@@ -1,70 +1,87 @@
-﻿using WaCore.Bl.Services;
+﻿using System;
+using WaCore.Bl.Services;
+using WaCore.Contracts.Enums;
 using Xunit;
 
 namespace WaCore.UnitTests.Bl.Services
 {
     public class PaswordServiceCheckStrengthTests
     {
-        [Fact]
-        public void PasswortEmpty_Blank()
+        private PasswordService GetPasswordService()
         {
-            Assert.Equal(PasswordService.PasswordScore.Blank, PasswordService.CheckStrength(""));
+            return new PasswordService();
         }
 
         [Fact]
+        public void PasswortEmpty_Blank()
+        {
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.Blank, service.CheckStrength(""));
+        }
+        
+        [Fact]
         public void Passwort_5Chars_TooShort()
         {
-            Assert.Equal(PasswordService.PasswordScore.TooShort, PasswordService.CheckStrength("12345"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.TooShort, service.CheckStrength("12345"));
         }
 
         [Fact]
         public void Passwort_6Digits_RequirementsNotMet()
         {
-            Assert.Equal(PasswordService.PasswordScore.RequirementsNotMet, PasswordService.CheckStrength("123456"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.RequirementsNotMet, service.CheckStrength("123456"));
         }
 
 
         [Fact]
         public void Passwort_6Chars_Digits_VeryWeak()
         {
-            Assert.Equal(PasswordService.PasswordScore.VeryWeak, PasswordService.CheckStrength("a234567"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.VeryWeak, service.CheckStrength("a234567"));
         }
 
 
         [Fact]
         public void Passwort_6LowerUpperCharsAndDigit_Weak()
         {
-            Assert.Equal(PasswordService.PasswordScore.Weak, PasswordService.CheckStrength("aA1234"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.Weak, service.CheckStrength("aA1234"));
         }
 
         [Fact]
         public void Passwort_8LowerUpperCharAndDigit_Fair()
         {
-            Assert.Equal(PasswordService.PasswordScore.Fair, PasswordService.CheckStrength("Passwor1"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.Fair, service.CheckStrength("Passwor1"));
         }
 
         [Fact]
         public void Passwort_10LowerUpperCharsAndDigit_Medium()
         {
-            Assert.Equal(PasswordService.PasswordScore.Medium, PasswordService.CheckStrength("Password123"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.Medium, service.CheckStrength("Password123"));
         }
 
         [Fact]
         public void Passwort_10LowerUpperCharsAndDigitAndSpecialChar_Strong()
         {
-            Assert.Equal(PasswordService.PasswordScore.Strong, PasswordService.CheckStrength("Password1#"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.Strong, service.CheckStrength("Password1#"));
         }
 
         [Fact]
         public void Passwort_12LowerUpperCharsAndDigitAndSpecialChar_VeryStrong()
         {
-            Assert.Equal(PasswordService.PasswordScore.VeryStrong, PasswordService.CheckStrength("Password123#"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.VeryStrong, service.CheckStrength("Password123#"));
         }
 
         [Fact]
         public void Passwort_10LowerUpperCharsAndDigitAndSpecialCharAndRepeatingChar_VeryWeak()
         {
-            Assert.Equal(PasswordService.PasswordScore.VeryWeak, PasswordService.CheckStrength("aA#1111111"));
+            var service = GetPasswordService();
+            Assert.Equal(PasswordScore.VeryWeak, service.CheckStrength("aA#1111111"));
         }
 
     }

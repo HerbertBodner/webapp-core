@@ -1,25 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using WaCore.Contracts.Bl.Services;
+using WaCore.Contracts.Enums;
 
 namespace WaCore.Bl.Services
 {
-    public class PasswordService
+    public class PasswordService : IPasswordService
     {
-        public enum PasswordScore
-        {
-            Blank = 0,
-            TooShort = 1,
-            RequirementsNotMet = 2,
-            VeryWeak = 3,
-            Weak = 4,
-            Fair = 5,
-            Medium = 6,
-            Strong = 7,
-            VeryStrong = 8
-        }
-
-        public static PasswordScore CheckStrength(string password)
+        public PasswordScore CheckStrength(string password)
         {
             int score = 0;
 

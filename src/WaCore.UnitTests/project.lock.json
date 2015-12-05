@@ -135,7 +135,10 @@
       },
       "WaCore.Bl/1.0.0": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1"
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "WaCore.Contracts": "1.0.0"
+        }
       },
       "WaCore.Contracts/1.0.0": {
         "type": "project",
@@ -155,7 +158,10 @@
       },
       "WaCore.Web/1.0.0": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1"
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "WaCore.Contracts": "1.0.0"
+        }
       },
       "xunit/2.1.0": {
         "type": "package",
@@ -1094,7 +1100,8 @@
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
           "System.Text.RegularExpressions": "4.0.11-beta-23516",
-          "System.Threading": "4.0.11-beta-23409"
+          "System.Threading": "4.0.11-beta-23409",
+          "WaCore.Contracts": "1.0.0"
         }
       },
       "WaCore.Contracts/1.0.0": {
@@ -1149,7 +1156,8 @@
           "System.Collections": "4.0.11-beta-23409",
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
-          "System.Threading": "4.0.11-beta-23409"
+          "System.Threading": "4.0.11-beta-23409",
+          "WaCore.Contracts": "1.0.0"
         }
       },
       "xunit/2.1.0": {
@@ -1449,7 +1457,10 @@
       },
       "WaCore.Bl/1.0.0": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1"
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "WaCore.Contracts": "1.0.0"
+        }
       },
       "WaCore.Contracts/1.0.0": {
         "type": "project",
@@ -1469,7 +1480,10 @@
       },
       "WaCore.Web/1.0.0": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1"
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "WaCore.Contracts": "1.0.0"
+        }
       },
       "xunit/2.1.0": {
         "type": "package",
@@ -1715,7 +1729,10 @@
       },
       "WaCore.Bl/1.0.0": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1"
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "WaCore.Contracts": "1.0.0"
+        }
       },
       "WaCore.Contracts/1.0.0": {
         "type": "project",
@@ -1735,7 +1752,10 @@
       },
       "WaCore.Web/1.0.0": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1"
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "WaCore.Contracts": "1.0.0"
+        }
       },
       "xunit/2.1.0": {
         "type": "package",
@@ -2945,7 +2965,8 @@
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
           "System.Text.RegularExpressions": "4.0.11-beta-23516",
-          "System.Threading": "4.0.11-beta-23409"
+          "System.Threading": "4.0.11-beta-23409",
+          "WaCore.Contracts": "1.0.0"
         }
       },
       "WaCore.Contracts/1.0.0": {
@@ -3000,7 +3021,8 @@
           "System.Collections": "4.0.11-beta-23409",
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
-          "System.Threading": "4.0.11-beta-23409"
+          "System.Threading": "4.0.11-beta-23409",
+          "WaCore.Contracts": "1.0.0"
         }
       },
       "xunit/2.1.0": {
@@ -4264,7 +4286,8 @@
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
           "System.Text.RegularExpressions": "4.0.11-beta-23516",
-          "System.Threading": "4.0.11-beta-23409"
+          "System.Threading": "4.0.11-beta-23409",
+          "WaCore.Contracts": "1.0.0"
         }
       },
       "WaCore.Contracts/1.0.0": {
@@ -4319,7 +4342,8 @@
           "System.Collections": "4.0.11-beta-23409",
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
-          "System.Threading": "4.0.11-beta-23409"
+          "System.Threading": "4.0.11-beta-23409",
+          "WaCore.Contracts": "1.0.0"
         }
       },
       "xunit/2.1.0": {
