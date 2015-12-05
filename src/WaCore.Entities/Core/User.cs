@@ -8,6 +8,8 @@ namespace WaCore.Entities.Core
 
         public string Name { get; set; }
 
-        public string Password { get; set; }
+        public string PlainPassword { get; set; }
+
+        public string HashedPassword { get; set; }
     }
 }

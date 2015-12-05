@@ -8,7 +8,7 @@ namespace WaCore.Contracts.Bl.Services
         void Register(TUser user);
         TUser SaveNewNonExistingUser(TUser user);
         TUser Login(string email, string password);
-        bool ChangePassword(string email, string oldPassword, string newPassword, string newPasswordConfirmation);
+        void ChangePassword(string email, string oldPassword, string newPassword);
         bool ResetPasswort(IUser user, string newPasswort, string newPasswordConfirmation);
     }
 }

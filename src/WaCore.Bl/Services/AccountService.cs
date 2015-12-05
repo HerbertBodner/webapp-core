@@ -1,7 +1,7 @@
 ﻿using WaCore.Contracts.Bl.Services;
 using WaCore.Contracts.Entities.Core;
 using WaCore.Contracts.Enums;
-using WaCore.Contracts.Exceptions;
+using WaCore.Contracts.Exceptions.AuthenticationExceptions;
 using WaCore.Contracts.Data.Repositories;
 
 namespace WaCore.Bl.Services
@@ -19,7 +19,7 @@ namespace WaCore.Bl.Services
 
         public virtual void Register(TUser user)
         {
-            if (user == null || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
+            if (user == null || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.PlainPassword))
             {
                 throw new UserEmailOrPasswordNullException();
             }
@@ -30,12 +30,14 @@ namespace WaCore.Bl.Services
                 throw new UserWithEmailAlreadyExistsException(user.Email);
             }
 
-            var strength = passwordService.CheckStrength(user.Password);
+            var strength = passwordService.CheckStrength(user.PlainPassword);
             if (strength < PasswordScore.Medium)
             {
                 throw new PasswordNotStrongEnoughException(strength);
             }
-            
+
+            user.HashedPassword = passwordService.HashPassword(user.PlainPassword);
+
             SaveNewNonExistingUser(user);
         }
 
@@ -56,17 +58,38 @@ namespace WaCore.Bl.Services
                 throw new UserNotFoundException(email);
             }
 
-            if (!passwordService.ValidatePassword(password, existingUser.Password))
+            if (!passwordService.ValidatePassword(password, existingUser.HashedPassword))
             {
                 throw new InvalidPasswordException(password);
             }
             return existingUser;
         }
 
-        public bool ChangePassword(string email, string oldPassword, string newPassword, string newPasswordConfirmation)
+        public void ChangePassword(string email, string oldPassword, string newPassword)
         {
-            //TODO
-            return false;
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newPassword))
+            {
+                throw new UserEmailOrPasswordNullException();
+            }
+
+            var existingUser = userRepo.FindByEmail(email);
+            if (existingUser == null)
+            {
+                throw new UserNotFoundException(email);
+            }
+
+            if (!passwordService.ValidatePassword(oldPassword, existingUser.HashedPassword))
+            {
+                throw new InvalidPasswordException(oldPassword);
+            }
+
+            var strength = passwordService.CheckStrength(newPassword);
+            if (strength < PasswordScore.Medium)
+            {
+                throw new PasswordNotStrongEnoughException(strength);
+            }
+
+            existingUser.HashedPassword = passwordService.HashPassword(newPassword);
         }
 
         public bool ResetPasswort(IUser user, string newPasswort, string newPasswordConfirmation)

@@ -3,7 +3,7 @@ using WaCore.Bl.Services;
 using WaCore.Contracts.Bl.Services;
 using WaCore.Contracts.Entities.Core;
 using WaCore.Contracts.Enums;
-using WaCore.Contracts.Exceptions;
+using WaCore.Contracts.Exceptions.AuthenticationExceptions;
 using WaCore.Contracts.Data.Repositories;
 using Xunit;
 
@@ -22,7 +22,7 @@ namespace WaCore.UnitTests.Bl.Services.AccountServiceTests
         {
             var user = Substitute.For<IUser>();
             user.Email = email;
-            user.Password = password;
+            user.PlainPassword = password;
             user.Name = name;
             return user;
         }

@@ -3,7 +3,8 @@
     public interface IUser
     {
         string Email { get; set; }
-        string Password { get; set; }
+        string PlainPassword { get; set; }
+        string HashedPassword { get; set; }
         string Name { get; set; }
     }
 }

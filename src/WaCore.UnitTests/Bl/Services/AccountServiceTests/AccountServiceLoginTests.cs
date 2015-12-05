@@ -2,7 +2,7 @@
 using WaCore.Bl.Services;
 using WaCore.Contracts.Bl.Services;
 using WaCore.Contracts.Entities.Core;
-using WaCore.Contracts.Exceptions;
+using WaCore.Contracts.Exceptions.AuthenticationExceptions;
 using WaCore.Contracts.Data.Repositories;
 using Xunit;
 
@@ -46,7 +46,7 @@ namespace WaCore.UnitTests.Bl.Services.AccountServiceTests
         {
             var userFake = Substitute.For<IUser>();
             userFake.Email = "my@mail.com";
-            userFake.Password = "MyVerySecurePassword123#";
+            userFake.PlainPassword = "MyVerySecurePassword123#";
             userFake.Name = "MyName";
 
             var userRepoFake = Substitute.For<IUserRepository<IUser>>();
@@ -64,7 +64,7 @@ namespace WaCore.UnitTests.Bl.Services.AccountServiceTests
         {
             var userFake = Substitute.For<IUser>();
             userFake.Email = "my@mail.com";
-            userFake.Password = "MyVerySecurePassword123#";
+            userFake.PlainPassword = "MyVerySecurePassword123#";
             userFake.Name = "MyName";
 
             var userRepoFake = Substitute.For<IUserRepository<IUser>>();
