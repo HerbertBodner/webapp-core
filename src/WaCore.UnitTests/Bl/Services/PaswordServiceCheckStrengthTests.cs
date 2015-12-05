@@ -1,5 +1,5 @@
-﻿using System;
-using WaCore.Bl.Services;
+﻿using WaCore.Bl.Services;
+using WaCore.Contracts.Bl.Services;
 using WaCore.Contracts.Enums;
 using Xunit;
 
@@ -7,7 +7,7 @@ namespace WaCore.UnitTests.Bl.Services
 {
     public class PaswordServiceCheckStrengthTests
     {
-        private PasswordService GetPasswordService()
+        private IPasswordService GetPasswordService()
         {
             return new PasswordService();
         }
@@ -83,6 +83,5 @@ namespace WaCore.UnitTests.Bl.Services
             var service = GetPasswordService();
             Assert.Equal(PasswordScore.VeryWeak, service.CheckStrength("aA#1111111"));
         }
-
     }
 }

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WaCore.Bl.Services;
+﻿using WaCore.Bl.Services;
+using WaCore.Contracts.Bl.Services;
 using Xunit;
 
 namespace WaCore.UnitTests.Bl.Services
 {
     public class PasswordServiceHashPasswordTests
     {
-        private static PasswordService GetPasswordService()
+        private static IPasswordService GetPasswordService()
         {
             return new PasswordService();
         }
