@@ -17,6 +17,10 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Utils", "src\WaCore.
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Web", "src\WaCore.Web\WaCore.Web.xproj", "{3D1CA264-8768-442D-A7AD-99667444C1BD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{F9D275A9-E78F-4C80-8241-8809DCB075CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E874E752-FCCF-40B5-B99C-1E7DC3F31AFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +58,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EF2DD50-A645-45BD-9E11-B1EB321AC18B} = {F9D275A9-E78F-4C80-8241-8809DCB075CF}
+		{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5} = {E874E752-FCCF-40B5-B99C-1E7DC3F31AFE}
 	EndGlobalSection
 EndGlobal
