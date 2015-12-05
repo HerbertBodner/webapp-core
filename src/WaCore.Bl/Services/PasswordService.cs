@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using Microsoft.AspNet.Cryptography.KeyDerivation;
 using WaCore.Contracts.Bl.Services;
 using WaCore.Contracts.Enums;
 
@@ -8,6 +11,8 @@ namespace WaCore.Bl.Services
 {
     public class PasswordService : IPasswordService
     {
+        const int ITERATIONS = 10000;
+
         public PasswordScore CheckStrength(string password)
         {
             int score = 0;
@@ -89,6 +94,67 @@ namespace WaCore.Bl.Services
             }
 
             return (PasswordScore)score;
+        }
+
+        public string HashPassword(string password)
+        {
+            byte[] salt = GenerateSalt();
+            var saltBase64 = Convert.ToBase64String(salt);
+            string hashedPwdBase64 = Convert.ToBase64String(GetHashedPassword(password, salt, ITERATIONS));
+            return saltBase64 + ":" + hashedPwdBase64;
+        }
+
+        private byte[] GetHashedPassword(string password, byte[] salt, int iteration)
+        {
+            return KeyDerivation.Pbkdf2(
+                            password: password,
+                            salt: salt,
+                            prf: KeyDerivationPrf.HMACSHA512,
+                            iterationCount: iteration,
+                            numBytesRequested: 256 / 8);
+        }
+
+        private byte[] GenerateSalt()
+        {
+            byte[] salt = new byte[128 / 8];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(salt);
+            }
+            var saltBase64 = Convert.ToBase64String(salt);
+            return salt;
+        }
+
+        public bool ValidatePassword(string password, string correctHash)
+        {
+            // Extract the parameters from the hash
+            char[] delimiter = { ':' };
+            string[] split = correctHash.Split(delimiter);
+            if (split.Length != 2)
+            {
+                return false;
+            }
+            var salt = Convert.FromBase64String(split[0]);
+            var pwdHash = Convert.FromBase64String(split[1]);
+
+            byte[] testHash = GetHashedPassword(password, salt, ITERATIONS);
+            return SlowEquals(pwdHash, testHash);
+        }
+
+        /// <summary>
+        /// Compares two byte arrays in length-constant time. This comparison
+        /// method is used so that password hashes cannot be extracted from
+        /// on-line systems using a timing attack and then attacked off-line.
+        /// </summary>
+        /// <param name="a">The first byte array.</param>
+        /// <param name="b">The second byte array.</param>
+        /// <returns>True if both byte arrays are equal. False otherwise.</returns>
+        private bool SlowEquals(byte[] a, byte[] b)
+        {
+            uint diff = (uint)a.Length ^ (uint)b.Length;
+            for (int i = 0; i < a.Length && i < b.Length; i++)
+                diff |= (uint)(a[i] ^ b[i]);
+            return diff == 0;
         }
     }
 }
