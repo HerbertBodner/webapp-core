@@ -1,11 +1,10 @@
-﻿{
+{
   "version": "1.0.0-*",
   "description": "WaCore.UnitTests Class Library",
   "authors": [ "Herbert" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
-
   "frameworks": {
     "dnx451": { },
     "dnxcore50": {
@@ -17,5 +16,18 @@
         "System.Threading": "4.0.11-beta-23409"
       }
     }
+  },
+  "dependencies": {
+    "WaCore.Bl": "1.0.0-*",
+    "WaCore.Contracts": "1.0.0-*",
+    "WaCore.Data": "1.0.0-*",
+    "WaCore.Entities": "1.0.0-*",
+    "WaCore.Utils": "1.0.0-*",
+    "WaCore.Web": "1.0.0-*",
+    "xunit": "2.1.0",
+    "xunit.runner.dnx": "2.1.0-beta6-build191"
+  },
+  "commands": {
+    "test": "xunit.runner.dnx"
   }
 }
