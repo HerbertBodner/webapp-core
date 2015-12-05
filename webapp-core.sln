@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24627.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Data", "src\WaCore.Data\WaCore.Data.xproj", "{AC51F3A2-1B3E-40DF-84F2-235618946478}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Entities", "src\WaCore.Entities\WaCore.Entities.xproj", "{BF7C10E5-3A34-4025-A953-84AD23211DE0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Contracts", "src\WaCore.Contracts\WaCore.Contracts.xproj", "{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.UnitTests", "src\WaCore.UnitTests\WaCore.UnitTests.xproj", "{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Bl", "src\WaCore.Bl\WaCore.Bl.xproj", "{4BDCE40C-7481-41E9-B94F-4CD18584B26E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Utils", "src\WaCore.Utils\WaCore.Utils.xproj", "{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Web", "src\WaCore.Web\WaCore.Web.xproj", "{3D1CA264-8768-442D-A7AD-99667444C1BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC51F3A2-1B3E-40DF-84F2-235618946478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC51F3A2-1B3E-40DF-84F2-235618946478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC51F3A2-1B3E-40DF-84F2-235618946478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC51F3A2-1B3E-40DF-84F2-235618946478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7C10E5-3A34-4025-A953-84AD23211DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7C10E5-3A34-4025-A953-84AD23211DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7C10E5-3A34-4025-A953-84AD23211DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7C10E5-3A34-4025-A953-84AD23211DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDCE40C-7481-41E9-B94F-4CD18584B26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDCE40C-7481-41E9-B94F-4CD18584B26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDCE40C-7481-41E9-B94F-4CD18584B26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDCE40C-7481-41E9-B94F-4CD18584B26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1CA264-8768-442D-A7AD-99667444C1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1CA264-8768-442D-A7AD-99667444C1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1CA264-8768-442D-A7AD-99667444C1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1CA264-8768-442D-A7AD-99667444C1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
