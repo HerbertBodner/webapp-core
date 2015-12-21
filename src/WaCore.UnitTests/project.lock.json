@@ -36,6 +36,15 @@
           "lib/dnx451/Microsoft.AspNet.Cryptography.KeyDerivation.dll": {}
         }
       },
+      "Microsoft.AspNet.Razor/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -175,11 +184,24 @@
           "lib/net45/NSubstitute.dll": {}
         }
       },
+      "RazorEngine/3.7.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.0.0"
+        },
+        "compile": {
+          "lib/net45/RazorEngine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RazorEngine.dll": {}
+        }
+      },
       "WaCore.Bl/1.0.0": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Cryptography.KeyDerivation": "1.0.0-beta8",
+          "RazorEngine": "3.7.5",
           "WaCore.Contracts": "1.0.0"
         }
       },
@@ -357,6 +379,15 @@
           "lib/dnx451/Microsoft.AspNet.Cryptography.KeyDerivation.dll": {}
         }
       },
+      "Microsoft.AspNet.Razor/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -496,11 +527,24 @@
           "lib/net45/NSubstitute.dll": {}
         }
       },
+      "RazorEngine/3.7.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.0.0"
+        },
+        "compile": {
+          "lib/net45/RazorEngine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RazorEngine.dll": {}
+        }
+      },
       "WaCore.Bl/1.0.0": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Cryptography.KeyDerivation": "1.0.0-beta8",
+          "RazorEngine": "3.7.5",
           "WaCore.Contracts": "1.0.0"
         }
       },
@@ -678,6 +722,15 @@
           "lib/dnx451/Microsoft.AspNet.Cryptography.KeyDerivation.dll": {}
         }
       },
+      "Microsoft.AspNet.Razor/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
       "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -817,11 +870,24 @@
           "lib/net45/NSubstitute.dll": {}
         }
       },
+      "RazorEngine/3.7.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.0.0"
+        },
+        "compile": {
+          "lib/net45/RazorEngine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RazorEngine.dll": {}
+        }
+      },
       "WaCore.Bl/1.0.0": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Cryptography.KeyDerivation": "1.0.0-beta8",
+          "RazorEngine": "3.7.5",
           "WaCore.Contracts": "1.0.0"
         }
       },
@@ -1023,6 +1089,18 @@
         "Microsoft.AspNet.Cryptography.KeyDerivation.nuspec"
       ]
     },
+    "Microsoft.AspNet.Razor/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "mU1W0PRd1uQAb+triRGp51YYkw26RQ9q1tWPX57eHqxDqjx1smRHhejQhhnoAGr3bZDkl8AoUxegGR3tNM+YKA==",
+      "files": [
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml",
+        "Microsoft.AspNet.Razor.3.0.0.nupkg",
+        "Microsoft.AspNet.Razor.3.0.0.nupkg.sha512",
+        "Microsoft.AspNet.Razor.nuspec"
+      ]
+    },
     "Microsoft.Dnx.Compilation.Abstractions/1.0.0-beta8": {
       "type": "package",
       "serviceable": true,
@@ -1174,6 +1252,20 @@
         "NSubstitute.1.9.2.nupkg.sha512",
         "NSubstitute.nuspec",
         "README.txt"
+      ]
+    },
+    "RazorEngine/3.7.5": {
+      "type": "package",
+      "sha512": "ZUFvrsmzN2muvmwHEc1WfK0+uxp/as+U5KS6I1WBqkFnD94WhvOLnvb4jbuxZyBy2xiBCcJ/yfml22fglaWSSw==",
+      "files": [
+        "lib/net40/RazorEngine.dll",
+        "lib/net40/RazorEngine.xml",
+        "lib/net45/RazorEngine.dll",
+        "lib/net45/RazorEngine.xml",
+        "LICENSE.md",
+        "RazorEngine.3.7.5.nupkg",
+        "RazorEngine.3.7.5.nupkg.sha512",
+        "RazorEngine.nuspec"
       ]
     },
     "xunit/2.1.0": {
