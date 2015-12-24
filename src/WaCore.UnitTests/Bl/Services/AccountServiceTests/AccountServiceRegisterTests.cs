@@ -11,11 +11,11 @@ namespace WaCore.UnitTests.Bl.Services.AccountServiceTests
 {
     public class AccountServiceRegisterTests
     {
-        protected IAccountService<IUser> GetAccountService(IUserRepository<IUser> userRepoFake = null, IPasswordService passwordServiceFake = null)
+        protected IAccountServiceOld<IUser> GetAccountService(IUserRepository<IUser> userRepoFake = null, IPasswordService passwordServiceFake = null)
         {
             userRepoFake = userRepoFake ?? Substitute.For<IUserRepository<IUser>>();
             passwordServiceFake = passwordServiceFake ?? Substitute.For<IPasswordService>();
-            return new AccountService<IUser>(userRepoFake, passwordServiceFake);
+            return new AccountServiceOld<IUser>(userRepoFake, passwordServiceFake);
         }
 
         protected IUser GetUserFake(string email, string password, string name = "")

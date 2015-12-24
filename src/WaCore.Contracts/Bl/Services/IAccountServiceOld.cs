@@ -2,7 +2,7 @@
 
 namespace WaCore.Contracts.Bl.Services
 {
-    public interface IAccountService<TUser>
+    public interface IAccountServiceOld<TUser>
         where TUser : IUser
     {
         void Register(TUser user);

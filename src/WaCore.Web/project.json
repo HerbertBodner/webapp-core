@@ -6,7 +6,11 @@
   "projectUrl": "",
   "licenseUrl": "",
   "frameworks": {
-    "dnx451": { },
+    "dnx451": {
+      "dependencies": {
+        
+      }
+    },
     "dnxcore50": {
       "dependencies": {
         "Microsoft.CSharp": "4.0.1-beta-23409",
@@ -19,8 +23,11 @@
   },
   "dependencies": {
     "WaCore.Contracts": "1.0.0-*",
+    "WaCore.Bl": "1.0.0-*",
     "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
     "Microsoft.AspNet.Mvc": "6.0.0-beta8",
-    "Microsoft.AspNet.Razor": "4.0.0-beta8"
+    "Microsoft.AspNet.Razor": "4.0.0-beta8",
+    "Microsoft.AspNet.Identity": "3.0.0-beta8",
+    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8"
   }
 }

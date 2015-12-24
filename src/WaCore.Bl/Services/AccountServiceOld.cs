@@ -6,12 +6,12 @@ using WaCore.Contracts.Data.Repositories;
 
 namespace WaCore.Bl.Services
 {
-    public class AccountService<TUser> : IAccountService<TUser>
+    public class AccountServiceOld<TUser> : IAccountServiceOld<TUser>
         where TUser : IUser
     {
         IUserRepository<TUser> userRepo;
         IPasswordService passwordService;
-        public AccountService(IUserRepository<TUser> userRepo, IPasswordService passwordService)
+        public AccountServiceOld(IUserRepository<TUser> userRepo, IPasswordService passwordService)
         {
             this.userRepo = userRepo;
             this.passwordService = passwordService;

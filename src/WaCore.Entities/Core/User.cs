@@ -1,15 +1,13 @@
-﻿using WaCore.Contracts.Entities.Core;
+﻿using System;
+using Microsoft.AspNet.Identity.EntityFramework;
+using WaCore.Contracts.Entities.Core;
 
 namespace WaCore.Entities.Core
 {
-    public class User : IUser
+    public class User : IdentityUser<Guid>, IUser
     {
-        public string Email { get; set; }
-
-        public string Name { get; set; }
-
         public string PlainPassword { get; set; }
-
         public string HashedPassword { get; set; }
+        public string Name { get; set; }
     }
 }
