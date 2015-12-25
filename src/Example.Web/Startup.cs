@@ -79,6 +79,9 @@ namespace Example.Web
                 app.UseStatusCodePagesWithReExecute("/error/{0}");
             }
 
+            // Add static files to the request pipeline.
+            app.UseStaticFiles();
+
             // Add cookie-based authentication to the request pipeline.
             app.UseIdentity();
 

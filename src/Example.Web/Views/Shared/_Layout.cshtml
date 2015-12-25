@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] - WaCore Example</title>
 
-        @*<environment names="Development">
+        <environment names="Development">
             <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
             <link rel="stylesheet" href="~/lib/bootstrap-touch-carousel/dist/css/bootstrap-touch-carousel.css" />
             <link rel="stylesheet" href="~/css/site.css" />
@@ -18,7 +18,7 @@
                   asp-fallback-href="~/lib/bootstrap-touch-carousel/css/bootstrap-touch-carousel.css"
                   asp-fallback-test-class="carousel-caption" asp-fallback-test-property="display" asp-fallback-test-value="none" />
             <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-        </environment>*@
+        </environment>
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -49,7 +49,7 @@
             </footer>
         </div>
 
-        @*<environment names="Development">
+        <environment names="Development">
             <script src="~/lib/jquery/dist/jquery.js"></script>
             <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
             <script src="~/lib/hammer.js/hammer.js"></script>
@@ -74,7 +74,7 @@
                     asp-fallback-test="window.Hammer && window.Hammer.Instance">
             </script>
             <script src="~/js/site.js" asp-append-version="true"></script>
-        </environment>*@
+        </environment>
 
         @RenderSection("scripts", required: false)
     </body>
