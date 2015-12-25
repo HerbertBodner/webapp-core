@@ -9,8 +9,12 @@ namespace WaCore.Entities.Core
 {
     public class Role : IdentityRole<Guid>
     {
+        public Role()
+        {
+            RolePermissions = new HashSet<RolePermission>();
+        }
         public string Description { get; set; }
 
-        public virtual ICollection<Permission> Permissions { get; set; }
+        public virtual ICollection<RolePermission> RolePermissions { get; set; }
     }
 }

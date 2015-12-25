@@ -14,7 +14,8 @@
     "WaCore.Web": "1.0.0-*",
     "WaCore.Entities": "1.0.0-*",
     "WaCore.Bl": "1.0.0-*",
-    "WaCore.Data": "1.0.0-*"
+    "WaCore.Data": "1.0.0-*",
+    "Example.Data": "1.0.0-*"
   },
 
   "commands": {

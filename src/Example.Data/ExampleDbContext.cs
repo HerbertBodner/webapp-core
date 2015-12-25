@@ -2,31 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Infrastructure;
-using WaCore.Contracts.Entities.Core;
-using WaCore.Entities.Core;
+using WaCore.Data;
 
-namespace WaCore.Data
+namespace Example.Data
 {
-    public class WaCoreDbContext : IdentityDbContext<User, Role, Guid>
+    public class ExampleDbContext : WaCoreDbContext
     {
-        public WaCoreDbContext(DbContextOptions options) : base(options)
-        {
-        }
-
-        public DbSet<Permission> Permissions { get; set; }
-
+        public ExampleDbContext(DbContextOptions options) :
+            base(options)
+        { }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
-
-            builder.Entity<UserPermission>().HasKey(x => new {x.PermissionId, x.UserId});
-            builder.Entity<RolePermission>().HasKey(x => new { x.PermissionId, x.RoleId });
         }
     }
 }

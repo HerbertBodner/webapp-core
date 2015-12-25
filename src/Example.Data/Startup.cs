@@ -2,21 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Example.Data;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Http;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Data.Entity;
-using Microsoft.Data.Entity.Infrastructure;
-using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
-using WaCore.Data;
 using WaCore.Entities.Core;
-using WaCore.Web;
+using Microsoft.Data.Entity;
+using Microsoft.Dnx.Runtime;
 
-namespace Example.Web
+namespace Example.Data
 {
     public class Startup
     {
@@ -44,7 +38,8 @@ namespace Example.Web
             Configuration = builder.Build();
         }
 
-        // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
+        public IConfigurationRoot Configuration { get; set; }
+
         public void ConfigureServices(IServiceCollection services)
         {
             // Add Entity Framework services to the services container.
@@ -53,50 +48,13 @@ namespace Example.Web
                 .AddDbContext<ExampleDbContext>(options =>
                     options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
 
-            services.ConfigureWaCore(Configuration);
-
             services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<ExampleDbContext, Guid>()
                 .AddDefaultTokenProviders();
-
         }
-
-        public IConfigurationRoot Configuration { get; set; }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            // Add the platform handler to the request pipeline.
-            app.UseIISPlatformHandler();
-
-            if (env.IsEnvironment("Development"))
-            {
-                //app.UseBrowserLink();
-
-                app.UseDeveloperExceptionPage();
-
-                //app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);
-                //app.UseStatusCodePagesWithReExecute("/error/{0}");
-                app.UseStatusCodePagesWithReExecute("/error/{0}");
-            }
-
-            // Add cookie-based authentication to the request pipeline.
-            app.UseIdentity();
-
-            // Add MVC to the request pipeline.
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-
-                // Uncomment the following line to add a route for porting Web API 2 controllers.
-                // routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
-            });
-
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
         }
     }
 }
