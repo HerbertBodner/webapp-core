@@ -1559,7 +1559,8 @@
           "Microsoft.AspNet.Razor": "4.0.0-beta8",
           "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
           "WaCore.Bl": "1.0.0",
-          "WaCore.Contracts": "1.0.0"
+          "WaCore.Contracts": "1.0.0",
+          "WaCore.Data": "1.0.0"
         }
       },
       "xunit/2.1.0": {
@@ -3230,7 +3231,8 @@
           "Microsoft.AspNet.Razor": "4.0.0-beta8",
           "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
           "WaCore.Bl": "1.0.0",
-          "WaCore.Contracts": "1.0.0"
+          "WaCore.Contracts": "1.0.0",
+          "WaCore.Data": "1.0.0"
         }
       },
       "xunit/2.1.0": {
@@ -4901,7 +4903,8 @@
           "Microsoft.AspNet.Razor": "4.0.0-beta8",
           "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
           "WaCore.Bl": "1.0.0",
-          "WaCore.Contracts": "1.0.0"
+          "WaCore.Contracts": "1.0.0",
+          "WaCore.Data": "1.0.0"
         }
       },
       "xunit/2.1.0": {

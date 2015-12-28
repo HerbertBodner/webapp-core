@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Infrastructure;
-using WaCore.Contracts.Entities.Core;
+using WaCore.Contracts.Data.Repositories.Base;
 using WaCore.Entities.Core;
 
 namespace WaCore.Data
 {
-    public class WaCoreDbContext : IdentityDbContext<User, Role, Guid>
+    public class WaCoreDbContext : IdentityDbContext<User, Role, Guid>, IDbContext
     {
         public WaCoreDbContext(DbContextOptions options) : base(options)
-        {
+        {           
         }
 
         public DbSet<Permission> Permissions { get; set; }
@@ -28,5 +28,29 @@ namespace WaCore.Data
             builder.Entity<UserPermission>().HasKey(x => new {x.PermissionId, x.UserId});
             builder.Entity<RolePermission>().HasKey(x => new { x.PermissionId, x.RoleId });
         }
+
+
+        #region IDbContext implemetation
+
+        public new IQueryable<TEntity> Set<TEntity>() where TEntity : class
+        {
+            return base.Set<TEntity>();
+        }
+
+        public void Add<TEntity>(TEntity entity) where TEntity : class
+        {
+            base.Add(entity);
+        }
+
+        public void Update<TEntity>(TEntity entity) where TEntity : class
+        {
+            base.Update(entity);
+        }
+
+        public void Remove<TEntity>(TEntity entity) where TEntity : class
+        {
+            base.Remove(entity);
+        }
+        #endregion
     }
 }
