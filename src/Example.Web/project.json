@@ -10,6 +10,8 @@
     "Microsoft.AspNet.Diagnostics": "1.0.0-beta8",
     "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta8",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta8",
+    "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta8",
     "EntityFramework.SqlServer": "7.0.0-beta8",
     "WaCore.Contracts": "1.0.0-*",
     "WaCore.Web": "1.0.0-*",

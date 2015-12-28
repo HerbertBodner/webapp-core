@@ -12,7 +12,11 @@ using Microsoft.Data.Entity.Infrastructure;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
+using Microsoft.Framework.DependencyInjection.Extensions;
+using WaCore.Contracts.Data.Repositories;
+using WaCore.Contracts.Data.Repositories.Base;
 using WaCore.Data;
+using WaCore.Data.Repositories;
 using WaCore.Entities.Core;
 using WaCore.Web;
 
@@ -58,6 +62,10 @@ namespace Example.Web
             services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<ExampleDbContext, Guid>()
                 .AddDefaultTokenProviders();
+
+
+            services.TryAddScoped<IUserRepository, UserRepository>();
+            services.TryAddScoped<IDbContextFactory, ExampleContextFactory>();
 
         }
 
