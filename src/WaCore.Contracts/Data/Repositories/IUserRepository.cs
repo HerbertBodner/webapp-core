@@ -1,4 +1,7 @@
-﻿using WaCore.Contracts.Entities.Core;
+﻿using System.Linq;
+using WaCore.Contracts.Data.Filters;
+using WaCore.Contracts.Data.Repositories.Base;
+using WaCore.Contracts.Entities.Core;
 
 namespace WaCore.Contracts.Data.Repositories
 {
@@ -8,5 +11,11 @@ namespace WaCore.Contracts.Data.Repositories
         TUser FindByEmail(string email);
         TUser FindByEmailAndPassword(string email, string hashedPassword);
         TUser Save(TUser user);
+    }
+
+
+    public interface IUserRepository 
+    {
+        IQueryable<IUser> GetByUserFilter(UserFilter filter);
     }
 }

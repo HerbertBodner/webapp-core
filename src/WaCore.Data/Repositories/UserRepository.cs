@@ -2,26 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WaCore.Contracts.Data.Filters;
 using WaCore.Contracts.Data.Repositories;
+using WaCore.Contracts.Data.Repositories.Base;
 using WaCore.Contracts.Entities.Core;
+using WaCore.Data.Repositories.Base;
+using WaCore.Entities.Core;
 
 namespace WaCore.Data.Repositories
 {
-    public class UserRepository : IUserRepository<IUser>
+    public class UserRepository : Repository<User>, IUserRepository
     {
-        public IUser FindByEmail(string email)
+        public UserRepository(IDbContextFactory contextFactory) : base(contextFactory)
         {
-            throw new NotImplementedException();
         }
 
-        public IUser FindByEmailAndPassword(string email, string hashedPassword)
+        public IQueryable<IUser> GetByUserFilter(UserFilter filter)
         {
-            throw new NotImplementedException();
-        }
-
-        public IUser Save(IUser user)
-        {
-            throw new NotImplementedException();
+            if (!string.IsNullOrEmpty(filter.Search))
+            {
+                return DbSet.Where(x => x.Name.Contains(filter.Search) || x.Email.Contains(filter.Search));
+            }
+            return DbSet;
         }
     }
 }
