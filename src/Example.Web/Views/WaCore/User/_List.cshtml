@@ -1,0 +1,51 @@
+﻿@model WaCore.Web.ViewModels.Users.UserListVm
+
+<div>
+    @*@Html.HiddenSorterFor(Model.SearchConfig)*@
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                @*<th>@(Html.SorterFor((IpPoolResponseDto resp) => resp.Id, Model.SearchConfig.SortField, Model.SearchConfig.SortOrderIsAscending))</th>
+                <th>@(Html.SorterFor((IpPoolResponseDto resp) => resp.Name, Model.SearchConfig.SortField, Model.SearchConfig.SortOrderIsAscending))</th>
+                <th>Entity</th>
+                <th>Type</th>
+                <th>@(Html.SorterFor((IpPoolResponseDto resp) => resp.CustomerId, Model.SearchConfig.SortField, Model.SearchConfig.SortOrderIsAscending))</th>*@
+                <th>Username</th>
+                <th>Email</th>
+                <th>EmailConfirmed</th>
+                <th>LockoutEnabled</th>
+                <th>LockoutEnd</th>
+                <th>PhoneNumber</th>
+                <th>PhoneNumberConfirmed</th>
+                <th>TwoFactorEnabled</th>
+                <th>AccessFailedCount</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.UserLst)
+            {
+                <tr>
+                    <td class="col-md-2">@user.UserName</td>
+                    <td class="col-md-2">@user.Email</td>
+                    <td class="col-md-1">@user.EmailConfirmed</td>
+                    <td class="col-md-1">@user.LockoutEnabled</td>
+                    <td class="col-md-1">@user.LockoutEnd</td>
+                    <td class="col-md-2">@user.PhoneNumber</td>
+                    <td class="col-md-1">@user.PhoneNumberConfirmed</td>
+                    <td class="col-md-1">@user.TwoFactorEnabled</td>
+                    <td class="col-md-1">@user.AccessFailedCount</td>
+                    @*<td class="col-md-2">
+                        <a title="Edit" href="@Url.Action("Edit", new { id = ipPool.Id } )">
+                            <span class="glyphicon glyphicon-edit" />
+                        </a>
+                        @Html.ActionLinkDelete("/IpPools/Delete?Id=" + ipPool.Id)
+                    </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @*@Html.PagedListPagerCustom(Model.DtoPagedList)*@
+
+</div>
