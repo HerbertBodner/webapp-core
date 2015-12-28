@@ -13,6 +13,7 @@ using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.DependencyInjection.Extensions;
+using WaCore.Bl;
 using WaCore.Contracts.Data.Repositories;
 using WaCore.Contracts.Data.Repositories.Base;
 using WaCore.Data;
@@ -57,7 +58,8 @@ namespace Example.Web
                 .AddDbContext<ExampleDbContext>(options =>
                     options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
 
-            services.ConfigureWaCore(Configuration);
+            services.ConfigureWaCoreWeb(Configuration);
+            services.ConfigureWaCoreBl(Configuration);
 
             services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<ExampleDbContext, Guid>()

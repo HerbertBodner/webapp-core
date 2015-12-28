@@ -8,7 +8,6 @@ using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using WaCore.Web.Infrastructure;
 using Microsoft.Framework.DependencyInjection.Extensions;
-using WaCore.Bl.Services.Account;
 using WaCore.Contracts.Bl.Services.Account;
 using WaCore.Web.Controllers;
 
@@ -16,7 +15,7 @@ namespace WaCore.Web
 {
     public static class ConfigurationExtensions
     {
-        public static IServiceCollection ConfigureWaCore(this IServiceCollection services,
+        public static IServiceCollection ConfigureWaCoreWeb(this IServiceCollection services,
             IConfigurationRoot configuration)
         {
             services.TryAddSingleton<IRazorViewEngine, WaCoreRazorViewEngine>();
@@ -28,8 +27,6 @@ namespace WaCore.Web
             // upgrading to newer versions of WaCore could modify or add views below /Views/WaCore
             // so you may need to compare your custom views to the originals again after upgrades
 
-
-            services.TryAddTransient<IAccountService, AccountService>();
 
             services.AddMvc();
             return services;

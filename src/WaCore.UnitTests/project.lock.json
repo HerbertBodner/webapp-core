@@ -1518,6 +1518,7 @@
           "Microsoft.AspNet.Cryptography.KeyDerivation": "1.0.0-beta8",
           "Microsoft.AspNet.Identity": "3.0.0-beta8",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
           "RazorEngine": "3.7.5",
           "WaCore.Contracts": "1.0.0",
           "WaCore.Entities": "1.0.0"
@@ -3189,6 +3190,7 @@
           "Microsoft.AspNet.Cryptography.KeyDerivation": "1.0.0-beta8",
           "Microsoft.AspNet.Identity": "3.0.0-beta8",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
           "RazorEngine": "3.7.5",
           "WaCore.Contracts": "1.0.0",
           "WaCore.Entities": "1.0.0"
@@ -4860,6 +4862,7 @@
           "Microsoft.AspNet.Cryptography.KeyDerivation": "1.0.0-beta8",
           "Microsoft.AspNet.Identity": "3.0.0-beta8",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta8",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8",
           "RazorEngine": "3.7.5",
           "WaCore.Contracts": "1.0.0",
           "WaCore.Entities": "1.0.0"
