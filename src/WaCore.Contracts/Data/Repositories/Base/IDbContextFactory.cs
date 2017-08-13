@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace WaCore.Contracts.Data.Repositories.Base
+﻿namespace WaCore.Contracts.Data.Repositories.Base
 {
     public interface IDbContextFactory
     {

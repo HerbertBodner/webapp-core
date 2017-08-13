@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace WaCore.Contracts.Data.Filters.Base
+﻿namespace WaCore.Contracts.Data.Filters.Base
 {
     public class FilterBase
     {
