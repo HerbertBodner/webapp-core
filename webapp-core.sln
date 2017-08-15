@@ -1,31 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Data", "src\WaCore.Data\WaCore.Data.xproj", "{AC51F3A2-1B3E-40DF-84F2-235618946478}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Entities", "src\WaCore.Entities\WaCore.Entities.xproj", "{BF7C10E5-3A34-4025-A953-84AD23211DE0}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Contracts", "src\WaCore.Contracts\WaCore.Contracts.xproj", "{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.UnitTests", "src\WaCore.UnitTests\WaCore.UnitTests.xproj", "{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Bl", "src\WaCore.Bl\WaCore.Bl.xproj", "{4BDCE40C-7481-41E9-B94F-4CD18584B26E}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Utils", "src\WaCore.Utils\WaCore.Utils.xproj", "{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WaCore.Web", "src\WaCore.Web\WaCore.Web.xproj", "{3D1CA264-8768-442D-A7AD-99667444C1BD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{F9D275A9-E78F-4C80-8241-8809DCB075CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E874E752-FCCF-40B5-B99C-1E7DC3F31AFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{DD16C4F1-9516-4270-A6E4-26C3C13DD39E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Example.Web", "src\Example.Web\Example.Web.xproj", "{F3821ADD-E25F-42F3-BD78-FBBA722416D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Data", "src\WaCore.Data\WaCore.Data.csproj", "{AC51F3A2-1B3E-40DF-84F2-235618946478}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Example.Data", "src\Example.Data\Example.Data.xproj", "{2057C0D5-2DA8-4327-BF8F-1A008783B38C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Entities", "src\WaCore.Entities\WaCore.Entities.csproj", "{BF7C10E5-3A34-4025-A953-84AD23211DE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Contracts", "src\WaCore.Contracts\WaCore.Contracts.csproj", "{3EF2DD50-A645-45BD-9E11-B1EB321AC18B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.UnitTests", "src\WaCore.UnitTests\WaCore.UnitTests.csproj", "{6FBD59CF-6465-4C3E-BDB8-BBA1CA87DFF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Bl", "src\WaCore.Bl\WaCore.Bl.csproj", "{4BDCE40C-7481-41E9-B94F-4CD18584B26E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Utils", "src\WaCore.Utils\WaCore.Utils.csproj", "{6B51725A-128E-4C4D-8BCD-648D8A3E19EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Web", "src\WaCore.Web\WaCore.Web.csproj", "{3D1CA264-8768-442D-A7AD-99667444C1BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Web", "src\Example.Web\Example.Web.csproj", "{F3821ADD-E25F-42F3-BD78-FBBA722416D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Data", "src\Example.Data\Example.Data.csproj", "{2057C0D5-2DA8-4327-BF8F-1A008783B38C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
