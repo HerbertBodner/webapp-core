@@ -3,4 +3,5 @@ mono: none
 dotnet: 1.0.4
 dist: trusty
 script:
+ - dotnet restore src/WaCore.Data.Ef/WaCore.Data.Ef.csproj
  - dotnet build src/WaCore.Data.Ef/WaCore.Data.Ef.csproj
