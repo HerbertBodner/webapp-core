@@ -1,16 +1,18 @@
 ﻿using System.Linq;
+using WaCore.Contracts.Data;
 using WaCore.Contracts.Data.Repositories.Base;
 
 namespace WaCore.Data.Repositories.Base
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class WacRepository<TEntity> : IWacRepository<TEntity> where TEntity : class
     {
         public readonly IQueryable<TEntity> DbSet;
-        protected readonly IDbContext Context;
+        protected readonly WacDbContext Context;
 
-        public Repository(IDbContextFactory contextFactory)
+        public WacRepository()
         {
-            Context = contextFactory.GetContext();
+            //TODO Set the context object here somehow
+            //Context = 
             DbSet = Context.Set<TEntity>();
         }
 

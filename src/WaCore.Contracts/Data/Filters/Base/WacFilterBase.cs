@@ -1,6 +1,6 @@
 ﻿namespace WaCore.Contracts.Data.Filters.Base
 {
-    public class FilterBase
+    public class WacFilterBase
     {
         public int Offset { get; set; }
 
@@ -10,7 +10,7 @@
 
         public bool SortOrderIsAscending { get; set; }
 
-        public FilterBase()
+        public WacFilterBase()
         {
             Offset = 0;
             Limit = 50;

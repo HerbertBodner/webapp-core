@@ -1,6 +1,6 @@
 ﻿namespace WaCore.Contracts.Data.Repositories.Base
 {
-    public interface IRepository<in TEntity> where TEntity : class
+    public interface IWacRepository<in TEntity> where TEntity : class
     {
         void Add(TEntity entity);
         void Update(TEntity entity);
