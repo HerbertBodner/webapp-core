@@ -5,6 +5,8 @@ namespace WaCore.Data
 {
     public class WacDbContext : DbContext, IWacDbContext
     {
-
+        public WacDbContext(DbContextOptions options)
+            : base(options)
+        { }
     }
 }

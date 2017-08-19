@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,6 +29,16 @@ namespace WaCore.Data.Repositories.Base
         public virtual Task<TEntity> GetAsync(object id, CancellationToken cancellationToken = default(CancellationToken))
         {
             return DbSet.FindAsync(id, cancellationToken);
+        }
+
+        public virtual List<TEntity> GetAll()
+        {
+            return DbSet.ToList();
+        }
+
+        public virtual Task<List<TEntity>> GetAllAsync()
+        {
+            return DbSet.ToListAsync();
         }
 
         public virtual void Add(TEntity entity)
