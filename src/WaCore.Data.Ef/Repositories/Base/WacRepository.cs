@@ -28,7 +28,7 @@ namespace WaCore.Data.Repositories.Base
 
         public virtual Task<TEntity> GetAsync(object id, CancellationToken cancellationToken = default(CancellationToken))
         {
-            return DbSet.FindAsync(id, cancellationToken);
+            return DbSet.FindAsync(new object[] { id }, cancellationToken);
         }
 
         public virtual List<TEntity> GetAll()
@@ -36,9 +36,9 @@ namespace WaCore.Data.Repositories.Base
             return DbSet.ToList();
         }
 
-        public virtual Task<List<TEntity>> GetAllAsync()
+        public virtual Task<List<TEntity>> GetAllAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
-            return DbSet.ToListAsync();
+            return DbSet.ToListAsync(cancellationToken);
         }
 
         public virtual void Add(TEntity entity)
