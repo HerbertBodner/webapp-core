@@ -8,8 +8,8 @@ namespace WaCore.Contracts.Data.Repositories.Base
     {
         TEntity Get(object id);
         Task<TEntity> GetAsync(object id, CancellationToken cancellationToken = default(CancellationToken));
-        List<TEntity> GetAll();
-        Task<List<TEntity>> GetAllAsync(CancellationToken cancellationToken = default(CancellationToken));
+        IList<TEntity> GetAll();
+        Task<IList<TEntity>> GetAllAsync(CancellationToken cancellationToken = default(CancellationToken));
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Remove(TEntity entity);

@@ -31,14 +31,14 @@ namespace WaCore.Data.Repositories.Base
             return DbSet.FindAsync(new object[] { id }, cancellationToken);
         }
 
-        public virtual List<TEntity> GetAll()
+        public virtual IList<TEntity> GetAll()
         {
             return DbSet.ToList();
         }
 
-        public virtual Task<List<TEntity>> GetAllAsync(CancellationToken cancellationToken = default(CancellationToken))
+        public virtual async Task<IList<TEntity>> GetAllAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
-            return DbSet.ToListAsync(cancellationToken);
+            return await DbSet.ToListAsync(cancellationToken);
         }
 
         public virtual void Add(TEntity entity)
