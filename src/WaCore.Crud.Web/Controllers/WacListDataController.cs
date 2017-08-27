@@ -11,9 +11,9 @@ namespace WaCore.Crud.Web.Controllers
         where TFilter : IWacFilter, new()
         where TDto : class
     {
-        private readonly IWacListDataService<TEntity, TFilter, TDto> service;
+        private readonly IWacListDataService<TFilter, TDto> service;
         protected TListVm listVm;
-        public WacListDataController(IWacListDataService<TEntity, TFilter, TDto> service)
+        public WacListDataController(IWacListDataService<TFilter, TDto> service)
         {
             this.service = service;
             listVm = new TListVm();

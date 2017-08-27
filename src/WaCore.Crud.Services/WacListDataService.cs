@@ -4,7 +4,7 @@ using WaCore.Crud.Contracts.Services;
 
 namespace WaCore.Crud.Services
 {
-    public abstract class WacListDataService<TEntity, TFilter, TDto> : IWacListDataService<TEntity, TFilter, TDto>
+    public abstract class WacListDataService<TEntity, TFilter, TDto> : IWacListDataService<TFilter, TDto>
     {
         private readonly IWacListDataRepository<TEntity, TFilter> repo;
 

@@ -7,7 +7,7 @@ using WaCore.Crud.Services;
 
 namespace WaCore.Crud.ListSample1.Services
 {
-    public interface IBookListDataService : IWacListDataService<Book, BookFilter, BookDto>
+    public interface IBookListDataService : IWacListDataService<BookFilter, BookDto>
     { }
 
     public class BookListDataService : WacListDataService<Book, BookFilter, BookDto>, IBookListDataService
