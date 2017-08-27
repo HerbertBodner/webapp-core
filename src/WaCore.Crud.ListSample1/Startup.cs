@@ -29,8 +29,10 @@ namespace WaCore.Crud.ListSample1
             services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(repoConfig =>
                 repoConfig.AddRepository<IBooksListRepository, BookListRepository>());
 
+            services.AddTransient<IBooksListRepository>(
+                serviceProvider => serviceProvider.GetService<IUnitOfWork>().GetRepository<IBooksListRepository>());
+
             services.AddTransient<IBookListDataService, BookListDataService>();
-            services.AddTransient<IBooksListRepository, BookListRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
