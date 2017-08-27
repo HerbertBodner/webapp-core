@@ -24,6 +24,8 @@ bld/
 
 # Bower
 **/wwwroot/lib
+**/wwwroot/css/site.min.css
+**/wwwroot/js/site.min.js
 
 # Visual Studo 2015 cache/options directory
 .vs/
