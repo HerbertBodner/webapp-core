@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using WaCore.Contracts.Data;
 using WaCore.Crud.Contracts.Data;
+using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Dtos.Filters;
 using WaCore.Data;
 using WaCore.Data.Repositories.Base;
@@ -9,7 +11,7 @@ namespace WaCore.Crud.Data.Ef
     public abstract class WacListDataRepository<TEntity, TDbContext, TFilter> : WacRepository<TEntity, TDbContext>, IWacListDataRepository<TEntity, TFilter>
         where TEntity : class
         where TDbContext : WacDbContext
-        where TFilter : WacFilter
+        where TFilter : IWacFilter
     {
         public WacListDataRepository(TDbContext dbContext) : base(dbContext)
         {
