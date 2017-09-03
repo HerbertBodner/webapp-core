@@ -34,7 +34,6 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
         public XssConfiguration()
         {
             XssSetting = XssMode.oneBlock;
-            ReportUri = string.Empty;
         }
 
         public string BuildHeaderValue()

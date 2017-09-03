@@ -101,136 +101,100 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
         /// </summary>
         public string Sandbox { get; set; }
 
-        public ContentSecurityPolicyConfiguration()
-        {
-            BaseUri = new List<string>();
-            DefaultSrc = new List<string>();
-            ScriptSrc = new List<string>();
-            ObjectSrc = new List<string>();
-            StyleSrc = new List<string>();
-            ImgSrc = new List<string>();
-            MediaSrc = new List<string>();
-            FrameSrc = new List<string>();
-            FrameAncestors = new List<string>();
-            FontSrc = new List<string>();
-            ConnectSrc = new List<string>();
-            ManifestSrc = new List<string>();
-            FormAction = new List<string>();
-            PluginTypes = new List<string>();
-            RequireSriFor = new List<string>();
-            WorkerSrc = new List<string>();
-
-            BlockAllMixedContent = true;
-            UpgradeInsecureRequests = true;
-
-            Sandbox = null;
-        }
-
         public string BuildHeaderValue()
         {
-            var sb = new StringBuilder();
+            var stringBuilder = new StringBuilder();
 
-            if (AnyValues())
+            if (BaseUri != null)
             {
-                if (BaseUri.Any())
-                {
-                    sb.Append(BuildValuesForDirective("base-uri", BaseUri));
-                }
-                if (DefaultSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("default-src", DefaultSrc));
-                }
-                if (ScriptSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("script-src", ScriptSrc));
-                }
-                if (ObjectSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("object-src", ObjectSrc));
-                }
-                if (StyleSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("style-src", StyleSrc));
-                }
-                if (ImgSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("img-src", ImgSrc));
-                }
-                if (MediaSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("media-src", MediaSrc));
-                }
-                if (FrameSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("frame-src", FrameSrc));
-                }
-                if (FrameAncestors.Any())
-                {
-                    sb.Append(BuildValuesForDirective("frame-ancestors", FrameAncestors));
-                }
-                if (FontSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("font-src", FontSrc));
-                }
-                if (ConnectSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("connect-src", ConnectSrc));
-                }
-                if (ManifestSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("manifest-src", ManifestSrc));
-                }
-                if (FormAction.Any())
-                {
-                    sb.Append(BuildValuesForDirective("form-action", FormAction));
-                }
-                if (PluginTypes.Any())
-                {
-                    sb.Append(BuildValuesForDirective("plugin-types", PluginTypes));
-                }
-                if (RequireSriFor.Any())
-                {
-                    sb.Append(BuildValuesForDirective("require-sri-for", RequireSriFor));
-                }
-                if (WorkerSrc.Any())
-                {
-                    sb.Append(BuildValuesForDirective("worker-src", WorkerSrc));
-                }
+                stringBuilder.Append(BuildValuesForDirective("base-uri", BaseUri));
+            }
+            if (DefaultSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("default-src", DefaultSrc));
+            }
+            if (ScriptSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("script-src", ScriptSrc));
+            }
+            if (ObjectSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("object-src", ObjectSrc));
+            }
+            if (StyleSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("style-src", StyleSrc));
+            }
+            if (ImgSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("img-src", ImgSrc));
+            }
+            if (MediaSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("media-src", MediaSrc));
+            }
+            if (FrameSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("frame-src", FrameSrc));
+            }
+            if (FrameAncestors != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("frame-ancestors", FrameAncestors));
+            }
+            if (FontSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("font-src", FontSrc));
+            }
+            if (ConnectSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("connect-src", ConnectSrc));
+            }
+            if (ManifestSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("manifest-src", ManifestSrc));
+            }
+            if (FormAction != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("form-action", FormAction));
+            }
+            if (PluginTypes != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("plugin-types", PluginTypes));
+            }
+            if (RequireSriFor != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("require-sri-for", RequireSriFor));
+            }
+            if (WorkerSrc != null)
+            {
+                stringBuilder.Append(BuildValuesForDirective("worker-src", WorkerSrc));
             }
 
             if (BlockAllMixedContent)
             {
-                sb.Append("block-all-mixed-content; ");
+                stringBuilder.Append("block-all-mixed-content; ");
             }
             if (UpgradeInsecureRequests)
             {
-                sb.Append("upgrade-insecure-requests; ");
+                stringBuilder.Append("upgrade-insecure-requests; ");
             }
             if (!string.IsNullOrEmpty(Sandbox))
             {
-                sb.AppendFormat("sandbox {0}", Sandbox);
+                stringBuilder.AppendFormat("sandbox {0}", Sandbox);
             }
 
-            return sb.ToString();
+            return stringBuilder.ToString();
         }
 
         private string BuildValuesForDirective(string directiveName, List<string> directiveValues)
         {
             var sb = new StringBuilder();
-            
+
             sb.Append(directiveName);
             directiveValues.ForEach(s => sb.Append($"'{s}' "));
             sb.Append(";");
 
             return sb.ToString();
-        }
-
-        private bool AnyValues()
-        {
-            return BaseUri.Any()    || DefaultSrc.Any() || ScriptSrc.Any()  || ObjectSrc.Any()
-                || StyleSrc.Any()   || ImgSrc.Any()     || MediaSrc.Any()   || FrameSrc.Any()
-                || FrameAncestors.Any() || FontSrc.Any()|| ConnectSrc.Any() || ManifestSrc.Any()
-                || FormAction.Any() || RequireSriFor.Any() || PluginTypes.Any() || WorkerSrc.Any();
         }
     }
 }

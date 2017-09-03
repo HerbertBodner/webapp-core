@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace WaCore.Web.Middleware.SecureHeaders.Models
@@ -28,9 +30,7 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
         public HpkpConfiguration()
         {
             PinSha256 = new List<string>();
-            ReportUri = null;
             MaxAge = 10000;
-            IncludeSubDomains = true;
         }
 
         public string BuildHeaderValue()

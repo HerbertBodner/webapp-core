@@ -21,7 +21,9 @@
             "ReportUri": "https://github.com/HerbertBodner/webapp-core"
         },
         "ContentSecurityPolicyConfiguration": {
-            "StyleSrc": [ "css.example.com", "css.example.net" ] 
+            "StyleSrc": [ "css.example.com", "css.example.net" ],
+            "BlockAllMixedContent": true,
+            "UpgradeInsecureRequests":  true 
         } 
     }
 }

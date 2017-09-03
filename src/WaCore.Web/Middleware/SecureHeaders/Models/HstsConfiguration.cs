@@ -24,14 +24,9 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
 
         public HstsConfiguration()
         {
-            IncludeSubDomains = true;
             MaxAge = 31536000;
         }
 
-        /// <summary>
-        /// Builds the HTTP header value
-        /// </summary>
-        /// <returns>A string representing the HTTP header value</returns>
         public string BuildHeaderValue()
         {
             var stringBuilder = new StringBuilder();
