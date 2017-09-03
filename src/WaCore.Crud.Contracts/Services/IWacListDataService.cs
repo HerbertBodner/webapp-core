@@ -6,6 +6,6 @@ namespace WaCore.Crud.Contracts.Services
 {
     public interface IWacListDataService<TFilter, TDto>
     {
-        List<TDto> GetAll(TFilter filter);
+        IList<TDto> GetAll(TFilter filter);
     }
 }

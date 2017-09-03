@@ -30,7 +30,7 @@ namespace WaCore.Crud.Web.Controllers
             return View(listVm);
         }
 
-        protected List<TDto> Filter(TFilter filter)
+        protected IList<TDto> Filter(TFilter filter)
         {
             return service.GetAll(filter);
         }

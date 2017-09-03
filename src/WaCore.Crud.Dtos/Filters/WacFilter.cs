@@ -7,6 +7,8 @@ namespace WaCore.Crud.Dtos.Filters
 {
     public class WacFilter : IWacFilter
     {
+        protected static Dictionary<string, string> sortingFieldMappingDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
         public int Offset { get; set; }
 
         public int? Limit { get; set; }
@@ -20,6 +22,11 @@ namespace WaCore.Crud.Dtos.Filters
             Offset = 0;
             Limit = 50;
             SortOrderIsAscending = true;
+        }
+
+        public string GetDbSortField(string dtoField)
+        {
+            return sortingFieldMappingDict.ContainsKey(dtoField) ? sortingFieldMappingDict[dtoField] : null;
         }
     }
 }

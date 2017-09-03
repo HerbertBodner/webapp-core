@@ -8,6 +8,6 @@ namespace WaCore.Crud.Contracts.Data
     public interface IWacListDataRepository<TEntity, TFilter>
         where TFilter : IWacFilter
     {
-        List<TEntity> GetAll(TFilter filter);
+        Tuple<int, IList<TEntity>> GetAll (TFilter filter);
     }
 }

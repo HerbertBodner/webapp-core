@@ -10,7 +10,7 @@ namespace WaCore.Crud.Web.ViewModels
         where TDto : class
         where TFilter : WacFilter
     {
-        public List<TDto> DtoList { get; set; }
+        public IList<TDto> DtoList { get; set; }
 
         public TFilter Filter { get; set; }
     }

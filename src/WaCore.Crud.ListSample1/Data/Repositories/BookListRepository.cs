@@ -23,11 +23,13 @@ namespace WaCore.Crud.ListSample1.Data.Repositories
         { }
 
 
-        public override List<Book> GetAll(BookFilter filter)
+        protected override IQueryable<Book> ApplyFilter(IQueryable<Book> query, BookFilter filter)
         {
-            var q = DbContext.Books.Where(x =>
-                string.IsNullOrEmpty(filter.Author) || x.Author.Contains(filter.Author));
-            return q.ToList();
+            if (!string.IsNullOrEmpty(filter.Author))
+            {
+                query = query.Where(x => x.Author.Contains(filter.Author));
+            }
+            return query;
         }
     }
 }

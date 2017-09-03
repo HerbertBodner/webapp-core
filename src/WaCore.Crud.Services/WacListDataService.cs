@@ -15,11 +15,16 @@ namespace WaCore.Crud.Services
             this.repo = repo;
         }
 
-        public List<TDto> GetAll(TFilter filter)
+        public IList<TDto> GetAll(TFilter filter)
         {
-            var entityList = repo.GetAll(filter);
+            var entityTuple = repo.GetAll(filter);
 
-            return entityList.ConvertAll(MapEntityToDto);
+            var dtoList = new List<TDto>();
+            foreach (var entity in entityTuple.Item2)
+            {
+                dtoList.Add(MapEntityToDto(entity));
+            }
+            return dtoList;
         }
 
         protected abstract TDto MapEntityToDto(TEntity entity);

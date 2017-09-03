@@ -13,5 +13,8 @@ namespace WaCore.Crud.Contracts.Dtos
         string SortField { get; set; }
 
         bool SortOrderIsAscending { get; set; }
+
+        string GetDbSortField(string dtoField);
+        
     }
 }
