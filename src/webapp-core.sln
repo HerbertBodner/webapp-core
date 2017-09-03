@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Contracts", "WaCore.Contracts\WaCore.Contracts.csproj", "{5F1B5CFE-B0EA-49EF-85FA-F55DD965EEC6}"
 EndProject
@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Data.Ef", "WaCore.Da
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FC121097-E52E-446C-A8CD-0D2FCA0FDEF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaCore.Sample", "WaCore.Sample\WaCore.Sample.csproj", "{234941C2-F30C-424F-B464-4782F3697536}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Sample", "WaCore.Sample\WaCore.Sample.csproj", "{234941C2-F30C-424F-B464-4782F3697536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaCore.Web", "WaCore.Web\WaCore.Web.csproj", "{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaCore.Sample.Middlewares", "WaCore.Sample.Middlewares\WaCore.Sample.Middlewares.csproj", "{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +33,21 @@ Global
 		{234941C2-F30C-424F-B464-4782F3697536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{234941C2-F30C-424F-B464-4782F3697536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{234941C2-F30C-424F-B464-4782F3697536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{234941C2-F30C-424F-B464-4782F3697536} = {FC121097-E52E-446C-A8CD-0D2FCA0FDEF3}
+		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0} = {FC121097-E52E-446C-A8CD-0D2FCA0FDEF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {923302B1-4B86-4AA2-A7F6-890CF6C2D74E}

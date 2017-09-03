@@ -1,0 +1,27 @@
+﻿{
+    "WaSecureHeadersMiddlewareConfiguration": {
+        "HstsConfiguration": {
+            "MaxAge": 42,
+            "IncludeSubDomains": "true"
+        },
+        "HPKPConfiguration": {
+            "PinSha256": [
+                "e927fad33f9eb96126896413502a1034be0ca379dec377fb891feb9ebc720e47"
+            ],
+            "MaxAge": 3,
+            "IncludeSubDomains": "true",
+            "ReportUri": "https://github.com/HerbertBodner/webapp-core"
+        },
+        "XFrameOptionsConfiguration": {
+            "OptionValue": "allowfrom",
+            "AllowFromDomain": "wacore.com"
+        },
+        "XssConfiguration": {
+            "XssSetting": "oneReport",
+            "ReportUri": "https://github.com/HerbertBodner/webapp-core"
+        },
+        "ContentSecurityPolicyConfiguration": {
+            "StyleSrc": [ "css.example.com", "css.example.net" ] 
+        } 
+    }
+}
