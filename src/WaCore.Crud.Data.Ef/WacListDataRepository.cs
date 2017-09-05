@@ -8,6 +8,8 @@ using WaCore.Data;
 using WaCore.Data.Repositories.Base;
 using WaCore.Crud.Utils;
 using System;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace WaCore.Crud.Data.Ef
 {
@@ -20,27 +22,22 @@ namespace WaCore.Crud.Data.Ef
         {
         }
 
-        public Tuple<int, IList<TEntity>> GetAll(TFilter filter)
+        public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
         {
             var q = ApplyFilter(DbSet.AsQueryable(), filter);
 
-            var paginatedList = ApplySortingAndPagination(q, filter).ToList();
+            var queryPaginated = ApplySortingAndPagination(q, filter);
 
-            int total;
-            
-            // if offset=0 and the amount in the list is smaller than the limit, we already know the total amount and don't need to do another query to the database
-            if (filter.Offset == 0 && (filter.Limit == null || paginatedList.Count() <= filter.Limit))
-            {
-                total = paginatedList.Count();
-            }
-            else
-            {
-                total = q.Count();
-            }
-
-            return new Tuple<int, IList<TEntity>>(total, paginatedList);
+            return await queryPaginated.ToListAsync();
         }
-        
+
+        public async Task<int> GetTotalCountAsync(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
+
+            return await q.CountAsync();
+        }
+
 
         protected abstract IQueryable<TEntity> ApplyFilter(IQueryable<TEntity> query, TFilter filter);
 

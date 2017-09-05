@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WaCore.Crud.Contracts\WaCore.Crud.Contracts.csproj" />
     <ProjectReference Include="..\WaCore.Crud.Dtos\WaCore.Crud.Dtos.csproj" />
+    <ProjectReference Include="..\WaCore.Crud.Utils\WaCore.Crud.Utils.csproj" />
   </ItemGroup>
 
 </Project>

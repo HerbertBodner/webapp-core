@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Contracts.Services;
+using WaCore.Crud.Contracts.Utils;
 using WaCore.Crud.Contracts.Web;
 
 namespace WaCore.Crud.Web.Controllers
@@ -19,20 +21,20 @@ namespace WaCore.Crud.Web.Controllers
             listVm = new TListVm();
         }
 
-        public IActionResult Index(TFilter filter)
+        public async Task<IActionResult> Index(TFilter filter)
         {
             if (filter == null)
             { 
                 filter = new TFilter();
             }
-            var dtoList = Filter(filter);
-            listVm.DtoList = dtoList;
+            var pagedList = await FilterAsync(filter);
+            listVm.DtoList = pagedList.List;
             return View(listVm);
         }
 
-        protected IList<TDto> Filter(TFilter filter)
+        protected async Task<IPagedList<TDto>> FilterAsync(TFilter filter)
         {
-            return service.GetAll(filter);
+            return await service.GetAllAsync(filter);
         }
     }
 }
