@@ -44,17 +44,19 @@ namespace WaCore.Crud.Data.Ef
 
         protected IQueryable<TEntity> ApplySortingAndPagination(IQueryable<TEntity> entityList, TFilter filter)
         {
-            if ((!string.IsNullOrEmpty(filter.SortField)))
+            if ((!string.IsNullOrEmpty(filter.SortBy)))
             {
-                var dbField = filter.GetDbSortField(filter.SortField);
-                if (dbField != null)
-                {
-                    filter.SortField = dbField;
-                }
+                var orderList = SortBySplitter.SplitSortByString(filter.SortBy);
 
-                if (typeof(TEntity).GetProperty(filter.SortField) != null)
+                foreach (var orderItem in orderList)
                 {
-                    entityList = entityList.OrderByField(filter.SortField, filter.SortOrderIsAscending);
+                    //TODO sorting
+                    //filter.GetDbSortField(orderItem.FieldName);
+
+                    //if (typeof(TEntity).GetProperty(filter.SortBy) != null)
+                    //{
+                    //    entityList = entityList.OrderByField(filter.SortBy, filter.SortOrderIsAscending);
+                    //}
                 }
             }
 
