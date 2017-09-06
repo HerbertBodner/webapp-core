@@ -8,7 +8,7 @@ using WaCore.Crud.Contracts.Web;
 
 namespace WaCore.Crud.Web.Controllers
 {
-    public class WacListDataController<TEntity, TFilter, TDto, TListVm> : Controller
+    public class WacListDataController<TListVm, TDto, TFilter> : Controller
         where TListVm : IWacListDataVm<TDto, TFilter>, new()
         where TFilter : IWacFilter, new()
         where TDto : class
