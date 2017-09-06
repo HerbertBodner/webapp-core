@@ -5,11 +5,13 @@ using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Contracts.Services;
 using WaCore.Crud.Contracts.Utils;
 using WaCore.Crud.Utils;
+using WaCore.Crud.Utils.Exceptions;
 
 namespace WaCore.Crud.Services
 {
     public abstract class WacListDataService<TEntity, TFilter, TDto> : IWacListDataService<TFilter, TDto>
         where TFilter : IWacFilter
+        where TEntity : class
     {
         protected readonly IWacListDataRepository<TEntity, TFilter> repo;
 
@@ -40,6 +42,16 @@ namespace WaCore.Crud.Services
                 dtoList.Add(MapEntityToDto(entity));
             }
             return new PagedList<TDto>(dtoList, totalCount, filter.Offset, filter.Limit);
+        }
+
+        public async Task<TDto> GetAsync(object id)
+        {
+            var entity = await repo.GetAsync(id);
+            if (entity == null)
+            {
+                throw new ResourceNotFoundException(id);
+            }
+            return MapEntityToDto(entity);
         }
 
         protected abstract TDto MapEntityToDto(TEntity entity);

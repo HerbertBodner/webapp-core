@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Contracts.Services;
 using WaCore.Crud.Contracts.Utils;
-using WaCore.Crud.Contracts.Web;
+using WaCore.Crud.Contracts.Web.ViewModels;
 
 namespace WaCore.Crud.Web.Controllers
 {

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using WaCore.Crud.Contracts.Web;
-using WaCore.Crud.Dtos.Filters;
+﻿using System.Collections.Generic;
+using WaCore.Crud.Contracts.Dtos;
+using WaCore.Crud.Contracts.Web.ViewModels;
 
 namespace WaCore.Crud.Web.ViewModels
 {
     public class WacListDataVm<TDto, TFilter> : IWacListDataVm<TDto, TFilter>
-        where TDto : class
-        where TFilter : WacFilter
+        where TFilter : IWacFilter
     {
         public IList<TDto> DtoList { get; set; }
 
