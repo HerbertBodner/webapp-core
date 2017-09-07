@@ -14,11 +14,15 @@ namespace WaCore.Crud.ListSample1.Data
         { }
 
         public IBooksListRepository BooksRepository => GetRepository<IBooksListRepository>();
+
+        public ICarRepository CarRepository => GetRepository<ICarRepository>();
     }
 
     public interface IUnitOfWork : IWacUnitOfWork
     {
         IBooksListRepository BooksRepository { get; }
+
+        ICarRepository CarRepository{ get; }
     }
 
 }

@@ -7,7 +7,7 @@ using WaCore.Crud.Contracts.Web.ViewModels;
 
 namespace WaCore.Crud.Web.Controllers
 {
-    public class WacCrudController<TListVm, TDto, TFilter, TEditVm, TNewDto, TEntity> : WacListDataController<TListVm, TDto, TFilter>
+    public class WacCrudController<TListVm, TDto, TFilter, TEditVm, TNewDto, TEntity, TKey> : WacListDataController<TListVm, TDto, TFilter>
         where TListVm : IWacListDataVm<TDto, TFilter>, new()
         where TFilter : IWacFilter, new()
         where TDto : class
@@ -57,7 +57,7 @@ namespace WaCore.Crud.Web.Controllers
         }
 
 
-        public virtual async Task<ActionResult> Edit(string id)
+        public virtual async Task<ActionResult> Edit(TKey id)
         {
             var vm = new TEditVm();
 
@@ -68,7 +68,7 @@ namespace WaCore.Crud.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public virtual async Task<ActionResult> Edit(TEditVm vm, string id)
+        public virtual async Task<ActionResult> Edit(TEditVm vm, TKey id)
         {
             if (!ModelState.IsValid)
             {
@@ -92,7 +92,7 @@ namespace WaCore.Crud.Web.Controllers
         }
 
 
-        public virtual async Task<IActionResult> Delete(string id)
+        public virtual async Task<IActionResult> Delete(TKey id)
         {
             try
             {

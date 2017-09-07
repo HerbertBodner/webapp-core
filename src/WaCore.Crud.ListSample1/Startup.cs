@@ -11,6 +11,7 @@ using WaCore.Crud.ListSample1.Data;
 using WaCore.Crud.ListSample1.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using WaCore.Crud.ListSample1.Services;
+using WaCore.Contracts.Data;
 
 namespace WaCore.Crud.ListSample1
 {
@@ -22,17 +23,24 @@ namespace WaCore.Crud.ListSample1
         {
             services.AddMvc();
 
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=WaCore.Sample;Trusted_Connection=True;";
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=WaCore.Crud.ListSample1;Trusted_Connection=True;";
             services.AddDbContext<LibraryDbContext>(optionsBuilder =>
                 optionsBuilder.UseSqlServer(connection));
 
-            services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(repoConfig =>
-                repoConfig.AddRepository<IBooksListRepository, BookListRepository>());
+            services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(repoConfig => {
+                repoConfig.AddRepository<IBooksListRepository, BookListRepository>();
+                repoConfig.AddRepository<ICarRepository, CarRepository>();
+                }
+            );
 
             services.AddTransient<IBooksListRepository>(
                 serviceProvider => serviceProvider.GetService<IUnitOfWork>().GetRepository<IBooksListRepository>());
 
+            services.AddTransient<ICarRepository>(
+                            serviceProvider => serviceProvider.GetService<IUnitOfWork>().GetRepository<ICarRepository>());
+
             services.AddTransient<IBookListDataService, BookListDataService>();
+            services.AddTransient<ICarService, CarService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
