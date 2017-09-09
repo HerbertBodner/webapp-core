@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using WaCore.Contracts.Data;
 
@@ -35,6 +36,36 @@ namespace WaCore.Data.Ef.DependencyInjection
             return this;
         }
 
-        // TODO: Create a way to add all repositories from a specific assembly
+        /// <summary>
+        /// Adds repositories from assembly which defines the specified type.
+        ///     <para>
+        ///      A type is added if the name ends with 'Repisotory' and if it implements an interface with a matching name and the 'I' prefix. E.g. <c>class BooksRepository: IBooksRepository</c>.
+        ///     </para>
+        /// </summary>
+        /// <typeparam name="TAssemblySelector">A type defined in the assembly to scan</typeparam>
+        /// <returns></returns>
+        public RepositoryConfiguration<TDbContext, TUnitOfWorkService> AddRepositoriesFromAssemblyOf<TAssemblySelector>()
+        {
+            var assembly = typeof(TAssemblySelector).Assembly;
+            var assemblyTypes = assembly.DefinedTypes.Select(ti => ti.AsType());
+            // Item1 is repository, Item2 is interface
+            IEnumerable<Tuple<Type, Type>> repositories = assemblyTypes.Where(t => t.IsClass && !t.IsAbstract && t.Name.EndsWith("Repository"))
+                .Select(t => {
+                    var matchingInterface = t.FindInterfaces((it, c) => it.Name == $"I{c}", t.Name).FirstOrDefault();
+                    if (matchingInterface == null)
+                        return null;
+                    return new Tuple<Type, Type>(t, matchingInterface);
+                    })
+                .Where(tuple => tuple != null);
+
+            var addRepositoryMethod = GetType().GetMethod(nameof(AddRepository));
+
+            foreach (var tuple in repositories)
+            {
+                var constructedMethod = addRepositoryMethod.MakeGenericMethod(tuple.Item2, tuple.Item1);
+                constructedMethod.Invoke(this, new object[]{ });
+            }
+            return this;
+        }
     }
 }
