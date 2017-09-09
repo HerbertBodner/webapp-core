@@ -27,8 +27,7 @@ namespace WaCore.Crud.Web.Controllers
             { 
                 filter = new TFilter();
             }
-            var pagedList = await FilterAsync(filter);
-            listVm.DtoList = pagedList.List;
+            listVm.DtoList = await FilterAsync(filter);
             return View(listVm);
         }
 
