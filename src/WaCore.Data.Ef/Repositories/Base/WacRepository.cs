@@ -10,7 +10,7 @@ namespace WaCore.Data.Repositories.Base
 {
     public class WacRepository<TEntity, TDbContext> : IWacRepository<TEntity> 
         where TEntity : class
-        where TDbContext : WacDbContext
+        where TDbContext : DbContext
     {
         protected readonly DbSet<TEntity> DbSet;
         protected readonly TDbContext DbContext;
