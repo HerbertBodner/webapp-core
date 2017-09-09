@@ -16,7 +16,7 @@ namespace WaCore.Crud.Services
     {
         protected IWacUnitOfWork UnitOfWork;
 
-        public WacCrudService(IWacUnitOfWork unitOfWork, IWacListDataRepository<TEntity, TFilter> repo) : base(repo)
+        public WacCrudService(IWacUnitOfWork unitOfWork) : base(unitOfWork)
         {
             UnitOfWork = unitOfWork;
         }

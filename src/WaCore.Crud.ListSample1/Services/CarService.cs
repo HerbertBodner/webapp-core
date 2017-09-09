@@ -19,7 +19,7 @@ namespace WaCore.Crud.ListSample1.Services
 
     public class CarService : WacCrudService<Car, CarFilter, CarDto, NewCarDto>, ICarService
     {
-        public CarService(IUnitOfWork unitOfWork, ICarRepository repo) : base(unitOfWork, repo)
+        public CarService(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
 

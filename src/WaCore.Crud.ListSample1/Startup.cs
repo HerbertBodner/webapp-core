@@ -12,6 +12,9 @@ using WaCore.Crud.ListSample1.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using WaCore.Crud.ListSample1.Services;
 using WaCore.Contracts.Data;
+using WaCore.Crud.ListSample1.Entities;
+using WaCore.Crud.ListSample1.ViewModels;
+using WaCore.Crud.Contracts.Data;
 
 namespace WaCore.Crud.ListSample1
 {
@@ -27,17 +30,15 @@ namespace WaCore.Crud.ListSample1
             services.AddDbContext<LibraryDbContext>(optionsBuilder =>
                 optionsBuilder.UseSqlServer(connection));
 
-            services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(repoConfig => {
-                repoConfig.AddRepository<IBooksListRepository, BookListRepository>();
-                repoConfig.AddRepository<ICarRepository, CarRepository>();
+            services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(
+                repoConfig => {
+                    repoConfig.AddRepository<IBooksListRepository, BookListRepository>();
+                    repoConfig.AddRepository<IWacListDataRepository<Book, BookFilter>, BookListRepository>();
+
+                    repoConfig.AddRepository<ICarRepository, CarRepository>();
+                    repoConfig.AddRepository<IWacListDataRepository<Car, CarFilter>, CarRepository>();
                 }
             );
-
-            services.AddTransient<IBooksListRepository>(
-                serviceProvider => serviceProvider.GetService<IUnitOfWork>().GetRepository<IBooksListRepository>());
-
-            services.AddTransient<ICarRepository>(
-                            serviceProvider => serviceProvider.GetService<IUnitOfWork>().GetRepository<ICarRepository>());
 
             services.AddTransient<IBookListDataService, BookListDataService>();
             services.AddTransient<ICarService, CarService>();

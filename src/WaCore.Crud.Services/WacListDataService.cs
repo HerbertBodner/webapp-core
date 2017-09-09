@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using WaCore.Contracts.Data;
 using WaCore.Crud.Contracts.Data;
 using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Contracts.Services;
@@ -15,9 +16,9 @@ namespace WaCore.Crud.Services
     {
         protected readonly IWacListDataRepository<TEntity, TFilter> repo;
 
-        public WacListDataService(IWacListDataRepository<TEntity, TFilter> repo)
+        public WacListDataService(IWacUnitOfWork unitOfWork)
         {
-            this.repo = repo;
+            repo = unitOfWork.GetRepository<IWacListDataRepository<TEntity, TFilter>>();
         }
 
         public TDto Get(object id)
