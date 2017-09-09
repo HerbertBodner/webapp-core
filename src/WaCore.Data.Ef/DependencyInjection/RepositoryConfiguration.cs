@@ -31,7 +31,7 @@ namespace WaCore.Data.Ef.DependencyInjection
             // This allows the UnitOfWork to create repository instances with dbcontext argument provided at runtime.
             _serviceCollection.AddTransient<Func<TDbContext, TService>>(serviceProvider => dbContext => ActivatorUtilities.CreateInstance<TImplementation>(serviceProvider, dbContext));
 
-            // For convinience register repositories as their interfaces as well, but then use the unit of work to create them
+            // For convenience register repositories as their interfaces as well, but then use the unit of work to create them
             _serviceCollection.AddTransient<TService>(serviceProvider => serviceProvider.GetRequiredService<TUnitOfWorkService>().GetRepository<TService>());
             return this;
         }
