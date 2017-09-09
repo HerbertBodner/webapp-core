@@ -20,6 +20,50 @@ namespace WaCore.Crud.Services
             this.repo = repo;
         }
 
+        public TDto Get(object id)
+        {
+            var entity = repo.Get(id);
+            if (entity == null)
+            {
+                throw new ResourceNotFoundException(id);
+            }
+            return MapEntityToDto(entity);
+        }
+
+        public async Task<TDto> GetAsync(object id)
+        {
+            var entity = await repo.GetAsync(id);
+            if (entity == null)
+            {
+                throw new ResourceNotFoundException(id);
+            }
+            return MapEntityToDto(entity);
+        }
+
+        public IPagedList<TDto> GetAll(TFilter filter)
+        {
+            var entityList = repo.GetAll(filter);
+
+            int totalCount;
+
+            // if offset=0 and the amount in the list is smaller than the limit, we already know the total amount and don't need to do another query to the database
+            if (filter.Offset == 0 && (filter.Limit == null || entityList.Count <= filter.Limit))
+            {
+                totalCount = entityList.Count;
+            }
+            else
+            {
+                totalCount = repo.GetTotalCount(filter);
+            }
+
+            var dtoList = new List<TDto>();
+            foreach (var entity in entityList)
+            {
+                dtoList.Add(MapEntityToDto(entity));
+            }
+            return new PagedList<TDto>(dtoList, totalCount, filter.Offset, filter.Limit);
+        }
+
         public async Task<IPagedList<TDto>> GetAllAsync(TFilter filter)
         {
             var entityList = await repo.GetAllAsync(filter);
@@ -44,15 +88,7 @@ namespace WaCore.Crud.Services
             return new PagedList<TDto>(dtoList, totalCount, filter.Offset, filter.Limit);
         }
 
-        public async Task<TDto> GetAsync(object id)
-        {
-            var entity = await repo.GetAsync(id);
-            if (entity == null)
-            {
-                throw new ResourceNotFoundException(id);
-            }
-            return MapEntityToDto(entity);
-        }
+
 
         protected abstract TDto MapEntityToDto(TEntity entity);
     }

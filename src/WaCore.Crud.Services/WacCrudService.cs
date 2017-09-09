@@ -21,6 +21,20 @@ namespace WaCore.Crud.Services
             UnitOfWork = unitOfWork;
         }
 
+        public virtual TDto Create(TNewDto dto)
+        {
+            using (var transaction = UnitOfWork.BeginTransaction())
+            {
+                var entity = MapToNewOrUpdatedEntity(Operation.Create, null, dto);
+
+                repo.Add(entity);
+                UnitOfWork.SaveChanges();
+                transaction.Commit();
+
+                return MapEntityToDto(entity);
+            }
+        }
+
         public virtual async Task<TDto> CreateAsync(TNewDto dto)
         {
             using (var transaction = await UnitOfWork.BeginTransactionAsync())
@@ -32,6 +46,26 @@ namespace WaCore.Crud.Services
                 transaction.Commit();
 
                 return MapEntityToDto(entity);
+            }
+        }
+
+        
+
+        public virtual TDto Update(object id, TNewDto dto)
+        {
+            using (var transaction = UnitOfWork.BeginTransaction())
+            {
+                var entity = repo.Get(id);
+                if (entity == null)
+                {
+                    throw new ResourceNotFoundException(id);
+                }
+
+                var updatedEntity = MapToNewOrUpdatedEntity(Operation.Update, entity, dto);
+                repo.Update(updatedEntity);
+                UnitOfWork.SaveChanges();
+                transaction.Commit();
+                return MapEntityToDto(updatedEntity);
             }
         }
 
@@ -53,6 +87,22 @@ namespace WaCore.Crud.Services
             }
         }
 
+
+        public virtual void Delete(object id)
+        {
+            using (var transaction = UnitOfWork.BeginTransaction())
+            {
+                var entity = repo.Get(id);
+                if (entity == null)
+                {
+                    throw new ResourceNotFoundException(id);
+                }
+
+                repo.Remove(entity);
+                UnitOfWork.SaveChanges();
+                transaction.Commit();
+            }
+        }
 
         public virtual async Task DeleteAsync(object id)
         {

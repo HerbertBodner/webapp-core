@@ -7,10 +7,15 @@ namespace WaCore.Crud.Contracts.Services
         where TEntity : class
         where TFilter : IWacFilter
     {
+        TDto Create(TNewDto dto);
         Task<TDto> CreateAsync(TNewDto dto);
+
+        TDto Update(object id, TNewDto dto);
         Task<TDto> UpdateAsync(object id, TNewDto dto);
+
+        void Delete(object id);
         Task DeleteAsync(object id);
-        
+
         TEntity MapToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
     }
 

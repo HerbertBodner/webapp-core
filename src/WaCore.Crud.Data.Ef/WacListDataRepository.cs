@@ -22,6 +22,14 @@ namespace WaCore.Crud.Data.Ef
         {
         }
 
+        public IList<TEntity> GetAll(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
+
+            var queryPaginated = ApplySortingAndPagination(q, filter);
+
+            return queryPaginated.ToList();
+        }
         public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
         {
             var q = ApplyFilter(DbSet.AsQueryable(), filter);
@@ -29,6 +37,14 @@ namespace WaCore.Crud.Data.Ef
             var queryPaginated = ApplySortingAndPagination(q, filter);
 
             return await queryPaginated.ToListAsync();
+        }
+
+
+        public int GetTotalCount(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
+
+            return q.Count();
         }
 
         public async Task<int> GetTotalCountAsync(TFilter filter)
