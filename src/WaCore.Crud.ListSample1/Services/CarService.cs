@@ -23,7 +23,7 @@ namespace WaCore.Crud.ListSample1.Services
         {
         }
 
-        public override Car MapToNewOrUpdatedEntity(Operation operation, Car entityToCreateOrUpdate, NewCarDto dto)
+        public override Car MapDtoToNewOrUpdatedEntity(Operation operation, Car entityToCreateOrUpdate, NewCarDto dto)
         {
             if (operation == Operation.Create)
             {

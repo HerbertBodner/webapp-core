@@ -25,7 +25,7 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = UnitOfWork.BeginTransaction())
             {
-                var entity = MapToNewOrUpdatedEntity(Operation.Create, null, dto);
+                var entity = MapDtoToNewOrUpdatedEntity(Operation.Create, null, dto);
 
                 repo.Add(entity);
                 UnitOfWork.SaveChanges();
@@ -39,7 +39,7 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = await UnitOfWork.BeginTransactionAsync())
             {
-                var entity = MapToNewOrUpdatedEntity(Operation.Create, null, dto);
+                var entity = MapDtoToNewOrUpdatedEntity(Operation.Create, null, dto);
 
                 repo.Add(entity);
                 await UnitOfWork.SaveChangesAsync();
@@ -61,7 +61,7 @@ namespace WaCore.Crud.Services
                     throw new ResourceNotFoundException(id);
                 }
 
-                var updatedEntity = MapToNewOrUpdatedEntity(Operation.Update, entity, dto);
+                var updatedEntity = MapDtoToNewOrUpdatedEntity(Operation.Update, entity, dto);
                 repo.Update(updatedEntity);
                 UnitOfWork.SaveChanges();
                 transaction.Commit();
@@ -79,7 +79,7 @@ namespace WaCore.Crud.Services
                     throw new ResourceNotFoundException(id);
                 }
 
-                var updatedEntity = MapToNewOrUpdatedEntity(Operation.Update, entity, dto);
+                var updatedEntity = MapDtoToNewOrUpdatedEntity(Operation.Update, entity, dto);
                 repo.Update(updatedEntity);
                 await UnitOfWork.SaveChangesAsync();
                 transaction.Commit();
@@ -120,7 +120,7 @@ namespace WaCore.Crud.Services
             }
         }
 
-        public abstract TEntity MapToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
+        public abstract TEntity MapDtoToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
         
     }
 }

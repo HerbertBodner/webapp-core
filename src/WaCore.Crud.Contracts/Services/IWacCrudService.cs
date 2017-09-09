@@ -16,7 +16,7 @@ namespace WaCore.Crud.Contracts.Services
         void Delete(object id);
         Task DeleteAsync(object id);
 
-        TEntity MapToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
+        TEntity MapDtoToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
     }
 
     public enum Operation
