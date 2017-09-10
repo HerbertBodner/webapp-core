@@ -11,7 +11,7 @@
             ],
             "MaxAge": 5184000,
             "IncludeSubDomains": "true",
-            "ReportUri": "https://github.com/HerbertBodner/webapp-core"
+            "ReportUri": "https://example.com"
         },
         "XFrameOptionsConfiguration": {
             "OptionValue": "allowfrom",
@@ -19,7 +19,7 @@
         },
         "XssConfiguration": {
             "XssSetting": "oneReport",
-            "ReportUri": "https://github.com/HerbertBodner/webapp-core"
+            "ReportUri": "https://example.com"
         },
         "ContentSecurityPolicyConfiguration": {
             "StyleSrc": [ "css.example.com", "css.example.net" ],
@@ -28,6 +28,6 @@
         },
         "XContentTypeOptionsConfiguration": {
             "OptionValue": "nosniff;"
-        } 
+        }
     }
 }
