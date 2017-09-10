@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using WaCore.Web.Middleware.SecureHeaders;
 using WaCore.Web.Middleware.SecureHeaders.Models;
 
-namespace WaCore.Web.Middleware.SecureHeaders
+namespace Microsoft.AspNetCore.Builder
 {
     public static class SecureHeadersMiddlewareExtensions
     {

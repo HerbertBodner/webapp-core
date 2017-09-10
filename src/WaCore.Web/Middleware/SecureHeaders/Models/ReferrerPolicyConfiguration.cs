@@ -2,7 +2,7 @@ using System;
 
 namespace WaCore.Web.Middleware.SecureHeaders.Models
 {
-    public class ReferrerPolicy : IConfigurationBase
+    public class ReferrerPolicyConfiguration : IConfigurationBase
     {
         public string OptionValue { get; set; } = "no-referrer;";
 
@@ -10,7 +10,7 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
         {
             if (string.IsNullOrWhiteSpace(OptionValue))
             {
-                 throw new ArgumentNullException(nameof(OptionValue));
+                throw new InvalidOperationException($"{nameof(OptionValue)} property is not set");
             }
 
             return OptionValue;

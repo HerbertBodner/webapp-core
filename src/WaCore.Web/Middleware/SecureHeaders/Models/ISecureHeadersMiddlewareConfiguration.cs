@@ -12,7 +12,7 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
 
         ContentSecurityPolicyConfiguration ContentSecurityPolicyConfiguration { get; set; }
 
-        ReferrerPolicy ReferrerPolicyConfiguration { get; set; }
+        ReferrerPolicyConfiguration ReferrerPolicyConfiguration { get; set; }
 
         XContentTypeOptionsConfiguration XContentTypeOptionsConfiguration { get; set; }
     }

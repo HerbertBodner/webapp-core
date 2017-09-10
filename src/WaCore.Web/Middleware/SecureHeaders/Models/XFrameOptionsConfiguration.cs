@@ -45,7 +45,7 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
                 case XFrameOptions.allowfrom:
                     if (string.IsNullOrWhiteSpace(AllowFromDomain))
                     {
-                        throw new ArgumentNullException(nameof(AllowFromDomain));
+                        throw new InvalidOperationException($"{nameof(AllowFromDomain)} property is not set");
                     }
                     stringBuilder.Append("allow-from: ");
                     stringBuilder.Append(AllowFromDomain);

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace WaCore.Web.Middleware.SecureHeaders.Models
 {
@@ -12,7 +10,7 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
         {
             if (string.IsNullOrWhiteSpace(OptionValue))
             {
-                throw new ArgumentNullException(nameof(OptionValue));
+                throw new InvalidOperationException($"{nameof(OptionValue)} property is not set");
             }
 
             return OptionValue;

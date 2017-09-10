@@ -17,7 +17,7 @@ namespace WaCore.Web.Middleware.SecureHeaders
         public WacSecureHeadersMiddleware(RequestDelegate next, WacSecureHeadersMiddlewareConfiguration config)
         {
             _next = next;
-            _config = config;
+            _config = config ?? throw new ArgumentException($@"Expected an instance of the {nameof(WacSecureHeadersMiddlewareConfiguration)} object.");
         }
 
         public void AddHeader(HttpContext httpContext, string headerName, string headerValue)
@@ -30,11 +30,6 @@ namespace WaCore.Web.Middleware.SecureHeaders
 
         public async Task Invoke(HttpContext httpContext)
         {
-            if (_config == null)
-            {
-                throw new ArgumentException($@"Expected an instance of the
-                        {nameof(WacSecureHeadersMiddlewareConfiguration)} object.");
-            }
             if (_config.HstsConfiguration != null)
             {
                 AddHeader(httpContext, SecureHeadersConstants.StrictTransportSecurityHeaderName,

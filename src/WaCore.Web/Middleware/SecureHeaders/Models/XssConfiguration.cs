@@ -54,7 +54,7 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
                 case XssMode.oneReport:
                     if (string.IsNullOrWhiteSpace(ReportUri))
                     {
-                        throw new ArgumentNullException(nameof(ReportUri));
+                        throw new InvalidOperationException($"{nameof(ReportUri)} property is not set");
                     }
                     stringBuilder.Append("1; report=");
                     stringBuilder.Append(ReportUri);
