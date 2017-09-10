@@ -8,7 +8,7 @@ using WaCore.Crud.ListSample1.Entities;
 
 namespace WaCore.Crud.ListSample1.Data
 {
-    public class LibraryDbContext : WacDbContext
+    public class LibraryDbContext : DbContext
     {
         public LibraryDbContext(DbContextOptions<LibraryDbContext> options)
             : base(options)
