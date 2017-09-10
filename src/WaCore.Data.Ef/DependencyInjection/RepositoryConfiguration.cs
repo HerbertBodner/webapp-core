@@ -48,21 +48,23 @@ namespace WaCore.Data.Ef.DependencyInjection
         {
             var assembly = typeof(TAssemblySelector).Assembly;
             var assemblyTypes = assembly.DefinedTypes.Select(ti => ti.AsType());
-            // Item1 is repository, Item2 is interface
-            IEnumerable<Tuple<Type, Type>> repositories = assemblyTypes.Where(t => t.IsClass && !t.IsAbstract && t.Name.EndsWith("Repository"))
-                .Select(t => {
+
+            var repoDescriptions = assemblyTypes
+                .Where(t => t.IsClass && !t.IsAbstract && t.Name.EndsWith("Repository"))
+                .Select(t => 
+                {
                     var matchingInterface = t.FindInterfaces((it, c) => it.Name == $"I{c}", t.Name).FirstOrDefault();
                     if (matchingInterface == null)
                         return null;
-                    return new Tuple<Type, Type>(t, matchingInterface);
-                    })
-                .Where(tuple => tuple != null);
+                    return new { Type = t, InterfaceType = matchingInterface };
+                })
+                .Where(x => x != null);
 
             var addRepositoryMethod = GetType().GetMethod(nameof(AddRepository));
 
-            foreach (var tuple in repositories)
+            foreach (var repoDescription in repoDescriptions)
             {
-                var constructedMethod = addRepositoryMethod.MakeGenericMethod(tuple.Item2, tuple.Item1);
+                var constructedMethod = addRepositoryMethod.MakeGenericMethod(repoDescription.InterfaceType, repoDescription.Type);
                 constructedMethod.Invoke(this, new object[]{ });
             }
             return this;
