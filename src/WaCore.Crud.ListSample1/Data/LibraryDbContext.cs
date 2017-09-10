@@ -15,5 +15,7 @@ namespace WaCore.Crud.ListSample1.Data
         { }
 
         public DbSet<Book> Books { get; set; }
+
+        public DbSet<Car> Cars { get; set; }
     }
 }

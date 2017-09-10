@@ -8,6 +8,10 @@ namespace WaCore.Crud.Contracts.Services
 {
     public interface IWacListDataService<TFilter, TDto>
     {
+        TDto Get(object id);
+        Task<TDto> GetAsync(object id);
+        IPagedList<TDto> GetAll(TFilter filter);
         Task<IPagedList<TDto>> GetAllAsync(TFilter filter);
+
     }
 }
