@@ -23,7 +23,10 @@
         "ContentSecurityPolicyConfiguration": {
             "StyleSrc": [ "css.example.com", "css.example.net" ],
             "BlockAllMixedContent": true,
-            "UpgradeInsecureRequests":  true 
+            "UpgradeInsecureRequests": true
+        },
+        "XContentTypeOptionsConfiguration": {
+            "OptionValue": "nosniff;"
         } 
     }
 }

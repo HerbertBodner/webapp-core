@@ -30,6 +30,11 @@ namespace WaCore.Web.Middleware.SecureHeaders.Models
         /// <summary>
         /// The Referrer-Policy configuration to use
         /// </summary>
-        public ReferrerPolicy ReferrerPolicy { get; set; }
+        public ReferrerPolicy ReferrerPolicyConfiguration { get; set; }
+
+        /// <summary>
+        /// The X Content Type Options configuration to use
+        /// </summary>
+        public XContentTypeOptionsConfiguration XContentTypeOptionsConfiguration { get; set; }
     }
 }

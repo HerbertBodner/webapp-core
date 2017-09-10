@@ -65,10 +65,16 @@ namespace WaCore.Web.Middleware.SecureHeaders
                     _config.ContentSecurityPolicyConfiguration.BuildHeaderValue());
             }
 
-            if (_config.ReferrerPolicy != null)
+            if (_config.ReferrerPolicyConfiguration != null)
             {
                 AddHeader(httpContext, SecureHeadersConstants.ReferrerPolicyHeaderName,
-                    _config.ReferrerPolicy.BuildHeaderValue());
+                    _config.ReferrerPolicyConfiguration.BuildHeaderValue());
+            }
+
+            if (_config.XContentTypeOptionsConfiguration != null)
+            {
+                AddHeader(httpContext, SecureHeadersConstants.XContentTypeOptions,
+                    _config.XContentTypeOptionsConfiguration.BuildHeaderValue());
             }
 
             await _next.Invoke(httpContext);

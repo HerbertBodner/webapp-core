@@ -17,5 +17,7 @@ namespace WaCore.Web.Middleware.SecureHeaders
         public static readonly string ContentSecurityPolicyHeaderName = "Content-Security-Policy";
 
         public static readonly string ReferrerPolicyHeaderName = "Referrer-Policy";
+
+        public static readonly string XContentTypeOptions = "X-Content-Type-Options";
     }
 }
