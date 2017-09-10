@@ -12,7 +12,7 @@ using WaCore.Contracts.Data;
 namespace WaCore.Data.Ef
 {
     public class WacEfUnitOfWork<TDbContext> : IWacUnitOfWork
-        where TDbContext : DbContext, IWacDbContext
+        where TDbContext : DbContext
     {
         protected readonly TDbContext _dbContext;
         protected readonly IServiceProvider _serviceProvider;
