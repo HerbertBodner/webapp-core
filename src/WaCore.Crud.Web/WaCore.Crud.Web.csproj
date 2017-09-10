@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WaCore.Crud.Contracts\WaCore.Crud.Contracts.csproj" />
+    <ProjectReference Include="..\WaCore.Crud.Dtos\WaCore.Crud.Dtos.csproj" />
+    <ProjectReference Include="..\WaCore.Crud.Services\WaCore.Crud.Services.csproj" />
+  </ItemGroup>
+
+</Project>
