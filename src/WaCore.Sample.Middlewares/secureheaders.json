@@ -6,9 +6,10 @@
         },
         "HPKPConfiguration": {
             "PinSha256": [
-                "e927fad33f9eb96126896413502a1034be0ca379dec377fb891feb9ebc720e47"
+                "cUPcTAZWKaASuYWhhneDttWpY3oBAkE3h2+soZS7sWs=",
+                "M8HztCzM3elUxkcjR2S5P4hhyBNf6lHkmjAHKhpGPWE="
             ],
-            "MaxAge": 3,
+            "MaxAge": 5184000,
             "IncludeSubDomains": "true",
             "ReportUri": "https://github.com/HerbertBodner/webapp-core"
         },
