@@ -12,9 +12,9 @@ namespace WaCore.Web.Middleware.SecureHeaders
     public class WacSecureHeadersMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly WaSecureHeadersMiddlewareConfiguration _config;
+        private readonly WacSecureHeadersMiddlewareConfiguration _config;
 
-        public WacSecureHeadersMiddleware(RequestDelegate next, WaSecureHeadersMiddlewareConfiguration config)
+        public WacSecureHeadersMiddleware(RequestDelegate next, WacSecureHeadersMiddlewareConfiguration config)
         {
             _next = next;
             _config = config;
@@ -33,7 +33,7 @@ namespace WaCore.Web.Middleware.SecureHeaders
             if (_config == null)
             {
                 throw new ArgumentException($@"Expected an instance of the
-                        {nameof(WaSecureHeadersMiddlewareConfiguration)} object.");
+                        {nameof(WacSecureHeadersMiddlewareConfiguration)} object.");
             }
             if (_config.HstsConfiguration != null)
             {

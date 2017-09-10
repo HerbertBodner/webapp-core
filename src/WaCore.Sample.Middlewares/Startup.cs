@@ -29,12 +29,12 @@ namespace WaCore.Sample.Middlewares
         {
             services.AddMvc();
 
-            services.Configure<WaSecureHeadersMiddlewareConfiguration>(Configuration.GetSection("WaSecureHeadersMiddlewareConfiguration"));
+            services.Configure<WacSecureHeadersMiddlewareConfiguration>(Configuration.GetSection("WacSecureHeadersMiddlewareConfiguration"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, 
-            IOptions<WaSecureHeadersMiddlewareConfiguration> secureHeaderSettings)
+            IOptions<WacSecureHeadersMiddlewareConfiguration> secureHeaderSettings)
         {
             if (env.IsDevelopment())
             {
@@ -48,7 +48,7 @@ namespace WaCore.Sample.Middlewares
 
             app.UseStaticFiles();
 
-            app.UseWaSecureHeadersMiddleware(secureHeaderSettings.Value);
+            app.UseWacSecureHeadersMiddleware(secureHeaderSettings.Value);
 
             app.UseMvc(routes =>
             {

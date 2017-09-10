@@ -1,6 +1,6 @@
 namespace WaCore.Web.Middleware.SecureHeaders.Models
 {
-    public class WaSecureHeadersMiddlewareConfiguration : ISecureHeadersMiddlewareConfiguration
+    public class WacSecureHeadersMiddlewareConfiguration : ISecureHeadersMiddlewareConfiguration
     {
         /// <summary>
         /// The HTTP Strict Transport Security configuration to use

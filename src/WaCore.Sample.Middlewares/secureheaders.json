@@ -1,5 +1,5 @@
 ﻿{
-    "WaSecureHeadersMiddlewareConfiguration": {
+    "WacSecureHeadersMiddlewareConfiguration": {
         "HstsConfiguration": {
             "MaxAge": 42,
             "IncludeSubDomains": "true"

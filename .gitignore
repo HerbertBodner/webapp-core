@@ -198,4 +198,4 @@ FakesAssemblies/
 # Asp.net 5
 *.lock.json
 
-# wwwroot/lib/
+wwwroot/lib/

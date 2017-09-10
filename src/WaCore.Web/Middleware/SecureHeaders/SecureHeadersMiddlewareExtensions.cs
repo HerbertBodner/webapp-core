@@ -5,7 +5,7 @@ namespace WaCore.Web.Middleware.SecureHeaders
 {
     public static class SecureHeadersMiddlewareExtensions
     {
-        public static IApplicationBuilder UseWaSecureHeadersMiddleware(this IApplicationBuilder builder, WaSecureHeadersMiddlewareConfiguration config)
+        public static IApplicationBuilder UseWacSecureHeadersMiddleware(this IApplicationBuilder builder, WacSecureHeadersMiddlewareConfiguration config)
         {
             return builder.UseMiddleware<WacSecureHeadersMiddleware>(config);
         }
