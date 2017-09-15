@@ -38,6 +38,10 @@ bld/
 *.VisualState.xml
 TestResult.xml
 
+# DOCFX
+_site
+obj
+
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/

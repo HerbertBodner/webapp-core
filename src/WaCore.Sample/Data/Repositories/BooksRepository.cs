@@ -8,6 +8,7 @@ using WaCore.Sample.Entities;
 
 namespace WaCore.Sample.Data.Repositories
 {
+    #region BookRepositoryDocu
     public class BooksRepository : WacRepository<Book, LibraryDbContext>, IBooksRepository
     {
         public BooksRepository(LibraryDbContext dbContext) : base(dbContext)
@@ -18,4 +19,5 @@ namespace WaCore.Sample.Data.Repositories
     {
 
     }
+    #endregion
 }

@@ -35,6 +35,7 @@ namespace WaCore.Sample.Controllers
             return Json(book);
         }
 
+        #region UseUoWDocu
         // POST api/books
         [HttpPost]
         public async Task<Book> PostAsync([FromBody]Book book)
@@ -47,6 +48,7 @@ namespace WaCore.Sample.Controllers
             }
             return book;
         }
+        #endregion
 
         // PUT api/values/5
         [HttpPut("{id}")]
