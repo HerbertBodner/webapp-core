@@ -1,6 +1,11 @@
 # webapp-core  
 Modules for common features for a .Net Core application
 
+
+|            |   Travis Build    |    AppVeyor Build    | 
+| ---------- | ----------------- | -------------------- |
+| **master** branch |[![Build Status](https://api.travis-ci.org/HerbertBodner/webapp-core.svg?branch=master)](https://travis-ci.org/HerbertBodner/webapp-core) |[![AppVeyor Build](https://ci.appveyor.com/api/projects/status/github/HerbertBodner/webapp-core?branch=master&svg=true)](https://ci.appveyor.com/project/yshchohaleu/webapp-core)
+
 ## 1. Vision
 Provide .Net Core developers with common functionality, which is often used in (web)-applications, so they can focus on the important business logic of their application they develop
 
