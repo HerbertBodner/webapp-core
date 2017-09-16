@@ -10,7 +10,7 @@ uid: UnitOfWork_Module
 
 ## 2. Features
 * UoW is responsible for creating repositories
-* Not depending on any specific DbContextCan, you can create your own
+* Not depending on any specific DbContext, you can create your own
 
 
 ## 3. How to find it
@@ -18,7 +18,7 @@ You can find it in the official nuget package server by searching for: ``WaCore.
 
 
 ## 4. How to use it
-Follwo this step-by-step guide to make use of this module or look at the ``WaCore.Sample`` project in the source code.
+Follow this step-by-step guide to make use of this module or look at the ``WaCore.Sample`` project in the source code.
 
 ### 4.1 Create your own DbContext
 For example you create a ``LibraryDbContext`` class, which derives from ``DbContext``:
@@ -32,12 +32,13 @@ You create your Repository class by implementing the interface ``IWacRepository<
 [!code-csharp[Main](..\..\src\WaCore.Sample\Data\Repositories\BooksRepository.cs?name=BookRepositoryDocu)]
 
 ### 4.4 Implement your UnitOfWork
-You create your ``UnitOfWork`` class, by implementing the interface ``IWacUnitOfWork``. You can actually derive from the abstract class ``WacEfUnitOfWork``, which already implements that interface using EF Core 2.0 under the hood. If you want to use any other ORM, then you just need to implement before mentioned interface.
+You create your ``UnitOfWork`` class, by implementing the interface ``IWacUnitOfWork``. You can actually derive from the abstract class ``WacEfUnitOfWork``, which already implements that interface using EF Core 2.0 under the hood. If you want to use any other ORM, then you just need to implement aforementioned interface.
 [!code-csharp[Main](..\..\src\WaCore.Sample\Data\UnitOfWork.cs?name=UnitOfWorkDocu)]
 
 ### 4.5 Register repositories in IoC container
-In the ``Startup.cs`` class of your application you register your repositories by using the extension method ``AddUnitOfWork``, which expects a ``RepositoryConfiguration`` object as parameter. 
-That class has multiple methods to register repositories: Either you register each repository manually (using method ``AddRepository<TRepoInterface, TRepoImplementation>``) or you use the method ``AddRepositoriesFromAssemblyOf<TAssemblySelector>`` (to register all classes, which names end with 'Repository') (see example).
+In the `ConfigureServices` method of your `Startup` class use the extension method `AddUnitOfWork` to register your Unit of Work class and your repositories in the IoC container.
+
+Specify your Unit of Work class in the type parameters of `AddUnitOfWork` and add your repositories using the configuration function argument. You can add specific repositories using `AddRepository<TRepoInterface, TRepoImplementation>` or all repositories defined in specific assembly using `AddRepositoriesFromAssemblyOf<TAssemblySelector>`.
 [!code-csharp[Main](..\..\src\WaCore.Sample\Startup.cs?name=RegisterRepositoriesDocu)]
 
 ### 4.6 Use UoW in your service layer
