@@ -41,6 +41,7 @@ In the `ConfigureServices` method of your `Startup` class use the extension meth
 Specify your Unit of Work class in the type parameters of `AddUnitOfWork` and add your repositories using the configuration function argument. You can add specific repositories using `AddRepository<TRepoInterface, TRepoImplementation>` or all repositories defined in specific assembly using `AddRepositoriesFromAssemblyOf<TAssemblySelector>`.
 [!code-csharp[Main](..\..\src\WaCore.Sample\Startup.cs?name=RegisterRepositoriesDocu)]
 
-### 4.6 Use UoW in your service layer
-For example, you can use the ``UnitOfwork`` as follows in your controller:
+### 4.6 Use UnitOfWork in your service layer
+You can get a UnitOfWork instance using dependency injection via constructor arguments.
+For instance, you can get an instance in the constructor and then use it as follows in your controller:
 [!code-csharp[Main](..\..\src\WaCore.Sample\Controllers\BooksController.cs?name=UseUoWDocu)]
