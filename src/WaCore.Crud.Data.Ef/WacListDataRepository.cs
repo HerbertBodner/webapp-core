@@ -48,16 +48,16 @@ namespace WaCore.Crud.Data.Ef
             if ((!string.IsNullOrEmpty(filter.SortBy)))
             {
                 var orderList = SortBySplitter.SplitSortByString(filter.SortBy);
+                orderList.Reverse();
 
                 foreach (var orderItem in orderList)
                 {
-                    //TODO sorting
-                    //filter.GetDbSortField(orderItem.FieldName);
+                    var sortField = filter.GetDbSortField(orderItem.FieldName);
 
-                    //if (typeof(TEntity).GetProperty(filter.SortBy) != null)
-                    //{
-                    //    entityList = entityList.OrderByField(filter.SortBy, filter.SortOrderIsAscending);
-                    //}
+                    if (sortField != null && typeof(TEntity).GetProperty(sortField) != null)
+                    {
+                        entityList = entityList.OrderByField(sortField, orderItem.OrderDirection == OrderItem.OrderBy.Ascending);
+                    }
                 }
             }
 

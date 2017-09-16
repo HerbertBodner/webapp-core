@@ -22,7 +22,7 @@ namespace WaCore.Crud.Dtos.Filters
             Offset = 0;
         }
 
-        public string GetDbSortField(string dtoField)
+        public virtual string GetDbSortField(string dtoField)
         {
             return sortingFieldMappingDict.ContainsKey(dtoField) ? sortingFieldMappingDict[dtoField] : null;
         }
