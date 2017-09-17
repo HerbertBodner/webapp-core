@@ -13,7 +13,7 @@ function Exec
 }
 
 echo "build: Build started"
-$projectsToDeploy = @("src/WaCore.Data.Ef")
+$projectsToDeploy = @("src/WaCore.Data.Ef", "src/WaCore.Web")
 
 if(Test-Path .\artifacts) { Remove-Item .\artifacts -Force -Recurse }
 
