@@ -12,6 +12,10 @@ using WaCore.Web.Exceptions;
 
 namespace WaCore.Web.Middleware.WebApiExceptionHandler
 {
+    /// <summary>
+    /// A middleware to handle exceptions in Web Api project and generate HTTP response based on exception type.
+    /// By default this middleware will handle all exceptions inherited from <see cref="WebApiException"/>.
+    /// </summary>
     public class WacWebApiExceptionHandlerMiddleware
     {
         private const string UnhandledExceptionMessage = "Internal server error";
