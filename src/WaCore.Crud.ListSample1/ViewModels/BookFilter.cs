@@ -14,10 +14,5 @@ namespace WaCore.Crud.ListSample1.ViewModels
         public BookFilter()
         {
         }
-
-        public override string GetDbSortField(string dtoField)
-        {
-            return dtoField;
-        }
     }
 }

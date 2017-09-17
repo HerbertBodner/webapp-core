@@ -12,8 +12,5 @@ namespace WaCore.Crud.Contracts.Dtos
         int? Limit { get; set; }
 
         string SortBy { get; set; }
-
-        string GetDbSortField(string dtoField);
-        
     }
 }
