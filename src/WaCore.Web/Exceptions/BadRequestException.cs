@@ -8,13 +8,13 @@ namespace WaCore.Web.Exceptions
 {
     public class BadRequestException : WebApiException
     {
-        public BadRequestException(string message, Dictionary<string, string[]> errorDetails = null)
+        public BadRequestException(string message, Dictionary<string, string> errorDetails = null)
             : base(HttpStatusCode.BadRequest, message)
         {
             ErrorDetails = errorDetails;
         }
 
-        public Dictionary<string, string[]> ErrorDetails { get; set; }
+        public Dictionary<string, string> ErrorDetails { get; set; }
 
         public override string ToString()
         {

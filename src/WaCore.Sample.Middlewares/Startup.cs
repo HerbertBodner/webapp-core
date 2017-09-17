@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Net;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using WaCore.Common.ExceptionHandling;
 using WaCore.Web.Middleware.SecureHeaders;
 using WaCore.Web.Middleware.SecureHeaders.Models;
+using WaCore.Web.Middleware.WebApiExceptionHandler;
 
 namespace WaCore.Sample.Middlewares
 {
@@ -48,7 +52,25 @@ namespace WaCore.Sample.Middlewares
 
             app.UseStaticFiles();
 
+            // secure headers middleware
             app.UseWacSecureHeadersMiddleware(secureHeaderSettings.Value);
+
+            // exception handling middleware
+            var webApiExceptionHandlerOptions = new WacWebApiExceptionHandlerOptions
+            {
+                CatchAll = false,
+                HandlingConfiguration = new WacHandlingConfiguration<object, WebApiExceptionDto>()
+                    .On<NotImplementedException>(e =>
+                        WacHandling.Handled(new WebApiExceptionDto
+                        {
+                            Message = "Test NoImplementedException response",
+                            HttpStatusCode = HttpStatusCode.NotImplemented,
+                            ErrorReference = Guid.NewGuid().ToString()
+                        }))
+            };
+
+            webApiExceptionHandlerOptions.HandlingConfiguration.MatchType = HandlingMatchType.Inheritance;
+            app.UseWebApiExceptionHandler(webApiExceptionHandlerOptions);
 
             app.UseMvc(routes =>
             {

@@ -1,4 +1,6 @@
-namespace WaCore.Web.Middleware.SecureHeaders.Models
+using WaCore.Web.Middleware.SecureHeaders.Models;
+
+namespace WaCore.Web.Middleware.SecureHeaders
 {
     public class WacSecureHeadersMiddlewareConfiguration : ISecureHeadersMiddlewareConfiguration
     {
