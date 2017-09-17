@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Crud.Data.Ef", "WaCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Crud.ListSample1", "WaCore.Crud.ListSample1\WaCore.Crud.ListSample1.csproj", "{8C427D1B-EE2A-4210-9F93-51F0D84F804C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaCore.Web", "WaCore.Web\WaCore.Web.csproj", "{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Web", "WaCore.Web\WaCore.Web.csproj", "{6BDA7B6E-2853-415E-9C27-EAE603AAB7BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaCore.Sample.Middlewares", "WaCore.Sample.Middlewares\WaCore.Sample.Middlewares.csproj", "{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaCore.Sample.Middlewares", "WaCore.Sample.Middlewares\WaCore.Sample.Middlewares.csproj", "{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaCore.Common", "WaCore.Common\WaCore.Common.csproj", "{335188C7-FB55-4FC8-8CF2-C8057F977EFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{504C2CFA-A7D3-4D11-A1B9-0CB4D78521E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335188C7-FB55-4FC8-8CF2-C8057F977EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335188C7-FB55-4FC8-8CF2-C8057F977EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335188C7-FB55-4FC8-8CF2-C8057F977EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335188C7-FB55-4FC8-8CF2-C8057F977EFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
