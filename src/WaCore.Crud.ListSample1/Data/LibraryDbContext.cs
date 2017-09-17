@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WaCore.Data;
-using WaCore.Sample.Entities;
+using WaCore.Crud.ListSample1.Entities;
 
-namespace WaCore.Sample.Data
+namespace WaCore.Crud.ListSample1.Data
 {
     public class LibraryDbContext : DbContext
     {

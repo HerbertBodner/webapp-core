@@ -33,7 +33,7 @@ namespace WaCore.Sample
                 optionsBuilder.UseSqlServer(connection));
 
             services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(repoConfig =>
-                repoConfig.AddRepository<IBooksRepository, BooksRepository>());
+                repoConfig.AddRepositoriesFromAssemblyOf<UnitOfWork>());
 
         }
 
