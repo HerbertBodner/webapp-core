@@ -8,6 +8,7 @@ using WaCore.Crud.ListSample1.Entities;
 using WaCore.Crud.ListSample1.ViewModels;
 using WaCore.Crud.Data.Ef;
 using WaCore.Crud.Contracts.Data;
+using WaCore.Crud.Utils;
 
 namespace WaCore.Crud.ListSample1.Data.Repositories
 {
@@ -19,7 +20,7 @@ namespace WaCore.Crud.ListSample1.Data.Repositories
 
     public class BookListRepository : WacListDataRepository<Book, LibraryDbContext, BookFilter>, IBooksListRepository
     {
-        public BookListRepository(LibraryDbContext dbContext) : base(dbContext)
+        public BookListRepository(LibraryDbContext dbContext, SortConfiguration<Book> sortConfig) : base(dbContext, sortConfig)
         { }
 
 

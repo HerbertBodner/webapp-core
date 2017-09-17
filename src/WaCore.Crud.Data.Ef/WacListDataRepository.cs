@@ -10,7 +10,6 @@ using WaCore.Data.Repositories.Base;
 using WaCore.Crud.Utils;
 using System;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace WaCore.Crud.Data.Ef
 {
@@ -19,8 +18,11 @@ namespace WaCore.Crud.Data.Ef
         where TDbContext : DbContext
         where TFilter : IWacFilter
     {
-        public WacListDataRepository(TDbContext dbContext) : base(dbContext)
+        protected SortConfiguration<TEntity> _sortConfiguration;
+
+        public WacListDataRepository(TDbContext dbContext, SortConfiguration<TEntity> sortConfiguration = null) : base(dbContext)
         {
+            _sortConfiguration = sortConfiguration;
         }
 
         public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
@@ -52,11 +54,14 @@ namespace WaCore.Crud.Data.Ef
 
                 foreach (var orderItem in orderList)
                 {
-                    var sortField = filter.GetDbSortField(orderItem.FieldName);
+                    var sortColumnDescriptors = _sortConfiguration.GetValueOrDefault(orderItem.FieldName);
 
-                    if (sortField != null && typeof(TEntity).GetProperty(sortField) != null)
+                    if (sortColumnDescriptors != null)
                     {
-                        entityList = entityList.OrderByField(sortField, orderItem.OrderDirection == OrderItem.OrderBy.Ascending);
+                        foreach (var sortDescriptor in sortColumnDescriptors.Reverse())
+                        {
+                            entityList = sortDescriptor.Apply(entityList, orderItem.OrderDirection == OrderItem.OrderBy.Descending);
+                        }
                     }
                 }
             }
