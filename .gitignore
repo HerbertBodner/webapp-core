@@ -39,7 +39,6 @@ bld/
 TestResult.xml
 
 # DOCFX
-_site
 obj
 
 # Build Results of an ATL Project
