@@ -35,7 +35,7 @@ if($Deploy){
 
 	# Checkout gh-pages
 	Write-Host "`n[Checkout gh-pages]" -ForegroundColor Green
-	git clone --quiet --no-checkout --branch=gh-pages https://github.com/HerbertBodner/webapp-core.git gh-pages
+	git clone --quiet --no-checkout --branch=gh-pages https://github.com/HerbertBodner/webapp-core.git docs/_site
 }
 
 # Build our docs
@@ -44,16 +44,16 @@ Write-Host "`n[Build our docs]" -ForegroundColor Green
 & .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json (&{If($Serve) {"--serve"}})
 
 if($Deploy){
-	git -C gh-pages status
-	$pendingChanges = git -C gh-pages status | select-string -pattern "Changes not staged for commit:","Untracked files:" -simplematch
+	git -C docs/_site status
+	$pendingChanges = git -C docs/_site status | select-string -pattern "Changes not staged for commit:","Untracked files:" -simplematch
 	if ($pendingChanges -ne $null) { 
 		# Committing changes
 		Write-host "`n[Committing changes]" -ForegroundColor Green
-		git -C gh-pages add -A
-		git -C gh-pages commit -m "static site regeneration"
+		git -C docs/_site add -A
+		git -C docs/_site commit -m "static site regeneration"
 		# Pushing changes
 		Write-host "`n[Pushing changes]" -ForegroundColor Green
-		git -C gh-pages push origin gh-pages --quiet
+		git -C docs/_site push origin gh-pages --quiet
 		Write-Host "`n[Success!]" -ForegroundColor Green
 	} 
 	else { 
