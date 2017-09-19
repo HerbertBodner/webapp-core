@@ -10,10 +10,11 @@
             "**/obj/**",
             "**/bin/**",
             "_site/**"
-          ]
+          ],
+          "src": ".."
         }
       ],
-      "dest": "api"
+      "dest": "docs/api"
     }
   ],
   "build": {
