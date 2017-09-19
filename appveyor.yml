@@ -24,10 +24,10 @@ after_build:
   - ps: |
         if(-Not $env:APPVEYOR_PULL_REQUEST_TITLE)
         {
-            & nuget install docfx.console -Version 2.24.0 -Source https://www.myget.org/F/docfx/api/v3/index.json
             cd docs
+            & nuget install docfx.console -Version 2.24.0 -Source https://www.myget.org/F/docfx/api/v3/index.json
             & docfx.console.2.24.0\tools\docfx docfx.json
-            # & docfx docfx.json
+            
             if ($lastexitcode -ne 0){
               throw [System.Exception] "docfx build failed with exit code $lastexitcode."
             }
