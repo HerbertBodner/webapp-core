@@ -1,11 +1,48 @@
+environment:
+  op_build_user: "OpenPublishBuild"
+  op_build_user_email: "info@wacore.com"
+  access_token:
+    secure: 4vngnALEVBWUWd4tuLHADxd5vF26geMyGw0dGjun494fq/W0sLiQAJxhXXYsdD39
+
 version: '{build}'
 image: Visual Studio 2017  
 pull_requests:  
   do_not_increment_build_number: false
 nuget:  
   disable_publish_on_pr: true
+before_build:
+  - ps: |
+        if(-Not $env:APPVEYOR_PULL_REQUEST_TITLE)
+        {
+            git checkout $env:APPVEYOR_REPO_BRANCH -q
+            #cinst docfx -y
+            choco install nuget.commandline -y
+        }
 build_script:  
 - ps: .\Build.ps1
+after_build:
+  - ps: |
+        if(-Not $env:APPVEYOR_PULL_REQUEST_TITLE)
+        {
+            & nuget install docfx.console -Version 2.18.4 -Source https://www.myget.org/F/docfx/api/v3/index.json
+            cd docs
+            & docfx.console.2.18.4\tools\docfx docfx.json
+            # & docfx docfx.json
+            if ($lastexitcode -ne 0){
+              throw [System.Exception] "docfx build failed with exit code $lastexitcode."
+            }
+            
+            git config --global credential.helper store
+            Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+            git config --global user.email $env:op_build_user_email
+            git config --global user.name $env:op_build_user
+            git clone https://github.com/HerbertBodner/webapp-core.git -b gh-pages origin_site -q
+            Copy-Item origin_site/.git _site -recurse
+            CD _site
+            git add -A 2>&1
+            git commit -m "CI Updates" -q
+            git push origin gh-pages -q
+        }
 test:
   assemblies:
     - '**\*test*.dll'
