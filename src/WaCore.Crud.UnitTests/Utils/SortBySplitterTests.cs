@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WaCore.Crud.Utils;
+using WaCore.Crud.Utils.Sorting;
 using Xunit;
 
 namespace WaCore.Crud.UnitTests.Utils
@@ -29,37 +29,43 @@ namespace WaCore.Crud.UnitTests.Utils
         [Fact]
         public void SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsFirstCorrectOrderItem()
         {
-            Validate("myField+Field2", 2, OrderItem.OrderBy.Ascending, "myField", 0);
+            Validate("myField,+Field2", 2, OrderItem.OrderBy.Ascending, "myField", 0);
         }
 
         [Fact]
         public void SplitSortByStringWhenTwoFieldsAndLeadingPlusReturnsFirstCorrectOrderItem()
         {
-            Validate("+myField+Field2", 2, OrderItem.OrderBy.Ascending, "myField", 0);
+            Validate("+myField,+Field2", 2, OrderItem.OrderBy.Ascending, "myField", 0);
         }
 
         [Fact]
         public void SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsFirstCorrectOrderItem()
         {
-            Validate("-myField+Field2", 2, OrderItem.OrderBy.Descending, "myField", 0);
+            Validate("-myField,+Field2", 2, OrderItem.OrderBy.Descending, "myField", 0);
         }
 
         [Fact]
         public void SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsSecondCorrectOrderItem()
         {
-            Validate("myField+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            Validate("myField,+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
         }
 
         [Fact]
         public void SplitSortByStringWhenTwoFieldsAndLeadingPlusReturnsSecondCorrectOrderItem()
         {
-            Validate("+myField+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            Validate("+myField,+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
         }
 
         [Fact]
         public void SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsSecondtCorrectOrderItem()
         {
-            Validate("-myField+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            Validate("-myField,+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+        }
+
+        [Fact]
+        public void SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem()
+        {
+            Validate("myField,Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
         }
 
 
