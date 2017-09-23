@@ -37,7 +37,7 @@ namespace WaCore.Crud.Utils.Sorting
                 else if (body.NodeType == ExpressionType.MemberAccess)
                 {
                     var memberExpr = (MemberExpression)body;
-                    sortField = $".{memberExpr.Member.Name}";
+                    sortField = $".{memberExpr.Member.Name}{sortField}";
                     body = memberExpr.Expression;
                 }
                 else
