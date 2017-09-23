@@ -4,11 +4,17 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace WaCore.Crud.Utils
+namespace WaCore.Crud.Utils.Sorting
 {
-    public class SortConfiguration<TEntity> : Dictionary<string, SortColumnDescriptor<TEntity>[]>
+    public class SortFieldMapping<TEntity> : Dictionary<string, SortColumnDescriptor<TEntity>[]>
     {
+        public SortFieldMapping(IEqualityComparer<string> comparer) : base(comparer)
+        { }
+
+        public SortFieldMapping() : base()
+        { }
     }
+
 
     public class SortColumnDescriptor<TEntity>
     {
@@ -22,8 +28,8 @@ namespace WaCore.Crud.Utils
 
         public Type KeyType { get; set; }
         // This should be of type Expression<Func<TEntity,KeyType>>
-        Expression KeySelector { get; set; }
-        bool Asc { get; set; }
+        public Expression KeySelector { get; set; }
+        public bool Asc { get; set; }
 
         public IQueryable<TEntity> Apply(IQueryable<TEntity> q, bool reverseOrder)
         {

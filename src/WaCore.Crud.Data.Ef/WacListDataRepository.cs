@@ -8,6 +8,7 @@ using WaCore.Crud.Dtos.Filters;
 using WaCore.Data;
 using WaCore.Data.Repositories.Base;
 using WaCore.Crud.Utils;
+using WaCore.Crud.Utils.Sorting;
 using System;
 using System.Threading.Tasks;
 
@@ -18,11 +19,17 @@ namespace WaCore.Crud.Data.Ef
         where TDbContext : DbContext
         where TFilter : IWacFilter
     {
-        protected SortConfiguration<TEntity> _sortConfiguration;
+        protected virtual SortFieldMapping<TEntity> SortFieldMapping { get; set; }
 
-        public WacListDataRepository(TDbContext dbContext, SortConfiguration<TEntity> sortConfiguration = null) : base(dbContext)
+        public WacListDataRepository(TDbContext dbContext) : base(dbContext)
         {
-            _sortConfiguration = sortConfiguration;
+        }
+
+        protected void InitializeSortFieldMapping(Action<ISortFieldMappingBuilder<TEntity>> configAction)
+        {
+            var builder = new SortFieldMappingBuilder<TEntity>();
+            configAction(builder);
+            SortFieldMapping = builder.Build();
         }
 
         public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
@@ -49,21 +56,7 @@ namespace WaCore.Crud.Data.Ef
         {
             if ((!string.IsNullOrEmpty(filter.SortBy)))
             {
-                var orderList = SortBySplitter.SplitSortByString(filter.SortBy);
-                orderList.Reverse();
-
-                foreach (var orderItem in orderList)
-                {
-                    var sortColumnDescriptors = _sortConfiguration.GetValueOrDefault(orderItem.FieldName);
-
-                    if (sortColumnDescriptors != null)
-                    {
-                        foreach (var sortDescriptor in sortColumnDescriptors.Reverse())
-                        {
-                            entityList = sortDescriptor.Apply(entityList, orderItem.OrderDirection == OrderItem.OrderBy.Descending);
-                        }
-                    }
-                }
+                entityList = entityList.OrderBySortString(filter.SortBy, SortFieldMapping);
             }
 
             if (filter.Offset > 0)

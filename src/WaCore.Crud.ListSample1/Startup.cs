@@ -35,16 +35,6 @@ namespace WaCore.Crud.ListSample1
                 serviceProvider => serviceProvider.GetService<IUnitOfWork>().GetRepository<IBooksListRepository>());
 
             services.AddTransient<IBookListDataService, BookListDataService>();
-
-            // TODO: Build some convenient Fluent API for configuring this
-            services.AddSingleton(new SortConfiguration<Book>()
-            {
-                {"id", new SortColumnDescriptor<Book>[] {new SortColumnDescriptor<Book>().Initialize(x => x.Id, asc: true)} },
-                {"author", new SortColumnDescriptor<Book>[] {new SortColumnDescriptor<Book>().Initialize(x => x.Author, asc: true)} },
-                {"title", new SortColumnDescriptor<Book>[] {new SortColumnDescriptor<Book>().Initialize(x => x.Title, asc: true)} },
-                {"authorAscThenIdDesc", new SortColumnDescriptor<Book>[] {new SortColumnDescriptor<Book>().Initialize(x => x.Author, asc: true), new SortColumnDescriptor<Book>().Initialize(x => x.Id, asc: false) } },
-            });
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

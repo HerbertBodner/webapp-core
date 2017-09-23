@@ -4,7 +4,7 @@ using System.Text;
 using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace WaCore.Crud.Utils
+namespace WaCore.Crud.Utils.Sorting
 {
     public static class SortBySplitter
     {
