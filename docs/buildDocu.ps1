@@ -57,7 +57,7 @@ if($Deploy){
 		git -C docs/_site commit -m "static site regeneration"
 		# Pushing changes
 		Write-host "`n[Pushing changes]" -ForegroundColor Green
-		git -C docs/_site push origin gh-pages --quiet
+		git -C docs/_site push origin gh-pages
 		Write-Host "`n[Success!]" -ForegroundColor Green
 	} 
 	else { 
