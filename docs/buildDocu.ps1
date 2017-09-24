@@ -49,7 +49,11 @@ if($Deploy){
 	if ($pendingChanges -ne $null) { 
 		# Committing changes
 		Write-host "`n[Committing changes]" -ForegroundColor Green
+		Write-host "`n[git -C docs/_site add -A]" -ForegroundColor Green
 		git -C docs/_site add -A
+		Write-host "`n[git -C docs/_site status]" -ForegroundColor Green
+		git -C docs/_site status
+		Write-host "`n[Committing changes]" -ForegroundColor Green
 		git -C docs/_site commit -m "static site regeneration"
 		# Pushing changes
 		Write-host "`n[Pushing changes]" -ForegroundColor Green
