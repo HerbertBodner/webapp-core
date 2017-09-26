@@ -25,5 +25,6 @@ Following modules are planned/implemented:
 | ---------- | ----------------- | -------------------- | -------------------- |
 |[**WaCore.Data.Ef**](xref:UnitOfWork_Module) | implemented |[![NuGet Version](https://img.shields.io/nuget/v/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/) [![NuGet Downloads](https://img.shields.io/nuget/dt/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/)  | Unit of work implementation for Ef 2.0  |
 | **WaCore.Crud.Services** | in progress | - | CRUD Service |
+| **WaCore.Web** | in progress | - | OWASP headers middleware
 | **WaCore.TemplateMgmt.Services** | planned | - | Template management services
 

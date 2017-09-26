@@ -13,7 +13,7 @@ uid: UnitOfWork_Module
 * Not depending on any specific DbContext, you can create your own
 
 
-## 3. How to find it
+## 3. How to install
 You can find it in the official nuget package server by searching for: ``WaCore.Data.Ef``
 
 
