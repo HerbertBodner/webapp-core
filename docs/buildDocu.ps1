@@ -2,8 +2,8 @@ Param(
 	[Switch]$Deploy
 )
 
-$git_user = "OpenPublishBuild"
-$git_email = "info@wacore.com"
+$git_user = "CiBuildDocu"
+$git_email = "CiBuildDocu@wacore.com"
 $git_access_token = "4vngnALEVBWUWd4tuLHADxd5vF26geMyGw0dGjun494fq/W0sLiQAJxhXXYsdD39"
 $target_branch = "gh-pages"
 
@@ -69,7 +69,7 @@ if($Deploy){
 		write-host "`nNo changes to documentation" -ForegroundColor Yellow
 	}
 
-	# Remove git credentials file (for local execution of buildDocu.ps)
+	# Remove git files in user profile (for local execution of buildDocu.ps)
 	Remove-Item "$env:USERPROFILE\.git-credentials"
-
+	Remove-Item "$env:USERPROFILE\.gitconfig"
 }
