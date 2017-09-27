@@ -1,7 +1,12 @@
 Param(
-	[Switch]$Deploy,
-	[Switch]$Serve
+	[Switch]$Deploy
 )
+
+$git_user = "OpenPublishBuild"
+$git_email = "info@wacore.com"
+$git_access_token = "4vngnALEVBWUWd4tuLHADxd5vF26geMyGw0dGjun494fq/W0sLiQAJxhXXYsdD39"
+$target_branch = "gh-pages"
+
 $docfxVersion = "2.24.0"
 $VisualStudioVersion = "15.0";
 $DotnetSDKVersion = "2.0.0";
@@ -28,20 +33,20 @@ if($Deploy){
 	# Configuring git credentials
 	Write-Host "`n[Configuring git credentials]" -ForegroundColor Green
 	& git config --global credential.helper store
-	Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:git_access_token):x-oauth-basic@github.com`n"
+	Add-Content "$env:USERPROFILE\.git-credentials" "https://$git_access_token:x-oauth-basic@github.com`n"
 
-	& git config --global user.email "$env:git_email"
-	& git config --global user.name "$env:git_user"
+	& git config --global user.email "$git_email"
+	& git config --global user.name "$git_user"
 
 	# Checkout gh-pages
-	Write-Host "`n[Checkout gh-pages]" -ForegroundColor Green
-	git clone --quiet --no-checkout --branch=gh-pages https://github.com/HerbertBodner/webapp-core.git docs/_site
+	Write-Host "`n[Checkout $target_branch]" -ForegroundColor Green
+	git clone --quiet --no-checkout --branch=$target_branch https://github.com/HerbertBodner/webapp-core.git docs/_site
 }
 
 # Build our docs
 Write-Host "`n[Build our docs]" -ForegroundColor Green
 
-& .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json (&{If($Serve) {"--serve"}})
+& .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json
 
 if($Deploy){
 	git -C docs/_site status
@@ -57,7 +62,7 @@ if($Deploy){
 		git -C docs/_site commit -m "static site regeneration"
 		# Pushing changes
 		Write-host "`n[Pushing changes]" -ForegroundColor Green
-		git -C docs/_site push origin gh-pages
+		git -C docs/_site push origin $target_branch
 		Write-Host "`n[Success!]" -ForegroundColor Green
 	} 
 	else { 
