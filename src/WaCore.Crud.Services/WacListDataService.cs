@@ -11,16 +11,16 @@ namespace WaCore.Crud.Services
     public abstract class WacListDataService<TEntity, TFilter, TDto> : IWacListDataService<TFilter, TDto>
         where TFilter : IWacFilter
     {
-        protected readonly IWacListDataRepository<TEntity, TFilter> repo;
+        protected readonly IWacListDataRepository<TEntity, TFilter> Repo;
 
         public WacListDataService(IWacListDataRepository<TEntity, TFilter> repo)
         {
-            this.repo = repo;
+            Repo = repo;
         }
 
         public async Task<IPagedList<TDto>> GetAllAsync(TFilter filter)
         {
-            var entityList = await repo.GetAllAsync(filter);
+            var entityList = await Repo.GetAllAsync(filter);
 
             int totalCount;
 
@@ -31,7 +31,7 @@ namespace WaCore.Crud.Services
             }
             else
             {
-                totalCount = await repo.GetTotalCountAsync(filter);
+                totalCount = await Repo.GetTotalCountAsync(filter);
             }
 
             var dtoList = new List<TDto>();

@@ -10,16 +10,13 @@ namespace WaCore.Crud.Utils
     {
         private IList<T> _list;
 
-        public int TotalCount { get; private set; }
+        public int TotalCount { get; }
 
-        public int Offset { get; private set; }
+        public int Offset { get; }
 
-        public int? Limit { get; private set; }
+        public int? Limit { get; }
 
-        public IList<T> List
-        {
-            get { return _list; }
-        }
+        public IList<T> List => _list;
 
         
         public PagedList(IList<T> list, int totalCount, int offset, int? limit)
@@ -35,9 +32,9 @@ namespace WaCore.Crud.Utils
             return _list.GetEnumerator();
         }
 
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
-            return this.GetEnumerator();
+            return GetEnumerator();
         }
     }
 }
