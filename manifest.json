@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/projects/webapp-core/docs",
+  "source_base_path": "D:/_repo/webapp-core/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html",
-          "hash": "TjqF3sfuIfvpC32GJp2mHA=="
+          "hash": "V4N9yRSJkNHXwAwGi9x0FA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.IWacTransaction.html",
-          "hash": "Jb+f1BUCN4PAZprfnLgsVw=="
+          "hash": "qd4xNPREG1UOwaHpM6EsDQ=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.IWacUnitOfWork.html",
-          "hash": "vaJH2UK19tk3ZOmRgcME0A=="
+          "hash": "Y7dGrjagFwrdYdaoaDQ45w=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html",
-          "hash": "LiWAOTiJYd++T8q78jEvzw=="
+          "hash": "UPbjzmzB1PZTUMt5PDJsaw=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html",
-          "hash": "wGLNZrvS0rzze9+/cR7HDw=="
+          "hash": "xnrBC5P8pZmglfoF8HlYeg=="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html",
-          "hash": "OJVWlR9iFCw5sn/V0kKpKA=="
+          "hash": "dZhpqW78e1RZwc4aCLFH4g=="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.WacEfUnitOfWork-1.html",
-          "hash": "RY8qwDFfFgUV4PeTrkHILw=="
+          "hash": "M+Z3NmvEkXpi550iPO9rtw=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Repositories.Base.WacRepository-2.html",
-          "hash": "nyGhBcPdstcArXIyIdWsDA=="
+          "hash": "L2leyxu0Zyl0pVhjmcBvgg=="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/WaCore.Data.Ef.html",
-          "hash": "zANQflC2VFTMry7A23WBoQ=="
+          "hash": "D5THRyc9R7vZDOESA+HANw=="
         }
       },
       "is_incremental": false,
@@ -917,11 +917,11 @@
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
