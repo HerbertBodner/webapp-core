@@ -1,0 +1,1996 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions
+  name: UnitOfWorkServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions
+  nameWithType: UnitOfWorkServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork*
+  name: AddUnitOfWork
+  href: api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_UnitOfWorkServiceCollectionExtensions_AddUnitOfWork_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork
+  fullName: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork
+  nameWithType: UnitOfWorkServiceCollectionExtensions.AddUnitOfWork
+- uid: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration{``0,WaCore.Contracts.Data.IWacUnitOfWork}})
+  name: AddUnitOfWork<TDbContext>(IServiceCollection, Action<RepositoryConfiguration<TDbContext, IWacUnitOfWork>>)
+  href: api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_UnitOfWorkServiceCollectionExtensions_AddUnitOfWork__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration___0_WaCore_Contracts_Data_IWacUnitOfWork___
+  commentId: M:Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration{``0,WaCore.Contracts.Data.IWacUnitOfWork}})
+  name.vb: AddUnitOfWork(Of TDbContext)(IServiceCollection, Action(Of RepositoryConfiguration(Of TDbContext, IWacUnitOfWork)))
+  fullName: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork<TDbContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, WaCore.Contracts.Data.IWacUnitOfWork>>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork(Of TDbContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, WaCore.Contracts.Data.IWacUnitOfWork)))
+  nameWithType: UnitOfWorkServiceCollectionExtensions.AddUnitOfWork<TDbContext>(IServiceCollection, Action<RepositoryConfiguration<TDbContext, IWacUnitOfWork>>)
+  nameWithType.vb: UnitOfWorkServiceCollectionExtensions.AddUnitOfWork(Of TDbContext)(IServiceCollection, Action(Of RepositoryConfiguration(Of TDbContext, IWacUnitOfWork)))
+- uid: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork``3(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration{``0,``1}},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name: AddUnitOfWork<TDbContext, TUnitOfWorkService, TUnitOfWorkImplementation>(IServiceCollection, Action<RepositoryConfiguration<TDbContext, TUnitOfWorkService>>, ServiceLifetime)
+  href: api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_UnitOfWorkServiceCollectionExtensions_AddUnitOfWork__3_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration___0___1___Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork``3(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration{``0,``1}},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name.vb: AddUnitOfWork(Of TDbContext, TUnitOfWorkService, TUnitOfWorkImplementation)(IServiceCollection, Action(Of RepositoryConfiguration(Of TDbContext, TUnitOfWorkService)), ServiceLifetime)
+  fullName: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork<TDbContext, TUnitOfWorkService, TUnitOfWorkImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>>, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.AddUnitOfWork(Of TDbContext, TUnitOfWorkService, TUnitOfWorkImplementation)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService)), Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: UnitOfWorkServiceCollectionExtensions.AddUnitOfWork<TDbContext, TUnitOfWorkService, TUnitOfWorkImplementation>(IServiceCollection, Action<RepositoryConfiguration<TDbContext, TUnitOfWorkService>>, ServiceLifetime)
+  nameWithType.vb: UnitOfWorkServiceCollectionExtensions.AddUnitOfWork(Of TDbContext, TUnitOfWorkService, TUnitOfWorkImplementation)(IServiceCollection, Action(Of RepositoryConfiguration(Of TDbContext, TUnitOfWorkService)), ServiceLifetime)
+- uid: UnitOfWork_Module
+  name: 1. What is it?
+  href: articles/WaCore.Data.Ef.html
+- uid: WaCore.Contracts.Data
+  name: WaCore.Contracts.Data
+  href: api/WaCore.Contracts.Data.html
+  commentId: N:WaCore.Contracts.Data
+  fullName: WaCore.Contracts.Data
+  nameWithType: WaCore.Contracts.Data
+- uid: WaCore.Contracts.Data.IWacTransaction
+  name: IWacTransaction
+  href: api/WaCore.Contracts.Data.IWacTransaction.html
+  commentId: T:WaCore.Contracts.Data.IWacTransaction
+  fullName: WaCore.Contracts.Data.IWacTransaction
+  nameWithType: IWacTransaction
+- uid: WaCore.Contracts.Data.IWacTransaction.Commit
+  name: Commit()
+  href: api/WaCore.Contracts.Data.IWacTransaction.html#WaCore_Contracts_Data_IWacTransaction_Commit
+  commentId: M:WaCore.Contracts.Data.IWacTransaction.Commit
+  fullName: WaCore.Contracts.Data.IWacTransaction.Commit()
+  nameWithType: IWacTransaction.Commit()
+- uid: WaCore.Contracts.Data.IWacTransaction.Commit*
+  name: Commit
+  href: api/WaCore.Contracts.Data.IWacTransaction.html#WaCore_Contracts_Data_IWacTransaction_Commit_
+  commentId: Overload:WaCore.Contracts.Data.IWacTransaction.Commit
+  fullName: WaCore.Contracts.Data.IWacTransaction.Commit
+  nameWithType: IWacTransaction.Commit
+- uid: WaCore.Contracts.Data.IWacTransaction.Rollback
+  name: Rollback()
+  href: api/WaCore.Contracts.Data.IWacTransaction.html#WaCore_Contracts_Data_IWacTransaction_Rollback
+  commentId: M:WaCore.Contracts.Data.IWacTransaction.Rollback
+  fullName: WaCore.Contracts.Data.IWacTransaction.Rollback()
+  nameWithType: IWacTransaction.Rollback()
+- uid: WaCore.Contracts.Data.IWacTransaction.Rollback*
+  name: Rollback
+  href: api/WaCore.Contracts.Data.IWacTransaction.html#WaCore_Contracts_Data_IWacTransaction_Rollback_
+  commentId: Overload:WaCore.Contracts.Data.IWacTransaction.Rollback
+  fullName: WaCore.Contracts.Data.IWacTransaction.Rollback
+  nameWithType: IWacTransaction.Rollback
+- uid: WaCore.Contracts.Data.IWacUnitOfWork
+  name: IWacUnitOfWork
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html
+  commentId: T:WaCore.Contracts.Data.IWacUnitOfWork
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork
+  nameWithType: IWacUnitOfWork
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction
+  name: BeginTransaction()
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_BeginTransaction
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction()
+  nameWithType: IWacUnitOfWork.BeginTransaction()
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction(System.Data.IsolationLevel)
+  name: BeginTransaction(IsolationLevel)
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_BeginTransaction_System_Data_IsolationLevel_
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction(System.Data.IsolationLevel)
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction(System.Data.IsolationLevel)
+  nameWithType: IWacUnitOfWork.BeginTransaction(IsolationLevel)
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction*
+  name: BeginTransaction
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_BeginTransaction_
+  commentId: Overload:WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransaction
+  nameWithType: IWacUnitOfWork.BeginTransaction
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)
+  name: BeginTransactionAsync(IsolationLevel, CancellationToken)
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_BeginTransactionAsync_System_Data_IsolationLevel_System_Threading_CancellationToken_
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync(System.Data.IsolationLevel, System.Threading.CancellationToken)
+  nameWithType: IWacUnitOfWork.BeginTransactionAsync(IsolationLevel, CancellationToken)
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync(System.Threading.CancellationToken)
+  name: BeginTransactionAsync(CancellationToken)
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_BeginTransactionAsync_System_Threading_CancellationToken_
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync(System.Threading.CancellationToken)
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync(System.Threading.CancellationToken)
+  nameWithType: IWacUnitOfWork.BeginTransactionAsync(CancellationToken)
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync*
+  name: BeginTransactionAsync
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_BeginTransactionAsync_
+  commentId: Overload:WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.BeginTransactionAsync
+  nameWithType: IWacUnitOfWork.BeginTransactionAsync
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.GetRepository*
+  name: GetRepository
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_GetRepository_
+  commentId: Overload:WaCore.Contracts.Data.IWacUnitOfWork.GetRepository
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.GetRepository
+  nameWithType: IWacUnitOfWork.GetRepository
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.GetRepository``1
+  name: GetRepository<TRepository>()
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_GetRepository__1
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.GetRepository``1
+  name.vb: GetRepository(Of TRepository)()
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.GetRepository<TRepository>()
+  fullName.vb: WaCore.Contracts.Data.IWacUnitOfWork.GetRepository(Of TRepository)()
+  nameWithType: IWacUnitOfWork.GetRepository<TRepository>()
+  nameWithType.vb: IWacUnitOfWork.GetRepository(Of TRepository)()
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.SaveChanges
+  name: SaveChanges()
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_SaveChanges
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.SaveChanges
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.SaveChanges()
+  nameWithType: IWacUnitOfWork.SaveChanges()
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.SaveChanges*
+  name: SaveChanges
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_SaveChanges_
+  commentId: Overload:WaCore.Contracts.Data.IWacUnitOfWork.SaveChanges
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.SaveChanges
+  nameWithType: IWacUnitOfWork.SaveChanges
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.SaveChangesAsync(System.Threading.CancellationToken)
+  name: SaveChangesAsync(CancellationToken)
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_SaveChangesAsync_System_Threading_CancellationToken_
+  commentId: M:WaCore.Contracts.Data.IWacUnitOfWork.SaveChangesAsync(System.Threading.CancellationToken)
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.SaveChangesAsync(System.Threading.CancellationToken)
+  nameWithType: IWacUnitOfWork.SaveChangesAsync(CancellationToken)
+- uid: WaCore.Contracts.Data.IWacUnitOfWork.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/WaCore.Contracts.Data.IWacUnitOfWork.html#WaCore_Contracts_Data_IWacUnitOfWork_SaveChangesAsync_
+  commentId: Overload:WaCore.Contracts.Data.IWacUnitOfWork.SaveChangesAsync
+  fullName: WaCore.Contracts.Data.IWacUnitOfWork.SaveChangesAsync
+  nameWithType: IWacUnitOfWork.SaveChangesAsync
+- uid: WaCore.Contracts.Data.Repositories.Base
+  name: WaCore.Contracts.Data.Repositories.Base
+  href: api/WaCore.Contracts.Data.Repositories.Base.html
+  commentId: N:WaCore.Contracts.Data.Repositories.Base
+  fullName: WaCore.Contracts.Data.Repositories.Base
+  nameWithType: WaCore.Contracts.Data.Repositories.Base
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1
+  name: IWacRepository<TEntity>
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html
+  commentId: T:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1
+  name.vb: IWacRepository(Of TEntity)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity)
+  nameWithType: IWacRepository<TEntity>
+  nameWithType.vb: IWacRepository(Of TEntity)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Add(`0)
+  name: Add(TEntity)
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Add__0_
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Add(`0)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Add(TEntity)
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Add(TEntity)
+  nameWithType: IWacRepository<TEntity>.Add(TEntity)
+  nameWithType.vb: IWacRepository(Of TEntity).Add(TEntity)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Add*
+  name: Add
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Add_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Add
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Add
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Add
+  nameWithType: IWacRepository<TEntity>.Add
+  nameWithType.vb: IWacRepository(Of TEntity).Add
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Get(System.Object)
+  name: Get(Object)
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Get_System_Object_
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Get(System.Object)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Get(System.Object)
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Get(System.Object)
+  nameWithType: IWacRepository<TEntity>.Get(Object)
+  nameWithType.vb: IWacRepository(Of TEntity).Get(Object)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Get*
+  name: Get
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Get_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Get
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Get
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Get
+  nameWithType: IWacRepository<TEntity>.Get
+  nameWithType.vb: IWacRepository(Of TEntity).Get
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAll
+  name: GetAll()
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_GetAll
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAll
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.GetAll()
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).GetAll()
+  nameWithType: IWacRepository<TEntity>.GetAll()
+  nameWithType.vb: IWacRepository(Of TEntity).GetAll()
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAll*
+  name: GetAll
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_GetAll_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAll
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.GetAll
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).GetAll
+  nameWithType: IWacRepository<TEntity>.GetAll
+  nameWithType.vb: IWacRepository(Of TEntity).GetAll
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAllAsync(System.Threading.CancellationToken)
+  name: GetAllAsync(CancellationToken)
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_GetAllAsync_System_Threading_CancellationToken_
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAllAsync(System.Threading.CancellationToken)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.GetAllAsync(System.Threading.CancellationToken)
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).GetAllAsync(System.Threading.CancellationToken)
+  nameWithType: IWacRepository<TEntity>.GetAllAsync(CancellationToken)
+  nameWithType.vb: IWacRepository(Of TEntity).GetAllAsync(CancellationToken)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAllAsync*
+  name: GetAllAsync
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_GetAllAsync_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAllAsync
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.GetAllAsync
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).GetAllAsync
+  nameWithType: IWacRepository<TEntity>.GetAllAsync
+  nameWithType.vb: IWacRepository(Of TEntity).GetAllAsync
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAsync(System.Object,System.Threading.CancellationToken)
+  name: GetAsync(Object, CancellationToken)
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_GetAsync_System_Object_System_Threading_CancellationToken_
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAsync(System.Object,System.Threading.CancellationToken)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.GetAsync(System.Object, System.Threading.CancellationToken)
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).GetAsync(System.Object, System.Threading.CancellationToken)
+  nameWithType: IWacRepository<TEntity>.GetAsync(Object, CancellationToken)
+  nameWithType.vb: IWacRepository(Of TEntity).GetAsync(Object, CancellationToken)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAsync*
+  name: GetAsync
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_GetAsync_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.GetAsync
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.GetAsync
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).GetAsync
+  nameWithType: IWacRepository<TEntity>.GetAsync
+  nameWithType.vb: IWacRepository(Of TEntity).GetAsync
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Remove(`0)
+  name: Remove(TEntity)
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Remove__0_
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Remove(`0)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Remove(TEntity)
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Remove(TEntity)
+  nameWithType: IWacRepository<TEntity>.Remove(TEntity)
+  nameWithType.vb: IWacRepository(Of TEntity).Remove(TEntity)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Remove*
+  name: Remove
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Remove_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Remove
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Remove
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Remove
+  nameWithType: IWacRepository<TEntity>.Remove
+  nameWithType.vb: IWacRepository(Of TEntity).Remove
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Update(`0)
+  name: Update(TEntity)
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Update__0_
+  commentId: M:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Update(`0)
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Update(TEntity)
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Update(TEntity)
+  nameWithType: IWacRepository<TEntity>.Update(TEntity)
+  nameWithType.vb: IWacRepository(Of TEntity).Update(TEntity)
+- uid: WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Update*
+  name: Update
+  href: api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html#WaCore_Contracts_Data_Repositories_Base_IWacRepository_1_Update_
+  commentId: Overload:WaCore.Contracts.Data.Repositories.Base.IWacRepository`1.Update
+  fullName: WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>.Update
+  fullName.vb: WaCore.Contracts.Data.Repositories.Base.IWacRepository(Of TEntity).Update
+  nameWithType: IWacRepository<TEntity>.Update
+  nameWithType.vb: IWacRepository(Of TEntity).Update
+- uid: WaCore.Crud.Contracts.Data
+  name: WaCore.Crud.Contracts.Data
+  href: api/WaCore.Crud.Contracts.Data.html
+  commentId: N:WaCore.Crud.Contracts.Data
+  fullName: WaCore.Crud.Contracts.Data
+  nameWithType: WaCore.Crud.Contracts.Data
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2
+  name: IWacListDataRepository<TEntity, TFilter>
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html
+  commentId: T:WaCore.Crud.Contracts.Data.IWacListDataRepository`2
+  name.vb: IWacListDataRepository(Of TEntity, TFilter)
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter)
+  nameWithType: IWacListDataRepository<TEntity, TFilter>
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter)
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAll(`1)
+  name: GetAll(TFilter)
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetAll__1_
+  commentId: M:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAll(`1)
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetAll(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetAll(TFilter)
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetAll(TFilter)
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetAll(TFilter)
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAll*
+  name: GetAll
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetAll_
+  commentId: Overload:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAll
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetAll
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetAll
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetAll
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetAll
+- uid: WaCore.Crud.Contracts.Dtos
+  name: WaCore.Crud.Contracts.Dtos
+  href: api/WaCore.Crud.Contracts.Dtos.html
+  commentId: N:WaCore.Crud.Contracts.Dtos
+  fullName: WaCore.Crud.Contracts.Dtos
+  nameWithType: WaCore.Crud.Contracts.Dtos
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter
+  name: IWacFilter
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html
+  commentId: T:WaCore.Crud.Contracts.Dtos.IWacFilter
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter
+  nameWithType: IWacFilter
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.Limit
+  name: Limit
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_Limit
+  commentId: P:WaCore.Crud.Contracts.Dtos.IWacFilter.Limit
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.Limit
+  nameWithType: IWacFilter.Limit
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.Limit*
+  name: Limit
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_Limit_
+  commentId: Overload:WaCore.Crud.Contracts.Dtos.IWacFilter.Limit
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.Limit
+  nameWithType: IWacFilter.Limit
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.Offset
+  name: Offset
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_Offset
+  commentId: P:WaCore.Crud.Contracts.Dtos.IWacFilter.Offset
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.Offset
+  nameWithType: IWacFilter.Offset
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.Offset*
+  name: Offset
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_Offset_
+  commentId: Overload:WaCore.Crud.Contracts.Dtos.IWacFilter.Offset
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.Offset
+  nameWithType: IWacFilter.Offset
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.SortField
+  name: SortField
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_SortField
+  commentId: P:WaCore.Crud.Contracts.Dtos.IWacFilter.SortField
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.SortField
+  nameWithType: IWacFilter.SortField
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.SortField*
+  name: SortField
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_SortField_
+  commentId: Overload:WaCore.Crud.Contracts.Dtos.IWacFilter.SortField
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.SortField
+  nameWithType: IWacFilter.SortField
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.SortOrderIsAscending
+  name: SortOrderIsAscending
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_SortOrderIsAscending
+  commentId: P:WaCore.Crud.Contracts.Dtos.IWacFilter.SortOrderIsAscending
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.SortOrderIsAscending
+  nameWithType: IWacFilter.SortOrderIsAscending
+- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.SortOrderIsAscending*
+  name: SortOrderIsAscending
+  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_SortOrderIsAscending_
+  commentId: Overload:WaCore.Crud.Contracts.Dtos.IWacFilter.SortOrderIsAscending
+  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.SortOrderIsAscending
+  nameWithType: IWacFilter.SortOrderIsAscending
+- uid: WaCore.Crud.Contracts.Services
+  name: WaCore.Crud.Contracts.Services
+  href: api/WaCore.Crud.Contracts.Services.html
+  commentId: N:WaCore.Crud.Contracts.Services
+  fullName: WaCore.Crud.Contracts.Services
+  nameWithType: WaCore.Crud.Contracts.Services
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2
+  name: IWacListDataService<TFilter, TDto>
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html
+  commentId: T:WaCore.Crud.Contracts.Services.IWacListDataService`2
+  name.vb: IWacListDataService(Of TFilter, TDto)
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto)
+  nameWithType: IWacListDataService<TFilter, TDto>
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto)
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAll(`0)
+  name: GetAll(TFilter)
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetAll__0_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAll(`0)
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetAll(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetAll(TFilter)
+  nameWithType: IWacListDataService<TFilter, TDto>.GetAll(TFilter)
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetAll(TFilter)
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAll*
+  name: GetAll
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetAll_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAll
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetAll
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetAll
+  nameWithType: IWacListDataService<TFilter, TDto>.GetAll
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetAll
+- uid: WaCore.Crud.Contracts.Web
+  name: WaCore.Crud.Contracts.Web
+  href: api/WaCore.Crud.Contracts.Web.html
+  commentId: N:WaCore.Crud.Contracts.Web
+  fullName: WaCore.Crud.Contracts.Web
+  nameWithType: WaCore.Crud.Contracts.Web
+- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2
+  name: IWacListDataVm<TDto, TFilter>
+  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html
+  commentId: T:WaCore.Crud.Contracts.Web.IWacListDataVm`2
+  name.vb: IWacListDataVm(Of TDto, TFilter)
+  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>
+  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter)
+  nameWithType: IWacListDataVm<TDto, TFilter>
+  nameWithType.vb: IWacListDataVm(Of TDto, TFilter)
+- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList
+  name: DtoList
+  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_DtoList
+  commentId: P:WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList
+  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.DtoList
+  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).DtoList
+  nameWithType: IWacListDataVm<TDto, TFilter>.DtoList
+  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).DtoList
+- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList*
+  name: DtoList
+  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_DtoList_
+  commentId: Overload:WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList
+  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.DtoList
+  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).DtoList
+  nameWithType: IWacListDataVm<TDto, TFilter>.DtoList
+  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).DtoList
+- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter
+  name: Filter
+  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_Filter
+  commentId: P:WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter
+  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.Filter
+  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).Filter
+  nameWithType: IWacListDataVm<TDto, TFilter>.Filter
+  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).Filter
+- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter*
+  name: Filter
+  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_Filter_
+  commentId: Overload:WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter
+  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.Filter
+  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).Filter
+  nameWithType: IWacListDataVm<TDto, TFilter>.Filter
+  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).Filter
+- uid: WaCore.Crud.Data.Ef
+  name: WaCore.Crud.Data.Ef
+  href: api/WaCore.Crud.Data.Ef.html
+  commentId: N:WaCore.Crud.Data.Ef
+  fullName: WaCore.Crud.Data.Ef
+  nameWithType: WaCore.Crud.Data.Ef
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3
+  name: WacListDataRepository<TEntity, TDbContext, TFilter>
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html
+  commentId: T:WaCore.Crud.Data.Ef.WacListDataRepository`3
+  name.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter)
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter)
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter)
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.#ctor(`1)
+  name: WacListDataRepository(TDbContext)
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3__ctor__1_
+  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.#ctor(`1)
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.WacListDataRepository(TDbContext)
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).WacListDataRepository(TDbContext)
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.WacListDataRepository(TDbContext)
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).WacListDataRepository(TDbContext)
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.#ctor*
+  name: WacListDataRepository
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3__ctor_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.#ctor
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.WacListDataRepository
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).WacListDataRepository
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.WacListDataRepository
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).WacListDataRepository
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAll(`2)
+  name: GetAll(TFilter)
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetAll__2_
+  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAll(`2)
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetAll(TFilter)
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAll(TFilter)
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetAll(TFilter)
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAll(TFilter)
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAll*
+  name: GetAll
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetAll_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAll
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetAll
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAll
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetAll
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAll
+- uid: WaCore.Crud.Dtos.Filters
+  name: WaCore.Crud.Dtos.Filters
+  href: api/WaCore.Crud.Dtos.Filters.html
+  commentId: N:WaCore.Crud.Dtos.Filters
+  fullName: WaCore.Crud.Dtos.Filters
+  nameWithType: WaCore.Crud.Dtos.Filters
+- uid: WaCore.Crud.Dtos.Filters.WacFilter
+  name: WacFilter
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html
+  commentId: T:WaCore.Crud.Dtos.Filters.WacFilter
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter
+  nameWithType: WacFilter
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.#ctor
+  name: WacFilter()
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter__ctor
+  commentId: M:WaCore.Crud.Dtos.Filters.WacFilter.#ctor
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.WacFilter()
+  nameWithType: WacFilter.WacFilter()
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.#ctor*
+  name: WacFilter
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter__ctor_
+  commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.#ctor
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.WacFilter
+  nameWithType: WacFilter.WacFilter
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.Limit
+  name: Limit
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_Limit
+  commentId: P:WaCore.Crud.Dtos.Filters.WacFilter.Limit
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.Limit
+  nameWithType: WacFilter.Limit
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.Limit*
+  name: Limit
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_Limit_
+  commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.Limit
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.Limit
+  nameWithType: WacFilter.Limit
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.Offset
+  name: Offset
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_Offset
+  commentId: P:WaCore.Crud.Dtos.Filters.WacFilter.Offset
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.Offset
+  nameWithType: WacFilter.Offset
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.Offset*
+  name: Offset
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_Offset_
+  commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.Offset
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.Offset
+  nameWithType: WacFilter.Offset
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.SortField
+  name: SortField
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_SortField
+  commentId: P:WaCore.Crud.Dtos.Filters.WacFilter.SortField
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.SortField
+  nameWithType: WacFilter.SortField
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.SortField*
+  name: SortField
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_SortField_
+  commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.SortField
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.SortField
+  nameWithType: WacFilter.SortField
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.SortOrderIsAscending
+  name: SortOrderIsAscending
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_SortOrderIsAscending
+  commentId: P:WaCore.Crud.Dtos.Filters.WacFilter.SortOrderIsAscending
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.SortOrderIsAscending
+  nameWithType: WacFilter.SortOrderIsAscending
+- uid: WaCore.Crud.Dtos.Filters.WacFilter.SortOrderIsAscending*
+  name: SortOrderIsAscending
+  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_SortOrderIsAscending_
+  commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.SortOrderIsAscending
+  fullName: WaCore.Crud.Dtos.Filters.WacFilter.SortOrderIsAscending
+  nameWithType: WacFilter.SortOrderIsAscending
+- uid: WaCore.Crud.ListSample1
+  name: WaCore.Crud.ListSample1
+  href: api/WaCore.Crud.ListSample1.html
+  commentId: N:WaCore.Crud.ListSample1
+  fullName: WaCore.Crud.ListSample1
+  nameWithType: WaCore.Crud.ListSample1
+- uid: WaCore.Crud.ListSample1.Controllers
+  name: WaCore.Crud.ListSample1.Controllers
+  href: api/WaCore.Crud.ListSample1.Controllers.html
+  commentId: N:WaCore.Crud.ListSample1.Controllers
+  fullName: WaCore.Crud.ListSample1.Controllers
+  nameWithType: WaCore.Crud.ListSample1.Controllers
+- uid: WaCore.Crud.ListSample1.Controllers.BookListDataController
+  name: BookListDataController
+  href: api/WaCore.Crud.ListSample1.Controllers.BookListDataController.html
+  commentId: T:WaCore.Crud.ListSample1.Controllers.BookListDataController
+  fullName: WaCore.Crud.ListSample1.Controllers.BookListDataController
+  nameWithType: BookListDataController
+- uid: WaCore.Crud.ListSample1.Controllers.BookListDataController.#ctor(WaCore.Crud.ListSample1.Services.IBookListDataService)
+  name: BookListDataController(IBookListDataService)
+  href: api/WaCore.Crud.ListSample1.Controllers.BookListDataController.html#WaCore_Crud_ListSample1_Controllers_BookListDataController__ctor_WaCore_Crud_ListSample1_Services_IBookListDataService_
+  commentId: M:WaCore.Crud.ListSample1.Controllers.BookListDataController.#ctor(WaCore.Crud.ListSample1.Services.IBookListDataService)
+  fullName: WaCore.Crud.ListSample1.Controllers.BookListDataController.BookListDataController(WaCore.Crud.ListSample1.Services.IBookListDataService)
+  nameWithType: BookListDataController.BookListDataController(IBookListDataService)
+- uid: WaCore.Crud.ListSample1.Controllers.BookListDataController.#ctor*
+  name: BookListDataController
+  href: api/WaCore.Crud.ListSample1.Controllers.BookListDataController.html#WaCore_Crud_ListSample1_Controllers_BookListDataController__ctor_
+  commentId: Overload:WaCore.Crud.ListSample1.Controllers.BookListDataController.#ctor
+  fullName: WaCore.Crud.ListSample1.Controllers.BookListDataController.BookListDataController
+  nameWithType: BookListDataController.BookListDataController
+- uid: WaCore.Crud.ListSample1.Controllers.HomeController
+  name: HomeController
+  href: api/WaCore.Crud.ListSample1.Controllers.HomeController.html
+  commentId: T:WaCore.Crud.ListSample1.Controllers.HomeController
+  fullName: WaCore.Crud.ListSample1.Controllers.HomeController
+  nameWithType: HomeController
+- uid: WaCore.Crud.ListSample1.Controllers.HomeController.Index
+  name: Index()
+  href: api/WaCore.Crud.ListSample1.Controllers.HomeController.html#WaCore_Crud_ListSample1_Controllers_HomeController_Index
+  commentId: M:WaCore.Crud.ListSample1.Controllers.HomeController.Index
+  fullName: WaCore.Crud.ListSample1.Controllers.HomeController.Index()
+  nameWithType: HomeController.Index()
+- uid: WaCore.Crud.ListSample1.Controllers.HomeController.Index*
+  name: Index
+  href: api/WaCore.Crud.ListSample1.Controllers.HomeController.html#WaCore_Crud_ListSample1_Controllers_HomeController_Index_
+  commentId: Overload:WaCore.Crud.ListSample1.Controllers.HomeController.Index
+  fullName: WaCore.Crud.ListSample1.Controllers.HomeController.Index
+  nameWithType: HomeController.Index
+- uid: WaCore.Crud.ListSample1.Data
+  name: WaCore.Crud.ListSample1.Data
+  href: api/WaCore.Crud.ListSample1.Data.html
+  commentId: N:WaCore.Crud.ListSample1.Data
+  fullName: WaCore.Crud.ListSample1.Data
+  nameWithType: WaCore.Crud.ListSample1.Data
+- uid: WaCore.Crud.ListSample1.Data.DbInitializer
+  name: DbInitializer
+  href: api/WaCore.Crud.ListSample1.Data.DbInitializer.html
+  commentId: T:WaCore.Crud.ListSample1.Data.DbInitializer
+  fullName: WaCore.Crud.ListSample1.Data.DbInitializer
+  nameWithType: DbInitializer
+- uid: WaCore.Crud.ListSample1.Data.DbInitializer.Initialize(WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  name: Initialize(LibraryDbContext)
+  href: api/WaCore.Crud.ListSample1.Data.DbInitializer.html#WaCore_Crud_ListSample1_Data_DbInitializer_Initialize_WaCore_Crud_ListSample1_Data_LibraryDbContext_
+  commentId: M:WaCore.Crud.ListSample1.Data.DbInitializer.Initialize(WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  fullName: WaCore.Crud.ListSample1.Data.DbInitializer.Initialize(WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  nameWithType: DbInitializer.Initialize(LibraryDbContext)
+- uid: WaCore.Crud.ListSample1.Data.DbInitializer.Initialize*
+  name: Initialize
+  href: api/WaCore.Crud.ListSample1.Data.DbInitializer.html#WaCore_Crud_ListSample1_Data_DbInitializer_Initialize_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.DbInitializer.Initialize
+  fullName: WaCore.Crud.ListSample1.Data.DbInitializer.Initialize
+  nameWithType: DbInitializer.Initialize
+- uid: WaCore.Crud.ListSample1.Data.IUnitOfWork
+  name: IUnitOfWork
+  href: api/WaCore.Crud.ListSample1.Data.IUnitOfWork.html
+  commentId: T:WaCore.Crud.ListSample1.Data.IUnitOfWork
+  fullName: WaCore.Crud.ListSample1.Data.IUnitOfWork
+  nameWithType: IUnitOfWork
+- uid: WaCore.Crud.ListSample1.Data.IUnitOfWork.BooksRepository
+  name: BooksRepository
+  href: api/WaCore.Crud.ListSample1.Data.IUnitOfWork.html#WaCore_Crud_ListSample1_Data_IUnitOfWork_BooksRepository
+  commentId: P:WaCore.Crud.ListSample1.Data.IUnitOfWork.BooksRepository
+  fullName: WaCore.Crud.ListSample1.Data.IUnitOfWork.BooksRepository
+  nameWithType: IUnitOfWork.BooksRepository
+- uid: WaCore.Crud.ListSample1.Data.IUnitOfWork.BooksRepository*
+  name: BooksRepository
+  href: api/WaCore.Crud.ListSample1.Data.IUnitOfWork.html#WaCore_Crud_ListSample1_Data_IUnitOfWork_BooksRepository_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.IUnitOfWork.BooksRepository
+  fullName: WaCore.Crud.ListSample1.Data.IUnitOfWork.BooksRepository
+  nameWithType: IUnitOfWork.BooksRepository
+- uid: WaCore.Crud.ListSample1.Data.LibraryDbContext
+  name: LibraryDbContext
+  href: api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html
+  commentId: T:WaCore.Crud.ListSample1.Data.LibraryDbContext
+  fullName: WaCore.Crud.ListSample1.Data.LibraryDbContext
+  nameWithType: LibraryDbContext
+- uid: WaCore.Crud.ListSample1.Data.LibraryDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WaCore.Crud.ListSample1.Data.LibraryDbContext})
+  name: LibraryDbContext(DbContextOptions<LibraryDbContext>)
+  href: api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html#WaCore_Crud_ListSample1_Data_LibraryDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_WaCore_Crud_ListSample1_Data_LibraryDbContext__
+  commentId: M:WaCore.Crud.ListSample1.Data.LibraryDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WaCore.Crud.ListSample1.Data.LibraryDbContext})
+  name.vb: LibraryDbContext(DbContextOptions(Of LibraryDbContext))
+  fullName: WaCore.Crud.ListSample1.Data.LibraryDbContext.LibraryDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<WaCore.Crud.ListSample1.Data.LibraryDbContext>)
+  fullName.vb: WaCore.Crud.ListSample1.Data.LibraryDbContext.LibraryDbContext(Microsoft.EntityFrameworkCore.DbContextOptions(Of WaCore.Crud.ListSample1.Data.LibraryDbContext))
+  nameWithType: LibraryDbContext.LibraryDbContext(DbContextOptions<LibraryDbContext>)
+  nameWithType.vb: LibraryDbContext.LibraryDbContext(DbContextOptions(Of LibraryDbContext))
+- uid: WaCore.Crud.ListSample1.Data.LibraryDbContext.#ctor*
+  name: LibraryDbContext
+  href: api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html#WaCore_Crud_ListSample1_Data_LibraryDbContext__ctor_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.LibraryDbContext.#ctor
+  fullName: WaCore.Crud.ListSample1.Data.LibraryDbContext.LibraryDbContext
+  nameWithType: LibraryDbContext.LibraryDbContext
+- uid: WaCore.Crud.ListSample1.Data.LibraryDbContext.Books
+  name: Books
+  href: api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html#WaCore_Crud_ListSample1_Data_LibraryDbContext_Books
+  commentId: P:WaCore.Crud.ListSample1.Data.LibraryDbContext.Books
+  fullName: WaCore.Crud.ListSample1.Data.LibraryDbContext.Books
+  nameWithType: LibraryDbContext.Books
+- uid: WaCore.Crud.ListSample1.Data.LibraryDbContext.Books*
+  name: Books
+  href: api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html#WaCore_Crud_ListSample1_Data_LibraryDbContext_Books_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.LibraryDbContext.Books
+  fullName: WaCore.Crud.ListSample1.Data.LibraryDbContext.Books
+  nameWithType: LibraryDbContext.Books
+- uid: WaCore.Crud.ListSample1.Data.Repositories
+  name: WaCore.Crud.ListSample1.Data.Repositories
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.html
+  commentId: N:WaCore.Crud.ListSample1.Data.Repositories
+  fullName: WaCore.Crud.ListSample1.Data.Repositories
+  nameWithType: WaCore.Crud.ListSample1.Data.Repositories
+- uid: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository
+  name: BookListRepository
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html
+  commentId: T:WaCore.Crud.ListSample1.Data.Repositories.BookListRepository
+  fullName: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository
+  nameWithType: BookListRepository
+- uid: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.#ctor(WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  name: BookListRepository(LibraryDbContext)
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html#WaCore_Crud_ListSample1_Data_Repositories_BookListRepository__ctor_WaCore_Crud_ListSample1_Data_LibraryDbContext_
+  commentId: M:WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.#ctor(WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  fullName: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.BookListRepository(WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  nameWithType: BookListRepository.BookListRepository(LibraryDbContext)
+- uid: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.#ctor*
+  name: BookListRepository
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html#WaCore_Crud_ListSample1_Data_Repositories_BookListRepository__ctor_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.#ctor
+  fullName: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.BookListRepository
+  nameWithType: BookListRepository.BookListRepository
+- uid: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.GetAll(WaCore.Crud.ListSample1.ViewModels.BookFilter)
+  name: GetAll(BookFilter)
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html#WaCore_Crud_ListSample1_Data_Repositories_BookListRepository_GetAll_WaCore_Crud_ListSample1_ViewModels_BookFilter_
+  commentId: M:WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.GetAll(WaCore.Crud.ListSample1.ViewModels.BookFilter)
+  fullName: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.GetAll(WaCore.Crud.ListSample1.ViewModels.BookFilter)
+  nameWithType: BookListRepository.GetAll(BookFilter)
+- uid: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.GetAll*
+  name: GetAll
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html#WaCore_Crud_ListSample1_Data_Repositories_BookListRepository_GetAll_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.GetAll
+  fullName: WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.GetAll
+  nameWithType: BookListRepository.GetAll
+- uid: WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository
+  name: IBooksListRepository
+  href: api/WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository.html
+  commentId: T:WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository
+  fullName: WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository
+  nameWithType: IBooksListRepository
+- uid: WaCore.Crud.ListSample1.Data.UnitOfWork
+  name: UnitOfWork
+  href: api/WaCore.Crud.ListSample1.Data.UnitOfWork.html
+  commentId: T:WaCore.Crud.ListSample1.Data.UnitOfWork
+  fullName: WaCore.Crud.ListSample1.Data.UnitOfWork
+  nameWithType: UnitOfWork
+- uid: WaCore.Crud.ListSample1.Data.UnitOfWork.#ctor(WaCore.Crud.ListSample1.Data.LibraryDbContext,System.IServiceProvider)
+  name: UnitOfWork(LibraryDbContext, IServiceProvider)
+  href: api/WaCore.Crud.ListSample1.Data.UnitOfWork.html#WaCore_Crud_ListSample1_Data_UnitOfWork__ctor_WaCore_Crud_ListSample1_Data_LibraryDbContext_System_IServiceProvider_
+  commentId: M:WaCore.Crud.ListSample1.Data.UnitOfWork.#ctor(WaCore.Crud.ListSample1.Data.LibraryDbContext,System.IServiceProvider)
+  fullName: WaCore.Crud.ListSample1.Data.UnitOfWork.UnitOfWork(WaCore.Crud.ListSample1.Data.LibraryDbContext, System.IServiceProvider)
+  nameWithType: UnitOfWork.UnitOfWork(LibraryDbContext, IServiceProvider)
+- uid: WaCore.Crud.ListSample1.Data.UnitOfWork.#ctor*
+  name: UnitOfWork
+  href: api/WaCore.Crud.ListSample1.Data.UnitOfWork.html#WaCore_Crud_ListSample1_Data_UnitOfWork__ctor_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.UnitOfWork.#ctor
+  fullName: WaCore.Crud.ListSample1.Data.UnitOfWork.UnitOfWork
+  nameWithType: UnitOfWork.UnitOfWork
+- uid: WaCore.Crud.ListSample1.Data.UnitOfWork.BooksRepository
+  name: BooksRepository
+  href: api/WaCore.Crud.ListSample1.Data.UnitOfWork.html#WaCore_Crud_ListSample1_Data_UnitOfWork_BooksRepository
+  commentId: P:WaCore.Crud.ListSample1.Data.UnitOfWork.BooksRepository
+  fullName: WaCore.Crud.ListSample1.Data.UnitOfWork.BooksRepository
+  nameWithType: UnitOfWork.BooksRepository
+- uid: WaCore.Crud.ListSample1.Data.UnitOfWork.BooksRepository*
+  name: BooksRepository
+  href: api/WaCore.Crud.ListSample1.Data.UnitOfWork.html#WaCore_Crud_ListSample1_Data_UnitOfWork_BooksRepository_
+  commentId: Overload:WaCore.Crud.ListSample1.Data.UnitOfWork.BooksRepository
+  fullName: WaCore.Crud.ListSample1.Data.UnitOfWork.BooksRepository
+  nameWithType: UnitOfWork.BooksRepository
+- uid: WaCore.Crud.ListSample1.Dtos
+  name: WaCore.Crud.ListSample1.Dtos
+  href: api/WaCore.Crud.ListSample1.Dtos.html
+  commentId: N:WaCore.Crud.ListSample1.Dtos
+  fullName: WaCore.Crud.ListSample1.Dtos
+  nameWithType: WaCore.Crud.ListSample1.Dtos
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto
+  name: BookDto
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html
+  commentId: T:WaCore.Crud.ListSample1.Dtos.BookDto
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto
+  nameWithType: BookDto
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto.Author
+  name: Author
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html#WaCore_Crud_ListSample1_Dtos_BookDto_Author
+  commentId: P:WaCore.Crud.ListSample1.Dtos.BookDto.Author
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto.Author
+  nameWithType: BookDto.Author
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto.Author*
+  name: Author
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html#WaCore_Crud_ListSample1_Dtos_BookDto_Author_
+  commentId: Overload:WaCore.Crud.ListSample1.Dtos.BookDto.Author
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto.Author
+  nameWithType: BookDto.Author
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto.Id
+  name: Id
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html#WaCore_Crud_ListSample1_Dtos_BookDto_Id
+  commentId: P:WaCore.Crud.ListSample1.Dtos.BookDto.Id
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto.Id
+  nameWithType: BookDto.Id
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto.Id*
+  name: Id
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html#WaCore_Crud_ListSample1_Dtos_BookDto_Id_
+  commentId: Overload:WaCore.Crud.ListSample1.Dtos.BookDto.Id
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto.Id
+  nameWithType: BookDto.Id
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto.Title
+  name: Title
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html#WaCore_Crud_ListSample1_Dtos_BookDto_Title
+  commentId: P:WaCore.Crud.ListSample1.Dtos.BookDto.Title
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto.Title
+  nameWithType: BookDto.Title
+- uid: WaCore.Crud.ListSample1.Dtos.BookDto.Title*
+  name: Title
+  href: api/WaCore.Crud.ListSample1.Dtos.BookDto.html#WaCore_Crud_ListSample1_Dtos_BookDto_Title_
+  commentId: Overload:WaCore.Crud.ListSample1.Dtos.BookDto.Title
+  fullName: WaCore.Crud.ListSample1.Dtos.BookDto.Title
+  nameWithType: BookDto.Title
+- uid: WaCore.Crud.ListSample1.Entities
+  name: WaCore.Crud.ListSample1.Entities
+  href: api/WaCore.Crud.ListSample1.Entities.html
+  commentId: N:WaCore.Crud.ListSample1.Entities
+  fullName: WaCore.Crud.ListSample1.Entities
+  nameWithType: WaCore.Crud.ListSample1.Entities
+- uid: WaCore.Crud.ListSample1.Entities.Book
+  name: Book
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html
+  commentId: T:WaCore.Crud.ListSample1.Entities.Book
+  fullName: WaCore.Crud.ListSample1.Entities.Book
+  nameWithType: Book
+- uid: WaCore.Crud.ListSample1.Entities.Book.Author
+  name: Author
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html#WaCore_Crud_ListSample1_Entities_Book_Author
+  commentId: P:WaCore.Crud.ListSample1.Entities.Book.Author
+  fullName: WaCore.Crud.ListSample1.Entities.Book.Author
+  nameWithType: Book.Author
+- uid: WaCore.Crud.ListSample1.Entities.Book.Author*
+  name: Author
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html#WaCore_Crud_ListSample1_Entities_Book_Author_
+  commentId: Overload:WaCore.Crud.ListSample1.Entities.Book.Author
+  fullName: WaCore.Crud.ListSample1.Entities.Book.Author
+  nameWithType: Book.Author
+- uid: WaCore.Crud.ListSample1.Entities.Book.Id
+  name: Id
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html#WaCore_Crud_ListSample1_Entities_Book_Id
+  commentId: P:WaCore.Crud.ListSample1.Entities.Book.Id
+  fullName: WaCore.Crud.ListSample1.Entities.Book.Id
+  nameWithType: Book.Id
+- uid: WaCore.Crud.ListSample1.Entities.Book.Id*
+  name: Id
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html#WaCore_Crud_ListSample1_Entities_Book_Id_
+  commentId: Overload:WaCore.Crud.ListSample1.Entities.Book.Id
+  fullName: WaCore.Crud.ListSample1.Entities.Book.Id
+  nameWithType: Book.Id
+- uid: WaCore.Crud.ListSample1.Entities.Book.Title
+  name: Title
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html#WaCore_Crud_ListSample1_Entities_Book_Title
+  commentId: P:WaCore.Crud.ListSample1.Entities.Book.Title
+  fullName: WaCore.Crud.ListSample1.Entities.Book.Title
+  nameWithType: Book.Title
+- uid: WaCore.Crud.ListSample1.Entities.Book.Title*
+  name: Title
+  href: api/WaCore.Crud.ListSample1.Entities.Book.html#WaCore_Crud_ListSample1_Entities_Book_Title_
+  commentId: Overload:WaCore.Crud.ListSample1.Entities.Book.Title
+  fullName: WaCore.Crud.ListSample1.Entities.Book.Title
+  nameWithType: Book.Title
+- uid: WaCore.Crud.ListSample1.Program
+  name: Program
+  href: api/WaCore.Crud.ListSample1.Program.html
+  commentId: T:WaCore.Crud.ListSample1.Program
+  fullName: WaCore.Crud.ListSample1.Program
+  nameWithType: Program
+- uid: WaCore.Crud.ListSample1.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/WaCore.Crud.ListSample1.Program.html#WaCore_Crud_ListSample1_Program_Main_System_String___
+  commentId: M:WaCore.Crud.ListSample1.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: WaCore.Crud.ListSample1.Program.Main(System.String[])
+  fullName.vb: WaCore.Crud.ListSample1.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: WaCore.Crud.ListSample1.Program.Main*
+  name: Main
+  href: api/WaCore.Crud.ListSample1.Program.html#WaCore_Crud_ListSample1_Program_Main_
+  commentId: Overload:WaCore.Crud.ListSample1.Program.Main
+  fullName: WaCore.Crud.ListSample1.Program.Main
+  nameWithType: Program.Main
+- uid: WaCore.Crud.ListSample1.Services
+  name: WaCore.Crud.ListSample1.Services
+  href: api/WaCore.Crud.ListSample1.Services.html
+  commentId: N:WaCore.Crud.ListSample1.Services
+  fullName: WaCore.Crud.ListSample1.Services
+  nameWithType: WaCore.Crud.ListSample1.Services
+- uid: WaCore.Crud.ListSample1.Services.BookListDataService
+  name: BookListDataService
+  href: api/WaCore.Crud.ListSample1.Services.BookListDataService.html
+  commentId: T:WaCore.Crud.ListSample1.Services.BookListDataService
+  fullName: WaCore.Crud.ListSample1.Services.BookListDataService
+  nameWithType: BookListDataService
+- uid: WaCore.Crud.ListSample1.Services.BookListDataService.#ctor(WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository)
+  name: BookListDataService(IBooksListRepository)
+  href: api/WaCore.Crud.ListSample1.Services.BookListDataService.html#WaCore_Crud_ListSample1_Services_BookListDataService__ctor_WaCore_Crud_ListSample1_Data_Repositories_IBooksListRepository_
+  commentId: M:WaCore.Crud.ListSample1.Services.BookListDataService.#ctor(WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository)
+  fullName: WaCore.Crud.ListSample1.Services.BookListDataService.BookListDataService(WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository)
+  nameWithType: BookListDataService.BookListDataService(IBooksListRepository)
+- uid: WaCore.Crud.ListSample1.Services.BookListDataService.#ctor*
+  name: BookListDataService
+  href: api/WaCore.Crud.ListSample1.Services.BookListDataService.html#WaCore_Crud_ListSample1_Services_BookListDataService__ctor_
+  commentId: Overload:WaCore.Crud.ListSample1.Services.BookListDataService.#ctor
+  fullName: WaCore.Crud.ListSample1.Services.BookListDataService.BookListDataService
+  nameWithType: BookListDataService.BookListDataService
+- uid: WaCore.Crud.ListSample1.Services.BookListDataService.MapEntityToDto(WaCore.Crud.ListSample1.Entities.Book)
+  name: MapEntityToDto(Book)
+  href: api/WaCore.Crud.ListSample1.Services.BookListDataService.html#WaCore_Crud_ListSample1_Services_BookListDataService_MapEntityToDto_WaCore_Crud_ListSample1_Entities_Book_
+  commentId: M:WaCore.Crud.ListSample1.Services.BookListDataService.MapEntityToDto(WaCore.Crud.ListSample1.Entities.Book)
+  fullName: WaCore.Crud.ListSample1.Services.BookListDataService.MapEntityToDto(WaCore.Crud.ListSample1.Entities.Book)
+  nameWithType: BookListDataService.MapEntityToDto(Book)
+- uid: WaCore.Crud.ListSample1.Services.BookListDataService.MapEntityToDto*
+  name: MapEntityToDto
+  href: api/WaCore.Crud.ListSample1.Services.BookListDataService.html#WaCore_Crud_ListSample1_Services_BookListDataService_MapEntityToDto_
+  commentId: Overload:WaCore.Crud.ListSample1.Services.BookListDataService.MapEntityToDto
+  fullName: WaCore.Crud.ListSample1.Services.BookListDataService.MapEntityToDto
+  nameWithType: BookListDataService.MapEntityToDto
+- uid: WaCore.Crud.ListSample1.Services.IBookListDataService
+  name: IBookListDataService
+  href: api/WaCore.Crud.ListSample1.Services.IBookListDataService.html
+  commentId: T:WaCore.Crud.ListSample1.Services.IBookListDataService
+  fullName: WaCore.Crud.ListSample1.Services.IBookListDataService
+  nameWithType: IBookListDataService
+- uid: WaCore.Crud.ListSample1.Startup
+  name: Startup
+  href: api/WaCore.Crud.ListSample1.Startup.html
+  commentId: T:WaCore.Crud.ListSample1.Startup
+  fullName: WaCore.Crud.ListSample1.Startup
+  nameWithType: Startup
+- uid: WaCore.Crud.ListSample1.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  name: Configure(IApplicationBuilder, IHostingEnvironment, ILoggerFactory, LibraryDbContext)
+  href: api/WaCore.Crud.ListSample1.Startup.html#WaCore_Crud_ListSample1_Startup_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IHostingEnvironment_Microsoft_Extensions_Logging_ILoggerFactory_WaCore_Crud_ListSample1_Data_LibraryDbContext_
+  commentId: M:WaCore.Crud.ListSample1.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  fullName: WaCore.Crud.ListSample1.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment, Microsoft.Extensions.Logging.ILoggerFactory, WaCore.Crud.ListSample1.Data.LibraryDbContext)
+  nameWithType: Startup.Configure(IApplicationBuilder, IHostingEnvironment, ILoggerFactory, LibraryDbContext)
+- uid: WaCore.Crud.ListSample1.Startup.Configure*
+  name: Configure
+  href: api/WaCore.Crud.ListSample1.Startup.html#WaCore_Crud_ListSample1_Startup_Configure_
+  commentId: Overload:WaCore.Crud.ListSample1.Startup.Configure
+  fullName: WaCore.Crud.ListSample1.Startup.Configure
+  nameWithType: Startup.Configure
+- uid: WaCore.Crud.ListSample1.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: ConfigureServices(IServiceCollection)
+  href: api/WaCore.Crud.ListSample1.Startup.html#WaCore_Crud_ListSample1_Startup_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:WaCore.Crud.ListSample1.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: WaCore.Crud.ListSample1.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: Startup.ConfigureServices(IServiceCollection)
+- uid: WaCore.Crud.ListSample1.Startup.ConfigureServices*
+  name: ConfigureServices
+  href: api/WaCore.Crud.ListSample1.Startup.html#WaCore_Crud_ListSample1_Startup_ConfigureServices_
+  commentId: Overload:WaCore.Crud.ListSample1.Startup.ConfigureServices
+  fullName: WaCore.Crud.ListSample1.Startup.ConfigureServices
+  nameWithType: Startup.ConfigureServices
+- uid: WaCore.Crud.ListSample1.ViewModels
+  name: WaCore.Crud.ListSample1.ViewModels
+  href: api/WaCore.Crud.ListSample1.ViewModels.html
+  commentId: N:WaCore.Crud.ListSample1.ViewModels
+  fullName: WaCore.Crud.ListSample1.ViewModels
+  nameWithType: WaCore.Crud.ListSample1.ViewModels
+- uid: WaCore.Crud.ListSample1.ViewModels.BookFilter
+  name: BookFilter
+  href: api/WaCore.Crud.ListSample1.ViewModels.BookFilter.html
+  commentId: T:WaCore.Crud.ListSample1.ViewModels.BookFilter
+  fullName: WaCore.Crud.ListSample1.ViewModels.BookFilter
+  nameWithType: BookFilter
+- uid: WaCore.Crud.ListSample1.ViewModels.BookFilter.Author
+  name: Author
+  href: api/WaCore.Crud.ListSample1.ViewModels.BookFilter.html#WaCore_Crud_ListSample1_ViewModels_BookFilter_Author
+  commentId: P:WaCore.Crud.ListSample1.ViewModels.BookFilter.Author
+  fullName: WaCore.Crud.ListSample1.ViewModels.BookFilter.Author
+  nameWithType: BookFilter.Author
+- uid: WaCore.Crud.ListSample1.ViewModels.BookFilter.Author*
+  name: Author
+  href: api/WaCore.Crud.ListSample1.ViewModels.BookFilter.html#WaCore_Crud_ListSample1_ViewModels_BookFilter_Author_
+  commentId: Overload:WaCore.Crud.ListSample1.ViewModels.BookFilter.Author
+  fullName: WaCore.Crud.ListSample1.ViewModels.BookFilter.Author
+  nameWithType: BookFilter.Author
+- uid: WaCore.Crud.ListSample1.ViewModels.BookListVm
+  name: BookListVm
+  href: api/WaCore.Crud.ListSample1.ViewModels.BookListVm.html
+  commentId: T:WaCore.Crud.ListSample1.ViewModels.BookListVm
+  fullName: WaCore.Crud.ListSample1.ViewModels.BookListVm
+  nameWithType: BookListVm
+- uid: WaCore.Crud.Services
+  name: WaCore.Crud.Services
+  href: api/WaCore.Crud.Services.html
+  commentId: N:WaCore.Crud.Services
+  fullName: WaCore.Crud.Services
+  nameWithType: WaCore.Crud.Services
+- uid: WaCore.Crud.Services.WacListDataService`3
+  name: WacListDataService<TEntity, TFilter, TDto>
+  href: api/WaCore.Crud.Services.WacListDataService-3.html
+  commentId: T:WaCore.Crud.Services.WacListDataService`3
+  name.vb: WacListDataService(Of TEntity, TFilter, TDto)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto)
+- uid: WaCore.Crud.Services.WacListDataService`3.#ctor(WaCore.Crud.Contracts.Data.IWacListDataRepository{`0,`1})
+  name: WacListDataService(IWacListDataRepository<TEntity, TFilter>)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3__ctor_WaCore_Crud_Contracts_Data_IWacListDataRepository__0__1__
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.#ctor(WaCore.Crud.Contracts.Data.IWacListDataRepository{`0,`1})
+  name.vb: WacListDataService(IWacListDataRepository(Of TEntity, TFilter))
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.WacListDataService(WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).WacListDataService(WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter))
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.WacListDataService(IWacListDataRepository<TEntity, TFilter>)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).WacListDataService(IWacListDataRepository(Of TEntity, TFilter))
+- uid: WaCore.Crud.Services.WacListDataService`3.#ctor*
+  name: WacListDataService
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3__ctor_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.#ctor
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.WacListDataService
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).WacListDataService
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.WacListDataService
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).WacListDataService
+- uid: WaCore.Crud.Services.WacListDataService`3.GetAll(`1)
+  name: GetAll(TFilter)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAll__1_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.GetAll(`1)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetAll(TFilter)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetAll(TFilter)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetAll(TFilter)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetAll(TFilter)
+- uid: WaCore.Crud.Services.WacListDataService`3.GetAll*
+  name: GetAll
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAll_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.GetAll
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetAll
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetAll
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetAll
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetAll
+- uid: WaCore.Crud.Services.WacListDataService`3.MapEntityToDto(`0)
+  name: MapEntityToDto(TEntity)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_MapEntityToDto__0_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.MapEntityToDto(`0)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.MapEntityToDto(TEntity)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).MapEntityToDto(TEntity)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.MapEntityToDto(TEntity)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).MapEntityToDto(TEntity)
+- uid: WaCore.Crud.Services.WacListDataService`3.MapEntityToDto*
+  name: MapEntityToDto
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_MapEntityToDto_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.MapEntityToDto
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.MapEntityToDto
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).MapEntityToDto
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.MapEntityToDto
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).MapEntityToDto
+- uid: WaCore.Crud.Web.Controllers
+  name: WaCore.Crud.Web.Controllers
+  href: api/WaCore.Crud.Web.Controllers.html
+  commentId: N:WaCore.Crud.Web.Controllers
+  fullName: WaCore.Crud.Web.Controllers
+  nameWithType: WaCore.Crud.Web.Controllers
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4
+  name: WacListDataController<TEntity, TFilter, TDto, TListVm>
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html
+  commentId: T:WaCore.Crud.Web.Controllers.WacListDataController`4
+  name.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm)
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm)
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm)
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.#ctor(WaCore.Crud.Contracts.Services.IWacListDataService{`1,`2})
+  name: WacListDataController(IWacListDataService<TFilter, TDto>)
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4__ctor_WaCore_Crud_Contracts_Services_IWacListDataService__1__2__
+  commentId: M:WaCore.Crud.Web.Controllers.WacListDataController`4.#ctor(WaCore.Crud.Contracts.Services.IWacListDataService{`1,`2})
+  name.vb: WacListDataController(IWacListDataService(Of TFilter, TDto))
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.WacListDataController(WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>)
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).WacListDataController(WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto))
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.WacListDataController(IWacListDataService<TFilter, TDto>)
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).WacListDataController(IWacListDataService(Of TFilter, TDto))
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.#ctor*
+  name: WacListDataController
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4__ctor_
+  commentId: Overload:WaCore.Crud.Web.Controllers.WacListDataController`4.#ctor
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.WacListDataController
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).WacListDataController
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.WacListDataController
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).WacListDataController
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.Filter(`1)
+  name: Filter(TFilter)
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4_Filter__1_
+  commentId: M:WaCore.Crud.Web.Controllers.WacListDataController`4.Filter(`1)
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.Filter(TFilter)
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).Filter(TFilter)
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.Filter(TFilter)
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).Filter(TFilter)
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.Filter*
+  name: Filter
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4_Filter_
+  commentId: Overload:WaCore.Crud.Web.Controllers.WacListDataController`4.Filter
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.Filter
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).Filter
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.Filter
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).Filter
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.Index(`1)
+  name: Index(TFilter)
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4_Index__1_
+  commentId: M:WaCore.Crud.Web.Controllers.WacListDataController`4.Index(`1)
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.Index(TFilter)
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).Index(TFilter)
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.Index(TFilter)
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).Index(TFilter)
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.Index*
+  name: Index
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4_Index_
+  commentId: Overload:WaCore.Crud.Web.Controllers.WacListDataController`4.Index
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.Index
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).Index
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.Index
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).Index
+- uid: WaCore.Crud.Web.Controllers.WacListDataController`4.listVm
+  name: listVm
+  href: api/WaCore.Crud.Web.Controllers.WacListDataController-4.html#WaCore_Crud_Web_Controllers_WacListDataController_4_listVm
+  commentId: F:WaCore.Crud.Web.Controllers.WacListDataController`4.listVm
+  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TEntity, TFilter, TDto, TListVm>.listVm
+  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TEntity, TFilter, TDto, TListVm).listVm
+  nameWithType: WacListDataController<TEntity, TFilter, TDto, TListVm>.listVm
+  nameWithType.vb: WacListDataController(Of TEntity, TFilter, TDto, TListVm).listVm
+- uid: WaCore.Crud.Web.ViewModels
+  name: WaCore.Crud.Web.ViewModels
+  href: api/WaCore.Crud.Web.ViewModels.html
+  commentId: N:WaCore.Crud.Web.ViewModels
+  fullName: WaCore.Crud.Web.ViewModels
+  nameWithType: WaCore.Crud.Web.ViewModels
+- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2
+  name: WacListDataVm<TDto, TFilter>
+  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html
+  commentId: T:WaCore.Crud.Web.ViewModels.WacListDataVm`2
+  name.vb: WacListDataVm(Of TDto, TFilter)
+  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>
+  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter)
+  nameWithType: WacListDataVm<TDto, TFilter>
+  nameWithType.vb: WacListDataVm(Of TDto, TFilter)
+- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList
+  name: DtoList
+  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList
+  commentId: P:WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList
+  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.DtoList
+  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).DtoList
+  nameWithType: WacListDataVm<TDto, TFilter>.DtoList
+  nameWithType.vb: WacListDataVm(Of TDto, TFilter).DtoList
+- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList*
+  name: DtoList
+  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList_
+  commentId: Overload:WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList
+  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.DtoList
+  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).DtoList
+  nameWithType: WacListDataVm<TDto, TFilter>.DtoList
+  nameWithType.vb: WacListDataVm(Of TDto, TFilter).DtoList
+- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter
+  name: Filter
+  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter
+  commentId: P:WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter
+  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.Filter
+  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).Filter
+  nameWithType: WacListDataVm<TDto, TFilter>.Filter
+  nameWithType.vb: WacListDataVm(Of TDto, TFilter).Filter
+- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter*
+  name: Filter
+  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter_
+  commentId: Overload:WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter
+  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.Filter
+  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).Filter
+  nameWithType: WacListDataVm<TDto, TFilter>.Filter
+  nameWithType.vb: WacListDataVm(Of TDto, TFilter).Filter
+- uid: WaCore.Data.Ef
+  name: WaCore.Data.Ef
+  href: api/WaCore.Data.Ef.html
+  commentId: N:WaCore.Data.Ef
+  fullName: WaCore.Data.Ef
+  nameWithType: WaCore.Data.Ef
+- uid: WaCore.Data.Ef.DependencyInjection
+  name: WaCore.Data.Ef.DependencyInjection
+  href: api/WaCore.Data.Ef.DependencyInjection.html
+  commentId: N:WaCore.Data.Ef.DependencyInjection
+  fullName: WaCore.Data.Ef.DependencyInjection
+  nameWithType: WaCore.Data.Ef.DependencyInjection
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2
+  name: RepositoryConfiguration<TDbContext, TUnitOfWorkService>
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html
+  commentId: T:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2
+  name.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService)
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService)
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService)
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: RepositoryConfiguration(IServiceCollection)
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html#WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration_2__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>.RepositoryConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).RepositoryConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>.RepositoryConfiguration(IServiceCollection)
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).RepositoryConfiguration(IServiceCollection)
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.#ctor*
+  name: RepositoryConfiguration
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html#WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration_2__ctor_
+  commentId: Overload:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.#ctor
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>.RepositoryConfiguration
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).RepositoryConfiguration
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>.RepositoryConfiguration
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).RepositoryConfiguration
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepositoriesFromAssemblyOf*
+  name: AddRepositoriesFromAssemblyOf
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html#WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration_2_AddRepositoriesFromAssemblyOf_
+  commentId: Overload:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepositoriesFromAssemblyOf
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepositoriesFromAssemblyOf
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepositoriesFromAssemblyOf
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepositoriesFromAssemblyOf
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepositoriesFromAssemblyOf
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepositoriesFromAssemblyOf``1
+  name: AddRepositoriesFromAssemblyOf<TAssemblySelector>()
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html#WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration_2_AddRepositoriesFromAssemblyOf__1
+  commentId: M:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepositoriesFromAssemblyOf``1
+  name.vb: AddRepositoriesFromAssemblyOf(Of TAssemblySelector)()
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepositoriesFromAssemblyOf<TAssemblySelector>()
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepositoriesFromAssemblyOf(Of TAssemblySelector)()
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepositoriesFromAssemblyOf<TAssemblySelector>()
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepositoriesFromAssemblyOf(Of TAssemblySelector)()
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepository*
+  name: AddRepository
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html#WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration_2_AddRepository_
+  commentId: Overload:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepository
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepository
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepository
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepository
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepository
+- uid: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepository``2
+  name: AddRepository<TService, TImplementation>()
+  href: api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html#WaCore_Data_Ef_DependencyInjection_RepositoryConfiguration_2_AddRepository__2
+  commentId: M:WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration`2.AddRepository``2
+  name.vb: AddRepository(Of TService, TImplementation)()
+  fullName: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepository<TService, TImplementation>()
+  fullName.vb: WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepository(Of TService, TImplementation)()
+  nameWithType: RepositoryConfiguration<TDbContext, TUnitOfWorkService>.AddRepository<TService, TImplementation>()
+  nameWithType.vb: RepositoryConfiguration(Of TDbContext, TUnitOfWorkService).AddRepository(Of TService, TImplementation)()
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper
+  name: WacDbContextTransactionWrapper
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html
+  commentId: T:WaCore.Data.Ef.WacDbContextTransactionWrapper
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper
+  nameWithType: WacDbContextTransactionWrapper
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.#ctor(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  name: WacDbContextTransactionWrapper(IDbContextTransaction)
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper__ctor_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_
+  commentId: M:WaCore.Data.Ef.WacDbContextTransactionWrapper.#ctor(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.WacDbContextTransactionWrapper(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  nameWithType: WacDbContextTransactionWrapper.WacDbContextTransactionWrapper(IDbContextTransaction)
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.#ctor*
+  name: WacDbContextTransactionWrapper
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper__ctor_
+  commentId: Overload:WaCore.Data.Ef.WacDbContextTransactionWrapper.#ctor
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.WacDbContextTransactionWrapper
+  nameWithType: WacDbContextTransactionWrapper.WacDbContextTransactionWrapper
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.Commit
+  name: Commit()
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper_Commit
+  commentId: M:WaCore.Data.Ef.WacDbContextTransactionWrapper.Commit
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.Commit()
+  nameWithType: WacDbContextTransactionWrapper.Commit()
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.Commit*
+  name: Commit
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper_Commit_
+  commentId: Overload:WaCore.Data.Ef.WacDbContextTransactionWrapper.Commit
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.Commit
+  nameWithType: WacDbContextTransactionWrapper.Commit
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.Dispose
+  name: Dispose()
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper_Dispose
+  commentId: M:WaCore.Data.Ef.WacDbContextTransactionWrapper.Dispose
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.Dispose()
+  nameWithType: WacDbContextTransactionWrapper.Dispose()
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.Dispose*
+  name: Dispose
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper_Dispose_
+  commentId: Overload:WaCore.Data.Ef.WacDbContextTransactionWrapper.Dispose
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.Dispose
+  nameWithType: WacDbContextTransactionWrapper.Dispose
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.Rollback
+  name: Rollback()
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper_Rollback
+  commentId: M:WaCore.Data.Ef.WacDbContextTransactionWrapper.Rollback
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.Rollback()
+  nameWithType: WacDbContextTransactionWrapper.Rollback()
+- uid: WaCore.Data.Ef.WacDbContextTransactionWrapper.Rollback*
+  name: Rollback
+  href: api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html#WaCore_Data_Ef_WacDbContextTransactionWrapper_Rollback_
+  commentId: Overload:WaCore.Data.Ef.WacDbContextTransactionWrapper.Rollback
+  fullName: WaCore.Data.Ef.WacDbContextTransactionWrapper.Rollback
+  nameWithType: WacDbContextTransactionWrapper.Rollback
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1
+  name: WacEfUnitOfWork<TDbContext>
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html
+  commentId: T:WaCore.Data.Ef.WacEfUnitOfWork`1
+  name.vb: WacEfUnitOfWork(Of TDbContext)
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext)
+  nameWithType: WacEfUnitOfWork<TDbContext>
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext)
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.#ctor(`0,System.IServiceProvider)
+  name: WacEfUnitOfWork(TDbContext, IServiceProvider)
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1__ctor__0_System_IServiceProvider_
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.#ctor(`0,System.IServiceProvider)
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.WacEfUnitOfWork(TDbContext, System.IServiceProvider)
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).WacEfUnitOfWork(TDbContext, System.IServiceProvider)
+  nameWithType: WacEfUnitOfWork<TDbContext>.WacEfUnitOfWork(TDbContext, IServiceProvider)
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).WacEfUnitOfWork(TDbContext, IServiceProvider)
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.#ctor*
+  name: WacEfUnitOfWork
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1__ctor_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.#ctor
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.WacEfUnitOfWork
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).WacEfUnitOfWork
+  nameWithType: WacEfUnitOfWork<TDbContext>.WacEfUnitOfWork
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).WacEfUnitOfWork
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1._dbContext
+  name: _dbContext
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1__dbContext
+  commentId: F:WaCore.Data.Ef.WacEfUnitOfWork`1._dbContext
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>._dbContext
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext)._dbContext
+  nameWithType: WacEfUnitOfWork<TDbContext>._dbContext
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext)._dbContext
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1._repositories
+  name: _repositories
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1__repositories
+  commentId: F:WaCore.Data.Ef.WacEfUnitOfWork`1._repositories
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>._repositories
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext)._repositories
+  nameWithType: WacEfUnitOfWork<TDbContext>._repositories
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext)._repositories
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1._serviceProvider
+  name: _serviceProvider
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1__serviceProvider
+  commentId: F:WaCore.Data.Ef.WacEfUnitOfWork`1._serviceProvider
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>._serviceProvider
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext)._serviceProvider
+  nameWithType: WacEfUnitOfWork<TDbContext>._serviceProvider
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext)._serviceProvider
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransaction
+  name: BeginTransaction()
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_BeginTransaction
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransaction
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.BeginTransaction()
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).BeginTransaction()
+  nameWithType: WacEfUnitOfWork<TDbContext>.BeginTransaction()
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).BeginTransaction()
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransaction(System.Data.IsolationLevel)
+  name: BeginTransaction(IsolationLevel)
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_BeginTransaction_System_Data_IsolationLevel_
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransaction(System.Data.IsolationLevel)
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.BeginTransaction(System.Data.IsolationLevel)
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).BeginTransaction(System.Data.IsolationLevel)
+  nameWithType: WacEfUnitOfWork<TDbContext>.BeginTransaction(IsolationLevel)
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).BeginTransaction(IsolationLevel)
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransaction*
+  name: BeginTransaction
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_BeginTransaction_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransaction
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.BeginTransaction
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).BeginTransaction
+  nameWithType: WacEfUnitOfWork<TDbContext>.BeginTransaction
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).BeginTransaction
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)
+  name: BeginTransactionAsync(IsolationLevel, CancellationToken)
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_BeginTransactionAsync_System_Data_IsolationLevel_System_Threading_CancellationToken_
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.BeginTransactionAsync(System.Data.IsolationLevel, System.Threading.CancellationToken)
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).BeginTransactionAsync(System.Data.IsolationLevel, System.Threading.CancellationToken)
+  nameWithType: WacEfUnitOfWork<TDbContext>.BeginTransactionAsync(IsolationLevel, CancellationToken)
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).BeginTransactionAsync(IsolationLevel, CancellationToken)
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransactionAsync(System.Threading.CancellationToken)
+  name: BeginTransactionAsync(CancellationToken)
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_BeginTransactionAsync_System_Threading_CancellationToken_
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransactionAsync(System.Threading.CancellationToken)
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.BeginTransactionAsync(System.Threading.CancellationToken)
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).BeginTransactionAsync(System.Threading.CancellationToken)
+  nameWithType: WacEfUnitOfWork<TDbContext>.BeginTransactionAsync(CancellationToken)
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).BeginTransactionAsync(CancellationToken)
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransactionAsync*
+  name: BeginTransactionAsync
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_BeginTransactionAsync_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.BeginTransactionAsync
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.BeginTransactionAsync
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).BeginTransactionAsync
+  nameWithType: WacEfUnitOfWork<TDbContext>.BeginTransactionAsync
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).BeginTransactionAsync
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.DbContext
+  name: DbContext
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_DbContext
+  commentId: P:WaCore.Data.Ef.WacEfUnitOfWork`1.DbContext
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.DbContext
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).DbContext
+  nameWithType: WacEfUnitOfWork<TDbContext>.DbContext
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).DbContext
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.DbContext*
+  name: DbContext
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_DbContext_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.DbContext
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.DbContext
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).DbContext
+  nameWithType: WacEfUnitOfWork<TDbContext>.DbContext
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).DbContext
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.Dispose
+  name: Dispose()
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_Dispose
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.Dispose
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.Dispose()
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).Dispose()
+  nameWithType: WacEfUnitOfWork<TDbContext>.Dispose()
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).Dispose()
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.Dispose*
+  name: Dispose
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_Dispose_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.Dispose
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.Dispose
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).Dispose
+  nameWithType: WacEfUnitOfWork<TDbContext>.Dispose
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).Dispose
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.GetRepository*
+  name: GetRepository
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_GetRepository_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.GetRepository
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.GetRepository
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).GetRepository
+  nameWithType: WacEfUnitOfWork<TDbContext>.GetRepository
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).GetRepository
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.GetRepository``1
+  name: GetRepository<TRepository>()
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_GetRepository__1
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.GetRepository``1
+  name.vb: GetRepository(Of TRepository)()
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.GetRepository<TRepository>()
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).GetRepository(Of TRepository)()
+  nameWithType: WacEfUnitOfWork<TDbContext>.GetRepository<TRepository>()
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).GetRepository(Of TRepository)()
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChanges
+  name: SaveChanges()
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_SaveChanges
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChanges
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.SaveChanges()
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).SaveChanges()
+  nameWithType: WacEfUnitOfWork<TDbContext>.SaveChanges()
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).SaveChanges()
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChanges*
+  name: SaveChanges
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_SaveChanges_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChanges
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.SaveChanges
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).SaveChanges
+  nameWithType: WacEfUnitOfWork<TDbContext>.SaveChanges
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).SaveChanges
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChangesAsync(System.Threading.CancellationToken)
+  name: SaveChangesAsync(CancellationToken)
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_SaveChangesAsync_System_Threading_CancellationToken_
+  commentId: M:WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChangesAsync(System.Threading.CancellationToken)
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.SaveChangesAsync(System.Threading.CancellationToken)
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).SaveChangesAsync(System.Threading.CancellationToken)
+  nameWithType: WacEfUnitOfWork<TDbContext>.SaveChangesAsync(CancellationToken)
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).SaveChangesAsync(CancellationToken)
+- uid: WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/WaCore.Data.Ef.WacEfUnitOfWork-1.html#WaCore_Data_Ef_WacEfUnitOfWork_1_SaveChangesAsync_
+  commentId: Overload:WaCore.Data.Ef.WacEfUnitOfWork`1.SaveChangesAsync
+  fullName: WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>.SaveChangesAsync
+  fullName.vb: WaCore.Data.Ef.WacEfUnitOfWork(Of TDbContext).SaveChangesAsync
+  nameWithType: WacEfUnitOfWork<TDbContext>.SaveChangesAsync
+  nameWithType.vb: WacEfUnitOfWork(Of TDbContext).SaveChangesAsync
+- uid: WaCore.Data.Repositories.Base
+  name: WaCore.Data.Repositories.Base
+  href: api/WaCore.Data.Repositories.Base.html
+  commentId: N:WaCore.Data.Repositories.Base
+  fullName: WaCore.Data.Repositories.Base
+  nameWithType: WaCore.Data.Repositories.Base
+- uid: WaCore.Data.Repositories.Base.WacRepository`2
+  name: WacRepository<TEntity, TDbContext>
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html
+  commentId: T:WaCore.Data.Repositories.Base.WacRepository`2
+  name.vb: WacRepository(Of TEntity, TDbContext)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext)
+  nameWithType: WacRepository<TEntity, TDbContext>
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.#ctor(`1)
+  name: WacRepository(TDbContext)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2__ctor__1_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.#ctor(`1)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.WacRepository(TDbContext)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).WacRepository(TDbContext)
+  nameWithType: WacRepository<TEntity, TDbContext>.WacRepository(TDbContext)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).WacRepository(TDbContext)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.#ctor*
+  name: WacRepository
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2__ctor_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.#ctor
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.WacRepository
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).WacRepository
+  nameWithType: WacRepository<TEntity, TDbContext>.WacRepository
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).WacRepository
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Add(`0)
+  name: Add(TEntity)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Add__0_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.Add(`0)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Add(TEntity)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Add(TEntity)
+  nameWithType: WacRepository<TEntity, TDbContext>.Add(TEntity)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Add(TEntity)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Add*
+  name: Add
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Add_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.Add
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Add
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Add
+  nameWithType: WacRepository<TEntity, TDbContext>.Add
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Add
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.DbContext
+  name: DbContext
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_DbContext
+  commentId: F:WaCore.Data.Repositories.Base.WacRepository`2.DbContext
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.DbContext
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).DbContext
+  nameWithType: WacRepository<TEntity, TDbContext>.DbContext
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).DbContext
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.DbSet
+  name: DbSet
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_DbSet
+  commentId: F:WaCore.Data.Repositories.Base.WacRepository`2.DbSet
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.DbSet
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).DbSet
+  nameWithType: WacRepository<TEntity, TDbContext>.DbSet
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).DbSet
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Get(System.Object)
+  name: Get(Object)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Get_System_Object_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.Get(System.Object)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Get(System.Object)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Get(System.Object)
+  nameWithType: WacRepository<TEntity, TDbContext>.Get(Object)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Get(Object)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Get*
+  name: Get
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Get_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.Get
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Get
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Get
+  nameWithType: WacRepository<TEntity, TDbContext>.Get
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Get
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.GetAll
+  name: GetAll()
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_GetAll
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.GetAll
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.GetAll()
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).GetAll()
+  nameWithType: WacRepository<TEntity, TDbContext>.GetAll()
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).GetAll()
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.GetAll*
+  name: GetAll
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_GetAll_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.GetAll
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.GetAll
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).GetAll
+  nameWithType: WacRepository<TEntity, TDbContext>.GetAll
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).GetAll
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.GetAllAsync(System.Threading.CancellationToken)
+  name: GetAllAsync(CancellationToken)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_GetAllAsync_System_Threading_CancellationToken_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.GetAllAsync(System.Threading.CancellationToken)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.GetAllAsync(System.Threading.CancellationToken)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).GetAllAsync(System.Threading.CancellationToken)
+  nameWithType: WacRepository<TEntity, TDbContext>.GetAllAsync(CancellationToken)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).GetAllAsync(CancellationToken)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.GetAllAsync*
+  name: GetAllAsync
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_GetAllAsync_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.GetAllAsync
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.GetAllAsync
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).GetAllAsync
+  nameWithType: WacRepository<TEntity, TDbContext>.GetAllAsync
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).GetAllAsync
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.GetAsync(System.Object,System.Threading.CancellationToken)
+  name: GetAsync(Object, CancellationToken)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_GetAsync_System_Object_System_Threading_CancellationToken_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.GetAsync(System.Object,System.Threading.CancellationToken)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.GetAsync(System.Object, System.Threading.CancellationToken)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).GetAsync(System.Object, System.Threading.CancellationToken)
+  nameWithType: WacRepository<TEntity, TDbContext>.GetAsync(Object, CancellationToken)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).GetAsync(Object, CancellationToken)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.GetAsync*
+  name: GetAsync
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_GetAsync_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.GetAsync
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.GetAsync
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).GetAsync
+  nameWithType: WacRepository<TEntity, TDbContext>.GetAsync
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).GetAsync
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Remove(`0)
+  name: Remove(TEntity)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Remove__0_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.Remove(`0)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Remove(TEntity)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Remove(TEntity)
+  nameWithType: WacRepository<TEntity, TDbContext>.Remove(TEntity)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Remove(TEntity)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Remove*
+  name: Remove
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Remove_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.Remove
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Remove
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Remove
+  nameWithType: WacRepository<TEntity, TDbContext>.Remove
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Remove
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Update(`0)
+  name: Update(TEntity)
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Update__0_
+  commentId: M:WaCore.Data.Repositories.Base.WacRepository`2.Update(`0)
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Update(TEntity)
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Update(TEntity)
+  nameWithType: WacRepository<TEntity, TDbContext>.Update(TEntity)
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Update(TEntity)
+- uid: WaCore.Data.Repositories.Base.WacRepository`2.Update*
+  name: Update
+  href: api/WaCore.Data.Repositories.Base.WacRepository-2.html#WaCore_Data_Repositories_Base_WacRepository_2_Update_
+  commentId: Overload:WaCore.Data.Repositories.Base.WacRepository`2.Update
+  fullName: WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>.Update
+  fullName.vb: WaCore.Data.Repositories.Base.WacRepository(Of TEntity, TDbContext).Update
+  nameWithType: WacRepository<TEntity, TDbContext>.Update
+  nameWithType.vb: WacRepository(Of TEntity, TDbContext).Update
+- uid: WaCore.Sample
+  name: WaCore.Sample
+  href: api/WaCore.Sample.html
+  commentId: N:WaCore.Sample
+  fullName: WaCore.Sample
+  nameWithType: WaCore.Sample
+- uid: WaCore.Sample.Controllers
+  name: WaCore.Sample.Controllers
+  href: api/WaCore.Sample.Controllers.html
+  commentId: N:WaCore.Sample.Controllers
+  fullName: WaCore.Sample.Controllers
+  nameWithType: WaCore.Sample.Controllers
+- uid: WaCore.Sample.Controllers.BooksController
+  name: BooksController
+  href: api/WaCore.Sample.Controllers.BooksController.html
+  commentId: T:WaCore.Sample.Controllers.BooksController
+  fullName: WaCore.Sample.Controllers.BooksController
+  nameWithType: BooksController
+- uid: WaCore.Sample.Controllers.BooksController.#ctor(WaCore.Sample.Data.IUnitOfWork)
+  name: BooksController(IUnitOfWork)
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController__ctor_WaCore_Sample_Data_IUnitOfWork_
+  commentId: M:WaCore.Sample.Controllers.BooksController.#ctor(WaCore.Sample.Data.IUnitOfWork)
+  fullName: WaCore.Sample.Controllers.BooksController.BooksController(WaCore.Sample.Data.IUnitOfWork)
+  nameWithType: BooksController.BooksController(IUnitOfWork)
+- uid: WaCore.Sample.Controllers.BooksController.#ctor*
+  name: BooksController
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController__ctor_
+  commentId: Overload:WaCore.Sample.Controllers.BooksController.#ctor
+  fullName: WaCore.Sample.Controllers.BooksController.BooksController
+  nameWithType: BooksController.BooksController
+- uid: WaCore.Sample.Controllers.BooksController.Delete(System.Int32)
+  name: Delete(Int32)
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_Delete_System_Int32_
+  commentId: M:WaCore.Sample.Controllers.BooksController.Delete(System.Int32)
+  fullName: WaCore.Sample.Controllers.BooksController.Delete(System.Int32)
+  nameWithType: BooksController.Delete(Int32)
+- uid: WaCore.Sample.Controllers.BooksController.Delete*
+  name: Delete
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_Delete_
+  commentId: Overload:WaCore.Sample.Controllers.BooksController.Delete
+  fullName: WaCore.Sample.Controllers.BooksController.Delete
+  nameWithType: BooksController.Delete
+- uid: WaCore.Sample.Controllers.BooksController.Get
+  name: Get()
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_Get
+  commentId: M:WaCore.Sample.Controllers.BooksController.Get
+  fullName: WaCore.Sample.Controllers.BooksController.Get()
+  nameWithType: BooksController.Get()
+- uid: WaCore.Sample.Controllers.BooksController.Get*
+  name: Get
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_Get_
+  commentId: Overload:WaCore.Sample.Controllers.BooksController.Get
+  fullName: WaCore.Sample.Controllers.BooksController.Get
+  nameWithType: BooksController.Get
+- uid: WaCore.Sample.Controllers.BooksController.GetAsync(System.Int32)
+  name: GetAsync(Int32)
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_GetAsync_System_Int32_
+  commentId: M:WaCore.Sample.Controllers.BooksController.GetAsync(System.Int32)
+  fullName: WaCore.Sample.Controllers.BooksController.GetAsync(System.Int32)
+  nameWithType: BooksController.GetAsync(Int32)
+- uid: WaCore.Sample.Controllers.BooksController.GetAsync*
+  name: GetAsync
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_GetAsync_
+  commentId: Overload:WaCore.Sample.Controllers.BooksController.GetAsync
+  fullName: WaCore.Sample.Controllers.BooksController.GetAsync
+  nameWithType: BooksController.GetAsync
+- uid: WaCore.Sample.Controllers.BooksController.PostAsync(WaCore.Sample.Entities.Book)
+  name: PostAsync(Book)
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_PostAsync_WaCore_Sample_Entities_Book_
+  commentId: M:WaCore.Sample.Controllers.BooksController.PostAsync(WaCore.Sample.Entities.Book)
+  fullName: WaCore.Sample.Controllers.BooksController.PostAsync(WaCore.Sample.Entities.Book)
+  nameWithType: BooksController.PostAsync(Book)
+- uid: WaCore.Sample.Controllers.BooksController.PostAsync*
+  name: PostAsync
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_PostAsync_
+  commentId: Overload:WaCore.Sample.Controllers.BooksController.PostAsync
+  fullName: WaCore.Sample.Controllers.BooksController.PostAsync
+  nameWithType: BooksController.PostAsync
+- uid: WaCore.Sample.Controllers.BooksController.PutAsync(System.Int32,WaCore.Sample.Entities.Book)
+  name: PutAsync(Int32, Book)
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_PutAsync_System_Int32_WaCore_Sample_Entities_Book_
+  commentId: M:WaCore.Sample.Controllers.BooksController.PutAsync(System.Int32,WaCore.Sample.Entities.Book)
+  fullName: WaCore.Sample.Controllers.BooksController.PutAsync(System.Int32, WaCore.Sample.Entities.Book)
+  nameWithType: BooksController.PutAsync(Int32, Book)
+- uid: WaCore.Sample.Controllers.BooksController.PutAsync*
+  name: PutAsync
+  href: api/WaCore.Sample.Controllers.BooksController.html#WaCore_Sample_Controllers_BooksController_PutAsync_
+  commentId: Overload:WaCore.Sample.Controllers.BooksController.PutAsync
+  fullName: WaCore.Sample.Controllers.BooksController.PutAsync
+  nameWithType: BooksController.PutAsync
+- uid: WaCore.Sample.Data
+  name: WaCore.Sample.Data
+  href: api/WaCore.Sample.Data.html
+  commentId: N:WaCore.Sample.Data
+  fullName: WaCore.Sample.Data
+  nameWithType: WaCore.Sample.Data
+- uid: WaCore.Sample.Data.DbInitializer
+  name: DbInitializer
+  href: api/WaCore.Sample.Data.DbInitializer.html
+  commentId: T:WaCore.Sample.Data.DbInitializer
+  fullName: WaCore.Sample.Data.DbInitializer
+  nameWithType: DbInitializer
+- uid: WaCore.Sample.Data.DbInitializer.Initialize(WaCore.Sample.Data.LibraryDbContext)
+  name: Initialize(LibraryDbContext)
+  href: api/WaCore.Sample.Data.DbInitializer.html#WaCore_Sample_Data_DbInitializer_Initialize_WaCore_Sample_Data_LibraryDbContext_
+  commentId: M:WaCore.Sample.Data.DbInitializer.Initialize(WaCore.Sample.Data.LibraryDbContext)
+  fullName: WaCore.Sample.Data.DbInitializer.Initialize(WaCore.Sample.Data.LibraryDbContext)
+  nameWithType: DbInitializer.Initialize(LibraryDbContext)
+- uid: WaCore.Sample.Data.DbInitializer.Initialize*
+  name: Initialize
+  href: api/WaCore.Sample.Data.DbInitializer.html#WaCore_Sample_Data_DbInitializer_Initialize_
+  commentId: Overload:WaCore.Sample.Data.DbInitializer.Initialize
+  fullName: WaCore.Sample.Data.DbInitializer.Initialize
+  nameWithType: DbInitializer.Initialize
+- uid: WaCore.Sample.Data.IUnitOfWork
+  name: IUnitOfWork
+  href: api/WaCore.Sample.Data.IUnitOfWork.html
+  commentId: T:WaCore.Sample.Data.IUnitOfWork
+  fullName: WaCore.Sample.Data.IUnitOfWork
+  nameWithType: IUnitOfWork
+- uid: WaCore.Sample.Data.IUnitOfWork.BooksRepository
+  name: BooksRepository
+  href: api/WaCore.Sample.Data.IUnitOfWork.html#WaCore_Sample_Data_IUnitOfWork_BooksRepository
+  commentId: P:WaCore.Sample.Data.IUnitOfWork.BooksRepository
+  fullName: WaCore.Sample.Data.IUnitOfWork.BooksRepository
+  nameWithType: IUnitOfWork.BooksRepository
+- uid: WaCore.Sample.Data.IUnitOfWork.BooksRepository*
+  name: BooksRepository
+  href: api/WaCore.Sample.Data.IUnitOfWork.html#WaCore_Sample_Data_IUnitOfWork_BooksRepository_
+  commentId: Overload:WaCore.Sample.Data.IUnitOfWork.BooksRepository
+  fullName: WaCore.Sample.Data.IUnitOfWork.BooksRepository
+  nameWithType: IUnitOfWork.BooksRepository
+- uid: WaCore.Sample.Data.LibraryDbContext
+  name: LibraryDbContext
+  href: api/WaCore.Sample.Data.LibraryDbContext.html
+  commentId: T:WaCore.Sample.Data.LibraryDbContext
+  fullName: WaCore.Sample.Data.LibraryDbContext
+  nameWithType: LibraryDbContext
+- uid: WaCore.Sample.Data.LibraryDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WaCore.Sample.Data.LibraryDbContext})
+  name: LibraryDbContext(DbContextOptions<LibraryDbContext>)
+  href: api/WaCore.Sample.Data.LibraryDbContext.html#WaCore_Sample_Data_LibraryDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_WaCore_Sample_Data_LibraryDbContext__
+  commentId: M:WaCore.Sample.Data.LibraryDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WaCore.Sample.Data.LibraryDbContext})
+  name.vb: LibraryDbContext(DbContextOptions(Of LibraryDbContext))
+  fullName: WaCore.Sample.Data.LibraryDbContext.LibraryDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<WaCore.Sample.Data.LibraryDbContext>)
+  fullName.vb: WaCore.Sample.Data.LibraryDbContext.LibraryDbContext(Microsoft.EntityFrameworkCore.DbContextOptions(Of WaCore.Sample.Data.LibraryDbContext))
+  nameWithType: LibraryDbContext.LibraryDbContext(DbContextOptions<LibraryDbContext>)
+  nameWithType.vb: LibraryDbContext.LibraryDbContext(DbContextOptions(Of LibraryDbContext))
+- uid: WaCore.Sample.Data.LibraryDbContext.#ctor*
+  name: LibraryDbContext
+  href: api/WaCore.Sample.Data.LibraryDbContext.html#WaCore_Sample_Data_LibraryDbContext__ctor_
+  commentId: Overload:WaCore.Sample.Data.LibraryDbContext.#ctor
+  fullName: WaCore.Sample.Data.LibraryDbContext.LibraryDbContext
+  nameWithType: LibraryDbContext.LibraryDbContext
+- uid: WaCore.Sample.Data.LibraryDbContext.Books
+  name: Books
+  href: api/WaCore.Sample.Data.LibraryDbContext.html#WaCore_Sample_Data_LibraryDbContext_Books
+  commentId: P:WaCore.Sample.Data.LibraryDbContext.Books
+  fullName: WaCore.Sample.Data.LibraryDbContext.Books
+  nameWithType: LibraryDbContext.Books
+- uid: WaCore.Sample.Data.LibraryDbContext.Books*
+  name: Books
+  href: api/WaCore.Sample.Data.LibraryDbContext.html#WaCore_Sample_Data_LibraryDbContext_Books_
+  commentId: Overload:WaCore.Sample.Data.LibraryDbContext.Books
+  fullName: WaCore.Sample.Data.LibraryDbContext.Books
+  nameWithType: LibraryDbContext.Books
+- uid: WaCore.Sample.Data.Repositories
+  name: WaCore.Sample.Data.Repositories
+  href: api/WaCore.Sample.Data.Repositories.html
+  commentId: N:WaCore.Sample.Data.Repositories
+  fullName: WaCore.Sample.Data.Repositories
+  nameWithType: WaCore.Sample.Data.Repositories
+- uid: WaCore.Sample.Data.Repositories.BooksRepository
+  name: BooksRepository
+  href: api/WaCore.Sample.Data.Repositories.BooksRepository.html
+  commentId: T:WaCore.Sample.Data.Repositories.BooksRepository
+  fullName: WaCore.Sample.Data.Repositories.BooksRepository
+  nameWithType: BooksRepository
+- uid: WaCore.Sample.Data.Repositories.BooksRepository.#ctor(WaCore.Sample.Data.LibraryDbContext)
+  name: BooksRepository(LibraryDbContext)
+  href: api/WaCore.Sample.Data.Repositories.BooksRepository.html#WaCore_Sample_Data_Repositories_BooksRepository__ctor_WaCore_Sample_Data_LibraryDbContext_
+  commentId: M:WaCore.Sample.Data.Repositories.BooksRepository.#ctor(WaCore.Sample.Data.LibraryDbContext)
+  fullName: WaCore.Sample.Data.Repositories.BooksRepository.BooksRepository(WaCore.Sample.Data.LibraryDbContext)
+  nameWithType: BooksRepository.BooksRepository(LibraryDbContext)
+- uid: WaCore.Sample.Data.Repositories.BooksRepository.#ctor*
+  name: BooksRepository
+  href: api/WaCore.Sample.Data.Repositories.BooksRepository.html#WaCore_Sample_Data_Repositories_BooksRepository__ctor_
+  commentId: Overload:WaCore.Sample.Data.Repositories.BooksRepository.#ctor
+  fullName: WaCore.Sample.Data.Repositories.BooksRepository.BooksRepository
+  nameWithType: BooksRepository.BooksRepository
+- uid: WaCore.Sample.Data.Repositories.IBooksRepository
+  name: IBooksRepository
+  href: api/WaCore.Sample.Data.Repositories.IBooksRepository.html
+  commentId: T:WaCore.Sample.Data.Repositories.IBooksRepository
+  fullName: WaCore.Sample.Data.Repositories.IBooksRepository
+  nameWithType: IBooksRepository
+- uid: WaCore.Sample.Data.UnitOfWork
+  name: UnitOfWork
+  href: api/WaCore.Sample.Data.UnitOfWork.html
+  commentId: T:WaCore.Sample.Data.UnitOfWork
+  fullName: WaCore.Sample.Data.UnitOfWork
+  nameWithType: UnitOfWork
+- uid: WaCore.Sample.Data.UnitOfWork.#ctor(WaCore.Sample.Data.LibraryDbContext,System.IServiceProvider)
+  name: UnitOfWork(LibraryDbContext, IServiceProvider)
+  href: api/WaCore.Sample.Data.UnitOfWork.html#WaCore_Sample_Data_UnitOfWork__ctor_WaCore_Sample_Data_LibraryDbContext_System_IServiceProvider_
+  commentId: M:WaCore.Sample.Data.UnitOfWork.#ctor(WaCore.Sample.Data.LibraryDbContext,System.IServiceProvider)
+  fullName: WaCore.Sample.Data.UnitOfWork.UnitOfWork(WaCore.Sample.Data.LibraryDbContext, System.IServiceProvider)
+  nameWithType: UnitOfWork.UnitOfWork(LibraryDbContext, IServiceProvider)
+- uid: WaCore.Sample.Data.UnitOfWork.#ctor*
+  name: UnitOfWork
+  href: api/WaCore.Sample.Data.UnitOfWork.html#WaCore_Sample_Data_UnitOfWork__ctor_
+  commentId: Overload:WaCore.Sample.Data.UnitOfWork.#ctor
+  fullName: WaCore.Sample.Data.UnitOfWork.UnitOfWork
+  nameWithType: UnitOfWork.UnitOfWork
+- uid: WaCore.Sample.Data.UnitOfWork.BooksRepository
+  name: BooksRepository
+  href: api/WaCore.Sample.Data.UnitOfWork.html#WaCore_Sample_Data_UnitOfWork_BooksRepository
+  commentId: P:WaCore.Sample.Data.UnitOfWork.BooksRepository
+  fullName: WaCore.Sample.Data.UnitOfWork.BooksRepository
+  nameWithType: UnitOfWork.BooksRepository
+- uid: WaCore.Sample.Data.UnitOfWork.BooksRepository*
+  name: BooksRepository
+  href: api/WaCore.Sample.Data.UnitOfWork.html#WaCore_Sample_Data_UnitOfWork_BooksRepository_
+  commentId: Overload:WaCore.Sample.Data.UnitOfWork.BooksRepository
+  fullName: WaCore.Sample.Data.UnitOfWork.BooksRepository
+  nameWithType: UnitOfWork.BooksRepository
+- uid: WaCore.Sample.Entities
+  name: WaCore.Sample.Entities
+  href: api/WaCore.Sample.Entities.html
+  commentId: N:WaCore.Sample.Entities
+  fullName: WaCore.Sample.Entities
+  nameWithType: WaCore.Sample.Entities
+- uid: WaCore.Sample.Entities.Book
+  name: Book
+  href: api/WaCore.Sample.Entities.Book.html
+  commentId: T:WaCore.Sample.Entities.Book
+  fullName: WaCore.Sample.Entities.Book
+  nameWithType: Book
+- uid: WaCore.Sample.Entities.Book.Author
+  name: Author
+  href: api/WaCore.Sample.Entities.Book.html#WaCore_Sample_Entities_Book_Author
+  commentId: P:WaCore.Sample.Entities.Book.Author
+  fullName: WaCore.Sample.Entities.Book.Author
+  nameWithType: Book.Author
+- uid: WaCore.Sample.Entities.Book.Author*
+  name: Author
+  href: api/WaCore.Sample.Entities.Book.html#WaCore_Sample_Entities_Book_Author_
+  commentId: Overload:WaCore.Sample.Entities.Book.Author
+  fullName: WaCore.Sample.Entities.Book.Author
+  nameWithType: Book.Author
+- uid: WaCore.Sample.Entities.Book.Id
+  name: Id
+  href: api/WaCore.Sample.Entities.Book.html#WaCore_Sample_Entities_Book_Id
+  commentId: P:WaCore.Sample.Entities.Book.Id
+  fullName: WaCore.Sample.Entities.Book.Id
+  nameWithType: Book.Id
+- uid: WaCore.Sample.Entities.Book.Id*
+  name: Id
+  href: api/WaCore.Sample.Entities.Book.html#WaCore_Sample_Entities_Book_Id_
+  commentId: Overload:WaCore.Sample.Entities.Book.Id
+  fullName: WaCore.Sample.Entities.Book.Id
+  nameWithType: Book.Id
+- uid: WaCore.Sample.Entities.Book.Title
+  name: Title
+  href: api/WaCore.Sample.Entities.Book.html#WaCore_Sample_Entities_Book_Title
+  commentId: P:WaCore.Sample.Entities.Book.Title
+  fullName: WaCore.Sample.Entities.Book.Title
+  nameWithType: Book.Title
+- uid: WaCore.Sample.Entities.Book.Title*
+  name: Title
+  href: api/WaCore.Sample.Entities.Book.html#WaCore_Sample_Entities_Book_Title_
+  commentId: Overload:WaCore.Sample.Entities.Book.Title
+  fullName: WaCore.Sample.Entities.Book.Title
+  nameWithType: Book.Title
+- uid: WaCore.Sample.Program
+  name: Program
+  href: api/WaCore.Sample.Program.html
+  commentId: T:WaCore.Sample.Program
+  fullName: WaCore.Sample.Program
+  nameWithType: Program
+- uid: WaCore.Sample.Program.BuildWebHost(System.String[])
+  name: BuildWebHost(String[])
+  href: api/WaCore.Sample.Program.html#WaCore_Sample_Program_BuildWebHost_System_String___
+  commentId: M:WaCore.Sample.Program.BuildWebHost(System.String[])
+  name.vb: BuildWebHost(String())
+  fullName: WaCore.Sample.Program.BuildWebHost(System.String[])
+  fullName.vb: WaCore.Sample.Program.BuildWebHost(System.String())
+  nameWithType: Program.BuildWebHost(String[])
+  nameWithType.vb: Program.BuildWebHost(String())
+- uid: WaCore.Sample.Program.BuildWebHost*
+  name: BuildWebHost
+  href: api/WaCore.Sample.Program.html#WaCore_Sample_Program_BuildWebHost_
+  commentId: Overload:WaCore.Sample.Program.BuildWebHost
+  fullName: WaCore.Sample.Program.BuildWebHost
+  nameWithType: Program.BuildWebHost
+- uid: WaCore.Sample.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/WaCore.Sample.Program.html#WaCore_Sample_Program_Main_System_String___
+  commentId: M:WaCore.Sample.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: WaCore.Sample.Program.Main(System.String[])
+  fullName.vb: WaCore.Sample.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: WaCore.Sample.Program.Main*
+  name: Main
+  href: api/WaCore.Sample.Program.html#WaCore_Sample_Program_Main_
+  commentId: Overload:WaCore.Sample.Program.Main
+  fullName: WaCore.Sample.Program.Main
+  nameWithType: Program.Main
+- uid: WaCore.Sample.Startup
+  name: Startup
+  href: api/WaCore.Sample.Startup.html
+  commentId: T:WaCore.Sample.Startup
+  fullName: WaCore.Sample.Startup
+  nameWithType: Startup
+- uid: WaCore.Sample.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  name: Startup(IConfiguration)
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup__ctor_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:WaCore.Sample.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: WaCore.Sample.Startup.Startup(Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: Startup.Startup(IConfiguration)
+- uid: WaCore.Sample.Startup.#ctor*
+  name: Startup
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup__ctor_
+  commentId: Overload:WaCore.Sample.Startup.#ctor
+  fullName: WaCore.Sample.Startup.Startup
+  nameWithType: Startup.Startup
+- uid: WaCore.Sample.Startup.Configuration
+  name: Configuration
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup_Configuration
+  commentId: P:WaCore.Sample.Startup.Configuration
+  fullName: WaCore.Sample.Startup.Configuration
+  nameWithType: Startup.Configuration
+- uid: WaCore.Sample.Startup.Configuration*
+  name: Configuration
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup_Configuration_
+  commentId: Overload:WaCore.Sample.Startup.Configuration
+  fullName: WaCore.Sample.Startup.Configuration
+  nameWithType: Startup.Configuration
+- uid: WaCore.Sample.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,WaCore.Sample.Data.LibraryDbContext)
+  name: Configure(IApplicationBuilder, IHostingEnvironment, LibraryDbContext)
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IHostingEnvironment_WaCore_Sample_Data_LibraryDbContext_
+  commentId: M:WaCore.Sample.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,WaCore.Sample.Data.LibraryDbContext)
+  fullName: WaCore.Sample.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IHostingEnvironment, WaCore.Sample.Data.LibraryDbContext)
+  nameWithType: Startup.Configure(IApplicationBuilder, IHostingEnvironment, LibraryDbContext)
+- uid: WaCore.Sample.Startup.Configure*
+  name: Configure
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup_Configure_
+  commentId: Overload:WaCore.Sample.Startup.Configure
+  fullName: WaCore.Sample.Startup.Configure
+  nameWithType: Startup.Configure
+- uid: WaCore.Sample.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: ConfigureServices(IServiceCollection)
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:WaCore.Sample.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: WaCore.Sample.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: Startup.ConfigureServices(IServiceCollection)
+- uid: WaCore.Sample.Startup.ConfigureServices*
+  name: ConfigureServices
+  href: api/WaCore.Sample.Startup.html#WaCore_Sample_Startup_ConfigureServices_
+  commentId: Overload:WaCore.Sample.Startup.ConfigureServices
+  fullName: WaCore.Sample.Startup.ConfigureServices
+  nameWithType: Startup.ConfigureServices

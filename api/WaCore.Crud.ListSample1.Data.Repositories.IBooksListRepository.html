@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBooksListRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBooksListRepository
+   ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/index.html" title="Articles" class="">Articles</a>
+                  </li>
+                  <li class="active">
+                    <a href="../api/index.html" title="Api Documentation" class="active">Api Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Microsoft.Extensions.DependencyInjection.html" title="Microsoft.Extensions.DependencyInjection" class="">Microsoft.Extensions.DependencyInjection</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html" title="UnitOfWorkServiceCollectionExtensions" class="">UnitOfWorkServiceCollectionExtensions</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Contracts.Data.html" title="WaCore.Contracts.Data" class="">WaCore.Contracts.Data</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Contracts.Data.IWacTransaction.html" title="IWacTransaction" class="">IWacTransaction</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Contracts.Data.IWacUnitOfWork.html" title="IWacUnitOfWork" class="">IWacUnitOfWork</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Contracts.Data.Repositories.Base.html" title="WaCore.Contracts.Data.Repositories.Base" class="">WaCore.Contracts.Data.Repositories.Base</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html" title="IWacRepository&lt;TEntity&gt;" class="">IWacRepository&lt;TEntity&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Contracts.Data.html" title="WaCore.Crud.Contracts.Data" class="">WaCore.Crud.Contracts.Data</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html" title="IWacListDataRepository&lt;TEntity, TFilter&gt;" class="">IWacListDataRepository&lt;TEntity, TFilter&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Contracts.Dtos.html" title="WaCore.Crud.Contracts.Dtos" class="">WaCore.Crud.Contracts.Dtos</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Contracts.Dtos.IWacFilter.html" title="IWacFilter" class="">IWacFilter</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Contracts.Services.html" title="WaCore.Crud.Contracts.Services" class="">WaCore.Crud.Contracts.Services</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Contracts.Services.IWacListDataService-2.html" title="IWacListDataService&lt;TFilter, TDto&gt;" class="">IWacListDataService&lt;TFilter, TDto&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Contracts.Web.html" title="WaCore.Crud.Contracts.Web" class="">WaCore.Crud.Contracts.Web</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Contracts.Web.IWacListDataVm-2.html" title="IWacListDataVm&lt;TDto, TFilter&gt;" class="">IWacListDataVm&lt;TDto, TFilter&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Data.Ef.html" title="WaCore.Crud.Data.Ef" class="">WaCore.Crud.Data.Ef</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Data.Ef.WacListDataRepository-3.html" title="WacListDataRepository&lt;TEntity, TDbContext, TFilter&gt;" class="">WacListDataRepository&lt;TEntity, TDbContext, TFilter&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Dtos.Filters.html" title="WaCore.Crud.Dtos.Filters" class="">WaCore.Crud.Dtos.Filters</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Dtos.Filters.WacFilter.html" title="WacFilter" class="">WacFilter</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.html" title="WaCore.Crud.ListSample1" class="">WaCore.Crud.ListSample1</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Program.html" title="Program" class="">Program</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Startup.html" title="Startup" class="">Startup</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.Controllers.html" title="WaCore.Crud.ListSample1.Controllers" class="">WaCore.Crud.ListSample1.Controllers</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Controllers.BookListDataController.html" title="BookListDataController" class="">BookListDataController</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Controllers.HomeController.html" title="HomeController" class="">HomeController</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.Data.html" title="WaCore.Crud.ListSample1.Data" class="">WaCore.Crud.ListSample1.Data</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Data.DbInitializer.html" title="DbInitializer" class="">DbInitializer</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Data.IUnitOfWork.html" title="IUnitOfWork" class="">IUnitOfWork</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Data.LibraryDbContext.html" title="LibraryDbContext" class="">LibraryDbContext</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Data.UnitOfWork.html" title="UnitOfWork" class="">UnitOfWork</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.Data.Repositories.html" title="WaCore.Crud.ListSample1.Data.Repositories" class="">WaCore.Crud.ListSample1.Data.Repositories</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html" title="BookListRepository" class="">BookListRepository</a>
+                          </li>
+                          <li class="active">
+                            <a href="WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository.html" title="IBooksListRepository" class="active">IBooksListRepository</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.Dtos.html" title="WaCore.Crud.ListSample1.Dtos" class="">WaCore.Crud.ListSample1.Dtos</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Dtos.BookDto.html" title="BookDto" class="">BookDto</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.Entities.html" title="WaCore.Crud.ListSample1.Entities" class="">WaCore.Crud.ListSample1.Entities</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Entities.Book.html" title="Book" class="">Book</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.Services.html" title="WaCore.Crud.ListSample1.Services" class="">WaCore.Crud.ListSample1.Services</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Services.BookListDataService.html" title="BookListDataService" class="">BookListDataService</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.Services.IBookListDataService.html" title="IBookListDataService" class="">IBookListDataService</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.ListSample1.ViewModels.html" title="WaCore.Crud.ListSample1.ViewModels" class="">WaCore.Crud.ListSample1.ViewModels</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.ViewModels.BookFilter.html" title="BookFilter" class="">BookFilter</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.ListSample1.ViewModels.BookListVm.html" title="BookListVm" class="">BookListVm</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Services.html" title="WaCore.Crud.Services" class="">WaCore.Crud.Services</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Services.WacListDataService-3.html" title="WacListDataService&lt;TEntity, TFilter, TDto&gt;" class="">WacListDataService&lt;TEntity, TFilter, TDto&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Web.Controllers.html" title="WaCore.Crud.Web.Controllers" class="">WaCore.Crud.Web.Controllers</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Web.Controllers.WacListDataController-4.html" title="WacListDataController&lt;TEntity, TFilter, TDto, TListVm&gt;" class="">WacListDataController&lt;TEntity, TFilter, TDto, TListVm&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Web.ViewModels.html" title="WaCore.Crud.Web.ViewModels" class="">WaCore.Crud.Web.ViewModels</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Web.ViewModels.WacListDataVm-2.html" title="WacListDataVm&lt;TDto, TFilter&gt;" class="">WacListDataVm&lt;TDto, TFilter&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Data.Ef.html" title="WaCore.Data.Ef" class="">WaCore.Data.Ef</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Data.Ef.WacDbContextTransactionWrapper.html" title="WacDbContextTransactionWrapper" class="">WacDbContextTransactionWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Data.Ef.WacEfUnitOfWork-1.html" title="WacEfUnitOfWork&lt;TDbContext&gt;" class="">WacEfUnitOfWork&lt;TDbContext&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Data.Ef.DependencyInjection.html" title="WaCore.Data.Ef.DependencyInjection" class="">WaCore.Data.Ef.DependencyInjection</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html" title="RepositoryConfiguration&lt;TDbContext, TUnitOfWorkService&gt;" class="">RepositoryConfiguration&lt;TDbContext, TUnitOfWorkService&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Data.Repositories.Base.html" title="WaCore.Data.Repositories.Base" class="">WaCore.Data.Repositories.Base</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Data.Repositories.Base.WacRepository-2.html" title="WacRepository&lt;TEntity, TDbContext&gt;" class="">WacRepository&lt;TEntity, TDbContext&gt;</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Sample.html" title="WaCore.Sample" class="">WaCore.Sample</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Sample.Program.html" title="Program" class="">Program</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Sample.Startup.html" title="Startup" class="">Startup</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Sample.Controllers.html" title="WaCore.Sample.Controllers" class="">WaCore.Sample.Controllers</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Sample.Controllers.BooksController.html" title="BooksController" class="">BooksController</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Sample.Data.html" title="WaCore.Sample.Data" class="">WaCore.Sample.Data</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Sample.Data.DbInitializer.html" title="DbInitializer" class="">DbInitializer</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Sample.Data.IUnitOfWork.html" title="IUnitOfWork" class="">IUnitOfWork</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Sample.Data.LibraryDbContext.html" title="LibraryDbContext" class="">LibraryDbContext</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Sample.Data.UnitOfWork.html" title="UnitOfWork" class="">UnitOfWork</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Sample.Data.Repositories.html" title="WaCore.Sample.Data.Repositories" class="">WaCore.Sample.Data.Repositories</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Sample.Data.Repositories.BooksRepository.html" title="BooksRepository" class="">BooksRepository</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Sample.Data.Repositories.IBooksRepository.html" title="IBooksRepository" class="">IBooksRepository</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="WaCore.Sample.Entities.html" title="WaCore.Sample.Entities" class="">WaCore.Sample.Entities</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Sample.Entities.Book.html" title="Book" class="">Book</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository">
+  
+  
+  <h1 id="WaCore_Crud_ListSample1_Data_Repositories_IBooksListRepository" data-uid="WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository" class="text-break">Interface IBooksListRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetAll__1_">IWacListDataRepository&lt;Book, BookFilter&gt;.GetAll(BookFilter)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WaCore.Crud.ListSample1.Data.Repositories.html">WaCore.Crud.ListSample1.Data.Repositories</a></h6>
+  <h6><strong>Assembly</strong>: WaCore.Crud.ListSample1.dll</h6>
+  <h5 id="WaCore_Crud_ListSample1_Data_Repositories_IBooksListRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBooksListRepository : IWacListDataRepository&lt;Book, BookFilter&gt;</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/HerbertBodner/webapp-core/new/ci_build_docu/apiSpec/new?filename=WaCore_Crud_ListSample1_Data_Repositories_IBooksListRepository.md&amp;value=---%0Auid%3A%20WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/HerbertBodner/webapp-core/blob/ci_build_docu/src/WaCore.Crud.ListSample1/Data/Repositories/BookListRepository.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
