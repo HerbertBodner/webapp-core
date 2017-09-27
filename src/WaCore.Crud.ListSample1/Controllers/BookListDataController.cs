@@ -6,7 +6,7 @@ using WaCore.Crud.Web.Controllers;
 
 namespace WaCore.Crud.ListSample1.Controllers
 {
-    public class BookListDataController : WacListDataController<Book, BookFilter, BookDto, BookListVm>
+    public class BookListDataController : WacListDataController<BookListVm, BookDto, BookFilter>
     {
         public BookListDataController(IBookListDataService booksService) : base(booksService)
         {

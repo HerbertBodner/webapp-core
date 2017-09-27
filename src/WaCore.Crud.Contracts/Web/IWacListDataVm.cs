@@ -9,7 +9,7 @@ namespace WaCore.Crud.Contracts.Web
         where TDto : class
         where TFilter : IWacFilter
     {
-        List<TDto> DtoList { get; set; }
+        IList<TDto> DtoList { get; set; }
 
         TFilter Filter { get; set; }
     }

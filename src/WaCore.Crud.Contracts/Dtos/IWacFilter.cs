@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace WaCore.Crud.Contracts.Dtos
@@ -10,8 +11,9 @@ namespace WaCore.Crud.Contracts.Dtos
 
         int? Limit { get; set; }
 
-        string SortField { get; set; }
+        string SortBy { get; set; }
 
-        bool SortOrderIsAscending { get; set; }
+        string GetDbSortField(string dtoField);
+        
     }
 }

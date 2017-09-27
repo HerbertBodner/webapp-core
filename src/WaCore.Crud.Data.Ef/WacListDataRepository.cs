@@ -1,23 +1,78 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
+using WaCore.Contracts.Data;
 using WaCore.Crud.Contracts.Data;
+using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Dtos.Filters;
 using WaCore.Data;
 using WaCore.Data.Repositories.Base;
+using WaCore.Crud.Utils;
+using System;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace WaCore.Crud.Data.Ef
 {
     public abstract class WacListDataRepository<TEntity, TDbContext, TFilter> : WacRepository<TEntity, TDbContext>, IWacListDataRepository<TEntity, TFilter>
         where TEntity : class
         where TDbContext : DbContext
-        where TFilter : WacFilter
+        where TFilter : IWacFilter
     {
         public WacListDataRepository(TDbContext dbContext) : base(dbContext)
         {
         }
 
-        public abstract List<TEntity> GetAll(TFilter filter);
+        public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
 
-        //Todo implement generic paging/sorting methods
+            var queryPaginated = ApplySortingAndPagination(q, filter);
+
+            return await queryPaginated.ToListAsync();
+        }
+
+        public async Task<int> GetTotalCountAsync(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
+
+            return await q.CountAsync();
+        }
+
+
+        protected abstract IQueryable<TEntity> ApplyFilter(IQueryable<TEntity> query, TFilter filter);
+
+
+        protected IQueryable<TEntity> ApplySortingAndPagination(IQueryable<TEntity> entityList, TFilter filter)
+        {
+            if ((!string.IsNullOrEmpty(filter.SortBy)))
+            {
+                var orderList = SortBySplitter.SplitSortByString(filter.SortBy);
+
+                foreach (var orderItem in orderList)
+                {
+                    //TODO sorting
+                    //filter.GetDbSortField(orderItem.FieldName);
+
+                    //if (typeof(TEntity).GetProperty(filter.SortBy) != null)
+                    //{
+                    //    entityList = entityList.OrderByField(filter.SortBy, filter.SortOrderIsAscending);
+                    //}
+                }
+            }
+
+            if (filter.Offset > 0)
+            {
+                entityList = entityList.Skip(filter.Offset);
+            }
+
+            if (filter.Limit != null)
+            {
+                entityList = entityList.Take(filter.Limit.Value);
+            }
+
+            return entityList;
+        }
+
     }
 }
