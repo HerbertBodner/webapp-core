@@ -67,5 +67,9 @@ if($Deploy){
 	} 
 	else { 
 		write-host "`nNo changes to documentation" -ForegroundColor Yellow
-    }
+	}
+
+	# Remove git credentials file (for local execution of buildDocu.ps)
+	Remove-Item "$env:USERPROFILE\.git-credentials"
+
 }
