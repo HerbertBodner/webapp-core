@@ -1,5 +1,6 @@
 version: '{build}'
 image: Visual Studio 2017  
+skip_branch_with_pr: true
 pull_requests:  
   do_not_increment_build_number: false
 nuget:  
@@ -8,7 +9,7 @@ build_script:
 - ps: .\Build.ps1
 after_build:
   - ps: |
-        if(-Not $env:APPVEYOR_PULL_REQUEST_TITLE)
+        If (($env:APPVEYOR_REPO_BRANCH -eq "master") -and (!$env:APPVEYOR_PULL_REQUEST_NUMBER)) 
         {
           choco install nuget.commandline -y
           .\docs\buildDocu.ps1 -Deploy
