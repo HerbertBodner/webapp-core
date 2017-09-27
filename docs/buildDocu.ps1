@@ -33,10 +33,10 @@ if($Deploy){
 	# Configuring git credentials
 	Write-Host "`n[Configuring git credentials]" -ForegroundColor Green
 	& git config --global credential.helper store
-	Add-Content "$env:USERPROFILE\.git-credentials" "https://$git_access_token:x-oauth-basic@github.com`n"
+	Add-Content "$env:USERPROFILE\.git-credentials" "https://$($git_access_token):x-oauth-basic@github.com`n"
 
-	& git config --global user.email "$git_email"
-	& git config --global user.name "$git_user"
+	& git config --global user.email "$($git_email)"
+	& git config --global user.name "$($git_user)"
 
 	# Checkout gh-pages
 	Write-Host "`n[Checkout $target_branch]" -ForegroundColor Green
