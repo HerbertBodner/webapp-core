@@ -14,16 +14,16 @@ using WaCore.Crud.Services;
 
 namespace WaCore.Crud.ListSample1.Services
 {
-    public interface ICarService : IWacCrudService<Car, CarFilter, CarDto, NewCarDto>
+    public interface ICarService : IWacCrudService<Car, CarFilter, CarDto, CarDto>
     { }
 
-    public class CarService : WacCrudService<Car, CarFilter, CarDto, NewCarDto>, ICarService
+    public class CarService : WacCrudService<Car, CarFilter, CarDto, CarDto>, ICarService
     {
         public CarService(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
 
-        public override void MapDtoToEntity(NewCarDto dto, Car entityToCreateOrUpdate, Operation operation)
+        public override void MapDtoToEntity(CarDto dto, Car entityToCreateOrUpdate, Operation operation)
         {
             entityToCreateOrUpdate.Model = dto.Model;
             entityToCreateOrUpdate.Brand = dto.Brand;

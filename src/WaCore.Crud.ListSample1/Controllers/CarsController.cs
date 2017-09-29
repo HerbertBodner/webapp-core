@@ -43,7 +43,7 @@ namespace WaCore.Crud.ListSample1.Controllers
             }
             try
             {
-                var newDto = await _service.CreateAsync(vm.NewDto);
+                var newDto = await _service.CreateAsync(vm.Dto);
                 vm.Dto = newDto;
             }
             catch (Exception ex)
@@ -78,7 +78,7 @@ namespace WaCore.Crud.ListSample1.Controllers
             }
             try
             {
-                await _service.UpdateAsync(id, vm.NewDto);
+                await _service.UpdateAsync(id, vm.Dto);
 
                 SetSuccessMessage("Changes saved successful!");
 

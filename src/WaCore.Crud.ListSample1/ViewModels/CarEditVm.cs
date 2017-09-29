@@ -9,6 +9,5 @@ namespace WaCore.Crud.ListSample1.ViewModels
     public class CarEditVm
     {
         public CarDto Dto { get; set; }
-        public NewCarDto NewDto { get; set; }
     }
 }
