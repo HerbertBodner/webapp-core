@@ -1,0 +1,33 @@
+﻿{
+    "WacSecureHeadersMiddlewareConfiguration": {
+        "HstsConfiguration": {
+            "MaxAge": 42,
+            "IncludeSubDomains": "true"
+        },
+        "HPKPConfiguration": {
+            "PinSha256": [
+                "cUPcTAZWKaASuYWhhneDttWpY3oBAkE3h2+soZS7sWs=",
+                "M8HztCzM3elUxkcjR2S5P4hhyBNf6lHkmjAHKhpGPWE="
+            ],
+            "MaxAge": 5184000,
+            "IncludeSubDomains": "true",
+            "ReportUri": "https://example.com"
+        },
+        "XFrameOptionsConfiguration": {
+            "OptionValue": "allowfrom",
+            "AllowFromDomain": "wacore.com"
+        },
+        "XssConfiguration": {
+            "XssSetting": "oneReport",
+            "ReportUri": "https://example.com"
+        },
+        "ContentSecurityPolicyConfiguration": {
+            "StyleSrc": [ "css.example.com", "css.example.net" ],
+            "BlockAllMixedContent": true,
+            "UpgradeInsecureRequests": true
+        },
+        "XContentTypeOptionsConfiguration": {
+            "OptionValue": "nosniff;"
+        }
+    }
+}

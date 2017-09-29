@@ -27,7 +27,7 @@ namespace WaCore.Crud.Services
             {
                 var entity = MapDtoToNewOrUpdatedEntity(Operation.Create, null, dto);
 
-                repo.Add(entity);
+                Repo.Add(entity);
                 UnitOfWork.SaveChanges();
                 transaction.Commit();
 
@@ -41,7 +41,7 @@ namespace WaCore.Crud.Services
             {
                 var entity = MapDtoToNewOrUpdatedEntity(Operation.Create, null, dto);
 
-                repo.Add(entity);
+                Repo.Add(entity);
                 await UnitOfWork.SaveChangesAsync();
                 transaction.Commit();
 
@@ -55,14 +55,14 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = UnitOfWork.BeginTransaction())
             {
-                var entity = repo.Get(id);
+                var entity = Repo.Get(id);
                 if (entity == null)
                 {
                     throw new ResourceNotFoundException(id);
                 }
 
                 var updatedEntity = MapDtoToNewOrUpdatedEntity(Operation.Update, entity, dto);
-                repo.Update(updatedEntity);
+                Repo.Update(updatedEntity);
                 UnitOfWork.SaveChanges();
                 transaction.Commit();
                 return MapEntityToDto(updatedEntity);
@@ -73,14 +73,14 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = await UnitOfWork.BeginTransactionAsync())
             {
-                var entity = await repo.GetAsync(id);
+                var entity = await Repo.GetAsync(id);
                 if (entity == null)
                 {
                     throw new ResourceNotFoundException(id);
                 }
 
                 var updatedEntity = MapDtoToNewOrUpdatedEntity(Operation.Update, entity, dto);
-                repo.Update(updatedEntity);
+                Repo.Update(updatedEntity);
                 await UnitOfWork.SaveChangesAsync();
                 transaction.Commit();
                 return MapEntityToDto(updatedEntity);
@@ -92,13 +92,13 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = UnitOfWork.BeginTransaction())
             {
-                var entity = repo.Get(id);
+                var entity = Repo.Get(id);
                 if (entity == null)
                 {
                     throw new ResourceNotFoundException(id);
                 }
 
-                repo.Remove(entity);
+                Repo.Remove(entity);
                 UnitOfWork.SaveChanges();
                 transaction.Commit();
             }
@@ -108,13 +108,13 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = await UnitOfWork.BeginTransactionAsync())
             {
-                var entity = await repo.GetAsync(id);
+                var entity = await Repo.GetAsync(id);
                 if (entity == null)
                 {
                     throw new ResourceNotFoundException(id);
                 }
 
-                repo.Remove(entity);
+                Repo.Remove(entity);
                 await UnitOfWork.SaveChangesAsync();
                 transaction.Commit();
             }

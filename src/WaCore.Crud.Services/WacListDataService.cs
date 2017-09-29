@@ -14,16 +14,16 @@ namespace WaCore.Crud.Services
         where TFilter : IWacFilter
         where TEntity : class
     {
-        protected readonly IWacListDataRepository<TEntity, TFilter> repo;
+        protected readonly IWacListDataRepository<TEntity, TFilter> Repo;
 
         public WacListDataService(IWacUnitOfWork unitOfWork)
         {
-            repo = unitOfWork.GetRepository<IWacListDataRepository<TEntity, TFilter>>();
+            Repo = unitOfWork.GetRepository<IWacListDataRepository<TEntity, TFilter>>();
         }
 
         public TDto Get(object id)
         {
-            var entity = repo.Get(id);
+            var entity = Repo.Get(id);
             if (entity == null)
             {
                 throw new ResourceNotFoundException(id);
@@ -33,7 +33,7 @@ namespace WaCore.Crud.Services
 
         public async Task<TDto> GetAsync(object id)
         {
-            var entity = await repo.GetAsync(id);
+            var entity = await Repo.GetAsync(id);
             if (entity == null)
             {
                 throw new ResourceNotFoundException(id);
@@ -43,7 +43,7 @@ namespace WaCore.Crud.Services
 
         public IPagedList<TDto> GetAll(TFilter filter)
         {
-            var entityList = repo.GetAll(filter);
+            var entityList = Repo.GetAll(filter);
 
             int totalCount;
 
@@ -54,7 +54,7 @@ namespace WaCore.Crud.Services
             }
             else
             {
-                totalCount = repo.GetTotalCount(filter);
+                totalCount = Repo.GetTotalCount(filter);
             }
 
             var dtoList = new List<TDto>();
@@ -67,7 +67,7 @@ namespace WaCore.Crud.Services
 
         public async Task<IPagedList<TDto>> GetAllAsync(TFilter filter)
         {
-            var entityList = await repo.GetAllAsync(filter);
+            var entityList = await Repo.GetAllAsync(filter);
 
             int totalCount;
 
@@ -78,7 +78,7 @@ namespace WaCore.Crud.Services
             }
             else
             {
-                totalCount = await repo.GetTotalCountAsync(filter);
+                totalCount = await Repo.GetTotalCountAsync(filter);
             }
 
             var dtoList = new List<TDto>();
