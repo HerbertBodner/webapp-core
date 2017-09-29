@@ -4,7 +4,7 @@ using WaCore.Crud.Contracts.Dtos;
 namespace WaCore.Crud.Contracts.Services
 {
     public interface IWacCrudService<TEntity, TFilter, TDto, TNewDto> : IWacListDataService<TFilter, TDto>
-        where TEntity : class
+        where TEntity : class, new()
         where TFilter : IWacFilter
     {
         TDto Create(TNewDto dto);
@@ -16,7 +16,7 @@ namespace WaCore.Crud.Contracts.Services
         void Delete(object id);
         Task DeleteAsync(object id);
 
-        TEntity MapDtoToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
+        void MapDtoToEntity(TNewDto dto, TEntity entityToCreateOrUpdate, Operation operation);
     }
 
     public enum Operation

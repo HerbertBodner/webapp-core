@@ -12,7 +12,7 @@ namespace WaCore.Crud.Services
 {
     public abstract class WacCrudService<TEntity, TFilter, TDto, TNewDto> : WacListDataService<TEntity, TFilter, TDto>, IWacCrudService<TEntity, TFilter, TDto, TNewDto> 
         where TFilter : IWacFilter
-        where TEntity : class
+        where TEntity : class, new()
     {
         protected IWacUnitOfWork UnitOfWork;
 
@@ -25,7 +25,8 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = UnitOfWork.BeginTransaction())
             {
-                var entity = MapDtoToNewOrUpdatedEntity(Operation.Create, null, dto);
+                var entity = new TEntity();
+                MapDtoToEntity(dto, entity, Operation.Create);
 
                 Repo.Add(entity);
                 UnitOfWork.SaveChanges();
@@ -39,7 +40,8 @@ namespace WaCore.Crud.Services
         {
             using (var transaction = await UnitOfWork.BeginTransactionAsync())
             {
-                var entity = MapDtoToNewOrUpdatedEntity(Operation.Create, null, dto);
+                var entity = new TEntity();
+                MapDtoToEntity(dto, entity, Operation.Create);
 
                 Repo.Add(entity);
                 await UnitOfWork.SaveChangesAsync();
@@ -61,11 +63,11 @@ namespace WaCore.Crud.Services
                     throw new ResourceNotFoundException(id);
                 }
 
-                var updatedEntity = MapDtoToNewOrUpdatedEntity(Operation.Update, entity, dto);
-                Repo.Update(updatedEntity);
+                MapDtoToEntity(dto, entity, Operation.Update);
+                Repo.Update(entity);
                 UnitOfWork.SaveChanges();
                 transaction.Commit();
-                return MapEntityToDto(updatedEntity);
+                return MapEntityToDto(entity);
             }
         }
 
@@ -79,11 +81,11 @@ namespace WaCore.Crud.Services
                     throw new ResourceNotFoundException(id);
                 }
 
-                var updatedEntity = MapDtoToNewOrUpdatedEntity(Operation.Update, entity, dto);
-                Repo.Update(updatedEntity);
+                MapDtoToEntity(dto, entity, Operation.Update);
+                Repo.Update(entity);
                 await UnitOfWork.SaveChangesAsync();
                 transaction.Commit();
-                return MapEntityToDto(updatedEntity);
+                return MapEntityToDto(entity);
             }
         }
 
@@ -120,7 +122,7 @@ namespace WaCore.Crud.Services
             }
         }
 
-        public abstract TEntity MapDtoToNewOrUpdatedEntity(Operation operation, TEntity entityToCreateOrUpdate, TNewDto dto);
+        public abstract void MapDtoToEntity(TNewDto dto, TEntity entityToCreateOrUpdate, Operation operation);
         
     }
 }

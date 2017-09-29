@@ -13,7 +13,7 @@ namespace WaCore.Crud.Web.Controllers
         where TDto : class
         where TEditVm : IWacEditVm<TDto, TNewDto>, new()
         where TNewDto : class, new()
-        where TEntity : class
+        where TEntity : class, new()
     {
         protected IWacCrudService<TEntity, TFilter, TDto, TNewDto> CrudService;
 

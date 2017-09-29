@@ -23,15 +23,10 @@ namespace WaCore.Crud.ListSample1.Services
         {
         }
 
-        public override Car MapDtoToNewOrUpdatedEntity(Operation operation, Car entityToCreateOrUpdate, NewCarDto dto)
+        public override void MapDtoToEntity(NewCarDto dto, Car entityToCreateOrUpdate, Operation operation)
         {
-            if (operation == Operation.Create)
-            {
-                entityToCreateOrUpdate = new Car();
-            }
             entityToCreateOrUpdate.Model = dto.Model;
             entityToCreateOrUpdate.Brand = dto.Brand;
-            return entityToCreateOrUpdate;
         }
 
         protected override CarDto MapEntityToDto(Car entity)
