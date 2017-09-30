@@ -14,7 +14,7 @@
           "src": ".."
         }
       ],
-      "dest": "docs/api"
+      "dest": "api"
     }
   ],
   "build": {
