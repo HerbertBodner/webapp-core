@@ -14,7 +14,7 @@ namespace WaCore.Crud.UnitTests.Utils
             public string StringProperty { get; set; }
             public string StringField;
             public int IntProperty { get; set; }
-            public int IntField { get; set; }
+            public int IntField;
             public TestDto RelatedDto { get; set; }
         }
 
