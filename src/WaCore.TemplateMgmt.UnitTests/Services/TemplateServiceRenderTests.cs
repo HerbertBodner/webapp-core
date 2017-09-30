@@ -9,7 +9,7 @@ using WaCore.TemplateMgmt.Engine.Stubble;
 namespace WaCore.TemplateMgmt.UnitTests
 {
     [TestClass]
-    public class TemplateServiceTests
+    public class TemplateServiceRenderTests
     {
         [TestMethod]
         public void RenderWithSimpleObjectReturnsCorrectString()

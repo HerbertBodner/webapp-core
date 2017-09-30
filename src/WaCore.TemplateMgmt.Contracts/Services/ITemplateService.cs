@@ -20,5 +20,9 @@ namespace WaCore.TemplateMgmt.Contracts.Services
 
         string Render(string templateContent, object model);
         Task<string> RenderAsync(string templateContent, object model);
+
+        string GetJsonFromType(Type modeltype, bool formattingIndented = true, int maxHierarchyDepth = 5);
+
+        string RenderWithJsonInput<TModel>(string templateContent, string jsonObject);
     }
 }

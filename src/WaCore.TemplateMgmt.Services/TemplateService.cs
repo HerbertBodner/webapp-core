@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using Newtonsoft.Json;
+using System;
 using System.Threading.Tasks;
 using WaCore.Contracts.Data;
 using WaCore.Crud.Contracts.Dtos;
@@ -61,6 +59,21 @@ namespace WaCore.TemplateMgmt.Services
         public async Task<string> RenderAsync(string templateContent, object model)
         {
             return await Engine.RenderAsync(templateContent, model);
+        }
+
+
+        public string GetJsonFromType(Type modeltype, bool formattingIndented = true, int maxHierarchyDepth = 5)
+        {
+            var instance = InstanceCreatorHelper.CreateInstanceRecursively(modeltype, maxHierarchyDepth);
+
+            return JsonConvert.SerializeObject(instance, formattingIndented ? Formatting.Indented : Formatting.None);
+        }
+
+        
+        public string RenderWithJsonInput<TModel>(string templateContent, string jsonObject)
+        {
+            var model = JsonConvert.DeserializeObject<TModel>(jsonObject);
+            return Render(templateContent, model);
         }
     }
 }
