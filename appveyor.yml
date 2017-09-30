@@ -44,8 +44,8 @@ after_build:
           git add -A 2>&1
           
           # Show changes
-          Write-host "`n[git -C docs/_site add -A]" -ForegroundColor Green
-          git -C docs/_site add -A
+          Write-host "`n[git status]" -ForegroundColor Green
+          git status
           
           # Committing changes
           Write-host "`n[Committing changes]" -ForegroundColor Green
