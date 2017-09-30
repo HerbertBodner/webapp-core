@@ -79,7 +79,7 @@ Push-Location docs/_site
 
     $status = git status --porcelain
 
-    if ([string]::IsNullOrEmpty($status)) {  
+    if (![string]::IsNullOrEmpty($status)) {  
           
         # Committing changes
         Write-host "`n[Committing changes]" -ForegroundColor Green
