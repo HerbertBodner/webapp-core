@@ -14,43 +14,46 @@ build_script:
 - ps: .\Build.ps1
 after_build:
   - ps: |
-        choco install nuget.commandline -y
-        .\docs\buildDocu.ps1
-
-        if ($lastexitcode -ne 0){
-          throw [System.Exception] "docfx build failed with exit code $lastexitcode."
+        If (($env:APPVEYOR_REPO_BRANCH -eq "docu"))
+        {
+          choco install nuget.commandline -y
+          .\docs\buildDocu.ps1
+          
+          if ($lastexitcode -ne 0){
+            throw [System.Exception] "docfx build failed with exit code $lastexitcode."
+          }
+          
+          # Configuring git credentials
+          Write-Host "`n[Configuring git credentials]" -ForegroundColor Green
+          git config --global credential.helper store
+          Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:git_access_token):x-oauth-basic@github.com`n"
+          git config --global user.email $env:git_email
+          git config --global user.name $env:git_user
+          
+          # Checkout gh-pages to folder origin_site
+          Write-Host "`n[Checkout gh-pages]" -ForegroundColor Green
+          git clone --quiet --no-checkout https://github.com/HerbertBodner/webapp-core.git -b gh-pages origin_site
+          
+          # Copy origin_site/.git to docs/_site
+          Write-Host "`n[Copy origin_site/.git to docs/_site]" -ForegroundColor Green
+          Copy-Item origin_site/.git docs/_site -recurse
+          
+          # Add changes
+          Write-Host "`n[Add changes]" -ForegroundColor Green
+          CD docs/_site
+          git add -A 2>&1
+          
+          # Show changes
+          Write-host "`n[git -C docs/_site add -A]" -ForegroundColor Green
+          git -C docs/_site add -A
+          
+          # Committing changes
+          Write-host "`n[Committing changes]" -ForegroundColor Green
+          git commit -m "CI Updates" -q
+          git push origin gh-pages -q
+          cd ..
+          cd ..
         }
-        
-        # Configuring git credentials
-	      Write-Host "`n[Configuring git credentials]" -ForegroundColor Green
-        git config --global credential.helper store
-        Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:git_access_token):x-oauth-basic@github.com`n"
-        git config --global user.email $env:git_email
-        git config --global user.name $env:git_user
-        
-        # Checkout gh-pages to folder origin_site
-	      Write-Host "`n[Checkout gh-pages]" -ForegroundColor Green
-        git clone --quiet --no-checkout https://github.com/HerbertBodner/webapp-core.git -b gh-pages origin_site
-        
-        # Copy origin_site/.git to docs/_site
-	      Write-Host "`n[Copy origin_site/.git to docs/_site]" -ForegroundColor Green
-        Copy-Item origin_site/.git docs/_site -recurse
-        
-        # Add changes
-	      Write-Host "`n[Add changes]" -ForegroundColor Green
-        CD docs/_site
-        git add -A 2>&1
-
-        # Show changes
-		    Write-host "`n[git -C docs/_site add -A]" -ForegroundColor Green
-		    git -C docs/_site add -A
-        
-        # Committing changes
-		    Write-host "`n[Committing changes]" -ForegroundColor Green
-        git commit -m "CI Updates" -q
-        git push origin gh-pages -q
-        cd ..
-        cd ..
 test:
   assemblies:
     - '**\*test*.dll'
