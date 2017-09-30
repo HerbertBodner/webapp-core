@@ -12,11 +12,8 @@ build_script:
 - ps: .\Build.ps1
 after_build:
   - ps: |
-        If ((!$env:APPVEYOR_PULL_REQUEST_NUMBER)) 
-        {
-          choco install nuget.commandline -y
-          .\docs\buildDocu.ps1 -Deploy
-        }
+        choco install nuget.commandline -y
+        .\docs\buildDocu.ps1 -Deploy
 test:
   assemblies:
     - '**\*test*.dll'
