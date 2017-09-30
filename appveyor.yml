@@ -26,4 +26,8 @@ deploy:
     branch: master
     appveyor_repo_tag: true
 on_success:
-- ps: .\docs\buildDocu.ps1 -deploy $env:git_email $env:git_user $env:git_access_token
+  - ps: |
+        If (($env:APPVEYOR_REPO_BRANCH -eq "docu"))
+        {
+          .\docs\buildDocu.ps1 -deploy $env:git_email $env:git_user $env:git_access_token
+        }
