@@ -7,6 +7,7 @@ uid: UnitOfWork_Module
 * While using the Repository pattern
 * Using Entity Framework Core 2.0
 
+test123
 
 ## 2. Features
 * UoW is responsible for creating repositories
