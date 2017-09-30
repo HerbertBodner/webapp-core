@@ -1,81 +1,144 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WaCore.Crud.Utils.Sorting;
-using Xunit;
 
 namespace WaCore.Crud.UnitTests.Utils
 {
+    [TestClass]
     public class SortBySplitterTests
     {
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenNoLeadingPlusOrMinusReturnsOneCorrectOrderItem()
         {
-            Validate("myField", 1, OrderItem.OrderBy.Ascending, "myField");
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 1,
+                ExpectedFieldName = "myField",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("myField", expected);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenLeadingPlusReturnsOneCorrectOrderItem()
         {
-            Validate("+myField", 1, OrderItem.OrderBy.Ascending, "myField");
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 1,
+                ExpectedFieldName = "myField",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("+myField", expected);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenLeadingMinusReturnsOneCorrectOrderItem()
         {
-            Validate("-myField", 1, OrderItem.OrderBy.Descending, "myField");
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 1,
+                ExpectedFieldName = "myField",
+                ExpectedOrderBy = OrderItem.OrderBy.Descending
+            };
+            Validate("-myField", expected);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsFirstCorrectOrderItem()
         {
-            Validate("myField,+Field2", 2, OrderItem.OrderBy.Ascending, "myField", 0);
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "myField",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("myField,+Field2", expected, 0);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenTwoFieldsAndLeadingPlusReturnsFirstCorrectOrderItem()
         {
-            Validate("+myField,+Field2", 2, OrderItem.OrderBy.Ascending, "myField", 0);
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "myField",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("+myField,+Field2", expected, 0);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsFirstCorrectOrderItem()
         {
-            Validate("-myField,+Field2", 2, OrderItem.OrderBy.Descending, "myField", 0);
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "myField",
+                ExpectedOrderBy = OrderItem.OrderBy.Descending
+            };
+            Validate("-myField,+Field2", expected, 0);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsSecondCorrectOrderItem()
         {
-            Validate("myField,+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "Field2",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("myField,+Field2", expected, 1);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenTwoFieldsAndLeadingPlusReturnsSecondCorrectOrderItem()
         {
-            Validate("+myField,+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "Field2",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("+myField,+Field2", expected, 1);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsSecondtCorrectOrderItem()
         {
-            Validate("-myField,+Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            var expected = new SortingValidation {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "Field2",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("-myField,+Field2", expected, 1);
         }
 
-        [Fact]
+        [TestMethod]
         public void SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem()
         {
-            Validate("myField,Field2", 2, OrderItem.OrderBy.Ascending, "Field2", 1);
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "Field2",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("myField,Field2", expected, 1);
         }
 
-
-        private void Validate(string inputString, int expectedFieldCount, OrderItem.OrderBy expectedOrderBy, string expectedFieldName, int itemNrToValidate = 0)
+        private void Validate(string inputString, SortingValidation sortingVal, int itemNrToValidate = 0)
         {
             var list = SortBySplitter.SplitSortByString(inputString);
 
-            Assert.Equal(expectedFieldCount, list.Count);
-            Assert.Equal(expectedOrderBy, list[itemNrToValidate].OrderDirection);
-            Assert.Equal(expectedFieldName, list[itemNrToValidate].FieldName);
+            Assert.AreEqual(sortingVal.ExpectedFieldCount, list.Count);
+            Assert.AreEqual(sortingVal.ExpectedFieldName, list[itemNrToValidate].FieldName);
+            Assert.AreEqual(sortingVal.ExpectedOrderBy, list[itemNrToValidate].OrderDirection);
         }
+    }
+
+    public class SortingValidation
+    {
+        public int ExpectedFieldCount { get; set; }
+        public string ExpectedFieldName { get; set; }
+        public OrderItem.OrderBy ExpectedOrderBy { get; set; }
     }
 }
