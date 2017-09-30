@@ -1,5 +1,6 @@
 Param(
-	[string]$git_email,
+	[Switch]$deploy,
+    [string]$git_email,
     [string]$git_user,
     [string]$git_access_token
 )
@@ -17,8 +18,6 @@ function Exec
         throw ("Exec: " + $errorMessage)
     }
 }
-$git_user = "CiBuildDocu"
-$git_email = "CiBuildDocu@example.comgi"
 
 
 $docfxVersion = "2.24.0"
@@ -49,6 +48,9 @@ Write-Host "`n[Build our docs]" -ForegroundColor Green
 Exec { & .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json }
 
 
+if(!$deploy){
+    return
+}
 
 # Checkout gh-pages to folder origin_site
 Write-Host "`n[Checkout gh-pages]" -ForegroundColor Green
@@ -85,7 +87,7 @@ Push-Location docs/_site
         Write-host "`n[Committing changes]" -ForegroundColor Green
         Exec { & git commit -m "CI Updates" -q }
         Exec { & git push https://$($git_access_token):x-oauth-basic@github.com/HerbertBodner/webapp-core.git gh-pages -q }
-    }
+     }
     else {
         Write-host "`n[No changes to commit]" -ForegroundColor Green
     }
