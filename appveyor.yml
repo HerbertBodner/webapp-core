@@ -1,3 +1,8 @@
+environment:
+  git_user: "CiBuildDocu"
+  git_email: "CiBuildDocu@example.com"
+  git_access_token:
+    secure: /OB1V/jwz6+VVu62c1k3dycubqHbRbYb/P/lieXf54NjvG5jQSOTVAjIOueVbgMR
 version: '{build}'
 image: Visual Studio 2017  
 pull_requests:  
@@ -20,3 +25,5 @@ deploy:
   on:
     branch: master
     appveyor_repo_tag: true
+on_success:
+- ps: .\docs\buildDocu.ps1 $env:git_email $env:git_user $env:git_git_access_token
