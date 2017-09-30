@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 using WaCore.Crud.Utils.Sorting;
-using Xunit;
 
 namespace WaCore.Crud.UnitTests.Utils
 {
+    [TestClass]
     public class SortFieldMappingBuilderTests
     {
         public class TestDto
@@ -18,67 +19,64 @@ namespace WaCore.Crud.UnitTests.Utils
             public TestDto RelatedDto { get; set; }
         }
 
-        [Fact]
+        [TestMethod]
         public void ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName()
         {
             AssertRetrunsExpectedSortField(x => x.StringProperty, "StringProperty");
         }
 
-        [Fact]
+        [TestMethod]
         public void ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName()
         {
             AssertRetrunsExpectedSortField(x => x.IntProperty, "IntProperty");
         }
 
-        [Fact]
+        [TestMethod]
         public void ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName()
         {
             AssertRetrunsExpectedSortField(x => x.IntField, "IntField");
         }
 
-        [Fact]
+        [TestMethod]
         public void ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath()
         {
             AssertRetrunsExpectedSortField(x => x.RelatedDto.StringProperty, "RelatedDto.StringProperty");
         }
 
-        [Fact]
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void ForDtoSortFieldWhenMappingSelfThrowsArgumentException()
         {
-            AssertThrowsArgumentException(x => x);
+            new SortFieldMappingBuilder<object>().ForDtoSortField<TestDto>(x => x);
         }
 
-        [Fact]
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void ForDtoSortFieldWhenMappingLiteralThrowsArgumentException()
         {
-            AssertThrowsArgumentException(x => 1);
+            new SortFieldMappingBuilder<object>().ForDtoSortField<TestDto>(x => 1);
         }
 
-        [Fact]
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException()
         {
-            AssertThrowsArgumentException(x => x.ToString());
+            new SortFieldMappingBuilder<object>().ForDtoSortField<TestDto>(x => x.ToString());
         }
 
-        [Fact]
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
         public void ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException()
         {
             var notAParameter = new TestDto();
-            AssertThrowsArgumentException(x => notAParameter.StringProperty);
+            new SortFieldMappingBuilder<object>().ForDtoSortField<TestDto>(x => notAParameter.StringProperty);
         }
-
 
         private void AssertRetrunsExpectedSortField(Expression<Func<TestDto, object>> expr, string expectedFieldName)
         {
             var builder = new SortFieldMappingBuilder<object>();
             var mapping = (SingleSortFieldMap<object>)builder.ForDtoSortField(expr);
-            Assert.Equal(expectedFieldName, mapping.SortField);
-        }
-
-        private void AssertThrowsArgumentException(Expression<Func<TestDto, object>> expr)
-        {
-            var builder = new SortFieldMappingBuilder<object>();
-            Assert.Throws<ArgumentException>(() => builder.ForDtoSortField(expr));
+            Assert.AreEqual(expectedFieldName, mapping.SortField);
         }
     }
 }
