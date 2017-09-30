@@ -4,7 +4,6 @@ Param(
 
 $git_user = "CiBuildDocu"
 $git_email = "CiBuildDocu@wacore.com"
-$git_access_token = "4vngnALEVBWUWd4tuLHADxd5vF26geMyGw0dGjun494fq/W0sLiQAJxhXXYsdD39"
 $target_branch = "gh-pages"
 
 $docfxVersion = "2.24.0"
@@ -33,7 +32,7 @@ if($Deploy){
 	# Configuring git credentials
 	Write-Host "`n[Configuring git credentials]" -ForegroundColor Green
 	& git config --global credential.helper store
-	Add-Content "$env:USERPROFILE\.git-credentials" "https://$($git_access_token):x-oauth-basic@github.com`n"
+	Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:git_access_token):x-oauth-basic@github.com`n"
 
 	& git config --global user.email "$($git_email)"
 	& git config --global user.name "$($git_user)"

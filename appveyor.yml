@@ -1,3 +1,6 @@
+environment:
+  git_access_token:
+    secure: /OB1V/jwz6+VVu62c1k3dycubqHbRbYb/P/lieXf54NjvG5jQSOTVAjIOueVbgMR
 version: '{build}'
 image: Visual Studio 2017  
 skip_branch_with_pr: true
@@ -9,7 +12,7 @@ build_script:
 - ps: .\Build.ps1
 after_build:
   - ps: |
-        If (($env:APPVEYOR_REPO_BRANCH -eq "master") -and (!$env:APPVEYOR_PULL_REQUEST_NUMBER)) 
+        If ((!$env:APPVEYOR_PULL_REQUEST_NUMBER)) 
         {
           choco install nuget.commandline -y
           .\docs\buildDocu.ps1 -Deploy
