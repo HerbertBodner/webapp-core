@@ -84,7 +84,7 @@ Push-Location docs/_site
         # Committing changes
         Write-host "`n[Committing changes]" -ForegroundColor Green
         Exec { & git commit -m "CI Updates" -q }
-        Exec { & git push https://$git_access_token:x-oauth-basic@github.com/HerbertBodner/webapp-core.git gh-pages -q }
+        Exec { & git push https://$($git_access_token):x-oauth-basic@github.com/HerbertBodner/webapp-core.git gh-pages -q }
     }
     else {
         Write-host "`n[No changes to commit]" -ForegroundColor Green
