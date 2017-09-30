@@ -27,7 +27,11 @@ deploy:
     appveyor_repo_tag: true
 on_success:
   - ps: |
-        if ($env:APPVEYOR_REPO_BRANCH -eq 'docu') 
+        Write-Host "APPVEYOR_REPO_BRANCH $($env:APPVEYOR_REPO_BRANCH)"
+        Write-Host "APPVEYOR_PULL_REQUEST_NUMBER $($env:APPVEYOR_PULL_REQUEST_NUMBER)"
+        Write-Host "APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH  $($env:APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH )"
+
+        if (!$env:APPVEYOR_PULL_REQUEST_NUMBER) 
         {
           .\docs\buildDocu.ps1 -deploy $env:git_email $env:git_user $env:git_access_token
         }
