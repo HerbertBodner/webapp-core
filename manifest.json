@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/_repo/webapp-core/docs",
+  "source_base_path": "C:/projects/webapp-core/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html",
-          "hash": "V4N9yRSJkNHXwAwGi9x0FA=="
+          "hash": "NAI96lv2Zd1DsJw9CYzAWA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.IWacTransaction.html",
-          "hash": "qd4xNPREG1UOwaHpM6EsDQ=="
+          "hash": "E/Lo+2cR2xoBHix7/WhLjQ=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.IWacUnitOfWork.html",
-          "hash": "Y7dGrjagFwrdYdaoaDQ45w=="
+          "hash": "5KkO89ESZ1u5QzCC/tv8vA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html",
-          "hash": "UPbjzmzB1PZTUMt5PDJsaw=="
+          "hash": "RxkI6q8Va1Sz1UXMl0UkpQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html",
-          "hash": "z8B4R/bXT+3kTLQeJTqrDA=="
+          "hash": "1qeq+RE5tsLC9HZAeUlOHA=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Dtos.IWacFilter.html",
-          "hash": "Ut4z3/efCtuM8SJBEkDOJQ=="
+          "hash": "B3NawvqUAl83Xrq4lz/Vig=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html",
-          "hash": "OsMhjx9XdVkVL8Z0KwJl3w=="
+          "hash": "3OZJHnKXjbW0P8es4aHQAA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html",
-          "hash": "HaW5o8YAMHOy9zB7yHG29g=="
+          "hash": "E7usJm4NlAe7Q/XDwoAcXQ=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html",
-          "hash": "9ldRz/nTOKyrJEF1bKuI0g=="
+          "hash": "0Kq2moPni+nuFgOAKAIiUg=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Dtos.Filters.WacFilter.html",
-          "hash": "I9ad3P8gMOQEUFzDAFEq4g=="
+          "hash": "jYZD3YWS++bkDkThSzrc9w=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Controllers.BookListDataController.html",
-          "hash": "eLSld2PIXvWJIAI5Vz+Bjw=="
+          "hash": "gqB1BR9pagZ2Jpy2/tXxow=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Controllers.HomeController.html",
-          "hash": "VBV85X8fL4DNcXRnfyt03A=="
+          "hash": "V8uLFr8r3kSoy9mHNTCehw=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Data.DbInitializer.html",
-          "hash": "WpS+WaRMg3xoB4xOLld5jA=="
+          "hash": "V6ovZndZTxqQj0PRZk8Lbg=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Data.IUnitOfWork.html",
-          "hash": "Bn3PJu2SQugMEC5a3tkg3Q=="
+          "hash": "MHB1UwRLQiS6of6QkvnJeA=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html",
-          "hash": "pJ48TLA+Iebep4w2VGeeyA=="
+          "hash": "mhmwV8J4WB2Vzd/Bvr7PWQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html",
-          "hash": "KIFdzmfqr3Dcgs+4GFpV0Q=="
+          "hash": "lynzoubPjHW6nUkvz9DZrg=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository.html",
-          "hash": "M0xfBgez6Q2tqH11S0T/iQ=="
+          "hash": "O53bz9uAbV88+sNouSjX+w=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Data.UnitOfWork.html",
-          "hash": "IfBUSz/HeVgU8PIQ7F67ng=="
+          "hash": "rJq5qXgPEEoxxcBj9aWglA=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Dtos.BookDto.html",
-          "hash": "rd3RfBkRq4ph1XjfNhxQtA=="
+          "hash": "mT2QRGOsANw6qYxa2tV1OQ=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Entities.Book.html",
-          "hash": "Ktn7xUQMs8eSgE69NrFMJA=="
+          "hash": "FG0/2tslaUP7YozhWHe+uA=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Program.html",
-          "hash": "AdUOCnJC/IcLbuNl2+C+Uw=="
+          "hash": "mBceNplK3oz8kU7KnUjUww=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Services.BookListDataService.html",
-          "hash": "1GX0eAfPCvoL2rNGK6IMrg=="
+          "hash": "bh8IKoerkfB7B0mvjGMCDw=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Services.IBookListDataService.html",
-          "hash": "nV29U7o4rRBB5YzdOkMTQw=="
+          "hash": "ANA0ddFeOWFORg9zMCWmLw=="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.Startup.html",
-          "hash": "inWJSIrIFTwjmAZSE7J5kw=="
+          "hash": "jJ8QQ7+/E7NG2UMBmN18zQ=="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.ViewModels.BookFilter.html",
-          "hash": "HDmIXzvIkk0ZWcX9fc2ZEQ=="
+          "hash": "6/GvxaSED+ZpKNqJC5Y+cg=="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.ListSample1.ViewModels.BookListVm.html",
-          "hash": "IaM4yVnHgorsPT7Kil6XxQ=="
+          "hash": "F1RQ6ufl26E3M251HIijHw=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Services.WacListDataService-3.html",
-          "hash": "rfv4S+ueVj924/S7eIZyHA=="
+          "hash": "evCHPy8jee3KpeSQe2uUEQ=="
         }
       },
       "is_incremental": false,
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Web.Controllers.WacListDataController-4.html",
-          "hash": "l0HGBOlFp9ml2YS095jj0Q=="
+          "hash": "EinrhEnmWxPLZ41Jzqc6xA=="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html",
-          "hash": "jEqGrxDHr8JvEuwoE/PVtg=="
+          "hash": "a+W6Z6eH1MVubKsOeu3PUA=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html",
-          "hash": "xnrBC5P8pZmglfoF8HlYeg=="
+          "hash": "6N/N8DrqPdaHQ/6BFLChXg=="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html",
-          "hash": "dZhpqW78e1RZwc4aCLFH4g=="
+          "hash": "zA3H49mYF++0xax5yWPGxg=="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.WacEfUnitOfWork-1.html",
-          "hash": "M+Z3NmvEkXpi550iPO9rtw=="
+          "hash": "rpV5Zq8LMVSOFz/BFmmoNw=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Repositories.Base.WacRepository-2.html",
-          "hash": "L2leyxu0Zyl0pVhjmcBvgg=="
+          "hash": "2YGSY83KfpG6RKaoji5mXw=="
         }
       },
       "is_incremental": false,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Controllers.BooksController.html",
-          "hash": "ee8FlPkFkdjs2FG7/NB0vA=="
+          "hash": "0Ne5oRW1tyvSolckTy4/4Q=="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Data.DbInitializer.html",
-          "hash": "v2pVbAUOJo4wqw6HSOdVMg=="
+          "hash": "Mwylzn2/d5I225rScVXMaQ=="
         }
       },
       "is_incremental": false,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Data.IUnitOfWork.html",
-          "hash": "QqZ47CckovaPP1z2M0iUzQ=="
+          "hash": "N5r1gB4KffmLHm1DzO7lbQ=="
         }
       },
       "is_incremental": false,
@@ -729,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Data.LibraryDbContext.html",
-          "hash": "OEvgHXYlqPhxhx/kbodSfg=="
+          "hash": "A7KFEhSqHBk9EEvvf6RwKw=="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Data.Repositories.BooksRepository.html",
-          "hash": "rcM+MZVr7isBniuP7GEIZg=="
+          "hash": "Nlh3j3yQllk6NIMLWHLIiA=="
         }
       },
       "is_incremental": false,
@@ -753,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Data.Repositories.IBooksRepository.html",
-          "hash": "rAeJtB2uXxCIJxE/JaG8dQ=="
+          "hash": "HTMiMfpbeK1IrkZJoO6ozQ=="
         }
       },
       "is_incremental": false,
@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Data.UnitOfWork.html",
-          "hash": "YR+mR4SUYmnycRnf8mPOyA=="
+          "hash": "PEhB9rGUaBbdutfAqEgeEg=="
         }
       },
       "is_incremental": false,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Entities.Book.html",
-          "hash": "q7aRgntYaZHlYtgx4W3w+w=="
+          "hash": "3Ls9HknxiBX0XmpjwaNvYw=="
         }
       },
       "is_incremental": false,
@@ -825,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Program.html",
-          "hash": "Fqw8tJcUr2mizt1uI943pQ=="
+          "hash": "hs/k2rLsZrk3icjfZwX7sg=="
         }
       },
       "is_incremental": false,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Sample.Startup.html",
-          "hash": "ZCC4fOzNEiBrJrS5Yy9TcA=="
+          "hash": "vI+SNsBBrlsPIV32CzDuTA=="
         }
       },
       "is_incremental": false,
@@ -861,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "XKH6nWgG+fZh+PjvzvVotA=="
+          "hash": "OsxWxwIiTJXAIDJKggIzqw=="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/WaCore.Data.Ef.html",
-          "hash": "zANQflC2VFTMry7A23WBoQ=="
+          "hash": "qyyjMNkhzJj8Ew64usAhGA=="
         }
       },
       "is_incremental": false,
@@ -885,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/index.html",
-          "hash": "AcZ/gFw9lZPN1Z4alHtlAw=="
+          "hash": "nfueP+3/JaJxQ3cNuXF1NA=="
         }
       },
       "is_incremental": false,
@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "/lu5xtVdv40WXB55/3vxJg=="
+          "hash": "yeAC/PHNMkVyS1P6cJHDyw=="
         }
       },
       "is_incremental": false,
@@ -912,17 +912,9 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -930,9 +922,17 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "RestApiDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
