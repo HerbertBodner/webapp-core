@@ -14,6 +14,23 @@ build_script:
 test:
   assemblies:
     - '**\*test*.dll'
+after_test:
+  - ps: |
+        Write-Host "APPVEYOR_REPO_BRANCH $($env:APPVEYOR_REPO_BRANCH)"
+        Write-Host "APPVEYOR_PULL_REQUEST_NUMBER $($env:APPVEYOR_PULL_REQUEST_NUMBER)"
+        Write-Host "APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH  $($env:APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH )"
+
+        if (!$env:APPVEYOR_PULL_REQUEST_NUMBER -and ($env:APPVEYOR_REPO_BRANCH -eq "docu")) 
+        {
+          # build docu and deploy changes to gh-pages
+          .\docs\buildDocu.ps1 -deploy $env:git_email $env:git_user $env:git_access_token
+        }
+        else
+        {
+          # build docu without deploying
+          .\docs\buildDocu.ps1
+        }
+
 artifacts:  
 - path: .\artifacts\**\*.nupkg
   name: NuGet
@@ -25,13 +42,3 @@ deploy:
   on:
     branch: master
     appveyor_repo_tag: true
-on_success:
-  - ps: |
-        Write-Host "APPVEYOR_REPO_BRANCH $($env:APPVEYOR_REPO_BRANCH)"
-        Write-Host "APPVEYOR_PULL_REQUEST_NUMBER $($env:APPVEYOR_PULL_REQUEST_NUMBER)"
-        Write-Host "APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH  $($env:APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH )"
-
-        if (!$env:APPVEYOR_PULL_REQUEST_NUMBER) 
-        {
-          .\docs\buildDocu.ps1 -deploy $env:git_email $env:git_user $env:git_access_token
-        }
