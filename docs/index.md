@@ -1,11 +1,6 @@
 # webapp-core  
 Modules for common features for a .Net Core application
 
-
-|            |   Travis Build    |    AppVeyor Build    | 
-| ---------- | ----------------- | -------------------- |
-| **master** branch |[![Build Status](https://api.travis-ci.org/HerbertBodner/webapp-core.svg?branch=master)](https://travis-ci.org/HerbertBodner/webapp-core) |[![AppVeyor Build](https://ci.appveyor.com/api/projects/status/github/HerbertBodner/webapp-core?branch=master&svg=true)](https://ci.appveyor.com/project/yshchohaleu/webapp-core)
-
 ## 1. Vision
 Provide .Net Core developers with common functionality, which is often used in (web)-applications, so they can focus on the important business logic of their application they develop
 
@@ -25,6 +20,5 @@ Following modules are planned/implemented:
 | ---------- | ----------------- | -------------------- | -------------------- |
 |[**WaCore.Data.Ef**](xref:UnitOfWork_Module) | implemented |[![NuGet Version](https://img.shields.io/nuget/v/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/) [![NuGet Downloads](https://img.shields.io/nuget/dt/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/)  | Unit of work implementation for Ef 2.0  |
 | **WaCore.Crud.Services** | in progress | - | CRUD Service |
-| **WaCore.Web** | in progress | - | OWASP headers middleware
 | **WaCore.TemplateMgmt.Services** | planned | - | Template management services
 

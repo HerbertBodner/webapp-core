@@ -8,6 +8,7 @@ using WaCore.Sample.Entities;
 
 namespace WaCore.Sample.Data
 {
+    #region LibraryDbcontextDocu
     public class LibraryDbContext : DbContext
     {
         public LibraryDbContext(DbContextOptions<LibraryDbContext> options)
@@ -16,4 +17,5 @@ namespace WaCore.Sample.Data
 
         public DbSet<Book> Books { get; set; }
     }
+    #endregion
 }

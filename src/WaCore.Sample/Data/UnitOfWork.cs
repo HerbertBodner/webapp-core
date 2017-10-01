@@ -8,6 +8,7 @@ using WaCore.Sample.Data.Repositories;
 
 namespace WaCore.Sample.Data
 {
+    #region UnitOfWorkDocu
     public class UnitOfWork : WacEfUnitOfWork<LibraryDbContext>, IUnitOfWork
     {
         public UnitOfWork(LibraryDbContext dbContext, IServiceProvider serviceProvider) : base(dbContext, serviceProvider)
@@ -20,5 +21,5 @@ namespace WaCore.Sample.Data
     {
         IBooksRepository BooksRepository { get; }
     }
-
+    #endregion
 }
