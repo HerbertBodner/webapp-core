@@ -41,9 +41,6 @@ $env:MSBuildSDKsPath = $MSBuildSDKsPath;
 
 Exec { & nuget install docfx.console -Version $docfxVersion }
 
-# ignore git warning "CRLF will be replaced by LF..." by setting core.autocrlf in config file
-Exec { & git config --local core.safecrlf false }
-
 
 Write-Host "`n[Build our docs]" -ForegroundColor Green
 Exec { & .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json }
@@ -67,6 +64,8 @@ Push-Location docs/_site
     Exec { & git config --local user.email $git_email }
     Exec { & git config --local user.name $git_user }
 
+    # ignore git warning "CRLF will be replaced by LF..." by setting core.autocrlf in config file
+    Exec { & git config --local core.safecrlf false }
 
     Write-Host "`n[Add changes]" -ForegroundColor Green
     Exec { & git add -A 2>&1 }
