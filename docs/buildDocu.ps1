@@ -64,7 +64,7 @@ Push-Location docs/_site
     Exec { & git config --local user.email $git_email }
     Exec { & git config --local user.name $git_user }
 
-    # ignore git warning "CRLF will be replaced by LF..." by setting core.autocrlf in config file
+    # ignore git warning "CRLF will be replaced by LF..." by setting core.safecrlf in config file
     Exec { & git config --local core.safecrlf false }
 
     Write-Host "`n[Add changes]" -ForegroundColor Green
