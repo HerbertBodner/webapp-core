@@ -7,6 +7,9 @@
             "src/**.csproj"
           ],
           "exclude": [
+            "src/WaCore.Sample/**",
+            "src/WaCore.Crud.ListSample1/**",
+            "src/WaCore.WaCore.Sample.Middlewares/**",
             "**/obj/**",
             "**/bin/**",
             "_site/**"
@@ -14,7 +17,7 @@
           "src": ".."
         }
       ],
-      "dest": "docs/api"
+      "dest": "api"
     }
   ],
   "build": {

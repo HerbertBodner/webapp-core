@@ -1,2 +1,2 @@
 # API documentation
-This section contains all the classes (including sample projects) of the project.
+This section contains the API documentation for all the classes of the project (excluding sample projects).
