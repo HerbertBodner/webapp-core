@@ -45,6 +45,10 @@ Exec { & nuget install docfx.console -Version $docfxVersion }
 Write-Host "`n[Build our docs]" -ForegroundColor Green
 Exec { & .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json }
 
+# Delete manifest.json file to avoid unnecessary pushes from CI build to gh-pages.
+# (manifest.json is changed for each new docu build and therefore would be pushed by CI build, even though the docu itself didn't change. 
+# Therefore we just delete it, because it is only used during the docu build process, but is not required for the docu website.)
+Exec { & Remove-Item docs/_site/manifest.json }
 
 if(!$deploy){
     return
