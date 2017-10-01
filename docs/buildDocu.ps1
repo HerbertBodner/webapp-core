@@ -39,11 +39,12 @@ $env:VSINSTALLDIR = $VSINSTALLDIR;
 $env:MSBuildExtensionsPath = $MSBuildExtensionsPath;
 $env:MSBuildSDKsPath = $MSBuildSDKsPath;
 
-# Install docfx
 Exec { & nuget install docfx.console -Version $docfxVersion }
 
+# ignore git warning "CRLF will be replaced by LF..." by setting core.autocrlf in config file
+Exec { & git config --local core.autocrlf true }
 
-# Build our docs
+
 Write-Host "`n[Build our docs]" -ForegroundColor Green
 Exec { & .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json }
 
@@ -52,43 +53,38 @@ if(!$deploy){
     return
 }
 
-# Checkout gh-pages to folder origin_site
-Write-Host "`n[Checkout gh-pages]" -ForegroundColor Green
+Write-Host "`n[Checkout gh-pages to folder origin_site]" -ForegroundColor Green
 Exec { & git clone --quiet --no-checkout https://github.com/HerbertBodner/webapp-core.git -b gh-pages origin_site }
 
           
-# Copy origin_site/.git to docs/_site
-Write-Host "`n[Copy origin_site/.git to docs/_site]" -ForegroundColor Green
-Exec { & Copy-Item origin_site/.git docs/_site -recurse }
+Write-Host "`n[Move origin_site/.git to docs/_site]" -ForegroundColor Green
+Exec { & Move-Item -Path origin_site/.git -Destination docs/_site  }
 
 
 Push-Location docs/_site
 
-    # Configuring git credentials
-    Write-Host "`n[Configuring git credentials in docs/_site]" -ForegroundColor Green
-    Exec { & git config --local credential.helper store }
-    #Exec { & Add-Content ".git-credentials" "https://$($env:git_access_token):x-oauth-basic@github.com`n" }
+    Write-Host "`n[Set user.email and user.name in local git config file]" -ForegroundColor Green
     Exec { & git config --local user.email $git_email }
     Exec { & git config --local user.name $git_user }
 
 
-    # Add changes
     Write-Host "`n[Add changes]" -ForegroundColor Green
     Exec { & git add -A 2>&1 }
           
-    # Show changes
     Write-host "`n[git status --porcelain]" -ForegroundColor Green
-
     $status = git status --porcelain
+    Write-host $status
 
     if (![string]::IsNullOrEmpty($status)) {  
           
-        # Committing changes
         Write-host "`n[Committing changes]" -ForegroundColor Green
         Exec { & git commit -m "CI Updates" -q }
+        
+        Write-host "`n[Pushing changes]" -ForegroundColor Green
         Exec { & git push https://$($git_access_token):x-oauth-basic@github.com/HerbertBodner/webapp-core.git gh-pages -q }
-     }
+    }
     else {
         Write-host "`n[No changes to commit]" -ForegroundColor Green
     }
+
 Pop-Location
