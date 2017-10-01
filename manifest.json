@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html",
-          "hash": "NAI96lv2Zd1DsJw9CYzAWA=="
+          "hash": "eoNBw2p5eB4CPkwwXvUKpA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "ne6UR37B5VGYD1S50mtaUg=="
+          "hash": "ZpEKDXv3XGooyyNloQpJEw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.IWacTransaction.html",
-          "hash": "E/Lo+2cR2xoBHix7/WhLjQ=="
+          "hash": "JI9IBpPceZR3lefp8JZgww=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.IWacUnitOfWork.html",
-          "hash": "5KkO89ESZ1u5QzCC/tv8vA=="
+          "hash": "A7O+JfmfnkcCkffHygFQRw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html",
-          "hash": "RxkI6q8Va1Sz1UXMl0UkpQ=="
+          "hash": "KWydcs3byyoSdOTaCasX6A=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.Repositories.Base.html",
-          "hash": "ireRP7uuCqqYvzfme0K8ew=="
+          "hash": "dj4CNNXOGCZHcO9BK8omvA=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Contracts.Data.html",
-          "hash": "xe+fmbzRijeAQcERZyeQ/w=="
+          "hash": "kqgTzLUCHrO9YSn40dJftg=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html",
-          "hash": "1qeq+RE5tsLC9HZAeUlOHA=="
+          "hash": "lHaqrxYhdDO2WdhkhJxq9A=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Data.html",
-          "hash": "2jMvj7ifFcFDRbqgJ5juvA=="
+          "hash": "H4440xBH3ox/Lo4NmaPQbw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Dtos.IWacFilter.html",
-          "hash": "B3NawvqUAl83Xrq4lz/Vig=="
+          "hash": "svIyBV3nCjC1eaZN1ZN1oA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Dtos.html",
-          "hash": "2IOTx6MPGlZG5A8CNbfklQ=="
+          "hash": "JejOAuD+zHxm1EQemv2G7Q=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html",
-          "hash": "3OZJHnKXjbW0P8es4aHQAA=="
+          "hash": "CdqWQKgoMTn1jMX1tAEp4A=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Services.html",
-          "hash": "7C8bubjds3wVWIdrU0HKEw=="
+          "hash": "Q1PgrR0RulJMiTbGJ8iJVg=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html",
-          "hash": "E7usJm4NlAe7Q/XDwoAcXQ=="
+          "hash": "KHYi2CC/CSbBE2VC9Ramkg=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Contracts.Web.html",
-          "hash": "0AfEHQJ45NLVLQGXq8e89Q=="
+          "hash": "zJSCPYsquw8TzO3x6IVGYA=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html",
-          "hash": "0Kq2moPni+nuFgOAKAIiUg=="
+          "hash": "jsaQ2GFLV0TQcPWXXRNa3Q=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Data.Ef.html",
-          "hash": "l/Z+IJDCZ7+LCzjfoPfgTQ=="
+          "hash": "6FdXMkC34QHrSAsHM/KMqg=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Dtos.Filters.WacFilter.html",
-          "hash": "jYZD3YWS++bkDkThSzrc9w=="
+          "hash": "jmThvdGqJyXwtLKEn7xCjg=="
         }
       },
       "is_incremental": false,
@@ -225,295 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Dtos.Filters.html",
-          "hash": "aqjdMUt6+ehOOt5ygvdCNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Controllers.BookListDataController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Controllers.BookListDataController.html",
-          "hash": "gqB1BR9pagZ2Jpy2/tXxow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Controllers.HomeController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Controllers.HomeController.html",
-          "hash": "V8uLFr8r3kSoy9mHNTCehw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Controllers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Controllers.html",
-          "hash": "Z8xgIMOqzaQ6/48gGUMTuA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.DbInitializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.DbInitializer.html",
-          "hash": "V6ovZndZTxqQj0PRZk8Lbg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.IUnitOfWork.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.IUnitOfWork.html",
-          "hash": "MHB1UwRLQiS6of6QkvnJeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.LibraryDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.LibraryDbContext.html",
-          "hash": "mhmwV8J4WB2Vzd/Bvr7PWQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.BookListRepository.html",
-          "hash": "lynzoubPjHW6nUkvz9DZrg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.IBooksListRepository.html",
-          "hash": "O53bz9uAbV88+sNouSjX+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.Repositories.html",
-          "hash": "MbNTSP/ZiI+tBX36Czo6nQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.UnitOfWork.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.UnitOfWork.html",
-          "hash": "rJq5qXgPEEoxxcBj9aWglA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Data.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Data.html",
-          "hash": "Vox1CHwmilDhyATpjP2Mwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Dtos.BookDto.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Dtos.BookDto.html",
-          "hash": "mT2QRGOsANw6qYxa2tV1OQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Dtos.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Dtos.html",
-          "hash": "MtgivW4OysGD+fBCdGNOmw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Entities.Book.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Entities.Book.html",
-          "hash": "FG0/2tslaUP7YozhWHe+uA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Entities.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Entities.html",
-          "hash": "no/IsmfbEEGBQW1IVoFKsQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Program.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Program.html",
-          "hash": "mBceNplK3oz8kU7KnUjUww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Services.BookListDataService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Services.BookListDataService.html",
-          "hash": "bh8IKoerkfB7B0mvjGMCDw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Services.IBookListDataService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Services.IBookListDataService.html",
-          "hash": "ANA0ddFeOWFORg9zMCWmLw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Services.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Services.html",
-          "hash": "nUqHNNWEowqWqgNVg49VTQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.Startup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.Startup.html",
-          "hash": "jJ8QQ7+/E7NG2UMBmN18zQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.ViewModels.BookFilter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.ViewModels.BookFilter.html",
-          "hash": "6/GvxaSED+ZpKNqJC5Y+cg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.ViewModels.BookListVm.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.ViewModels.BookListVm.html",
-          "hash": "F1RQ6ufl26E3M251HIijHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.ViewModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.ViewModels.html",
-          "hash": "bPRPOOEho6opR1H/0RnQow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Crud.ListSample1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Crud.ListSample1.html",
-          "hash": "PgX/jmnzjw011EI0ruwCHA=="
+          "hash": "hOOxF1yFyD7RlpZfrZgflQ=="
         }
       },
       "is_incremental": false,
@@ -525,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Services.WacListDataService-3.html",
-          "hash": "evCHPy8jee3KpeSQe2uUEQ=="
+          "hash": "k0NPD6SYYp8oiMkXKxmJuw=="
         }
       },
       "is_incremental": false,
@@ -537,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Services.html",
-          "hash": "XkpxKxMCOwxcAFk/XwTz5A=="
+          "hash": "Vj7ttAGofWKXHICNXXyHtA=="
         }
       },
       "is_incremental": false,
@@ -549,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Web.Controllers.WacListDataController-4.html",
-          "hash": "EinrhEnmWxPLZ41Jzqc6xA=="
+          "hash": "koyNG6IK9o8NY+3RDWC0Og=="
         }
       },
       "is_incremental": false,
@@ -561,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Web.Controllers.html",
-          "hash": "iF4nk3BcezzzIYLTeKC9RA=="
+          "hash": "YjqYa/OzGJEEwPq1SEuVEw=="
         }
       },
       "is_incremental": false,
@@ -573,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html",
-          "hash": "a+W6Z6eH1MVubKsOeu3PUA=="
+          "hash": "mZfvTpFStrYrIGANO4kLpQ=="
         }
       },
       "is_incremental": false,
@@ -585,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Crud.Web.ViewModels.html",
-          "hash": "+lLViPQHkKBF25Ge3llvOw=="
+          "hash": "RW3uFFTXsUVs1SiSLvvrkw=="
         }
       },
       "is_incremental": false,
@@ -597,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html",
-          "hash": "6N/N8DrqPdaHQ/6BFLChXg=="
+          "hash": "me8rNdg5eqqUbykKVO9BLQ=="
         }
       },
       "is_incremental": false,
@@ -609,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.DependencyInjection.html",
-          "hash": "BT/2BAfli2PWNDRKXBlWNA=="
+          "hash": "hLaimszfKKiKg7GdZu5jug=="
         }
       },
       "is_incremental": false,
@@ -621,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html",
-          "hash": "zA3H49mYF++0xax5yWPGxg=="
+          "hash": "NW7B7juwROcecu5v7ObALw=="
         }
       },
       "is_incremental": false,
@@ -633,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.WacEfUnitOfWork-1.html",
-          "hash": "rpV5Zq8LMVSOFz/BFmmoNw=="
+          "hash": "RwOyVn28X6S2wmFsoBcEHQ=="
         }
       },
       "is_incremental": false,
@@ -645,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Ef.html",
-          "hash": "dO8BaUMYad6J8NAj+1VuHw=="
+          "hash": "wJ59knNSG33opY4AQ2N2RA=="
         }
       },
       "is_incremental": false,
@@ -657,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Repositories.Base.WacRepository-2.html",
-          "hash": "2YGSY83KfpG6RKaoji5mXw=="
+          "hash": "vE5tG/7NKiodkopvTS7oCQ=="
         }
       },
       "is_incremental": false,
@@ -669,187 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WaCore.Data.Repositories.Base.html",
-          "hash": "0RaUJ56wc1SP6prAYbZ30w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Controllers.BooksController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Controllers.BooksController.html",
-          "hash": "0Ne5oRW1tyvSolckTy4/4Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Controllers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Controllers.html",
-          "hash": "ZDxNsUICiWLVesrd5FsGuA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.DbInitializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.DbInitializer.html",
-          "hash": "Mwylzn2/d5I225rScVXMaQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.IUnitOfWork.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.IUnitOfWork.html",
-          "hash": "N5r1gB4KffmLHm1DzO7lbQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.LibraryDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.LibraryDbContext.html",
-          "hash": "A7KFEhSqHBk9EEvvf6RwKw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.Repositories.BooksRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.Repositories.BooksRepository.html",
-          "hash": "Nlh3j3yQllk6NIMLWHLIiA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.Repositories.IBooksRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.Repositories.IBooksRepository.html",
-          "hash": "HTMiMfpbeK1IrkZJoO6ozQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.Repositories.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.Repositories.html",
-          "hash": "K3xwtOXGY9T+jR7GKxzQ5g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.UnitOfWork.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.UnitOfWork.html",
-          "hash": "PEhB9rGUaBbdutfAqEgeEg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Data.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Data.html",
-          "hash": "mWWrzBEjVPZdCRkDcIlSnA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Entities.Book.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Entities.Book.html",
-          "hash": "3Ls9HknxiBX0XmpjwaNvYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Entities.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Entities.html",
-          "hash": "TEQXMrw6BTl+D/1GVdw8SA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Program.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Program.html",
-          "hash": "hs/k2rLsZrk3icjfZwX7sg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.Startup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.Startup.html",
-          "hash": "vI+SNsBBrlsPIV32CzDuTA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/WaCore.Sample.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/WaCore.Sample.html",
-          "hash": "5w/niXnMyhbrRxyetuf+hw=="
+          "hash": "0y9ha2gZ0lQ/avYhbC2hdA=="
         }
       },
       "is_incremental": false,
@@ -861,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "OsxWxwIiTJXAIDJKggIzqw=="
+          "hash": "0BCo9FCj9S2Si4gr2rWVLA=="
         }
       },
       "is_incremental": false,
@@ -917,11 +449,11 @@
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
