@@ -23,7 +23,7 @@ Following modules are planned/implemented:
 
 | Module |   Status    |    Version/Downloads    | Description | 
 | ---------- | ----------------- | -------------------- | -------------------- |
-|[**WaCore.Data.Ef**](https://herbertbodner.github.io/webapp-core/articles/WaCore.Data.Ef.html) | implemented |[![NuGet Version](https://img.shields.io/nuget/v/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/) [![NuGet Downloads](https://img.shields.io/nuget/dt/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/)  | Unit of work implementation for Ef Core 2.0  |
+|[**WaCore.Data.Ef**](https://herbertbodner.github.io/webapp-core/articles/WaCore.Data.Ef.html) | done |[![NuGet Version](https://img.shields.io/nuget/v/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/) [![NuGet Downloads](https://img.shields.io/nuget/dt/WaCore.Data.Ef.svg)](https://www.nuget.org/packages/WaCore.Data.Ef/)  | Unit of work implementation for Ef Core 2.0  |
 | **WaCore.Crud.Services** | in progress | - | CRUD Service |
 | **WaCore.Web** | in progress | - | OWASP headers middleware; Exception handling middleware
 | **WaCore.TemplateMgmt.Services** | in progress | - | Template management services
