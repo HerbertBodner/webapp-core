@@ -71,16 +71,32 @@
 <h1 id="webapp-core">webapp-core</h1>
 
 <p>Modules for common features for a .Net Core application</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Travis Build</th>
+<th>AppVeyor Build</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>master</strong> branch</td>
+<td><a href="https://travis-ci.org/HerbertBodner/webapp-core"><img src="https://api.travis-ci.org/HerbertBodner/webapp-core.svg?branch=master" alt="Build Status"></a></td>
+<td><a href="https://ci.appveyor.com/project/HerbertBodner/webapp-core/branch/master"><img src="https://ci.appveyor.com/api/projects/status/psk9k0e7bw7mvjvv/branch/master?svg=true" alt="AppVeyor Build"></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="1-vision">1. Vision</h2>
 <p>Provide .Net Core developers with common functionality, which is often used in (web)-applications, so they can focus on the important business logic of their application they develop</p>
 <h2 id="2-what-is-it">2. What is it?</h2>
 <ul>
-<li>set of modules, which include <strong>base functionality</strong> often used in (web)-applications</li>
-<li>built using <strong>.Net Core 2.0</strong> framework</li>
-<li><strong>modular</strong> structure: use only the modules you need</li>
-<li>easily <strong>extendable</strong>: based on interfaces</li>
-<li>based on a <strong>layered architecture</strong> (data, service, web)</li>
-<li>available as <strong>nuget packages</strong> for easy integration</li>
+<li>Set of modules, which include <strong>base functionality</strong> often used in (web)-applications</li>
+<li>Built using <strong>.Net Core 2.0</strong> framework</li>
+<li><strong>Modular</strong> structure: use only the modules you need</li>
+<li>Easily <strong>extendable</strong>: based on interfaces</li>
+<li>Based on a <strong>layered architecture</strong> (data, service, web)</li>
+<li>Available as <strong>nuget packages</strong> for easy integration</li>
 </ul>
 <h2 id="3-modules">3. Modules</h2>
 <p>Following modules are planned/implemented:</p>
@@ -95,10 +111,10 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="articles/WaCore.Data.Ef.html"><strong>WaCore.Data.Ef</strong></a></td>
-<td>implemented</td>
+<td><a href="https://herbertbodner.github.io/webapp-core/articles/WaCore.Data.Ef.html"><strong>WaCore.Data.Ef</strong></a></td>
+<td>done</td>
 <td><a href="https://www.nuget.org/packages/WaCore.Data.Ef/"><img src="https://img.shields.io/nuget/v/WaCore.Data.Ef.svg" alt="NuGet Version"></a> <a href="https://www.nuget.org/packages/WaCore.Data.Ef/"><img src="https://img.shields.io/nuget/dt/WaCore.Data.Ef.svg" alt="NuGet Downloads"></a></td>
-<td>Unit of work implementation for Ef 2.0</td>
+<td>Unit of work implementation for Ef Core 2.0</td>
 </tr>
 <tr>
 <td><strong>WaCore.Crud.Services</strong></td>
@@ -107,8 +123,14 @@
 <td>CRUD Service</td>
 </tr>
 <tr>
+<td><strong>WaCore.Web</strong></td>
+<td>in progress</td>
+<td>-</td>
+<td>OWASP headers middleware; Exception handling middleware</td>
+</tr>
+<tr>
 <td><strong>WaCore.TemplateMgmt.Services</strong></td>
-<td>planned</td>
+<td>in progress</td>
 <td>-</td>
 <td>Template management services</td>
 </tr>
