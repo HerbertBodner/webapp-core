@@ -41,6 +41,8 @@ $env:MSBuildSDKsPath = $MSBuildSDKsPath;
 
 Exec { & nuget install docfx.console -Version $docfxVersion }
 
+# Copy Readme.md to docs/index.md so that the readme file is used as the startpage for the docu
+Exec { & Copy-Item readme.md docs/index.md }
 
 Write-Host "`n[Build our docs]" -ForegroundColor Green
 Exec { & .\docfx.console.$docfxVersion\tools\docfx docs/docfx.json }
