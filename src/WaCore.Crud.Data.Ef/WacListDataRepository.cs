@@ -23,7 +23,7 @@ namespace WaCore.Crud.Data.Ef
         {
         }
 
-        public IList<TEntity> GetAll(TFilter filter)
+        public IList<TEntity> GetList(TFilter filter)
         {
             var q = ApplyFilter(DbSet.AsQueryable(), filter);
 
@@ -31,7 +31,7 @@ namespace WaCore.Crud.Data.Ef
 
             return queryPaginated.ToList();
         }
-        public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
+        public async Task<IList<TEntity>> GetListAsync(TFilter filter)
         {
             var q = ApplyFilter(DbSet.AsQueryable(), filter);
 

@@ -23,7 +23,7 @@ namespace WaCore.Crud.ListSample1.Controllers
             {
                 filter = new CarFilter();
             }
-            _listVm.DtoList = await _service.GetAllAsync(filter);
+            _listVm.DtoList = await _service.GetListAsync(filter);
             return View(_listVm);
         }
 

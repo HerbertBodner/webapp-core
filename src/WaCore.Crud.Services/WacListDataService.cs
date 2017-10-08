@@ -41,9 +41,9 @@ namespace WaCore.Crud.Services
             return MapEntityToDto(entity);
         }
 
-        public IPagedList<TDto> GetAll(TFilter filter)
+        public IPagedList<TDto> GetList(TFilter filter)
         {
-            var entityList = Repo.GetAll(filter);
+            var entityList = Repo.GetList(filter);
 
             int totalCount;
 
@@ -65,9 +65,9 @@ namespace WaCore.Crud.Services
             return new PagedList<TDto>(dtoList, totalCount, filter.Offset, filter.Limit);
         }
 
-        public async Task<IPagedList<TDto>> GetAllAsync(TFilter filter)
+        public async Task<IPagedList<TDto>> GetListAsync(TFilter filter)
         {
-            var entityList = await Repo.GetAllAsync(filter);
+            var entityList = await Repo.GetListAsync(filter);
 
             int totalCount;
 
