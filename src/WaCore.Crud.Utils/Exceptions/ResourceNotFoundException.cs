@@ -22,9 +22,5 @@ namespace WaCore.Crud.Utils.Exceptions
 
         public object Resource { get { return _resource; } }
 
-        public string BaseMessage
-        {
-            get { return "Ressource not found."; }
-        }
     }
 }
