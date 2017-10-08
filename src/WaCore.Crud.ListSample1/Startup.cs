@@ -32,7 +32,7 @@ namespace WaCore.Crud.ListSample1
 
             services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(
                 repoConfig => {
-                    repoConfig.AddRepository<IBooksListRepository, BookListRepository>();
+                    repoConfig.AddRepository<IBookListRepository, BookListRepository>();
                     repoConfig.AddRepository<IWacListDataRepository<Book, BookFilter>, BookListRepository>();
 
                     repoConfig.AddRepository<ICarRepository, CarRepository>();
