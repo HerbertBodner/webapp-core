@@ -93,14 +93,15 @@ namespace WaCore.Crud.ListSample1.Controllers
             }
         }
 
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public virtual async Task<IActionResult> Delete(int id)
         {
             try
             {
                 await _service.DeleteAsync(id);
 
-                SetSuccessMessage("Deleted successful");
+                SetSuccessMessage("Deleted successfully");
 
                 return new EmptyResult();
             }

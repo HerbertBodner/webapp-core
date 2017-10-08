@@ -13,12 +13,12 @@
                 @Html.TextBoxFor(m => m.Filter.CreatedAfter, new { @class = "form-control" })
             </div>
 
-            <button type="submit" class="btn btn-default">Search</button>
+            <button type="submit" class="btn btn-primary">Search</button>
         </div>
     </fieldset>
 </form>
 <div class="btn-toolbar">
-    @Html.ActionLink("New", "Create", null, null, new { @class = "btn btn-default pull-right" })
+    @Html.ActionLink("New car", "Create", null, null, new { @class = "btn btn-primary pull-right" })
 </div>
 <table class="table table-hover">
     <thead>
