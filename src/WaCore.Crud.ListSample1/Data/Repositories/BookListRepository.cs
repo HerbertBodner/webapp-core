@@ -8,6 +8,8 @@ using WaCore.Crud.ListSample1.Entities;
 using WaCore.Crud.ListSample1.ViewModels;
 using WaCore.Crud.Data.Ef;
 using WaCore.Crud.Contracts.Data;
+using WaCore.Crud.Utils;
+using WaCore.Crud.ListSample1.Dtos;
 
 namespace WaCore.Crud.ListSample1.Data.Repositories
 {
@@ -20,7 +22,15 @@ namespace WaCore.Crud.ListSample1.Data.Repositories
     public class BookListRepository : WacListDataRepository<Book, LibraryDbContext, BookFilter>, IBookListRepository
     {
         public BookListRepository(LibraryDbContext dbContext) : base(dbContext)
-        { }
+        {
+            InitializeSortFieldMapping(builder =>
+            {
+                builder.ForDtoSortField<BookDto>(x => x.Id).OrderBy(x => x.Id);
+                builder.ForDtoSortField<BookDto>(x => x.Author).OrderBy(x => x.Author);
+                builder.ForDtoSortField<BookDto>(x => x.Title).OrderBy(x => x.Title);
+                builder.ForSortField("authorAscThenIdDesc").OrderBy(x => x.Author).ThenByDescending(x => x.Id);
+            });
+        }
 
 
         protected override IQueryable<Book> ApplyFilter(IQueryable<Book> query, BookFilter filter)

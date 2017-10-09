@@ -15,6 +15,8 @@ using WaCore.Contracts.Data;
 using WaCore.Crud.ListSample1.Entities;
 using WaCore.Crud.ListSample1.ViewModels;
 using WaCore.Crud.Contracts.Data;
+using WaCore.Crud.Utils;
+using WaCore.Crud.ListSample1.Entities;
 
 namespace WaCore.Crud.ListSample1
 {

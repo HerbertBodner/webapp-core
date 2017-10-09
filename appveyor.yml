@@ -1,3 +1,8 @@
+environment:
+  git_user: "CiBuildDocu"
+  git_email: "CiBuildDocu@example.com"
+  git_access_token:
+    secure: /OB1V/jwz6+VVu62c1k3dycubqHbRbYb/P/lieXf54NjvG5jQSOTVAjIOueVbgMR
 version: '{build}'
 image: Visual Studio 2017  
 pull_requests:  
@@ -9,6 +14,19 @@ build_script:
 test:
   assemblies:
     - '**\*test*.dll'
+after_test:
+  - ps: |
+        if (!$env:APPVEYOR_PULL_REQUEST_NUMBER -and ($env:APPVEYOR_REPO_BRANCH -eq "master")) 
+        {
+          # build docu and deploy changes to gh-pages
+          .\docs\buildDocu.ps1 -deploy $env:git_email $env:git_user $env:git_access_token
+        }
+        else
+        {
+          # build docu without deploying
+          .\docs\buildDocu.ps1
+        }
+
 artifacts:  
 - path: .\artifacts\**\*.nupkg
   name: NuGet
@@ -16,7 +34,7 @@ deploy:
 - provider: NuGet
   name: production
   api_key:
-    secure: q9CTIytwzn07gcypWBXc1JNw5V1+kFX54YosfZYxGAKchBoCCr4Gpduso4ntoKw2
+    secure: 3qnlhVVXjspVhZ4f27rjeH4SKhI/p6jS0Qf3oLymqXbynpwqgw39b2sEluQadWFx
   on:
     branch: master
     appveyor_repo_tag: true
