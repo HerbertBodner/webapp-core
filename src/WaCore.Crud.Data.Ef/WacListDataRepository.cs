@@ -8,9 +8,9 @@ using WaCore.Crud.Dtos.Filters;
 using WaCore.Data;
 using WaCore.Data.Repositories.Base;
 using WaCore.Crud.Utils;
+using WaCore.Crud.Utils.Sorting;
 using System;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace WaCore.Crud.Data.Ef
 {
@@ -19,8 +19,17 @@ namespace WaCore.Crud.Data.Ef
         where TDbContext : DbContext
         where TFilter : IWacFilter
     {
+        protected virtual SortFieldMapping<TEntity> SortFieldMapping { get; set; }
+
         public WacListDataRepository(TDbContext dbContext) : base(dbContext)
         {
+        }
+
+        protected void InitializeSortFieldMapping(Action<ISortFieldMappingBuilder<TEntity>> configAction)
+        {
+            var builder = new SortFieldMappingBuilder<TEntity>();
+            configAction(builder);
+            SortFieldMapping = builder.Build();
         }
 
         public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
@@ -47,18 +56,7 @@ namespace WaCore.Crud.Data.Ef
         {
             if ((!string.IsNullOrEmpty(filter.SortBy)))
             {
-                var orderList = SortBySplitter.SplitSortByString(filter.SortBy);
-
-                foreach (var orderItem in orderList)
-                {
-                    //TODO sorting
-                    //filter.GetDbSortField(orderItem.FieldName);
-
-                    //if (typeof(TEntity).GetProperty(filter.SortBy) != null)
-                    //{
-                    //    entityList = entityList.OrderByField(filter.SortBy, filter.SortOrderIsAscending);
-                    //}
-                }
+                entityList = entityList.OrderBySortString(filter.SortBy, SortFieldMapping);
             }
 
             if (filter.Offset > 0)

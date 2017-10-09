@@ -11,6 +11,8 @@ using WaCore.Crud.ListSample1.Data;
 using WaCore.Crud.ListSample1.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using WaCore.Crud.ListSample1.Services;
+using WaCore.Crud.Utils;
+using WaCore.Crud.ListSample1.Entities;
 
 namespace WaCore.Crud.ListSample1
 {
