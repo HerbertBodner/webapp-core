@@ -367,18 +367,6 @@ references:
   commentId: T:WaCore.Crud.Contracts.Dtos.IWacFilter
   fullName: WaCore.Crud.Contracts.Dtos.IWacFilter
   nameWithType: IWacFilter
-- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.GetDbSortField(System.String)
-  name: GetDbSortField(String)
-  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_GetDbSortField_System_String_
-  commentId: M:WaCore.Crud.Contracts.Dtos.IWacFilter.GetDbSortField(System.String)
-  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.GetDbSortField(System.String)
-  nameWithType: IWacFilter.GetDbSortField(String)
-- uid: WaCore.Crud.Contracts.Dtos.IWacFilter.GetDbSortField*
-  name: GetDbSortField
-  href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_GetDbSortField_
-  commentId: Overload:WaCore.Crud.Contracts.Dtos.IWacFilter.GetDbSortField
-  fullName: WaCore.Crud.Contracts.Dtos.IWacFilter.GetDbSortField
-  nameWithType: IWacFilter.GetDbSortField
 - uid: WaCore.Crud.Contracts.Dtos.IWacFilter.Limit
   name: Limit
   href: api/WaCore.Crud.Contracts.Dtos.IWacFilter.html#WaCore_Crud_Contracts_Dtos_IWacFilter_Limit
@@ -669,6 +657,39 @@ references:
   fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetTotalCountAsync
   nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetTotalCountAsync
   nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetTotalCountAsync
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.InitializeSortFieldMapping(System.Action{WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder{`0}})
+  name: InitializeSortFieldMapping(Action<ISortFieldMappingBuilder<TEntity>>)
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_InitializeSortFieldMapping_System_Action_WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder__0___
+  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.InitializeSortFieldMapping(System.Action{WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder{`0}})
+  name.vb: InitializeSortFieldMapping(Action(Of ISortFieldMappingBuilder(Of TEntity)))
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.InitializeSortFieldMapping(System.Action<WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>>)
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).InitializeSortFieldMapping(System.Action(Of WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity)))
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.InitializeSortFieldMapping(Action<ISortFieldMappingBuilder<TEntity>>)
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).InitializeSortFieldMapping(Action(Of ISortFieldMappingBuilder(Of TEntity)))
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.InitializeSortFieldMapping*
+  name: InitializeSortFieldMapping
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_InitializeSortFieldMapping_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.InitializeSortFieldMapping
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.InitializeSortFieldMapping
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).InitializeSortFieldMapping
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.InitializeSortFieldMapping
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).InitializeSortFieldMapping
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.SortFieldMapping
+  name: SortFieldMapping
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_SortFieldMapping
+  commentId: P:WaCore.Crud.Data.Ef.WacListDataRepository`3.SortFieldMapping
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.SortFieldMapping
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).SortFieldMapping
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.SortFieldMapping
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).SortFieldMapping
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.SortFieldMapping*
+  name: SortFieldMapping
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_SortFieldMapping_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.SortFieldMapping
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.SortFieldMapping
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).SortFieldMapping
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.SortFieldMapping
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).SortFieldMapping
 - uid: WaCore.Crud.Dtos.Filters
   name: WaCore.Crud.Dtos.Filters
   href: api/WaCore.Crud.Dtos.Filters.html
@@ -693,18 +714,6 @@ references:
   commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.#ctor
   fullName: WaCore.Crud.Dtos.Filters.WacFilter.WacFilter
   nameWithType: WacFilter.WacFilter
-- uid: WaCore.Crud.Dtos.Filters.WacFilter.GetDbSortField(System.String)
-  name: GetDbSortField(String)
-  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_GetDbSortField_System_String_
-  commentId: M:WaCore.Crud.Dtos.Filters.WacFilter.GetDbSortField(System.String)
-  fullName: WaCore.Crud.Dtos.Filters.WacFilter.GetDbSortField(System.String)
-  nameWithType: WacFilter.GetDbSortField(String)
-- uid: WaCore.Crud.Dtos.Filters.WacFilter.GetDbSortField*
-  name: GetDbSortField
-  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_GetDbSortField_
-  commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.GetDbSortField
-  fullName: WaCore.Crud.Dtos.Filters.WacFilter.GetDbSortField
-  nameWithType: WacFilter.GetDbSortField
 - uid: WaCore.Crud.Dtos.Filters.WacFilter.Limit
   name: Limit
   href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_Limit
@@ -741,12 +750,6 @@ references:
   commentId: Overload:WaCore.Crud.Dtos.Filters.WacFilter.SortBy
   fullName: WaCore.Crud.Dtos.Filters.WacFilter.SortBy
   nameWithType: WacFilter.SortBy
-- uid: WaCore.Crud.Dtos.Filters.WacFilter.sortingFieldMappingDict
-  name: sortingFieldMappingDict
-  href: api/WaCore.Crud.Dtos.Filters.WacFilter.html#WaCore_Crud_Dtos_Filters_WacFilter_sortingFieldMappingDict
-  commentId: F:WaCore.Crud.Dtos.Filters.WacFilter.sortingFieldMappingDict
-  fullName: WaCore.Crud.Dtos.Filters.WacFilter.sortingFieldMappingDict
-  nameWithType: WacFilter.sortingFieldMappingDict
 - uid: WaCore.Crud.Services
   name: WaCore.Crud.Services
   href: api/WaCore.Crud.Services.html
@@ -867,6 +870,18 @@ references:
   commentId: Overload:WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenNoLeadingPlusOrMinusReturnsOneCorrectOrderItem
   fullName: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenNoLeadingPlusOrMinusReturnsOneCorrectOrderItem
   nameWithType: SortBySplitterTests.SplitSortByStringWhenNoLeadingPlusOrMinusReturnsOneCorrectOrderItem
+- uid: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
+  name: SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem()
+  href: api/WaCore.Crud.UnitTests.Utils.SortBySplitterTests.html#WaCore_Crud_UnitTests_Utils_SortBySplitterTests_SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
+  fullName: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem()
+  nameWithType: SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem()
+- uid: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem*
+  name: SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
+  href: api/WaCore.Crud.UnitTests.Utils.SortBySplitterTests.html#WaCore_Crud_UnitTests_Utils_SortBySplitterTests_SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
+  fullName: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
+  nameWithType: SortBySplitterTests.SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem
 - uid: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsFirstCorrectOrderItem
   name: SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsFirstCorrectOrderItem()
   href: api/WaCore.Crud.UnitTests.Utils.SortBySplitterTests.html#WaCore_Crud_UnitTests_Utils_SortBySplitterTests_SplitSortByStringWhenTwoFieldsAndLeadingMinusReturnsFirstCorrectOrderItem
@@ -939,6 +954,162 @@ references:
   commentId: Overload:WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsSecondCorrectOrderItem
   fullName: WaCore.Crud.UnitTests.Utils.SortBySplitterTests.SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsSecondCorrectOrderItem
   nameWithType: SortBySplitterTests.SplitSortByStringWhenTwoFieldsAndNoLeadingPlusOrMinusReturnsSecondCorrectOrderItem
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests
+  name: SortFieldMappingBuilderTests
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html
+  commentId: T:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests
+  nameWithType: SortFieldMappingBuilderTests
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+  name: ForDtoSortFieldWhenMappingLiteralThrowsArgumentException()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException*
+  name: ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingLiteralThrowsArgumentException_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingLiteralThrowsArgumentException
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+  name: ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException*
+  name: ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingMethodCallThrowsArgumentException
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+  name: ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException*
+  name: ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingOtherFieldsPropertyThrowsArgumentException
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+  name: ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath*
+  name: ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingRelatedObjectPropertyReturnsPropertyAccessPath
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+  name: ForDtoSortFieldWhenMappingSelfThrowsArgumentException()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException*
+  name: ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSelfThrowsArgumentException_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSelfThrowsArgumentException
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+  name: ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName*
+  name: ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleReferenceTypePropertyReturnsPropertyName
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+  name: ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName*
+  name: ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypeFieldReturnsFieldName
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+  name: ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName()
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+  commentId: M:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName()
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName()
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName*
+  name: ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+  nameWithType: SortFieldMappingBuilderTests.ForDtoSortFieldWhenMappingSingleValueTypeTypePropertyReturnsPropertyName
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto
+  name: SortFieldMappingBuilderTests.TestDto
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html
+  commentId: T:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto
+  nameWithType: SortFieldMappingBuilderTests.TestDto
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntField
+  name: IntField
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_IntField
+  commentId: F:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntField
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntField
+  nameWithType: SortFieldMappingBuilderTests.TestDto.IntField
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntProperty
+  name: IntProperty
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_IntProperty
+  commentId: P:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntProperty
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntProperty
+  nameWithType: SortFieldMappingBuilderTests.TestDto.IntProperty
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntProperty*
+  name: IntProperty
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_IntProperty_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntProperty
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.IntProperty
+  nameWithType: SortFieldMappingBuilderTests.TestDto.IntProperty
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.RelatedDto
+  name: RelatedDto
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_RelatedDto
+  commentId: P:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.RelatedDto
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.RelatedDto
+  nameWithType: SortFieldMappingBuilderTests.TestDto.RelatedDto
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.RelatedDto*
+  name: RelatedDto
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_RelatedDto_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.RelatedDto
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.RelatedDto
+  nameWithType: SortFieldMappingBuilderTests.TestDto.RelatedDto
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringField
+  name: StringField
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_StringField
+  commentId: F:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringField
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringField
+  nameWithType: SortFieldMappingBuilderTests.TestDto.StringField
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringProperty
+  name: StringProperty
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_StringProperty
+  commentId: P:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringProperty
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringProperty
+  nameWithType: SortFieldMappingBuilderTests.TestDto.StringProperty
+- uid: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringProperty*
+  name: StringProperty
+  href: api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html#WaCore_Crud_UnitTests_Utils_SortFieldMappingBuilderTests_TestDto_StringProperty_
+  commentId: Overload:WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringProperty
+  fullName: WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.StringProperty
+  nameWithType: SortFieldMappingBuilderTests.TestDto.StringProperty
 - uid: WaCore.Crud.UnitTests.Utils.SortingValidation
   name: SortingValidation
   href: api/WaCore.Crud.UnitTests.Utils.SortingValidation.html
@@ -993,69 +1164,21 @@ references:
   commentId: T:WaCore.Crud.Utils.LinqExtensions
   fullName: WaCore.Crud.Utils.LinqExtensions
   nameWithType: LinqExtensions
-- uid: WaCore.Crud.Utils.LinqExtensions.OrderByField*
-  name: OrderByField
-  href: api/WaCore.Crud.Utils.LinqExtensions.html#WaCore_Crud_Utils_LinqExtensions_OrderByField_
-  commentId: Overload:WaCore.Crud.Utils.LinqExtensions.OrderByField
-  fullName: WaCore.Crud.Utils.LinqExtensions.OrderByField
-  nameWithType: LinqExtensions.OrderByField
-- uid: WaCore.Crud.Utils.LinqExtensions.OrderByField``1(System.Linq.IQueryable{``0},System.String,System.Boolean)
-  name: OrderByField<T>(IQueryable<T>, String, Boolean)
-  href: api/WaCore.Crud.Utils.LinqExtensions.html#WaCore_Crud_Utils_LinqExtensions_OrderByField__1_System_Linq_IQueryable___0__System_String_System_Boolean_
-  commentId: M:WaCore.Crud.Utils.LinqExtensions.OrderByField``1(System.Linq.IQueryable{``0},System.String,System.Boolean)
-  name.vb: OrderByField(Of T)(IQueryable(Of T), String, Boolean)
-  fullName: WaCore.Crud.Utils.LinqExtensions.OrderByField<T>(System.Linq.IQueryable<T>, System.String, System.Boolean)
-  fullName.vb: WaCore.Crud.Utils.LinqExtensions.OrderByField(Of T)(System.Linq.IQueryable(Of T), System.String, System.Boolean)
-  nameWithType: LinqExtensions.OrderByField<T>(IQueryable<T>, String, Boolean)
-  nameWithType.vb: LinqExtensions.OrderByField(Of T)(IQueryable(Of T), String, Boolean)
-- uid: WaCore.Crud.Utils.OrderItem
-  name: OrderItem
-  href: api/WaCore.Crud.Utils.OrderItem.html
-  commentId: T:WaCore.Crud.Utils.OrderItem
-  fullName: WaCore.Crud.Utils.OrderItem
-  nameWithType: OrderItem
-- uid: WaCore.Crud.Utils.OrderItem.FieldName
-  name: FieldName
-  href: api/WaCore.Crud.Utils.OrderItem.html#WaCore_Crud_Utils_OrderItem_FieldName
-  commentId: P:WaCore.Crud.Utils.OrderItem.FieldName
-  fullName: WaCore.Crud.Utils.OrderItem.FieldName
-  nameWithType: OrderItem.FieldName
-- uid: WaCore.Crud.Utils.OrderItem.FieldName*
-  name: FieldName
-  href: api/WaCore.Crud.Utils.OrderItem.html#WaCore_Crud_Utils_OrderItem_FieldName_
-  commentId: Overload:WaCore.Crud.Utils.OrderItem.FieldName
-  fullName: WaCore.Crud.Utils.OrderItem.FieldName
-  nameWithType: OrderItem.FieldName
-- uid: WaCore.Crud.Utils.OrderItem.OrderBy
-  name: OrderItem.OrderBy
-  href: api/WaCore.Crud.Utils.OrderItem.OrderBy.html
-  commentId: T:WaCore.Crud.Utils.OrderItem.OrderBy
-  fullName: WaCore.Crud.Utils.OrderItem.OrderBy
-  nameWithType: OrderItem.OrderBy
-- uid: WaCore.Crud.Utils.OrderItem.OrderBy.Ascending
-  name: Ascending
-  href: api/WaCore.Crud.Utils.OrderItem.OrderBy.html#WaCore_Crud_Utils_OrderItem_OrderBy_Ascending
-  commentId: F:WaCore.Crud.Utils.OrderItem.OrderBy.Ascending
-  fullName: WaCore.Crud.Utils.OrderItem.OrderBy.Ascending
-  nameWithType: OrderItem.OrderBy.Ascending
-- uid: WaCore.Crud.Utils.OrderItem.OrderBy.Descending
-  name: Descending
-  href: api/WaCore.Crud.Utils.OrderItem.OrderBy.html#WaCore_Crud_Utils_OrderItem_OrderBy_Descending
-  commentId: F:WaCore.Crud.Utils.OrderItem.OrderBy.Descending
-  fullName: WaCore.Crud.Utils.OrderItem.OrderBy.Descending
-  nameWithType: OrderItem.OrderBy.Descending
-- uid: WaCore.Crud.Utils.OrderItem.OrderDirection
-  name: OrderDirection
-  href: api/WaCore.Crud.Utils.OrderItem.html#WaCore_Crud_Utils_OrderItem_OrderDirection
-  commentId: P:WaCore.Crud.Utils.OrderItem.OrderDirection
-  fullName: WaCore.Crud.Utils.OrderItem.OrderDirection
-  nameWithType: OrderItem.OrderDirection
-- uid: WaCore.Crud.Utils.OrderItem.OrderDirection*
-  name: OrderDirection
-  href: api/WaCore.Crud.Utils.OrderItem.html#WaCore_Crud_Utils_OrderItem_OrderDirection_
-  commentId: Overload:WaCore.Crud.Utils.OrderItem.OrderDirection
-  fullName: WaCore.Crud.Utils.OrderItem.OrderDirection
-  nameWithType: OrderItem.OrderDirection
+- uid: WaCore.Crud.Utils.LinqExtensions.OrderBySortString*
+  name: OrderBySortString
+  href: api/WaCore.Crud.Utils.LinqExtensions.html#WaCore_Crud_Utils_LinqExtensions_OrderBySortString_
+  commentId: Overload:WaCore.Crud.Utils.LinqExtensions.OrderBySortString
+  fullName: WaCore.Crud.Utils.LinqExtensions.OrderBySortString
+  nameWithType: LinqExtensions.OrderBySortString
+- uid: WaCore.Crud.Utils.LinqExtensions.OrderBySortString``1(System.Linq.IQueryable{``0},System.String,WaCore.Crud.Utils.Sorting.SortFieldMapping{``0})
+  name: OrderBySortString<T>(IQueryable<T>, String, SortFieldMapping<T>)
+  href: api/WaCore.Crud.Utils.LinqExtensions.html#WaCore_Crud_Utils_LinqExtensions_OrderBySortString__1_System_Linq_IQueryable___0__System_String_WaCore_Crud_Utils_Sorting_SortFieldMapping___0__
+  commentId: M:WaCore.Crud.Utils.LinqExtensions.OrderBySortString``1(System.Linq.IQueryable{``0},System.String,WaCore.Crud.Utils.Sorting.SortFieldMapping{``0})
+  name.vb: OrderBySortString(Of T)(IQueryable(Of T), String, SortFieldMapping(Of T))
+  fullName: WaCore.Crud.Utils.LinqExtensions.OrderBySortString<T>(System.Linq.IQueryable<T>, System.String, WaCore.Crud.Utils.Sorting.SortFieldMapping<T>)
+  fullName.vb: WaCore.Crud.Utils.LinqExtensions.OrderBySortString(Of T)(System.Linq.IQueryable(Of T), System.String, WaCore.Crud.Utils.Sorting.SortFieldMapping(Of T))
+  nameWithType: LinqExtensions.OrderBySortString<T>(IQueryable<T>, String, SortFieldMapping<T>)
+  nameWithType.vb: LinqExtensions.OrderBySortString(Of T)(IQueryable(Of T), String, SortFieldMapping(Of T))
 - uid: WaCore.Crud.Utils.PagedList`1
   name: PagedList<T>
   href: api/WaCore.Crud.Utils.PagedList-1.html
@@ -1180,30 +1303,535 @@ references:
   fullName.vb: WaCore.Crud.Utils.PagedList(Of T).TotalCount
   nameWithType: PagedList<T>.TotalCount
   nameWithType.vb: PagedList(Of T).TotalCount
-- uid: WaCore.Crud.Utils.SortBySplitter
+- uid: WaCore.Crud.Utils.Sorting
+  name: WaCore.Crud.Utils.Sorting
+  href: api/WaCore.Crud.Utils.Sorting.html
+  commentId: N:WaCore.Crud.Utils.Sorting
+  fullName: WaCore.Crud.Utils.Sorting
+  nameWithType: WaCore.Crud.Utils.Sorting
+- uid: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1
+  name: IFirstSortConfigurable<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1
+  name.vb: IFirstSortConfigurable(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable(Of TEntity)
+  nameWithType: IFirstSortConfigurable<TEntity>
+  nameWithType.vb: IFirstSortConfigurable(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderBy*
+  name: OrderBy
+  href: api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.html#WaCore_Crud_Utils_Sorting_IFirstSortConfigurable_1_OrderBy_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderBy
+  fullName: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable<TEntity>.OrderBy
+  fullName.vb: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable(Of TEntity).OrderBy
+  nameWithType: IFirstSortConfigurable<TEntity>.OrderBy
+  nameWithType.vb: IFirstSortConfigurable(Of TEntity).OrderBy
+- uid: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: OrderBy<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.html#WaCore_Crud_Utils_Sorting_IFirstSortConfigurable_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: OrderBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable<TEntity>.OrderBy<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable(Of TEntity).OrderBy(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: IFirstSortConfigurable<TEntity>.OrderBy<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: IFirstSortConfigurable(Of TEntity).OrderBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderByDescending*
+  name: OrderByDescending
+  href: api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.html#WaCore_Crud_Utils_Sorting_IFirstSortConfigurable_1_OrderByDescending_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderByDescending
+  fullName: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable<TEntity>.OrderByDescending
+  fullName.vb: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable(Of TEntity).OrderByDescending
+  nameWithType: IFirstSortConfigurable<TEntity>.OrderByDescending
+  nameWithType.vb: IFirstSortConfigurable(Of TEntity).OrderByDescending
+- uid: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: OrderByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.html#WaCore_Crud_Utils_Sorting_IFirstSortConfigurable_1_OrderByDescending__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.IFirstSortConfigurable`1.OrderByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: OrderByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable<TEntity>.OrderByDescending<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.IFirstSortConfigurable(Of TEntity).OrderByDescending(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: IFirstSortConfigurable<TEntity>.OrderByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: IFirstSortConfigurable(Of TEntity).OrderByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1
+  name: ISecondarySortConfigurable<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1
+  name.vb: ISecondarySortConfigurable(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable(Of TEntity)
+  nameWithType: ISecondarySortConfigurable<TEntity>
+  nameWithType.vb: ISecondarySortConfigurable(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenBy*
+  name: ThenBy
+  href: api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.html#WaCore_Crud_Utils_Sorting_ISecondarySortConfigurable_1_ThenBy_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenBy
+  fullName: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable<TEntity>.ThenBy
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable(Of TEntity).ThenBy
+  nameWithType: ISecondarySortConfigurable<TEntity>.ThenBy
+  nameWithType.vb: ISecondarySortConfigurable(Of TEntity).ThenBy
+- uid: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: ThenBy<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.html#WaCore_Crud_Utils_Sorting_ISecondarySortConfigurable_1_ThenBy__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: ThenBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable<TEntity>.ThenBy<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable(Of TEntity).ThenBy(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: ISecondarySortConfigurable<TEntity>.ThenBy<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: ISecondarySortConfigurable(Of TEntity).ThenBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenByDescending*
+  name: ThenByDescending
+  href: api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.html#WaCore_Crud_Utils_Sorting_ISecondarySortConfigurable_1_ThenByDescending_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenByDescending
+  fullName: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable<TEntity>.ThenByDescending
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable(Of TEntity).ThenByDescending
+  nameWithType: ISecondarySortConfigurable<TEntity>.ThenByDescending
+  nameWithType.vb: ISecondarySortConfigurable(Of TEntity).ThenByDescending
+- uid: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: ThenByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.html#WaCore_Crud_Utils_Sorting_ISecondarySortConfigurable_1_ThenByDescending__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable`1.ThenByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: ThenByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable<TEntity>.ThenByDescending<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable(Of TEntity).ThenByDescending(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: ISecondarySortConfigurable<TEntity>.ThenByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: ISecondarySortConfigurable(Of TEntity).ThenByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1
+  name: ISortFieldMappingBuilder<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1
+  name.vb: ISortFieldMappingBuilder(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity)
+  nameWithType: ISortFieldMappingBuilder<TEntity>
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.CaseSensitive
+  name: CaseSensitive
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder_1_CaseSensitive
+  commentId: P:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.CaseSensitive
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>.CaseSensitive
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity).CaseSensitive
+  nameWithType: ISortFieldMappingBuilder<TEntity>.CaseSensitive
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity).CaseSensitive
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.CaseSensitive*
+  name: CaseSensitive
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder_1_CaseSensitive_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.CaseSensitive
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>.CaseSensitive
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity).CaseSensitive
+  nameWithType: ISortFieldMappingBuilder<TEntity>.CaseSensitive
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity).CaseSensitive
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForDtoSortField*
+  name: ForDtoSortField
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder_1_ForDtoSortField_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForDtoSortField
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>.ForDtoSortField
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity).ForDtoSortField
+  nameWithType: ISortFieldMappingBuilder<TEntity>.ForDtoSortField
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity).ForDtoSortField
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForDtoSortField``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  name: ForDtoSortField<TDto>(Expression<Func<TDto, Object>>)
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder_1_ForDtoSortField__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___
+  commentId: M:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForDtoSortField``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  name.vb: ForDtoSortField(Of TDto)(Expression(Of Func(Of TDto, Object)))
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>.ForDtoSortField<TDto>(System.Linq.Expressions.Expression<System.Func<TDto, System.Object>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity).ForDtoSortField(Of TDto)(System.Linq.Expressions.Expression(Of System.Func(Of TDto, System.Object)))
+  nameWithType: ISortFieldMappingBuilder<TEntity>.ForDtoSortField<TDto>(Expression<Func<TDto, Object>>)
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity).ForDtoSortField(Of TDto)(Expression(Of Func(Of TDto, Object)))
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForSortField(System.String)
+  name: ForSortField(String)
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder_1_ForSortField_System_String_
+  commentId: M:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForSortField(System.String)
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>.ForSortField(System.String)
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity).ForSortField(System.String)
+  nameWithType: ISortFieldMappingBuilder<TEntity>.ForSortField(String)
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity).ForSortField(String)
+- uid: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForSortField*
+  name: ForSortField
+  href: api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_ISortFieldMappingBuilder_1_ForSortField_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder`1.ForSortField
+  fullName: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>.ForSortField
+  fullName.vb: WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder(Of TEntity).ForSortField
+  nameWithType: ISortFieldMappingBuilder<TEntity>.ForSortField
+  nameWithType.vb: ISortFieldMappingBuilder(Of TEntity).ForSortField
+- uid: WaCore.Crud.Utils.Sorting.OrderItem
+  name: OrderItem
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.html
+  commentId: T:WaCore.Crud.Utils.Sorting.OrderItem
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem
+  nameWithType: OrderItem
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.FieldName
+  name: FieldName
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.html#WaCore_Crud_Utils_Sorting_OrderItem_FieldName
+  commentId: P:WaCore.Crud.Utils.Sorting.OrderItem.FieldName
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.FieldName
+  nameWithType: OrderItem.FieldName
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.FieldName*
+  name: FieldName
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.html#WaCore_Crud_Utils_Sorting_OrderItem_FieldName_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.OrderItem.FieldName
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.FieldName
+  nameWithType: OrderItem.FieldName
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.OrderBy
+  name: OrderItem.OrderBy
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.html
+  commentId: T:WaCore.Crud.Utils.Sorting.OrderItem.OrderBy
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.OrderBy
+  nameWithType: OrderItem.OrderBy
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.Ascending
+  name: Ascending
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.html#WaCore_Crud_Utils_Sorting_OrderItem_OrderBy_Ascending
+  commentId: F:WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.Ascending
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.Ascending
+  nameWithType: OrderItem.OrderBy.Ascending
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.Descending
+  name: Descending
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.html#WaCore_Crud_Utils_Sorting_OrderItem_OrderBy_Descending
+  commentId: F:WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.Descending
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.Descending
+  nameWithType: OrderItem.OrderBy.Descending
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.OrderDirection
+  name: OrderDirection
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.html#WaCore_Crud_Utils_Sorting_OrderItem_OrderDirection
+  commentId: P:WaCore.Crud.Utils.Sorting.OrderItem.OrderDirection
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.OrderDirection
+  nameWithType: OrderItem.OrderDirection
+- uid: WaCore.Crud.Utils.Sorting.OrderItem.OrderDirection*
+  name: OrderDirection
+  href: api/WaCore.Crud.Utils.Sorting.OrderItem.html#WaCore_Crud_Utils_Sorting_OrderItem_OrderDirection_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.OrderItem.OrderDirection
+  fullName: WaCore.Crud.Utils.Sorting.OrderItem.OrderDirection
+  nameWithType: OrderItem.OrderDirection
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1
+  name: SingleSortFieldMap<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1
+  name.vb: SingleSortFieldMap(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity)
+  nameWithType: SingleSortFieldMap<TEntity>
+  nameWithType.vb: SingleSortFieldMap(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.#ctor(System.String)
+  name: SingleSortFieldMap(String)
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1__ctor_System_String_
+  commentId: M:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.#ctor(System.String)
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.SingleSortFieldMap(System.String)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).SingleSortFieldMap(System.String)
+  nameWithType: SingleSortFieldMap<TEntity>.SingleSortFieldMap(String)
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).SingleSortFieldMap(String)
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.#ctor*
+  name: SingleSortFieldMap
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1__ctor_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.#ctor
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.SingleSortFieldMap
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).SingleSortFieldMap
+  nameWithType: SingleSortFieldMap<TEntity>.SingleSortFieldMap
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).SingleSortFieldMap
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderBy*
+  name: OrderBy
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_OrderBy_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderBy
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.OrderBy
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).OrderBy
+  nameWithType: SingleSortFieldMap<TEntity>.OrderBy
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).OrderBy
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: OrderBy<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: OrderBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.OrderBy<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).OrderBy(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: SingleSortFieldMap<TEntity>.OrderBy<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).OrderBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderByDescending*
+  name: OrderByDescending
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_OrderByDescending_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderByDescending
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.OrderByDescending
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).OrderByDescending
+  nameWithType: SingleSortFieldMap<TEntity>.OrderByDescending
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).OrderByDescending
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: OrderByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_OrderByDescending__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.OrderByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: OrderByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.OrderByDescending<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).OrderByDescending(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: SingleSortFieldMap<TEntity>.OrderByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).OrderByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortColumns
+  name: SortColumns
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_SortColumns
+  commentId: P:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortColumns
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.SortColumns
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).SortColumns
+  nameWithType: SingleSortFieldMap<TEntity>.SortColumns
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).SortColumns
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortColumns*
+  name: SortColumns
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_SortColumns_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortColumns
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.SortColumns
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).SortColumns
+  nameWithType: SingleSortFieldMap<TEntity>.SortColumns
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).SortColumns
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortField
+  name: SortField
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_SortField
+  commentId: P:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortField
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.SortField
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).SortField
+  nameWithType: SingleSortFieldMap<TEntity>.SortField
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).SortField
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortField*
+  name: SortField
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_SortField_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.SortField
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.SortField
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).SortField
+  nameWithType: SingleSortFieldMap<TEntity>.SortField
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).SortField
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenBy*
+  name: ThenBy
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_ThenBy_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenBy
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.ThenBy
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).ThenBy
+  nameWithType: SingleSortFieldMap<TEntity>.ThenBy
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).ThenBy
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: ThenBy<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_ThenBy__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenBy``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: ThenBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.ThenBy<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).ThenBy(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: SingleSortFieldMap<TEntity>.ThenBy<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).ThenBy(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenByDescending*
+  name: ThenByDescending
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_ThenByDescending_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenByDescending
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.ThenByDescending
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).ThenByDescending
+  nameWithType: SingleSortFieldMap<TEntity>.ThenByDescending
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).ThenByDescending
+- uid: WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name: ThenByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  href: api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html#WaCore_Crud_Utils_Sorting_SingleSortFieldMap_1_ThenByDescending__1_System_Linq_Expressions_Expression_System_Func__0___0___
+  commentId: M:WaCore.Crud.Utils.Sorting.SingleSortFieldMap`1.ThenByDescending``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  name.vb: ThenByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+  fullName: WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>.ThenByDescending<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SingleSortFieldMap(Of TEntity).ThenByDescending(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)))
+  nameWithType: SingleSortFieldMap<TEntity>.ThenByDescending<TKey>(Expression<Func<TEntity, TKey>>)
+  nameWithType.vb: SingleSortFieldMap(Of TEntity).ThenByDescending(Of TKey)(Expression(Of Func(Of TEntity, TKey)))
+- uid: WaCore.Crud.Utils.Sorting.SortBySplitter
   name: SortBySplitter
-  href: api/WaCore.Crud.Utils.SortBySplitter.html
-  commentId: T:WaCore.Crud.Utils.SortBySplitter
-  fullName: WaCore.Crud.Utils.SortBySplitter
+  href: api/WaCore.Crud.Utils.Sorting.SortBySplitter.html
+  commentId: T:WaCore.Crud.Utils.Sorting.SortBySplitter
+  fullName: WaCore.Crud.Utils.Sorting.SortBySplitter
   nameWithType: SortBySplitter
-- uid: WaCore.Crud.Utils.SortBySplitter.SortRegex
+- uid: WaCore.Crud.Utils.Sorting.SortBySplitter.SortRegex
   name: SortRegex
-  href: api/WaCore.Crud.Utils.SortBySplitter.html#WaCore_Crud_Utils_SortBySplitter_SortRegex
-  commentId: F:WaCore.Crud.Utils.SortBySplitter.SortRegex
-  fullName: WaCore.Crud.Utils.SortBySplitter.SortRegex
+  href: api/WaCore.Crud.Utils.Sorting.SortBySplitter.html#WaCore_Crud_Utils_Sorting_SortBySplitter_SortRegex
+  commentId: F:WaCore.Crud.Utils.Sorting.SortBySplitter.SortRegex
+  fullName: WaCore.Crud.Utils.Sorting.SortBySplitter.SortRegex
   nameWithType: SortBySplitter.SortRegex
-- uid: WaCore.Crud.Utils.SortBySplitter.SplitSortByString(System.String)
+- uid: WaCore.Crud.Utils.Sorting.SortBySplitter.SplitSortByString(System.String)
   name: SplitSortByString(String)
-  href: api/WaCore.Crud.Utils.SortBySplitter.html#WaCore_Crud_Utils_SortBySplitter_SplitSortByString_System_String_
-  commentId: M:WaCore.Crud.Utils.SortBySplitter.SplitSortByString(System.String)
-  fullName: WaCore.Crud.Utils.SortBySplitter.SplitSortByString(System.String)
+  href: api/WaCore.Crud.Utils.Sorting.SortBySplitter.html#WaCore_Crud_Utils_Sorting_SortBySplitter_SplitSortByString_System_String_
+  commentId: M:WaCore.Crud.Utils.Sorting.SortBySplitter.SplitSortByString(System.String)
+  fullName: WaCore.Crud.Utils.Sorting.SortBySplitter.SplitSortByString(System.String)
   nameWithType: SortBySplitter.SplitSortByString(String)
-- uid: WaCore.Crud.Utils.SortBySplitter.SplitSortByString*
+- uid: WaCore.Crud.Utils.Sorting.SortBySplitter.SplitSortByString*
   name: SplitSortByString
-  href: api/WaCore.Crud.Utils.SortBySplitter.html#WaCore_Crud_Utils_SortBySplitter_SplitSortByString_
-  commentId: Overload:WaCore.Crud.Utils.SortBySplitter.SplitSortByString
-  fullName: WaCore.Crud.Utils.SortBySplitter.SplitSortByString
+  href: api/WaCore.Crud.Utils.Sorting.SortBySplitter.html#WaCore_Crud_Utils_Sorting_SortBySplitter_SplitSortByString_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortBySplitter.SplitSortByString
+  fullName: WaCore.Crud.Utils.Sorting.SortBySplitter.SplitSortByString
   nameWithType: SortBySplitter.SplitSortByString
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1
+  name: SortColumnDescriptor<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1
+  name.vb: SortColumnDescriptor(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity)
+  nameWithType: SortColumnDescriptor<TEntity>
+  nameWithType.vb: SortColumnDescriptor(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Asc
+  name: Asc
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_Asc
+  commentId: P:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Asc
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.Asc
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).Asc
+  nameWithType: SortColumnDescriptor<TEntity>.Asc
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).Asc
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Asc*
+  name: Asc
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_Asc_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Asc
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.Asc
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).Asc
+  nameWithType: SortColumnDescriptor<TEntity>.Asc
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).Asc
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Initialize*
+  name: Initialize
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_Initialize_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Initialize
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.Initialize
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).Initialize
+  nameWithType: SortColumnDescriptor<TEntity>.Initialize
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).Initialize
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Initialize``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean)
+  name: Initialize<TKey>(Expression<Func<TEntity, TKey>>, Boolean)
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_Initialize__1_System_Linq_Expressions_Expression_System_Func__0___0___System_Boolean_
+  commentId: M:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.Initialize``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Boolean)
+  name.vb: Initialize(Of TKey)(Expression(Of Func(Of TEntity, TKey)), Boolean)
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.Initialize<TKey>(System.Linq.Expressions.Expression<System.Func<TEntity, TKey>>, System.Boolean)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).Initialize(Of TKey)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TKey)), System.Boolean)
+  nameWithType: SortColumnDescriptor<TEntity>.Initialize<TKey>(Expression<Func<TEntity, TKey>>, Boolean)
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).Initialize(Of TKey)(Expression(Of Func(Of TEntity, TKey)), Boolean)
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeySelector
+  name: KeySelector
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_KeySelector
+  commentId: P:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeySelector
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.KeySelector
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).KeySelector
+  nameWithType: SortColumnDescriptor<TEntity>.KeySelector
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).KeySelector
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeySelector*
+  name: KeySelector
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_KeySelector_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeySelector
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.KeySelector
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).KeySelector
+  nameWithType: SortColumnDescriptor<TEntity>.KeySelector
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).KeySelector
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeyType
+  name: KeyType
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_KeyType
+  commentId: P:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeyType
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.KeyType
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).KeyType
+  nameWithType: SortColumnDescriptor<TEntity>.KeyType
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).KeyType
+- uid: WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeyType*
+  name: KeyType
+  href: api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html#WaCore_Crud_Utils_Sorting_SortColumnDescriptor_1_KeyType_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortColumnDescriptor`1.KeyType
+  fullName: WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>.KeyType
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortColumnDescriptor(Of TEntity).KeyType
+  nameWithType: SortColumnDescriptor<TEntity>.KeyType
+  nameWithType.vb: SortColumnDescriptor(Of TEntity).KeyType
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMapping`1
+  name: SortFieldMapping<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMapping-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.SortFieldMapping`1
+  name.vb: SortFieldMapping(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMapping<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMapping(Of TEntity)
+  nameWithType: SortFieldMapping<TEntity>
+  nameWithType.vb: SortFieldMapping(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMapping`1.#ctor
+  name: SortFieldMapping()
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMapping-1.html#WaCore_Crud_Utils_Sorting_SortFieldMapping_1__ctor
+  commentId: M:WaCore.Crud.Utils.Sorting.SortFieldMapping`1.#ctor
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMapping<TEntity>.SortFieldMapping()
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMapping(Of TEntity).SortFieldMapping()
+  nameWithType: SortFieldMapping<TEntity>.SortFieldMapping()
+  nameWithType.vb: SortFieldMapping(Of TEntity).SortFieldMapping()
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMapping`1.#ctor(System.Collections.Generic.IEqualityComparer{System.String})
+  name: SortFieldMapping(IEqualityComparer<String>)
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMapping-1.html#WaCore_Crud_Utils_Sorting_SortFieldMapping_1__ctor_System_Collections_Generic_IEqualityComparer_System_String__
+  commentId: M:WaCore.Crud.Utils.Sorting.SortFieldMapping`1.#ctor(System.Collections.Generic.IEqualityComparer{System.String})
+  name.vb: SortFieldMapping(IEqualityComparer(Of String))
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMapping<TEntity>.SortFieldMapping(System.Collections.Generic.IEqualityComparer<System.String>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMapping(Of TEntity).SortFieldMapping(System.Collections.Generic.IEqualityComparer(Of System.String))
+  nameWithType: SortFieldMapping<TEntity>.SortFieldMapping(IEqualityComparer<String>)
+  nameWithType.vb: SortFieldMapping(Of TEntity).SortFieldMapping(IEqualityComparer(Of String))
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMapping`1.#ctor*
+  name: SortFieldMapping
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMapping-1.html#WaCore_Crud_Utils_Sorting_SortFieldMapping_1__ctor_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortFieldMapping`1.#ctor
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMapping<TEntity>.SortFieldMapping
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMapping(Of TEntity).SortFieldMapping
+  nameWithType: SortFieldMapping<TEntity>.SortFieldMapping
+  nameWithType.vb: SortFieldMapping(Of TEntity).SortFieldMapping
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1
+  name: SortFieldMappingBuilder<TEntity>
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html
+  commentId: T:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1
+  name.vb: SortFieldMappingBuilder(Of TEntity)
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity)
+  nameWithType: SortFieldMappingBuilder<TEntity>
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity)
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.Build
+  name: Build()
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_Build
+  commentId: M:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.Build
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.Build()
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).Build()
+  nameWithType: SortFieldMappingBuilder<TEntity>.Build()
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).Build()
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.Build*
+  name: Build
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_Build_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.Build
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.Build
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).Build
+  nameWithType: SortFieldMappingBuilder<TEntity>.Build
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).Build
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.CaseSensitive
+  name: CaseSensitive
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_CaseSensitive
+  commentId: P:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.CaseSensitive
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.CaseSensitive
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).CaseSensitive
+  nameWithType: SortFieldMappingBuilder<TEntity>.CaseSensitive
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).CaseSensitive
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.CaseSensitive*
+  name: CaseSensitive
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_CaseSensitive_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.CaseSensitive
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.CaseSensitive
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).CaseSensitive
+  nameWithType: SortFieldMappingBuilder<TEntity>.CaseSensitive
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).CaseSensitive
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForDtoSortField*
+  name: ForDtoSortField
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_ForDtoSortField_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForDtoSortField
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.ForDtoSortField
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).ForDtoSortField
+  nameWithType: SortFieldMappingBuilder<TEntity>.ForDtoSortField
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).ForDtoSortField
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForDtoSortField``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  name: ForDtoSortField<TDto>(Expression<Func<TDto, Object>>)
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_ForDtoSortField__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___
+  commentId: M:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForDtoSortField``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})
+  name.vb: ForDtoSortField(Of TDto)(Expression(Of Func(Of TDto, Object)))
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.ForDtoSortField<TDto>(System.Linq.Expressions.Expression<System.Func<TDto, System.Object>>)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).ForDtoSortField(Of TDto)(System.Linq.Expressions.Expression(Of System.Func(Of TDto, System.Object)))
+  nameWithType: SortFieldMappingBuilder<TEntity>.ForDtoSortField<TDto>(Expression<Func<TDto, Object>>)
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).ForDtoSortField(Of TDto)(Expression(Of Func(Of TDto, Object)))
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForSortField(System.String)
+  name: ForSortField(String)
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_ForSortField_System_String_
+  commentId: M:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForSortField(System.String)
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.ForSortField(System.String)
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).ForSortField(System.String)
+  nameWithType: SortFieldMappingBuilder<TEntity>.ForSortField(String)
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).ForSortField(String)
+- uid: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForSortField*
+  name: ForSortField
+  href: api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html#WaCore_Crud_Utils_Sorting_SortFieldMappingBuilder_1_ForSortField_
+  commentId: Overload:WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder`1.ForSortField
+  fullName: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>.ForSortField
+  fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).ForSortField
+  nameWithType: SortFieldMappingBuilder<TEntity>.ForSortField
+  nameWithType.vb: SortFieldMappingBuilder(Of TEntity).ForSortField
 - uid: WaCore.Crud.Web.Controllers
   name: WaCore.Crud.Web.Controllers
   href: api/WaCore.Crud.Web.Controllers.html
