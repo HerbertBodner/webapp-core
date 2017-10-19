@@ -8,6 +8,7 @@ using WaCore.Sample.Entities;
 
 namespace WaCore.Sample.Controllers
 {
+#region UseUoWDocu
     [Route("api/[controller]")]
     public class BooksController : Controller
     {
@@ -17,6 +18,20 @@ namespace WaCore.Sample.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+
+        // POST api/books
+        [HttpPost]
+        public async Task<Book> PostAsync([FromBody]Book book)
+        {
+            using (var transaction = await _unitOfWork.BeginTransactionAsync())
+            {
+                _unitOfWork.BooksRepository.Add(book);
+                await _unitOfWork.SaveChangesAsync();
+                transaction.Commit();
+            }
+            return book;
+        }
+#endregion
 
         // GET api/books
         [HttpGet]
@@ -33,19 +48,6 @@ namespace WaCore.Sample.Controllers
             if (book == null)
                 return NotFound();
             return Json(book);
-        }
-
-        // POST api/books
-        [HttpPost]
-        public async Task<Book> PostAsync([FromBody]Book book)
-        {
-            using (var transaction = await _unitOfWork.BeginTransactionAsync())
-            {
-                _unitOfWork.BooksRepository.Add(book);
-                await _unitOfWork.SaveChangesAsync();
-                transaction.Commit();
-            }
-            return book;
         }
 
         // PUT api/values/5

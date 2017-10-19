@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using WaCore.Crud.ListSample1.Data;
 using WaCore.Crud.ListSample1.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using WaCore.Crud.ListSample1.Services;
-using WaCore.Contracts.Data;
 using WaCore.Crud.ListSample1.Entities;
 using WaCore.Crud.ListSample1.ViewModels;
 using WaCore.Crud.Contracts.Data;
@@ -32,7 +26,7 @@ namespace WaCore.Crud.ListSample1
 
             services.AddUnitOfWork<LibraryDbContext, IUnitOfWork, UnitOfWork>(
                 repoConfig => {
-                    repoConfig.AddRepository<IBooksListRepository, BookListRepository>();
+                    repoConfig.AddRepository<IBookListRepository, BookListRepository>();
                     repoConfig.AddRepository<IWacListDataRepository<Book, BookFilter>, BookListRepository>();
 
                     repoConfig.AddRepository<ICarRepository, CarRepository>();

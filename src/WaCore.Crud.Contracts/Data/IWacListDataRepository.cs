@@ -11,8 +11,8 @@ namespace WaCore.Crud.Contracts.Data
         where TFilter : IWacFilter
         where TEntity : class
     {
-        IList<TEntity> GetAll(TFilter filter);
-        Task<IList<TEntity>> GetAllAsync(TFilter filter);
+        IList<TEntity> GetList(TFilter filter);
+        Task<IList<TEntity>> GetListAsync(TFilter filter);
         int GetTotalCount(TFilter filter);
         Task<int> GetTotalCountAsync(TFilter filter);
     }

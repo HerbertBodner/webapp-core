@@ -10,8 +10,8 @@ namespace WaCore.Crud.Contracts.Services
     {
         TDto Get(object id);
         Task<TDto> GetAsync(object id);
-        IPagedList<TDto> GetAll(TFilter filter);
-        Task<IPagedList<TDto>> GetAllAsync(TFilter filter);
+        IPagedList<TDto> GetList(TFilter filter);
+        Task<IPagedList<TDto>> GetListAsync(TFilter filter);
 
     }
 }

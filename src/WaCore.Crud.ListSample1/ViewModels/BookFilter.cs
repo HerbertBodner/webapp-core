@@ -13,7 +13,6 @@ namespace WaCore.Crud.ListSample1.ViewModels
 
         public BookFilter()
         {
-            
         }
     }
 }

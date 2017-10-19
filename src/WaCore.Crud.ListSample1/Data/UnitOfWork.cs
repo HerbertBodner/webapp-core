@@ -13,14 +13,14 @@ namespace WaCore.Crud.ListSample1.Data
         public UnitOfWork(LibraryDbContext dbContext, IServiceProvider serviceProvider) : base(dbContext, serviceProvider)
         { }
 
-        public IBooksListRepository BooksRepository => GetRepository<IBooksListRepository>();
+        public IBookListRepository BookRepository => GetRepository<IBookListRepository>();
 
         public ICarRepository CarRepository => GetRepository<ICarRepository>();
     }
 
     public interface IUnitOfWork : IWacUnitOfWork
     {
-        IBooksListRepository BooksRepository { get; }
+        IBookListRepository BookRepository { get; }
 
         ICarRepository CarRepository{ get; }
     }

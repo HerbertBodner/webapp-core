@@ -4,11 +4,11 @@ using System.Text;
 using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace WaCore.Crud.Utils
+namespace WaCore.Crud.Utils.Sorting
 {
     public static class SortBySplitter
     {
-        public static Regex SortRegex = new Regex("[+-]\\w+", RegexOptions.Compiled);
+        public static Regex SortRegex = new Regex("[+-]?[\\w\\.]+", RegexOptions.Compiled);
 
         public static List<OrderItem> SplitSortByString(string sortByString)
         {
@@ -18,13 +18,11 @@ namespace WaCore.Crud.Utils
                 return list;
             }
 
-            sortByString = AddLeadingPlusIfNecessary(sortByString);
-
             foreach (var match in SortRegex.Matches(sortByString))
             {
-                var order = match.ToString().StartsWith('+') ? OrderItem.OrderBy.Ascending : OrderItem.OrderBy.Descending;
+                var order = match.ToString().StartsWith('-') ? OrderItem.OrderBy.Descending : OrderItem.OrderBy.Ascending;
 
-                var fieldName = match.ToString().Substring(1);
+                var fieldName = match.ToString().TrimStart('+','-');
 
                 list.Add(new OrderItem
                 {
@@ -34,16 +32,6 @@ namespace WaCore.Crud.Utils
             }
 
             return list;
-        }
-
-        private static string AddLeadingPlusIfNecessary(string sortByString)
-        {
-            if (!sortByString.StartsWith('+') && !sortByString.StartsWith('-'))
-            {
-                sortByString = "+" + sortByString;
-            }
-
-            return sortByString;
         }
     }
 
