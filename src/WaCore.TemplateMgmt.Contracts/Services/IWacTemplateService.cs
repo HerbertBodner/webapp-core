@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using WaCore.Crud.Contracts.Dtos;
 using WaCore.Crud.Contracts.Services;
 
 namespace WaCore.TemplateMgmt.Contracts.Services
 {
-    public interface ITemplateService<TEntity, TFilter, TDto, TNewDto> : IWacCrudService<TEntity, TFilter, TDto, TNewDto>
+    public interface IWacTemplateService<TEntity, TFilter, TDto, TNewDto> : IWacCrudService<TEntity, TFilter, TDto, TNewDto>
         where TEntity : class, new()
         where TFilter : IWacFilter
     {

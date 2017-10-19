@@ -7,21 +7,21 @@ using WaCore.TemplateMgmt.Services;
 
 namespace WaCore.TemplateMgmt.UnitTests
 {
-    public interface ITemplateServiceFake : ITemplateService<Template, WacFilter, Template, Template>
+    public interface ITemplateServiceFake : IWacTemplateService<TemplateFake, WacFilter, TemplateFake, TemplateFake>
     { }
 
-    public class TemplateServiceFake : TemplateService<Template, WacFilter, Template, Template>, ITemplateServiceFake
+    public class TemplateServiceFake : WacTemplateService<TemplateFake, WacFilter, TemplateFake, TemplateFake>, ITemplateServiceFake
     {
-        public TemplateServiceFake(IWacUnitOfWork unitOfWork, ITemplateEngine engine) : base(unitOfWork, engine)
+        public TemplateServiceFake(IWacUnitOfWork unitOfWork, IWacTemplateEngine engine) : base(unitOfWork, engine)
         {
         }
 
-        public override void MapDtoToEntity(Template dto, Template entityToCreateOrUpdate, Operation operation)
+        public override void MapDtoToEntity(TemplateFake dto, TemplateFake entityToCreateOrUpdate, Operation operation)
         {
             //nothing to do
         }
 
-        protected override Template MapEntityToDto(Template entity)
+        protected override TemplateFake MapEntityToDto(TemplateFake entity)
         {
             return entity;
         }

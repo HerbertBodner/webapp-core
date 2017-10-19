@@ -5,7 +5,7 @@ using WaCore.TemplateMgmt.Contracts.ValueObjects;
 
 namespace WaCore.TemplateMgmt.UnitTests
 {
-    public class Template : ITemplate
+    public class TemplateFake : IWacTemplate
     {
         public string Content { get; set; }
     }

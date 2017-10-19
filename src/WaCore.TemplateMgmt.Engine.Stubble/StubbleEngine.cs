@@ -8,7 +8,7 @@ using WaCore.TemplateMgmt.Contracts.Engine;
 
 namespace WaCore.TemplateMgmt.Engine.Stubble
 {
-    public class StubbleEngine : ITemplateEngine
+    public class StubbleEngine : IWacTemplateEngine
     {
         private StubbleVisitorRenderer _stubble;
         public StubbleEngine(RendererSettings settings=null)

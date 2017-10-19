@@ -12,12 +12,12 @@ using WaCore.TemplateMgmt.Contracts.ValueObjects;
 
 namespace WaCore.TemplateMgmt.Services
 {
-    public abstract class TemplateService<TEntity, TFilter, TDto, TNewDto> : WacCrudService<TEntity, TFilter, TDto, TNewDto>, ITemplateService<TEntity, TFilter, TDto, TNewDto>
+    public abstract class WacTemplateService<TEntity, TFilter, TDto, TNewDto> : WacCrudService<TEntity, TFilter, TDto, TNewDto>, IWacTemplateService<TEntity, TFilter, TDto, TNewDto>
         where TFilter : IWacFilter
-        where TEntity : class, ITemplate, new()
+        where TEntity : class, IWacTemplate, new()
     {
-        protected ITemplateEngine Engine;
-        public TemplateService(IWacUnitOfWork unitOfWork, ITemplateEngine engine) : base(unitOfWork)
+        protected IWacTemplateEngine Engine;
+        public WacTemplateService(IWacUnitOfWork unitOfWork, IWacTemplateEngine engine) : base(unitOfWork)
         {
             Engine = engine;
         }

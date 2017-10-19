@@ -8,7 +8,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddStubble(this IServiceCollection serviceCollection, RendererSettings rendererSettings = null)
         {
-            serviceCollection.AddSingleton(typeof(ITemplateEngine), new StubbleEngine(rendererSettings));
+            serviceCollection.AddSingleton(typeof(IWacTemplateEngine), new StubbleEngine(rendererSettings));
 
             return serviceCollection;
         }

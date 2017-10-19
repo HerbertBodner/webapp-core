@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WaCore.TemplateMgmt.Contracts.ValueObjects
 {
-    public interface ITemplate
+    public interface IWacTemplate
     {
         string Content { get; set; }
     }

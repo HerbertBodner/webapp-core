@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WaCore.TemplateMgmt.Contracts.Engine
 {
-    public interface ITemplateEngine
+    public interface IWacTemplateEngine
     {
         string Render(string input, object model);
         Task<string> RenderAsync(string input, object model);

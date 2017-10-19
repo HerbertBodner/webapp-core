@@ -9,12 +9,12 @@ using WaCore.TemplateMgmt.Engine.Stubble;
 namespace WaCore.TemplateMgmt.UnitTests
 {
     [TestClass]
-    public class TemplateServiceTests
+    public class WacTemplateServiceTests
     {
         [TestMethod]
         public void RenderWithSimpleObjectReturnsCorrectString()
         {
-            var template = new Template
+            var template = new TemplateFake
             {
                 Content = "{{name}}"
             };
@@ -28,7 +28,7 @@ namespace WaCore.TemplateMgmt.UnitTests
         [TestMethod]
         public async Task RenderWithComplexObjectReturnsCorrectString()
         {
-            var template = new Template
+            var template = new TemplateFake
             {
                 Content =
                 "{{#customer}}" +
@@ -63,14 +63,14 @@ namespace WaCore.TemplateMgmt.UnitTests
         }
 
 
-        private ITemplateServiceFake GetTemplateServiceFake(Template template)
+        private ITemplateServiceFake GetTemplateServiceFake(TemplateFake template)
         {
-            var templateRepoFake = Substitute.For<IWacListDataRepository<Template, WacFilter>>();
+            var templateRepoFake = Substitute.For<IWacListDataRepository<TemplateFake, WacFilter>>();
             templateRepoFake.Get(Arg.Any<object>()).Returns(template);
             templateRepoFake.GetAsync(Arg.Any<object>()).Returns(template);
 
             var uow = Substitute.For<IWacUnitOfWork>();
-            uow.GetRepository<IWacListDataRepository<Template, WacFilter>>().Returns(templateRepoFake);
+            uow.GetRepository<IWacListDataRepository<TemplateFake, WacFilter>>().Returns(templateRepoFake);
 
             var templateServiceFake = Substitute.For<TemplateServiceFake>(uow, new StubbleEngine());
             
