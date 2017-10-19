@@ -25,6 +25,15 @@ namespace WaCore.Crud.Data.Ef
         {
         }
 
+        public IList<TEntity> GetList(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
+
+            var queryPaginated = ApplySortingAndPagination(q, filter);
+
+            return queryPaginated.ToList();
+        }
+        
         protected void InitializeSortFieldMapping(Action<ISortFieldMappingBuilder<TEntity>> configAction)
         {
             var builder = new SortFieldMappingBuilder<TEntity>();
@@ -32,13 +41,21 @@ namespace WaCore.Crud.Data.Ef
             SortFieldMapping = builder.Build();
         }
 
-        public async Task<IList<TEntity>> GetAllAsync(TFilter filter)
+        public async Task<IList<TEntity>> GetListAsync(TFilter filter)
         {
             var q = ApplyFilter(DbSet.AsQueryable(), filter);
 
             var queryPaginated = ApplySortingAndPagination(q, filter);
 
             return await queryPaginated.ToListAsync();
+        }
+
+
+        public int GetTotalCount(TFilter filter)
+        {
+            var q = ApplyFilter(DbSet.AsQueryable(), filter);
+
+            return q.Count();
         }
 
         public async Task<int> GetTotalCountAsync(TFilter filter)

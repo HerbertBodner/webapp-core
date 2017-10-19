@@ -13,13 +13,13 @@ using WaCore.Crud.ListSample1.Dtos;
 
 namespace WaCore.Crud.ListSample1.Data.Repositories
 {
-    public interface IBooksListRepository : IWacListDataRepository<Book, BookFilter>
+    public interface IBookListRepository : IWacListDataRepository<Book, BookFilter>
     {
 
     }
 
 
-    public class BookListRepository : WacListDataRepository<Book, LibraryDbContext, BookFilter>, IBooksListRepository
+    public class BookListRepository : WacListDataRepository<Book, LibraryDbContext, BookFilter>, IBookListRepository
     {
         public BookListRepository(LibraryDbContext dbContext) : base(dbContext)
         {

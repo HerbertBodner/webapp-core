@@ -19,7 +19,6 @@
     <ProjectReference Include="..\WaCore.Crud.ListSample1\WaCore.Crud.ListSample1.csproj" />
     <ProjectReference Include="..\WaCore.Crud.Services\WaCore.Crud.Services.csproj" />
     <ProjectReference Include="..\WaCore.Crud.Utils\WaCore.Crud.Utils.csproj" />
-    <ProjectReference Include="..\WaCore.Crud.Web\WaCore.Crud.Web.csproj" />
   </ItemGroup>
 
 </Project>

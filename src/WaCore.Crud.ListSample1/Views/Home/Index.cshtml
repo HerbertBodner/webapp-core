@@ -7,15 +7,42 @@
     <div class="col-md-6">
         <h2>Books list</h2>
         <h4>Simple List Data with filtering and paging</h4>
-        <div>Use base classes for Repository (WacListDataRepository), Service (WacListDataService), Controller (WacListDataController), Filter (WacFilter) and Viewmodel (WacListDataVm).
-        By deriving your own classes from those base classes, you only need to impmlement their abstract methods and get a nicely structured, extendable code, which has following server-side functionality:</div>
-        <ul>
-            <li>display a list of dtos</li>
-            <li>filter/search</li>
-            <li>paging</li>
-            <li>sorting</li>
-        </ul>
+        <div>
+            <p>
+                It uses base classes for Service (<code>WacListDataService</code>), Repository (<code>WacListDataRepository</code>) and Filter (<code>WacFilter</code>).
+            </p>
+            <p>
+                By deriving your own classes from those base classes, you only need to impmlement their abstract methods and get a nicely structured, extendable code, which has following server-side functionality:
+
+                <ul>
+                    <li>display a list of dtos</li>
+                    <li>filter/search</li>
+                    <li>paging</li>
+                    <li>sorting</li>
+                </ul>
+            </p>
+        </div>
         <div>@Html.ActionLink("View example", "Index", "BookListData") </div>
+
+    </div>
+
+    <div class="col-md-6">
+        <h2>Cars list</h2>
+        <h4>Simple CRUD functionality</h4>
+        <div>
+            <p>
+                Same as the books example, but provides also CRUD functionality.
+            </p>
+            <p>
+                It uses the same base classes as the books example for Repository (<code>WacListDataRepository</code>) and Filter (<code>WacFilter</code>).
+                But instead of using <code>WacListDataService</code> for the base class of the service, it uses <code>WacCrudService</code>, which extends the former one with CRUD functionality.
+            </p>
+            <p>
+                By deriving your own classes from those base classes, you only need to impmlement their abstract methods and get a nicely structured, extendable code, which has CRUD functionality.
+            </p>
+        </div>
+        
+        <div>@Html.ActionLink("View example", "Index", "Cars") </div>
 
     </div>
     
