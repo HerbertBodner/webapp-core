@@ -323,22 +323,54 @@ references:
   fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter)
   nameWithType: IWacListDataRepository<TEntity, TFilter>
   nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter)
-- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAllAsync(`1)
-  name: GetAllAsync(TFilter)
-  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetAllAsync__1_
-  commentId: M:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAllAsync(`1)
-  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetAllAsync(TFilter)
-  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetAllAsync(TFilter)
-  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetAllAsync(TFilter)
-  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetAllAsync(TFilter)
-- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAllAsync*
-  name: GetAllAsync
-  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetAllAsync_
-  commentId: Overload:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetAllAsync
-  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetAllAsync
-  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetAllAsync
-  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetAllAsync
-  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetAllAsync
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetList(`1)
+  name: GetList(TFilter)
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetList__1_
+  commentId: M:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetList(`1)
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetList(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetList(TFilter)
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetList(TFilter)
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetList(TFilter)
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetList*
+  name: GetList
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetList_
+  commentId: Overload:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetList
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetList
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetList
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetList
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetList
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetListAsync(`1)
+  name: GetListAsync(TFilter)
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetListAsync__1_
+  commentId: M:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetListAsync(`1)
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetListAsync(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetListAsync(TFilter)
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetListAsync(TFilter)
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetListAsync(TFilter)
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetListAsync*
+  name: GetListAsync
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetListAsync_
+  commentId: Overload:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetListAsync
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetListAsync
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetListAsync
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetListAsync
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetListAsync
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetTotalCount(`1)
+  name: GetTotalCount(TFilter)
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetTotalCount__1_
+  commentId: M:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetTotalCount(`1)
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetTotalCount(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetTotalCount(TFilter)
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetTotalCount(TFilter)
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetTotalCount(TFilter)
+- uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetTotalCount*
+  name: GetTotalCount
+  href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetTotalCount_
+  commentId: Overload:WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetTotalCount
+  fullName: WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>.GetTotalCount
+  fullName.vb: WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter).GetTotalCount
+  nameWithType: IWacListDataRepository<TEntity, TFilter>.GetTotalCount
+  nameWithType.vb: IWacListDataRepository(Of TEntity, TFilter).GetTotalCount
 - uid: WaCore.Crud.Contracts.Data.IWacListDataRepository`2.GetTotalCountAsync(`1)
   name: GetTotalCountAsync(TFilter)
   href: api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html#WaCore_Crud_Contracts_Data_IWacListDataRepository_2_GetTotalCountAsync__1_
@@ -409,6 +441,127 @@ references:
   commentId: N:WaCore.Crud.Contracts.Services
   fullName: WaCore.Crud.Contracts.Services
   nameWithType: WaCore.Crud.Contracts.Services
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4
+  name: IWacCrudService<TEntity, TFilter, TDto, TNewDto>
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html
+  commentId: T:WaCore.Crud.Contracts.Services.IWacCrudService`4
+  name.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.Create(`3)
+  name: Create(TNewDto)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_Create__3_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.Create(`3)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Create(TNewDto)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create(TNewDto)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Create(TNewDto)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create(TNewDto)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.Create*
+  name: Create
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_Create_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.Create
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Create
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Create
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.CreateAsync(`3)
+  name: CreateAsync(TNewDto)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_CreateAsync__3_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.CreateAsync(`3)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync(TNewDto)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync(TNewDto)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync(TNewDto)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync(TNewDto)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.CreateAsync*
+  name: CreateAsync
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_CreateAsync_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.CreateAsync
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.Delete(System.Object)
+  name: Delete(Object)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_Delete_System_Object_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.Delete(System.Object)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete(System.Object)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete(System.Object)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete(Object)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete(Object)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.Delete*
+  name: Delete
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_Delete_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.Delete
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.DeleteAsync(System.Object)
+  name: DeleteAsync(Object)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_DeleteAsync_System_Object_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.DeleteAsync(System.Object)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync(System.Object)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync(System.Object)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync(Object)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync(Object)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.DeleteAsync*
+  name: DeleteAsync
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_DeleteAsync_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.DeleteAsync
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.MapDtoToEntity(`3,`0,WaCore.Crud.Contracts.Services.Operation)
+  name: MapDtoToEntity(TNewDto, TEntity, Operation)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_MapDtoToEntity__3__0_WaCore_Crud_Contracts_Services_Operation_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.MapDtoToEntity(`3,`0,WaCore.Crud.Contracts.Services.Operation)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity(TNewDto, TEntity, WaCore.Crud.Contracts.Services.Operation)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity(TNewDto, TEntity, WaCore.Crud.Contracts.Services.Operation)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity(TNewDto, TEntity, Operation)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity(TNewDto, TEntity, Operation)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.MapDtoToEntity*
+  name: MapDtoToEntity
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_MapDtoToEntity_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.MapDtoToEntity
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.Update(System.Object,`3)
+  name: Update(Object, TNewDto)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_Update_System_Object__3_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.Update(System.Object,`3)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Update(System.Object, TNewDto)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update(System.Object, TNewDto)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Update(Object, TNewDto)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update(Object, TNewDto)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.Update*
+  name: Update
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_Update_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.Update
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Update
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.Update
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.UpdateAsync(System.Object,`3)
+  name: UpdateAsync(Object, TNewDto)
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_UpdateAsync_System_Object__3_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacCrudService`4.UpdateAsync(System.Object,`3)
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync(System.Object, TNewDto)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync(System.Object, TNewDto)
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync(Object, TNewDto)
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync(Object, TNewDto)
+- uid: WaCore.Crud.Contracts.Services.IWacCrudService`4.UpdateAsync*
+  name: UpdateAsync
+  href: api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html#WaCore_Crud_Contracts_Services_IWacCrudService_4_UpdateAsync_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacCrudService`4.UpdateAsync
+  fullName: WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync
+  nameWithType: IWacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync
+  nameWithType.vb: IWacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync
 - uid: WaCore.Crud.Contracts.Services.IWacListDataService`2
   name: IWacListDataService<TFilter, TDto>
   href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html
@@ -418,22 +571,88 @@ references:
   fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto)
   nameWithType: IWacListDataService<TFilter, TDto>
   nameWithType.vb: IWacListDataService(Of TFilter, TDto)
-- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAllAsync(`0)
-  name: GetAllAsync(TFilter)
-  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetAllAsync__0_
-  commentId: M:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAllAsync(`0)
-  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetAllAsync(TFilter)
-  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetAllAsync(TFilter)
-  nameWithType: IWacListDataService<TFilter, TDto>.GetAllAsync(TFilter)
-  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetAllAsync(TFilter)
-- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAllAsync*
-  name: GetAllAsync
-  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetAllAsync_
-  commentId: Overload:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAllAsync
-  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetAllAsync
-  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetAllAsync
-  nameWithType: IWacListDataService<TFilter, TDto>.GetAllAsync
-  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetAllAsync
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.Get(System.Object)
+  name: Get(Object)
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_Get_System_Object_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacListDataService`2.Get(System.Object)
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.Get(System.Object)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).Get(System.Object)
+  nameWithType: IWacListDataService<TFilter, TDto>.Get(Object)
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).Get(Object)
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.Get*
+  name: Get
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_Get_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacListDataService`2.Get
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.Get
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).Get
+  nameWithType: IWacListDataService<TFilter, TDto>.Get
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).Get
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAsync(System.Object)
+  name: GetAsync(Object)
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetAsync_System_Object_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAsync(System.Object)
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetAsync(System.Object)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetAsync(System.Object)
+  nameWithType: IWacListDataService<TFilter, TDto>.GetAsync(Object)
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetAsync(Object)
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAsync*
+  name: GetAsync
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetAsync_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetAsync
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetAsync
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetAsync
+  nameWithType: IWacListDataService<TFilter, TDto>.GetAsync
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetAsync
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetList(`0)
+  name: GetList(TFilter)
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetList__0_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetList(`0)
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetList(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetList(TFilter)
+  nameWithType: IWacListDataService<TFilter, TDto>.GetList(TFilter)
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetList(TFilter)
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetList*
+  name: GetList
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetList_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetList
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetList
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetList
+  nameWithType: IWacListDataService<TFilter, TDto>.GetList
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetList
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetListAsync(`0)
+  name: GetListAsync(TFilter)
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetListAsync__0_
+  commentId: M:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetListAsync(`0)
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetListAsync(TFilter)
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetListAsync(TFilter)
+  nameWithType: IWacListDataService<TFilter, TDto>.GetListAsync(TFilter)
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetListAsync(TFilter)
+- uid: WaCore.Crud.Contracts.Services.IWacListDataService`2.GetListAsync*
+  name: GetListAsync
+  href: api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html#WaCore_Crud_Contracts_Services_IWacListDataService_2_GetListAsync_
+  commentId: Overload:WaCore.Crud.Contracts.Services.IWacListDataService`2.GetListAsync
+  fullName: WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>.GetListAsync
+  fullName.vb: WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto).GetListAsync
+  nameWithType: IWacListDataService<TFilter, TDto>.GetListAsync
+  nameWithType.vb: IWacListDataService(Of TFilter, TDto).GetListAsync
+- uid: WaCore.Crud.Contracts.Services.Operation
+  name: Operation
+  href: api/WaCore.Crud.Contracts.Services.Operation.html
+  commentId: T:WaCore.Crud.Contracts.Services.Operation
+  fullName: WaCore.Crud.Contracts.Services.Operation
+  nameWithType: Operation
+- uid: WaCore.Crud.Contracts.Services.Operation.Create
+  name: Create
+  href: api/WaCore.Crud.Contracts.Services.Operation.html#WaCore_Crud_Contracts_Services_Operation_Create
+  commentId: F:WaCore.Crud.Contracts.Services.Operation.Create
+  fullName: WaCore.Crud.Contracts.Services.Operation.Create
+  nameWithType: Operation.Create
+- uid: WaCore.Crud.Contracts.Services.Operation.Update
+  name: Update
+  href: api/WaCore.Crud.Contracts.Services.Operation.html#WaCore_Crud_Contracts_Services_Operation_Update
+  commentId: F:WaCore.Crud.Contracts.Services.Operation.Update
+  fullName: WaCore.Crud.Contracts.Services.Operation.Update
+  nameWithType: Operation.Update
 - uid: WaCore.Crud.Contracts.Utils
   name: WaCore.Crud.Contracts.Utils
   href: api/WaCore.Crud.Contracts.Utils.html
@@ -513,53 +732,6 @@ references:
   fullName.vb: WaCore.Crud.Contracts.Utils.IPagedList(Of T).TotalCount
   nameWithType: IPagedList<T>.TotalCount
   nameWithType.vb: IPagedList(Of T).TotalCount
-- uid: WaCore.Crud.Contracts.Web
-  name: WaCore.Crud.Contracts.Web
-  href: api/WaCore.Crud.Contracts.Web.html
-  commentId: N:WaCore.Crud.Contracts.Web
-  fullName: WaCore.Crud.Contracts.Web
-  nameWithType: WaCore.Crud.Contracts.Web
-- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2
-  name: IWacListDataVm<TDto, TFilter>
-  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html
-  commentId: T:WaCore.Crud.Contracts.Web.IWacListDataVm`2
-  name.vb: IWacListDataVm(Of TDto, TFilter)
-  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>
-  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter)
-  nameWithType: IWacListDataVm<TDto, TFilter>
-  nameWithType.vb: IWacListDataVm(Of TDto, TFilter)
-- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList
-  name: DtoList
-  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_DtoList
-  commentId: P:WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList
-  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.DtoList
-  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).DtoList
-  nameWithType: IWacListDataVm<TDto, TFilter>.DtoList
-  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).DtoList
-- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList*
-  name: DtoList
-  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_DtoList_
-  commentId: Overload:WaCore.Crud.Contracts.Web.IWacListDataVm`2.DtoList
-  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.DtoList
-  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).DtoList
-  nameWithType: IWacListDataVm<TDto, TFilter>.DtoList
-  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).DtoList
-- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter
-  name: Filter
-  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_Filter
-  commentId: P:WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter
-  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.Filter
-  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).Filter
-  nameWithType: IWacListDataVm<TDto, TFilter>.Filter
-  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).Filter
-- uid: WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter*
-  name: Filter
-  href: api/WaCore.Crud.Contracts.Web.IWacListDataVm-2.html#WaCore_Crud_Contracts_Web_IWacListDataVm_2_Filter_
-  commentId: Overload:WaCore.Crud.Contracts.Web.IWacListDataVm`2.Filter
-  fullName: WaCore.Crud.Contracts.Web.IWacListDataVm<TDto, TFilter>.Filter
-  fullName.vb: WaCore.Crud.Contracts.Web.IWacListDataVm(Of TDto, TFilter).Filter
-  nameWithType: IWacListDataVm<TDto, TFilter>.Filter
-  nameWithType.vb: IWacListDataVm(Of TDto, TFilter).Filter
 - uid: WaCore.Crud.Data.Ef
   name: WaCore.Crud.Data.Ef
   href: api/WaCore.Crud.Data.Ef.html
@@ -625,22 +797,54 @@ references:
   fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).ApplySortingAndPagination
   nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.ApplySortingAndPagination
   nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).ApplySortingAndPagination
-- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAllAsync(`2)
-  name: GetAllAsync(TFilter)
-  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetAllAsync__2_
-  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAllAsync(`2)
-  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetAllAsync(TFilter)
-  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAllAsync(TFilter)
-  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetAllAsync(TFilter)
-  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAllAsync(TFilter)
-- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAllAsync*
-  name: GetAllAsync
-  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetAllAsync_
-  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetAllAsync
-  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetAllAsync
-  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAllAsync
-  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetAllAsync
-  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetAllAsync
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetList(`2)
+  name: GetList(TFilter)
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetList__2_
+  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetList(`2)
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetList(TFilter)
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetList(TFilter)
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetList(TFilter)
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetList(TFilter)
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetList*
+  name: GetList
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetList_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetList
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetList
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetList
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetList
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetList
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetListAsync(`2)
+  name: GetListAsync(TFilter)
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetListAsync__2_
+  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetListAsync(`2)
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetListAsync(TFilter)
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetListAsync(TFilter)
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetListAsync(TFilter)
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetListAsync(TFilter)
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetListAsync*
+  name: GetListAsync
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetListAsync_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetListAsync
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetListAsync
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetListAsync
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetListAsync
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetListAsync
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetTotalCount(`2)
+  name: GetTotalCount(TFilter)
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetTotalCount__2_
+  commentId: M:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetTotalCount(`2)
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetTotalCount(TFilter)
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetTotalCount(TFilter)
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetTotalCount(TFilter)
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetTotalCount(TFilter)
+- uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetTotalCount*
+  name: GetTotalCount
+  href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetTotalCount_
+  commentId: Overload:WaCore.Crud.Data.Ef.WacListDataRepository`3.GetTotalCount
+  fullName: WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>.GetTotalCount
+  fullName.vb: WaCore.Crud.Data.Ef.WacListDataRepository(Of TEntity, TDbContext, TFilter).GetTotalCount
+  nameWithType: WacListDataRepository<TEntity, TDbContext, TFilter>.GetTotalCount
+  nameWithType.vb: WacListDataRepository(Of TEntity, TDbContext, TFilter).GetTotalCount
 - uid: WaCore.Crud.Data.Ef.WacListDataRepository`3.GetTotalCountAsync(`2)
   name: GetTotalCountAsync(TFilter)
   href: api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html#WaCore_Crud_Data_Ef_WacListDataRepository_3_GetTotalCountAsync__2_
@@ -756,6 +960,151 @@ references:
   commentId: N:WaCore.Crud.Services
   fullName: WaCore.Crud.Services
   nameWithType: WaCore.Crud.Services
+- uid: WaCore.Crud.Services.WacCrudService`4
+  name: WacCrudService<TEntity, TFilter, TDto, TNewDto>
+  href: api/WaCore.Crud.Services.WacCrudService-4.html
+  commentId: T:WaCore.Crud.Services.WacCrudService`4
+  name.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto)
+- uid: WaCore.Crud.Services.WacCrudService`4.#ctor(WaCore.Contracts.Data.IWacUnitOfWork)
+  name: WacCrudService(IWacUnitOfWork)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4__ctor_WaCore_Contracts_Data_IWacUnitOfWork_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.#ctor(WaCore.Contracts.Data.IWacUnitOfWork)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.WacCrudService(WaCore.Contracts.Data.IWacUnitOfWork)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).WacCrudService(WaCore.Contracts.Data.IWacUnitOfWork)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.WacCrudService(IWacUnitOfWork)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).WacCrudService(IWacUnitOfWork)
+- uid: WaCore.Crud.Services.WacCrudService`4.#ctor*
+  name: WacCrudService
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4__ctor_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.#ctor
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.WacCrudService
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).WacCrudService
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.WacCrudService
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).WacCrudService
+- uid: WaCore.Crud.Services.WacCrudService`4.Create(`3)
+  name: Create(TNewDto)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_Create__3_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.Create(`3)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.Create(TNewDto)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create(TNewDto)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.Create(TNewDto)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create(TNewDto)
+- uid: WaCore.Crud.Services.WacCrudService`4.Create*
+  name: Create
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_Create_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.Create
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.Create
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.Create
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Create
+- uid: WaCore.Crud.Services.WacCrudService`4.CreateAsync(`3)
+  name: CreateAsync(TNewDto)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_CreateAsync__3_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.CreateAsync(`3)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync(TNewDto)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync(TNewDto)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync(TNewDto)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync(TNewDto)
+- uid: WaCore.Crud.Services.WacCrudService`4.CreateAsync*
+  name: CreateAsync
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_CreateAsync_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.CreateAsync
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.CreateAsync
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).CreateAsync
+- uid: WaCore.Crud.Services.WacCrudService`4.Delete(System.Object)
+  name: Delete(Object)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_Delete_System_Object_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.Delete(System.Object)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete(System.Object)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete(System.Object)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete(Object)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete(Object)
+- uid: WaCore.Crud.Services.WacCrudService`4.Delete*
+  name: Delete
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_Delete_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.Delete
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.Delete
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Delete
+- uid: WaCore.Crud.Services.WacCrudService`4.DeleteAsync(System.Object)
+  name: DeleteAsync(Object)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_DeleteAsync_System_Object_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.DeleteAsync(System.Object)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync(System.Object)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync(System.Object)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync(Object)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync(Object)
+- uid: WaCore.Crud.Services.WacCrudService`4.DeleteAsync*
+  name: DeleteAsync
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_DeleteAsync_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.DeleteAsync
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.DeleteAsync
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).DeleteAsync
+- uid: WaCore.Crud.Services.WacCrudService`4.MapDtoToEntity(`3,`0,WaCore.Crud.Contracts.Services.Operation)
+  name: MapDtoToEntity(TNewDto, TEntity, Operation)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_MapDtoToEntity__3__0_WaCore_Crud_Contracts_Services_Operation_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.MapDtoToEntity(`3,`0,WaCore.Crud.Contracts.Services.Operation)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity(TNewDto, TEntity, WaCore.Crud.Contracts.Services.Operation)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity(TNewDto, TEntity, WaCore.Crud.Contracts.Services.Operation)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity(TNewDto, TEntity, Operation)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity(TNewDto, TEntity, Operation)
+- uid: WaCore.Crud.Services.WacCrudService`4.MapDtoToEntity*
+  name: MapDtoToEntity
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_MapDtoToEntity_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.MapDtoToEntity
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.MapDtoToEntity
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).MapDtoToEntity
+- uid: WaCore.Crud.Services.WacCrudService`4.UnitOfWork
+  name: UnitOfWork
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_UnitOfWork
+  commentId: F:WaCore.Crud.Services.WacCrudService`4.UnitOfWork
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.UnitOfWork
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).UnitOfWork
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.UnitOfWork
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).UnitOfWork
+- uid: WaCore.Crud.Services.WacCrudService`4.Update(System.Object,`3)
+  name: Update(Object, TNewDto)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_Update_System_Object__3_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.Update(System.Object,`3)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.Update(System.Object, TNewDto)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update(System.Object, TNewDto)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.Update(Object, TNewDto)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update(Object, TNewDto)
+- uid: WaCore.Crud.Services.WacCrudService`4.Update*
+  name: Update
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_Update_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.Update
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.Update
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.Update
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).Update
+- uid: WaCore.Crud.Services.WacCrudService`4.UpdateAsync(System.Object,`3)
+  name: UpdateAsync(Object, TNewDto)
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_UpdateAsync_System_Object__3_
+  commentId: M:WaCore.Crud.Services.WacCrudService`4.UpdateAsync(System.Object,`3)
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync(System.Object, TNewDto)
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync(System.Object, TNewDto)
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync(Object, TNewDto)
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync(Object, TNewDto)
+- uid: WaCore.Crud.Services.WacCrudService`4.UpdateAsync*
+  name: UpdateAsync
+  href: api/WaCore.Crud.Services.WacCrudService-4.html#WaCore_Crud_Services_WacCrudService_4_UpdateAsync_
+  commentId: Overload:WaCore.Crud.Services.WacCrudService`4.UpdateAsync
+  fullName: WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync
+  fullName.vb: WaCore.Crud.Services.WacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync
+  nameWithType: WacCrudService<TEntity, TFilter, TDto, TNewDto>.UpdateAsync
+  nameWithType.vb: WacCrudService(Of TEntity, TFilter, TDto, TNewDto).UpdateAsync
 - uid: WaCore.Crud.Services.WacListDataService`3
   name: WacListDataService<TEntity, TFilter, TDto>
   href: api/WaCore.Crud.Services.WacListDataService-3.html
@@ -765,15 +1114,14 @@ references:
   fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto)
   nameWithType: WacListDataService<TEntity, TFilter, TDto>
   nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto)
-- uid: WaCore.Crud.Services.WacListDataService`3.#ctor(WaCore.Crud.Contracts.Data.IWacListDataRepository{`0,`1})
-  name: WacListDataService(IWacListDataRepository<TEntity, TFilter>)
-  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3__ctor_WaCore_Crud_Contracts_Data_IWacListDataRepository__0__1__
-  commentId: M:WaCore.Crud.Services.WacListDataService`3.#ctor(WaCore.Crud.Contracts.Data.IWacListDataRepository{`0,`1})
-  name.vb: WacListDataService(IWacListDataRepository(Of TEntity, TFilter))
-  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.WacListDataService(WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>)
-  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).WacListDataService(WaCore.Crud.Contracts.Data.IWacListDataRepository(Of TEntity, TFilter))
-  nameWithType: WacListDataService<TEntity, TFilter, TDto>.WacListDataService(IWacListDataRepository<TEntity, TFilter>)
-  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).WacListDataService(IWacListDataRepository(Of TEntity, TFilter))
+- uid: WaCore.Crud.Services.WacListDataService`3.#ctor(WaCore.Contracts.Data.IWacUnitOfWork)
+  name: WacListDataService(IWacUnitOfWork)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3__ctor_WaCore_Contracts_Data_IWacUnitOfWork_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.#ctor(WaCore.Contracts.Data.IWacUnitOfWork)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.WacListDataService(WaCore.Contracts.Data.IWacUnitOfWork)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).WacListDataService(WaCore.Contracts.Data.IWacUnitOfWork)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.WacListDataService(IWacUnitOfWork)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).WacListDataService(IWacUnitOfWork)
 - uid: WaCore.Crud.Services.WacListDataService`3.#ctor*
   name: WacListDataService
   href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3__ctor_
@@ -782,22 +1130,70 @@ references:
   fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).WacListDataService
   nameWithType: WacListDataService<TEntity, TFilter, TDto>.WacListDataService
   nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).WacListDataService
-- uid: WaCore.Crud.Services.WacListDataService`3.GetAllAsync(`1)
-  name: GetAllAsync(TFilter)
-  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAllAsync__1_
-  commentId: M:WaCore.Crud.Services.WacListDataService`3.GetAllAsync(`1)
-  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetAllAsync(TFilter)
-  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetAllAsync(TFilter)
-  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetAllAsync(TFilter)
-  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetAllAsync(TFilter)
-- uid: WaCore.Crud.Services.WacListDataService`3.GetAllAsync*
-  name: GetAllAsync
-  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAllAsync_
-  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.GetAllAsync
-  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetAllAsync
-  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetAllAsync
-  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetAllAsync
-  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetAllAsync
+- uid: WaCore.Crud.Services.WacListDataService`3.Get(System.Object)
+  name: Get(Object)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_Get_System_Object_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.Get(System.Object)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.Get(System.Object)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).Get(System.Object)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.Get(Object)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).Get(Object)
+- uid: WaCore.Crud.Services.WacListDataService`3.Get*
+  name: Get
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_Get_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.Get
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.Get
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).Get
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.Get
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).Get
+- uid: WaCore.Crud.Services.WacListDataService`3.GetAsync(System.Object)
+  name: GetAsync(Object)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAsync_System_Object_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.GetAsync(System.Object)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetAsync(System.Object)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetAsync(System.Object)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetAsync(Object)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetAsync(Object)
+- uid: WaCore.Crud.Services.WacListDataService`3.GetAsync*
+  name: GetAsync
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAsync_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.GetAsync
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetAsync
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetAsync
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetAsync
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetAsync
+- uid: WaCore.Crud.Services.WacListDataService`3.GetList(`1)
+  name: GetList(TFilter)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetList__1_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.GetList(`1)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetList(TFilter)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetList(TFilter)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetList(TFilter)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetList(TFilter)
+- uid: WaCore.Crud.Services.WacListDataService`3.GetList*
+  name: GetList
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetList_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.GetList
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetList
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetList
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetList
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetList
+- uid: WaCore.Crud.Services.WacListDataService`3.GetListAsync(`1)
+  name: GetListAsync(TFilter)
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetListAsync__1_
+  commentId: M:WaCore.Crud.Services.WacListDataService`3.GetListAsync(`1)
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetListAsync(TFilter)
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetListAsync(TFilter)
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetListAsync(TFilter)
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetListAsync(TFilter)
+- uid: WaCore.Crud.Services.WacListDataService`3.GetListAsync*
+  name: GetListAsync
+  href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetListAsync_
+  commentId: Overload:WaCore.Crud.Services.WacListDataService`3.GetListAsync
+  fullName: WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>.GetListAsync
+  fullName.vb: WaCore.Crud.Services.WacListDataService(Of TEntity, TFilter, TDto).GetListAsync
+  nameWithType: WacListDataService<TEntity, TFilter, TDto>.GetListAsync
+  nameWithType.vb: WacListDataService(Of TEntity, TFilter, TDto).GetListAsync
 - uid: WaCore.Crud.Services.WacListDataService`3.MapEntityToDto(`0)
   name: MapEntityToDto(TEntity)
   href: api/WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_MapEntityToDto__0_
@@ -1158,6 +1554,48 @@ references:
   commentId: N:WaCore.Crud.Utils
   fullName: WaCore.Crud.Utils
   nameWithType: WaCore.Crud.Utils
+- uid: WaCore.Crud.Utils.Exceptions
+  name: WaCore.Crud.Utils.Exceptions
+  href: api/WaCore.Crud.Utils.Exceptions.html
+  commentId: N:WaCore.Crud.Utils.Exceptions
+  fullName: WaCore.Crud.Utils.Exceptions
+  nameWithType: WaCore.Crud.Utils.Exceptions
+- uid: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException
+  name: ResourceNotFoundException
+  href: api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html
+  commentId: T:WaCore.Crud.Utils.Exceptions.ResourceNotFoundException
+  fullName: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException
+  nameWithType: ResourceNotFoundException
+- uid: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.#ctor(System.Object)
+  name: ResourceNotFoundException(Object)
+  href: api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html#WaCore_Crud_Utils_Exceptions_ResourceNotFoundException__ctor_System_Object_
+  commentId: M:WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.#ctor(System.Object)
+  fullName: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.ResourceNotFoundException(System.Object)
+  nameWithType: ResourceNotFoundException.ResourceNotFoundException(Object)
+- uid: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.#ctor(System.Object,System.String)
+  name: ResourceNotFoundException(Object, String)
+  href: api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html#WaCore_Crud_Utils_Exceptions_ResourceNotFoundException__ctor_System_Object_System_String_
+  commentId: M:WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.#ctor(System.Object,System.String)
+  fullName: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.ResourceNotFoundException(System.Object, System.String)
+  nameWithType: ResourceNotFoundException.ResourceNotFoundException(Object, String)
+- uid: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.#ctor*
+  name: ResourceNotFoundException
+  href: api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html#WaCore_Crud_Utils_Exceptions_ResourceNotFoundException__ctor_
+  commentId: Overload:WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.#ctor
+  fullName: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.ResourceNotFoundException
+  nameWithType: ResourceNotFoundException.ResourceNotFoundException
+- uid: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.Resource
+  name: Resource
+  href: api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html#WaCore_Crud_Utils_Exceptions_ResourceNotFoundException_Resource
+  commentId: P:WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.Resource
+  fullName: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.Resource
+  nameWithType: ResourceNotFoundException.Resource
+- uid: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.Resource*
+  name: Resource
+  href: api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html#WaCore_Crud_Utils_Exceptions_ResourceNotFoundException_Resource_
+  commentId: Overload:WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.Resource
+  fullName: WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.Resource
+  nameWithType: ResourceNotFoundException.Resource
 - uid: WaCore.Crud.Utils.LinqExtensions
   name: LinqExtensions
   href: api/WaCore.Crud.Utils.LinqExtensions.html
@@ -1832,125 +2270,6 @@ references:
   fullName.vb: WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder(Of TEntity).ForSortField
   nameWithType: SortFieldMappingBuilder<TEntity>.ForSortField
   nameWithType.vb: SortFieldMappingBuilder(Of TEntity).ForSortField
-- uid: WaCore.Crud.Web.Controllers
-  name: WaCore.Crud.Web.Controllers
-  href: api/WaCore.Crud.Web.Controllers.html
-  commentId: N:WaCore.Crud.Web.Controllers
-  fullName: WaCore.Crud.Web.Controllers
-  nameWithType: WaCore.Crud.Web.Controllers
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3
-  name: WacListDataController<TListVm, TDto, TFilter>
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html
-  commentId: T:WaCore.Crud.Web.Controllers.WacListDataController`3
-  name.vb: WacListDataController(Of TListVm, TDto, TFilter)
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter)
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter)
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.#ctor(WaCore.Crud.Contracts.Services.IWacListDataService{`2,`1})
-  name: WacListDataController(IWacListDataService<TFilter, TDto>)
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3__ctor_WaCore_Crud_Contracts_Services_IWacListDataService__2__1__
-  commentId: M:WaCore.Crud.Web.Controllers.WacListDataController`3.#ctor(WaCore.Crud.Contracts.Services.IWacListDataService{`2,`1})
-  name.vb: WacListDataController(IWacListDataService(Of TFilter, TDto))
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.WacListDataController(WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>)
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).WacListDataController(WaCore.Crud.Contracts.Services.IWacListDataService(Of TFilter, TDto))
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.WacListDataController(IWacListDataService<TFilter, TDto>)
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).WacListDataController(IWacListDataService(Of TFilter, TDto))
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.#ctor*
-  name: WacListDataController
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3__ctor_
-  commentId: Overload:WaCore.Crud.Web.Controllers.WacListDataController`3.#ctor
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.WacListDataController
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).WacListDataController
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.WacListDataController
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).WacListDataController
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.FilterAsync(`2)
-  name: FilterAsync(TFilter)
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3_FilterAsync__2_
-  commentId: M:WaCore.Crud.Web.Controllers.WacListDataController`3.FilterAsync(`2)
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.FilterAsync(TFilter)
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).FilterAsync(TFilter)
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.FilterAsync(TFilter)
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).FilterAsync(TFilter)
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.FilterAsync*
-  name: FilterAsync
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3_FilterAsync_
-  commentId: Overload:WaCore.Crud.Web.Controllers.WacListDataController`3.FilterAsync
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.FilterAsync
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).FilterAsync
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.FilterAsync
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).FilterAsync
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.Index(`2)
-  name: Index(TFilter)
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3_Index__2_
-  commentId: M:WaCore.Crud.Web.Controllers.WacListDataController`3.Index(`2)
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.Index(TFilter)
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).Index(TFilter)
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.Index(TFilter)
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).Index(TFilter)
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.Index*
-  name: Index
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3_Index_
-  commentId: Overload:WaCore.Crud.Web.Controllers.WacListDataController`3.Index
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.Index
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).Index
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.Index
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).Index
-- uid: WaCore.Crud.Web.Controllers.WacListDataController`3.listVm
-  name: listVm
-  href: api/WaCore.Crud.Web.Controllers.WacListDataController-3.html#WaCore_Crud_Web_Controllers_WacListDataController_3_listVm
-  commentId: F:WaCore.Crud.Web.Controllers.WacListDataController`3.listVm
-  fullName: WaCore.Crud.Web.Controllers.WacListDataController<TListVm, TDto, TFilter>.listVm
-  fullName.vb: WaCore.Crud.Web.Controllers.WacListDataController(Of TListVm, TDto, TFilter).listVm
-  nameWithType: WacListDataController<TListVm, TDto, TFilter>.listVm
-  nameWithType.vb: WacListDataController(Of TListVm, TDto, TFilter).listVm
-- uid: WaCore.Crud.Web.ViewModels
-  name: WaCore.Crud.Web.ViewModels
-  href: api/WaCore.Crud.Web.ViewModels.html
-  commentId: N:WaCore.Crud.Web.ViewModels
-  fullName: WaCore.Crud.Web.ViewModels
-  nameWithType: WaCore.Crud.Web.ViewModels
-- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2
-  name: WacListDataVm<TDto, TFilter>
-  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html
-  commentId: T:WaCore.Crud.Web.ViewModels.WacListDataVm`2
-  name.vb: WacListDataVm(Of TDto, TFilter)
-  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>
-  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter)
-  nameWithType: WacListDataVm<TDto, TFilter>
-  nameWithType.vb: WacListDataVm(Of TDto, TFilter)
-- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList
-  name: DtoList
-  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList
-  commentId: P:WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList
-  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.DtoList
-  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).DtoList
-  nameWithType: WacListDataVm<TDto, TFilter>.DtoList
-  nameWithType.vb: WacListDataVm(Of TDto, TFilter).DtoList
-- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList*
-  name: DtoList
-  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList_
-  commentId: Overload:WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList
-  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.DtoList
-  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).DtoList
-  nameWithType: WacListDataVm<TDto, TFilter>.DtoList
-  nameWithType.vb: WacListDataVm(Of TDto, TFilter).DtoList
-- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter
-  name: Filter
-  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter
-  commentId: P:WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter
-  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.Filter
-  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).Filter
-  nameWithType: WacListDataVm<TDto, TFilter>.Filter
-  nameWithType.vb: WacListDataVm(Of TDto, TFilter).Filter
-- uid: WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter*
-  name: Filter
-  href: api/WaCore.Crud.Web.ViewModels.WacListDataVm-2.html#WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter_
-  commentId: Overload:WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter
-  fullName: WaCore.Crud.Web.ViewModels.WacListDataVm<TDto, TFilter>.Filter
-  fullName.vb: WaCore.Crud.Web.ViewModels.WacListDataVm(Of TDto, TFilter).Filter
-  nameWithType: WacListDataVm<TDto, TFilter>.Filter
-  nameWithType.vb: WacListDataVm(Of TDto, TFilter).Filter
 - uid: WaCore.Data.Ef
   name: WaCore.Data.Ef
   href: api/WaCore.Data.Ef.html

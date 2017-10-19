@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class WacListDataVm&lt;TDto, TFilter&gt;
+    <title>Class WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class WacListDataVm&lt;TDto, TFilter&gt;
+    <meta name="title" content="Class WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;
    ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -144,7 +144,13 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="WaCore.Crud.Contracts.Services.IWacCrudService-4.html" title="IWacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;" class="">IWacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;</a>
+                          </li>
+                          <li class="">
                             <a href="WaCore.Crud.Contracts.Services.IWacListDataService-2.html" title="IWacListDataService&lt;TFilter, TDto&gt;" class="">IWacListDataService&lt;TFilter, TDto&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="WaCore.Crud.Contracts.Services.Operation.html" title="Operation" class="">Operation</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -154,15 +160,6 @@
                         <ul class="nav level2">
                           <li class="">
                             <a href="WaCore.Crud.Contracts.Utils.IPagedList-1.html" title="IPagedList&lt;T&gt;" class="">IPagedList&lt;T&gt;</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="WaCore.Crud.Contracts.Web.html" title="WaCore.Crud.Contracts.Web" class="">WaCore.Crud.Contracts.Web</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="WaCore.Crud.Contracts.Web.IWacListDataVm-2.html" title="IWacListDataVm&lt;TDto, TFilter&gt;" class="">IWacListDataVm&lt;TDto, TFilter&gt;</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -188,6 +185,9 @@
                       <a href="WaCore.Crud.Services.html" title="WaCore.Crud.Services" class="">WaCore.Crud.Services</a>
                         
                         <ul class="nav level2">
+                          <li class="active">
+                            <a href="WaCore.Crud.Services.WacCrudService-4.html" title="WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;" class="active">WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;</a>
+                          </li>
                           <li class="">
                             <a href="WaCore.Crud.Services.WacListDataService-3.html" title="WacListDataService&lt;TEntity, TFilter, TDto&gt;" class="">WacListDataService&lt;TEntity, TFilter, TDto&gt;</a>
                           </li>
@@ -224,6 +224,15 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
+                      <a href="WaCore.Crud.Utils.Exceptions.html" title="WaCore.Crud.Utils.Exceptions" class="">WaCore.Crud.Utils.Exceptions</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html" title="ResourceNotFoundException" class="">ResourceNotFoundException</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
                       <a href="WaCore.Crud.Utils.Sorting.html" title="WaCore.Crud.Utils.Sorting" class="">WaCore.Crud.Utils.Sorting</a>
                         
                         <ul class="nav level2">
@@ -256,24 +265,6 @@
                           </li>
                           <li class="">
                             <a href="WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html" title="SortFieldMappingBuilder&lt;TEntity&gt;" class="">SortFieldMappingBuilder&lt;TEntity&gt;</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="WaCore.Crud.Web.Controllers.html" title="WaCore.Crud.Web.Controllers" class="">WaCore.Crud.Web.Controllers</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="WaCore.Crud.Web.Controllers.WacListDataController-3.html" title="WacListDataController&lt;TListVm, TDto, TFilter&gt;" class="">WacListDataController&lt;TListVm, TDto, TFilter&gt;</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="WaCore.Crud.Web.ViewModels.html" title="WaCore.Crud.Web.ViewModels" class="">WaCore.Crud.Web.ViewModels</a>
-                        
-                        <ul class="nav level2">
-                          <li class="active">
-                            <a href="WaCore.Crud.Web.ViewModels.WacListDataVm-2.html" title="WacListDataVm&lt;TDto, TFilter&gt;" class="active">WacListDataVm&lt;TDto, TFilter&gt;</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -397,24 +388,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WaCore.Crud.Web.ViewModels.WacListDataVm`2">
+            <article class="content wrap" id="_content" data-uid="WaCore.Crud.Services.WacCrudService`4">
   
   
-  <h1 id="WaCore_Crud_Web_ViewModels_WacListDataVm_2" data-uid="WaCore.Crud.Web.ViewModels.WacListDataVm`2" class="text-break">Class WacListDataVm&lt;TDto, TFilter&gt;
+  <h1 id="WaCore_Crud_Services_WacCrudService_4" data-uid="WaCore.Crud.Services.WacCrudService`4" class="text-break">Class WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">WacListDataVm&lt;TDto, TFilter&gt;</span></div>
+    <div class="level1"><a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html">WacListDataService</a>&lt;TEntity, TFilter, TDto&gt;</div>
+    <div class="level2"><span class="xref">WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="WaCore.Crud.Contracts.Web.IWacListDataVm-2.html">IWacListDataVm</a>&lt;TDto, TFilter&gt;</div>
+    <div><a class="xref" href="WaCore.Crud.Contracts.Services.IWacCrudService-4.html">IWacCrudService</a>&lt;TEntity, TFilter, TDto, TNewDto&gt;</div>
+    <div><a class="xref" href="WaCore.Crud.Contracts.Services.IWacListDataService-2.html">IWacListDataService</a>&lt;TFilter, TDto&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_Repo">WacListDataService&lt;TEntity, TFilter, TDto&gt;.Repo</a>
+    </div>
+    <div>
+      <a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_Get_System_Object_">WacListDataService&lt;TEntity, TFilter, TDto&gt;.Get(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetAsync_System_Object_">WacListDataService&lt;TEntity, TFilter, TDto&gt;.GetAsync(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetList__1_">WacListDataService&lt;TEntity, TFilter, TDto&gt;.GetList(TFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_GetListAsync__1_">WacListDataService&lt;TEntity, TFilter, TDto&gt;.GetListAsync(TFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="WaCore.Crud.Services.WacListDataService-3.html#WaCore_Crud_Services_WacListDataService_3_MapEntityToDto__0_">WacListDataService&lt;TEntity, TFilter, TDto&gt;.MapEntityToDto(TEntity)</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -437,11 +448,11 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="WaCore.Crud.Web.ViewModels.html">WaCore.Crud.Web.ViewModels</a></h6>
-  <h6><strong>Assembly</strong>: WaCore.Crud.Web.dll</h6>
-  <h5 id="WaCore_Crud_Web_ViewModels_WacListDataVm_2_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WaCore.Crud.Services.html">WaCore.Crud.Services</a></h6>
+  <h6><strong>Assembly</strong>: WaCore.Crud.Services.dll</h6>
+  <h5 id="WaCore_Crud_Services_WacCrudService_4_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WacListDataVm&lt;TDto, TFilter&gt; : IWacListDataVm&lt;TDto, TFilter&gt; where TDto : class where TFilter : WacFilter</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class WacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt; : WacListDataService&lt;TEntity, TFilter, TDto&gt;, IWacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;, IWacListDataService&lt;TFilter, TDto&gt; where TEntity : class, new ()where TFilter : IWacFilter</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -453,33 +464,74 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TDto</span></td>
+        <td><span class="parametername">TEntity</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="parametername">TFilter</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="parametername">TDto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TNewDto</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList.md&amp;value=---%0Auid%3A%20WaCore.Crud.Web.ViewModels.WacListDataVm%602.DtoList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4__ctor_WaCore_Contracts_Data_IWacUnitOfWork_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.%23ctor(WaCore.Contracts.Data.IWacUnitOfWork)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Web/ViewModels/WacListDataVm.cs/#L13">View Source</a>
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L19">View Source</a>
   </span>
-  <a id="WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList_" data-uid="WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList*"></a>
-  <h4 id="WaCore_Crud_Web_ViewModels_WacListDataVm_2_DtoList" data-uid="WaCore.Crud.Web.ViewModels.WacListDataVm`2.DtoList">DtoList</h4>
+  <a id="WaCore_Crud_Services_WacCrudService_4__ctor_" data-uid="WaCore.Crud.Services.WacCrudService`4.#ctor*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4__ctor_WaCore_Contracts_Data_IWacUnitOfWork_" data-uid="WaCore.Crud.Services.WacCrudService`4.#ctor(WaCore.Contracts.Data.IWacUnitOfWork)">WacCrudService(IWacUnitOfWork)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IList&lt;TDto&gt; DtoList { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public WacCrudService(IWacUnitOfWork unitOfWork)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaCore.Contracts.Data.IWacUnitOfWork.html">IWacUnitOfWork</a></td>
+        <td><span class="parametername">unitOfWork</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_UnitOfWork.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.UnitOfWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L17">View Source</a>
+  </span>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_UnitOfWork" data-uid="WaCore.Crud.Services.WacCrudService`4.UnitOfWork">UnitOfWork</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IWacUnitOfWork UnitOfWork</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -489,27 +541,93 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TDto&gt;</td>
+        <td><a class="xref" href="WaCore.Contracts.Data.IWacUnitOfWork.html">IWacUnitOfWork</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_Create__3_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.Create(%603)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L24">View Source</a>
+  </span>
+  <a id="WaCore_Crud_Services_WacCrudService_4_Create_" data-uid="WaCore.Crud.Services.WacCrudService`4.Create*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_Create__3_" data-uid="WaCore.Crud.Services.WacCrudService`4.Create(`3)">Create(TNewDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TDto Create(TNewDto dto)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNewDto</span></td>
+        <td><span class="parametername">dto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDto</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter.md&amp;value=---%0Auid%3A%20WaCore.Crud.Web.ViewModels.WacListDataVm%602.Filter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_CreateAsync__3_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.CreateAsync(%603)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Web/ViewModels/WacListDataVm.cs/#L15">View Source</a>
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L39">View Source</a>
   </span>
-  <a id="WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter_" data-uid="WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter*"></a>
-  <h4 id="WaCore_Crud_Web_ViewModels_WacListDataVm_2_Filter" data-uid="WaCore.Crud.Web.ViewModels.WacListDataVm`2.Filter">Filter</h4>
+  <a id="WaCore_Crud_Services_WacCrudService_4_CreateAsync_" data-uid="WaCore.Crud.Services.WacCrudService`4.CreateAsync*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_CreateAsync__3_" data-uid="WaCore.Crud.Services.WacCrudService`4.CreateAsync(`3)">CreateAsync(TNewDto)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TFilter Filter { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TDto&gt; CreateAsync(TNewDto dto)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNewDto</span></td>
+        <td><span class="parametername">dto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -519,14 +637,242 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TFilter</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TDto&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_Delete_System_Object_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.Delete(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L93">View Source</a>
+  </span>
+  <a id="WaCore_Crud_Services_WacCrudService_4_Delete_" data-uid="WaCore.Crud.Services.WacCrudService`4.Delete*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_Delete_System_Object_" data-uid="WaCore.Crud.Services.WacCrudService`4.Delete(System.Object)">Delete(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Delete(object id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_DeleteAsync_System_Object_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.DeleteAsync(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L109">View Source</a>
+  </span>
+  <a id="WaCore_Crud_Services_WacCrudService_4_DeleteAsync_" data-uid="WaCore.Crud.Services.WacCrudService`4.DeleteAsync*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_DeleteAsync_System_Object_" data-uid="WaCore.Crud.Services.WacCrudService`4.DeleteAsync(System.Object)">DeleteAsync(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteAsync(object id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_MapDtoToEntity__3__0_WaCore_Crud_Contracts_Services_Operation_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.MapDtoToEntity(%603%2C%600%2CWaCore.Crud.Contracts.Services.Operation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L125">View Source</a>
+  </span>
+  <a id="WaCore_Crud_Services_WacCrudService_4_MapDtoToEntity_" data-uid="WaCore.Crud.Services.WacCrudService`4.MapDtoToEntity*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_MapDtoToEntity__3__0_WaCore_Crud_Contracts_Services_Operation_" data-uid="WaCore.Crud.Services.WacCrudService`4.MapDtoToEntity(`3,`0,WaCore.Crud.Contracts.Services.Operation)">MapDtoToEntity(TNewDto, TEntity, Operation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void MapDtoToEntity(TNewDto dto, TEntity entityToCreateOrUpdate, Operation operation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNewDto</span></td>
+        <td><span class="parametername">dto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entityToCreateOrUpdate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaCore.Crud.Contracts.Services.Operation.html">Operation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_Update_System_Object__3_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.Update(System.Object%2C%603)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L56">View Source</a>
+  </span>
+  <a id="WaCore_Crud_Services_WacCrudService_4_Update_" data-uid="WaCore.Crud.Services.WacCrudService`4.Update*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_Update_System_Object__3_" data-uid="WaCore.Crud.Services.WacCrudService`4.Update(System.Object,`3)">Update(Object, TNewDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TDto Update(object id, TNewDto dto)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNewDto</span></td>
+        <td><span class="parametername">dto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4_UpdateAsync_System_Object__3_.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604.UpdateAsync(System.Object%2C%603)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L74">View Source</a>
+  </span>
+  <a id="WaCore_Crud_Services_WacCrudService_4_UpdateAsync_" data-uid="WaCore.Crud.Services.WacCrudService`4.UpdateAsync*"></a>
+  <h4 id="WaCore_Crud_Services_WacCrudService_4_UpdateAsync_System_Object__3_" data-uid="WaCore.Crud.Services.WacCrudService`4.UpdateAsync(System.Object,`3)">UpdateAsync(Object, TNewDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TDto&gt; UpdateAsync(object id, TNewDto dto)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNewDto</span></td>
+        <td><span class="parametername">dto</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TDto&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="WaCore.Crud.Contracts.Web.IWacListDataVm-2.html">IWacListDataVm&lt;TDto, TFilter&gt;</a>
+      <a class="xref" href="WaCore.Crud.Contracts.Services.IWacCrudService-4.html">IWacCrudService&lt;TEntity, TFilter, TDto, TNewDto&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="WaCore.Crud.Contracts.Services.IWacListDataService-2.html">IWacListDataService&lt;TFilter, TDto&gt;</a>
   </div>
 </article>
           </div>
@@ -536,10 +882,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Web_ViewModels_WacListDataVm_2.md&amp;value=---%0Auid%3A%20WaCore.Crud.Web.ViewModels.WacListDataVm%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/HerbertBodner/webapp-core/new/master/apiSpec/new?filename=WaCore_Crud_Services_WacCrudService_4.md&amp;value=---%0Auid%3A%20WaCore.Crud.Services.WacCrudService%604%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Web/ViewModels/WacListDataVm.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/HerbertBodner/webapp-core/blob/master/src/WaCore.Crud.Services/WacCrudService.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
