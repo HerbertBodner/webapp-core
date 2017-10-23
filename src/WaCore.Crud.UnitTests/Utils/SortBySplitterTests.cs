@@ -1,5 +1,5 @@
-﻿using WaCore.Crud.Utils;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WaCore.Crud.Utils.Sorting;
 
 namespace WaCore.Crud.UnitTests.Utils
 {
@@ -51,7 +51,7 @@ namespace WaCore.Crud.UnitTests.Utils
                 ExpectedFieldName = "myField",
                 ExpectedOrderBy = OrderItem.OrderBy.Ascending
             };
-            Validate("myField+Field2", expected, 0);
+            Validate("myField,+Field2", expected, 0);
         }
 
         [TestMethod]
@@ -63,7 +63,7 @@ namespace WaCore.Crud.UnitTests.Utils
                 ExpectedFieldName = "myField",
                 ExpectedOrderBy = OrderItem.OrderBy.Ascending
             };
-            Validate("+myField+Field2", expected, 0);
+            Validate("+myField,+Field2", expected, 0);
         }
 
         [TestMethod]
@@ -75,7 +75,7 @@ namespace WaCore.Crud.UnitTests.Utils
                 ExpectedFieldName = "myField",
                 ExpectedOrderBy = OrderItem.OrderBy.Descending
             };
-            Validate("-myField+Field2", expected, 0);
+            Validate("-myField,+Field2", expected, 0);
         }
 
         [TestMethod]
@@ -87,7 +87,7 @@ namespace WaCore.Crud.UnitTests.Utils
                 ExpectedFieldName = "Field2",
                 ExpectedOrderBy = OrderItem.OrderBy.Ascending
             };
-            Validate("myField+Field2", expected, 1);
+            Validate("myField,+Field2", expected, 1);
         }
 
         [TestMethod]
@@ -99,7 +99,7 @@ namespace WaCore.Crud.UnitTests.Utils
                 ExpectedFieldName = "Field2",
                 ExpectedOrderBy = OrderItem.OrderBy.Ascending
             };
-            Validate("+myField+Field2", expected, 1);
+            Validate("+myField,+Field2", expected, 1);
         }
 
         [TestMethod]
@@ -110,9 +110,20 @@ namespace WaCore.Crud.UnitTests.Utils
                 ExpectedFieldName = "Field2",
                 ExpectedOrderBy = OrderItem.OrderBy.Ascending
             };
-            Validate("-myField+Field2", expected, 1);
+            Validate("-myField,+Field2", expected, 1);
         }
 
+        [TestMethod]
+        public void SplitSortByStringWhenSecondFieldWithoutPlusOrMinusReturnsSecondCorrectOrderItem()
+        {
+            var expected = new SortingValidation
+            {
+                ExpectedFieldCount = 2,
+                ExpectedFieldName = "Field2",
+                ExpectedOrderBy = OrderItem.OrderBy.Ascending
+            };
+            Validate("myField,Field2", expected, 1);
+        }
 
         private void Validate(string inputString, SortingValidation sortingVal, int itemNrToValidate = 0)
         {

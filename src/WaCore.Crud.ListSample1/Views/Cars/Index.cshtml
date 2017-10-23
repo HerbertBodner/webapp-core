@@ -1,0 +1,44 @@
+﻿@model WaCore.Crud.ListSample1.ViewModels.CarListVm
+@{
+    ViewData["Title"] = "Cars";
+}
+
+<h2>View all cars</h2>
+
+<form>
+    <fieldset class="form-inline">
+        <div class="well well-sm">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Filter.CreatedAfter)
+                @Html.TextBoxFor(m => m.Filter.CreatedAfter, new { @class = "form-control" })
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </fieldset>
+</form>
+<div class="btn-toolbar">
+    @Html.ActionLink("New car", "Create", null, null, new { @class = "btn btn-primary pull-right" })
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Created at</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.DtoList)
+        {
+            <tr>
+                <td class="col-md-1">@car.Id</td>
+                <td class="col-md-3">@car.Brand</td>
+                <td class="col-md-3">@car.Model</td>
+                <td class="col-md-2">@car.CreatedAt</td>
+                <td class="col-md-3">@Html.ActionLink("Manage", "Edit", new { @id = car.Id })</td>
+            </tr>
+        }
+    </tbody>
+</table>
