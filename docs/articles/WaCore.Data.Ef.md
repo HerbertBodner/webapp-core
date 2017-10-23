@@ -7,6 +7,11 @@ uid: UnitOfWork_Module
 * While using the Repository pattern
 * Using Entity Framework Core 2.0
 
+To get a better architectural overview on what this module represents, have a look at the following layer diagram:
+![Layer diagram](../images/WaCore.Data.Ef_Layers.png)
+
+As you can see, the module consists of 1 NuGet package (``WaCore.Data.Ef``) and one dependent assembly (``WaCore.Contracts``).
+The NuGet package is considered to be part of the data access layer. Other modules build on top of this module.
 
 
 ## 2. Features
