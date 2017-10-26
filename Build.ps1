@@ -29,7 +29,7 @@ if ($env:APPVEYOR_REPO_TAG -eq "true") {
         Push-Location $src
     
         echo "build: Pack project in $src"
-        exec { & dotnet pack -c Release --include-symbols -o ..\..\artifacts /p:PackageVersion=$buildVersion }    
+        exec { & dotnet pack -c Release -o ..\..\artifacts /p:PackageVersion=$buildVersion }    
 
         Pop-Location
     }
