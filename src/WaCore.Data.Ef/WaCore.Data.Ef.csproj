@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2PAssets</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WaCore.Contracts\WaCore.Contracts.csproj" />
+    <ProjectReference Include="..\WaCore.Contracts\WaCore.Contracts.csproj" PrivateAssets="All" />
   </ItemGroup>
-
+  
+  <Target Name="IncludeP2PAssets">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)WaCore.Contracts.dll" />
+    </ItemGroup>
+  </Target>
 </Project>

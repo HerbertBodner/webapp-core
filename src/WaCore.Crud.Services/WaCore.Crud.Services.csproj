@@ -2,12 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeP2PAssets</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WaCore.Crud.Contracts\WaCore.Crud.Contracts.csproj" />
-    <ProjectReference Include="..\WaCore.Crud.Dtos\WaCore.Crud.Dtos.csproj" />
-    <ProjectReference Include="..\WaCore.Crud.Utils\WaCore.Crud.Utils.csproj" />
+    <ProjectReference Include="..\WaCore.Crud.Contracts\WaCore.Crud.Contracts.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\WaCore.Crud.Dtos\WaCore.Crud.Dtos.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\WaCore.Crud.Utils\WaCore.Crud.Utils.csproj" PrivateAssets="All" />
   </ItemGroup>
 
+  <Target Name="IncludeP2PAssets">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)WaCore.Crud.Contracts.dll" />
+      <BuildOutputInPackage Include="$(OutputPath)WaCore.Crud.Dtos.dll" />
+      <BuildOutputInPackage Include="$(OutputPath)WaCore.Crud.Utils.dll" />
+    </ItemGroup>
+  </Target>
 </Project>
