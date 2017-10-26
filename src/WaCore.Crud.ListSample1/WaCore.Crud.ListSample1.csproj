@@ -18,6 +18,7 @@
     <ProjectReference Include="..\WaCore.Crud.Data.Ef\WaCore.Crud.Data.Ef.csproj" />
     <ProjectReference Include="..\WaCore.Crud.Dtos\WaCore.Crud.Dtos.csproj" />
     <ProjectReference Include="..\WaCore.Crud.Services\WaCore.Crud.Services.csproj" />
+    <ProjectReference Include="..\WaCore.Crud.Utils\WaCore.Crud.Utils.csproj" />
     <ProjectReference Include="..\WaCore.Data.Ef\WaCore.Data.Ef.csproj" />
   </ItemGroup>
 
