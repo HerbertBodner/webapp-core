@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WaCore.Crud.Services\WaCore.Crud.Services.csproj" />
+    <ProjectReference Include="..\WaCore.TemplateMgmt.Contracts\WaCore.TemplateMgmt.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
