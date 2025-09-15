@@ -1,0 +1,1159 @@
+{
+  "source_base_path": "/home/runner/work/webapp-core/webapp-core/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.SecureHeadersMiddlewareExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.SecureHeadersMiddlewareExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.AspNetCore.Builder.SecureHeadersMiddlewareExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.AspNetCore.Builder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.UnitOfWorkServiceCollectionExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Contracts.Data.IWacTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Contracts.Data.IWacTransaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Contracts.Data.IWacTransaction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Contracts.Data.IWacUnitOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Contracts.Data.IWacUnitOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Contracts.Data.IWacUnitOfWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Contracts.Data.Repositories.Base.IWacRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Contracts.Data.Repositories.Base.IWacRepository<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Contracts.Data.Repositories.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Contracts.Data.Repositories.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Contracts.Data.Repositories.Base",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Contracts.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Contracts.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Contracts.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Data.IWacListDataRepository-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Data.IWacListDataRepository<TEntity, TFilter>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Dtos.IWacFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Dtos.IWacFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Dtos.IWacFilter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Dtos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Dtos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Dtos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Services.IWacCrudService-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Services.IWacCrudService-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Services.IWacCrudService<TEntity, TFilter, TDto, TNewDto>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Services.IWacListDataService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Services.IWacListDataService-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Services.IWacListDataService<TFilter, TDto>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Services.Operation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Services.Operation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Services.Operation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Utils.IPagedList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Utils.IPagedList-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Utils.IPagedList<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Contracts.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Contracts.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Contracts.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Data.Ef.WacListDataRepository-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Data.Ef.WacListDataRepository-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Data.Ef.WacListDataRepository<TEntity, TDbContext, TFilter>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Data.Ef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Data.Ef.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Data.Ef",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Dtos.Filters.WacFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Dtos.Filters.WacFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Dtos.Filters.WacFilter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Dtos.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Dtos.Filters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Dtos.Filters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Services.WacCrudService-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Services.WacCrudService-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Services.WacCrudService<TEntity, TFilter, TDto, TNewDto>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Services.WacListDataService-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Services.WacListDataService-3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Services.WacListDataService<TEntity, TFilter, TDto>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.UnitTests.Utils.SortBySplitterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.UnitTests.Utils.SortBySplitterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.UnitTests.Utils.SortBySplitterTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.TestDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.UnitTests.Utils.SortFieldMappingBuilderTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.UnitTests.Utils.SortingValidation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.UnitTests.Utils.SortingValidation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.UnitTests.Utils.SortingValidation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.UnitTests.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.UnitTests.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.UnitTests.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Exceptions.ResourceNotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Exceptions.ResourceNotFoundException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.LinqExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.LinqExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.LinqExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.PagedList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.PagedList-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.PagedList<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.IFirstSortConfigurable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.IFirstSortConfigurable<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.ISecondarySortConfigurable<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.ISortFieldMappingBuilder<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.OrderItem.OrderBy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.OrderItem.OrderBy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.OrderItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.OrderItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.OrderItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.SingleSortFieldMap-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.SingleSortFieldMap<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.SortBySplitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.SortBySplitter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.SortBySplitter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.SortColumnDescriptor-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.SortColumnDescriptor<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.SortFieldMapping-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.SortFieldMapping-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.SortFieldMapping<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting.SortFieldMappingBuilder<TEntity>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.Sorting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.Sorting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils.Sorting",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Crud.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Crud.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Crud.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Ef.DependencyInjection.RepositoryConfiguration<TDbContext, TUnitOfWorkService>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Ef.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Ef.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Ef.DependencyInjection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Ef.WacDbContextTransactionWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Ef.WacDbContextTransactionWrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Ef.WacDbContextTransactionWrapper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Ef.WacEfUnitOfWork-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Ef.WacEfUnitOfWork-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Ef.WacEfUnitOfWork<TDbContext>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Ef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Ef.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Ef",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Repositories.Base.WacRepository-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Repositories.Base.WacRepository-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Repositories.Base.WacRepository<TEntity, TDbContext>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Data.Repositories.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Data.Repositories.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Data.Repositories.Base",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.Controllers.HomeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares.Controllers.HomeController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.Models.ErrorViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares.Models.ErrorViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares.Program",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.Startup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares.Startup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Sample.Middlewares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Sample.Middlewares.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Sample.Middlewares",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.ContentSecurityPolicyConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.ContentSecurityPolicyConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.ContentSecurityPolicyConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.HpkpConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.HpkpConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.HpkpConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.HstsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.HstsConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.HstsConfiguration",
+      "Summary": "<p sourcefile=\"api/WaCore.Web.Middleware.SecureHeaders.Models.HstsConfiguration.yml\" sourcestartlinenumber=\"1\">Represents the HTTP Strict Transport Security configuration</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.IConfigurationBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.IConfigurationBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.IConfigurationBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.ISecureHeadersMiddlewareConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.ISecureHeadersMiddlewareConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.ISecureHeadersMiddlewareConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.ReferrerPolicyConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.ReferrerPolicyConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.ReferrerPolicyConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.WacSecureHeadersMiddlewareConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.WacSecureHeadersMiddlewareConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.WacSecureHeadersMiddlewareConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XContentTypeOptionsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XContentTypeOptionsConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.XContentTypeOptionsConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XFrameOptionsConfiguration.XFrameOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XFrameOptionsConfiguration.XFrameOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.XFrameOptionsConfiguration.XFrameOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XFrameOptionsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XFrameOptionsConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.XFrameOptionsConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XssConfiguration.XssMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XssConfiguration.XssMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.XssConfiguration.XssMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XssConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.XssConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models.XssConfiguration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.SecureHeadersConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.SecureHeadersConstants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.SecureHeadersConstants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.WacSecureHeadersMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.WacSecureHeadersMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders.WacSecureHeadersMiddleware",
+      "Summary": "<p sourcefile=\"api/WaCore.Web.Middleware.SecureHeaders.WacSecureHeadersMiddleware.yml\" sourcestartlinenumber=\"1\">A middleware for injecting OWASP recommended headers into a\nHTTP Request</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WaCore.Web.Middleware.SecureHeaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WaCore.Web.Middleware.SecureHeaders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WaCore.Web.Middleware.SecureHeaders",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/WaCore.Data.Ef.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/WaCore.Data.Ef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
